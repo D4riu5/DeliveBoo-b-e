@@ -22,7 +22,7 @@
                     Nome del mio Ristorante: {{ $user->restaurant->name }}
                 </h3>
                 <h4>
-                    Address del mio Ristorante: {{ $user->restaurant->Address }}
+                    Address del mio Ristorante: {{ $user->restaurant->address }}
                 </h4>
                 <h4>
                     nome propietario {{ $user->name . ' ' . $user->surname }}
