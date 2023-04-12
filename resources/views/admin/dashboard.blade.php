@@ -17,7 +17,7 @@
                     <tbody>
                         <tr scope="row">
                             <td>
-                                <div class="fw-bold">
+                                <div>
                                     {{ $user->restaurant->name }}
                                 </div>
                             </td>
