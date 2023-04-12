@@ -8,7 +8,7 @@
                     Cucina: {{ $type->name }}
                 </h1>
                 <p>
-                    
+                    Descrizione cucina: {{ $type->description }}
                 </p>
             </div>
         </div>
