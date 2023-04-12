@@ -25,7 +25,7 @@
         <div id="app">
 
             <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-2 shadow">
-                <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="/">DeliveBoo</a>
+                <a class="navbar-brand col-md-3 col-lg-2 me-0 px-2" href="/">DeliverBoo</a>
                 <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -59,11 +59,23 @@
                             <ul class="nav flex-column">
                                 <li class="nav-item">
                                     <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.type.index' ? 'bg-secondary' : '' }}" href="{{route('admin.type.index')}}">
-                                        <i class="fa-solid fa-kitchen-set fa-lg fa-fw"></i> Tipi di cucina
+                                        <i class="fa-solid fa-kitchen-set fa-lg fa-fw"></i> Tipologia di cucina
                                     </a>
                                 </li>
                             </ul>
                         </div>
+                        <div class="position-sticky pt-3 my-5">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="navbar-brand col-md-3 col-lg-2 me-0 px-2" href="/">Return</a>
+                                    <button class="navbar-toggler position-absolute d-md-none collapsed btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+
+                      
                     </nav>
 
                     <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
