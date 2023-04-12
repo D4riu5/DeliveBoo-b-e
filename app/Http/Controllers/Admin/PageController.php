@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Type;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -15,6 +16,8 @@ class PageController extends Controller
 
         $user = Auth::user();
         $restaurant = $user->restaurant;
+        
+
         return view('admin.dashboard', compact('restaurant', 'user'));
 
         // VER 2
