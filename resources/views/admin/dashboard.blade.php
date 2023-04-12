@@ -17,6 +17,7 @@
                 <h4>
                     PIVA {{ $user->name . ' ' . $restaurant->PIVA }}
                 </h4> --}}
+                
                 {{-- VERSION 2 --}}
                 <h3>
                     Nome del mio Ristorante: {{ $user->restaurant->name }}
