@@ -3,34 +3,47 @@
 @section('content')
     <div class="container-fluid mt-4">
         <div class="row justify-content-center">
-            <div class="col-md-8">
-                {{-- VERSION 1 --}}
-                {{-- <h3>
-                    Nome del mio Ristorante: {{ $restaurant->name }}
-                </h3>
-                <h4>
-                    Address del mio Ristorante: {{ $restaurant->Address }}
-                </h4>
-                <h4>
-                    nome propietario {{ $user->name . ' ' . $user->surname }}
-                </h4>
-                <h4>
-                    PIVA {{ $user->name . ' ' . $restaurant->PIVA }}
-                </h4> --}}
-                
-                {{-- VERSION 2 --}}
-                <h3>
-                    Nome del mio Ristorante: {{ $user->restaurant->name }}
-                </h3>
-                <h4>
-                    Address del mio Ristorante: {{ $user->restaurant->address }}
-                </h4>
-                <h4>
-                    nome propietario {{ $user->name . ' ' . $user->surname }}
-                </h4>
-                <h4>
-                    PIVA {{ $user->name . ' ' . $user->restaurant->PIVA }}
-                </h4>
+            <div class="col-md-12">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nome attività</th>
+                            <th scope="col">Indirizzo</th>
+                            <th scope="col">Nome proprietario</th>
+                            <th scope="col">Cognome proprietario</th>
+                            <th scope="col">Partita IVA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr scope="row">
+                            <td>
+                                <div class="fw-bold">
+                                    {{ $user->restaurant->name }}
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    {{ $user->restaurant->address }}
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    {{ $user->name }}
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    {{ $user->surname }}
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    {{ $user->restaurant->PIVA }}
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
