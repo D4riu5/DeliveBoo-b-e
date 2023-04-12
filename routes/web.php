@@ -6,7 +6,12 @@ use Illuminate\Support\Facades\Route;
 // 
 // Controllers
 use App\Http\Controllers\Admin\PageController;
+use App\Http\Controllers\Admin\TypeController;
 use App\Http\Controllers\Admin\RestaurantController;
+
+//Models
+use App\Models\Restaurant;
+use App\Models\Type;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,9 +30,8 @@ Route::get('/', function () {
 
 Route::prefix('admin')->name('admin.')->middleware(['auth', 'verified'])->group(function () {
     Route::get('/dashboard', [PageController::class, 'dashboard'])->name('dashboard');
-
     Route::resource('restaurant', RestaurantController::class)->only(['edit', 'update']);
-
+    Route::resource('type', TypeController::class)->only(['index', 'show']);
 });
 
 Route::middleware('auth')->group(function () {
