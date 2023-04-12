@@ -18,44 +18,57 @@
         @method('patch')
 
         <div class="mb-2">
-            <label for="name">{{__('Name')}}</label>
-            <input class="form-control" type="text" name="name" id="name" autocomplete="name" value="{{old('name', $user->name)}}" required autofocus>
+            <label for="name">{{ __('Name') }}</label>
+            <input class="form-control" type="text" name="name" id="name" autocomplete="name"
+                value="{{ old('name', $user->name) }}" required autofocus>
             @error('name')
-            <span class="invalid-feedback" role="alert">
-                <strong>{{ $errors->get('name')}}</strong>
-            </span>
+                <div class="alert alert-danger mt-3"  role="alert">
+                    <strong>{{ $message }}</strong>
+                </div>
+            @enderror
+        </div>
+
+        <div class="mb-2">
+            <label for="surname">{{ __('Surname') }}</label>
+            <input class="form-control" type="text" name="surname" id="surname" autocomplete="surname"
+                value="{{ old('surname', $user->surname) }}"  autofocus>
+            @error('surname')
+                <div class="alert alert-danger mt-3"  role="alert">
+                    <strong>{{ $message }}</strong>
+                </div>
             @enderror
         </div>
 
         <div class="mb-2">
             <label for="email">
-                {{__('Email') }}
+                {{ __('Email') }}
             </label>
 
-            <input id="email" name="email" type="email" class="form-control" value="{{ old('email', $user->email)}}" required autocomplete="username" />
+            <input id="email" name="email" type="email" class="form-control"
+                value="{{ old('email', $user->email) }}" required autocomplete="username" />
 
             @error('email')
-            <span class="alert alert-danger mt-2" role="alert">
-                <strong>{{ $errors->get('email')}}</strong>
-            </span>
+                <div class="alert alert-danger mt-3" role="alert">
+                    <strong>{{ $message }}</strong>
+                </div>
             @enderror
 
-            @if ($user instanceof \Illuminate\Contracts\Auth\MustVerifyEmail && ! $user->hasVerifiedEmail())
-            <div>
-                <p class="text-sm mt-2 text-muted">
-                    {{ __('Your email address is unverified.') }}
+            @if ($user instanceof \Illuminate\Contracts\Auth\MustVerifyEmail && !$user->hasVerifiedEmail())
+                <div>
+                    <p class="text-sm mt-2 text-muted">
+                        {{ __('Your email address is unverified.') }}
 
-                    <button form="send-verification" class="btn btn-outline-dark">
-                        {{ __('Click here to re-send the verification email.') }}
-                    </button>
-                </p>
+                        <button form="send-verification" class="btn btn-outline-dark">
+                            {{ __('Click here to re-send the verification email.') }}
+                        </button>
+                    </p>
 
-                @if (session('status') === 'verification-link-sent')
-                <p class="mt-2 text-success">
-                    {{ __('A new verification link has been sent to your email address.') }}
-                </p>
-                @endif
-            </div>
+                    @if (session('status') === 'verification-link-sent')
+                        <p class="mt-2 text-success">
+                            {{ __('A new verification link has been sent to your email address.') }}
+                        </p>
+                    @endif
+                </div>
             @endif
         </div>
 
