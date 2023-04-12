@@ -17,7 +17,7 @@
                     <tbody>
                         <tr scope="row">
                             <td>
-                                <div class="fw-bold">
+                                <div>
                                     {{ $user->restaurant->name }}
                                 </div>
                             </td>
@@ -44,6 +44,20 @@
                         </tr>
                     </tbody>
                 </table>
+
+
+                <h3 class="my-3">
+                    Types associate al mio ristorante:
+                    <div>
+                        @foreach ($user->restaurant->types as $type)
+                            <a class="m-2 d-inline-block" href="{{ route('admin.type.show', $type->id) }}">
+                                {{ $type->name }}
+                            </a>
+                        @endforeach
+                    </div>
+                </h3>
+
+
             </div>
         </div>
     </div>
