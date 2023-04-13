@@ -3,6 +3,7 @@
 /public/hot
 /public/storage
 public/uploads/*
+immagini
 /storage/*.key
 /vendor
 .env
