@@ -15,12 +15,12 @@ return new class extends Migration
     {
         Schema::create('restaurants', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('address');
-            $table->string('PIVA');
+            $table->string('name', 32);
+            $table->string('address', 128);
+            $table->string('PIVA', 11);
             $table->string('image')->nullable();
-            $table->unsignedTinyInteger('avg_rating')->nullable();
-            $table->smallInteger('total_reviews')->nullable()->unsigned();
+            // $table->unsignedTinyInteger('avg_rating')->nullable();
+            // $table->smallInteger('total_reviews')->nullable()->unsigned();
             $table->timestamps();
         });
     }

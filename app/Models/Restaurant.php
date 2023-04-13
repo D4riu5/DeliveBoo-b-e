@@ -14,8 +14,8 @@ class Restaurant extends Model
         'address',
         'PIVA',
         'image',
-        'avg_rating',
-        'total_reviews',
+        // 'avg_rating',
+        // 'total_reviews',
         'user_id'
     ];
 

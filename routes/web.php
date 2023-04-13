@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\PageController;
 use App\Http\Controllers\Admin\TypeController;
 use App\Http\Controllers\Admin\RestaurantController;
+use App\Http\Controllers\Admin\OrderController;
 
 //Models
 use App\Models\Restaurant;
@@ -33,6 +34,7 @@ Route::prefix('admin')->name('admin.')->middleware(['auth', 'verified'])->group(
     Route::get('/dashboard', [PageController::class, 'dashboard'])->name('dashboard');
     Route::resource('restaurant', RestaurantController::class)->only(['edit', 'update']);
     Route::resource('type', TypeController::class)->only(['index', 'show']);
+    Route::resource('order', OrderController::class)->only(['index', 'show']);
     Route::resource('food', FoodController::class);
 });
 
