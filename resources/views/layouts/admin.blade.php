@@ -58,6 +58,15 @@
                         <div class="position-sticky pt-3">
                             <ul class="nav flex-column">
                                 <li class="nav-item">
+                                    <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.order.index' ? 'bg-secondary' : '' }}" href="{{route('admin.order.index')}}">
+                                        <i class="fa-solid fa-arrow-down-short-wide fa-lg fa-fw"></i> I miei ordini
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="position-sticky pt-3">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
                                     <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.type.index' ? 'bg-secondary' : '' }}" href="{{route('admin.type.index')}}">
                                         <i class="fa-solid fa-kitchen-set fa-lg fa-fw"></i> Tipologie di cucina
                                     </a>
