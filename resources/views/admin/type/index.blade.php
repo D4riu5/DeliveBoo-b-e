@@ -4,31 +4,27 @@
     <div class="container-fluid mt-4">
         <div class="row justify-content-center">
             <div class="col-md-12">
-                <div class="my-3">
-                    <h3 class="fw-bold">
-                        Tipi di cucina
-                    </h3>
+                <div class="mb-5">
+                    <h2 class="fw-bold text-center mt-2">
+                        Tipologie di cucina
+                    </h2>
                 </div>
                 {{-- INIZIO CICLO PER STAMPA DI ELEMENTI IN VARIABILE $TYPES  --}}
-                @foreach ($types as $type)
-                    {{-- INIZIO TABELLA  --}}
-                    <table class="table my-3">
-                        {{-- CORPO TABELLA --}}
-                        <tbody>
-                            <tr>
-                                <th scope="row">
-                                    <a href="{{ route('admin.type.show', $type->id) }}">
-                                        {{ $type->name }}
-                                    </a>
-                                </th>
-                            </tr>
-                        </tbody>
-                    </table>
-                    {{-- FINE TABELLA  --}}
-                @endforeach
-                {{-- FINE CICLO PER STAMPA DI ELEMENTI IN VARIABILE $TYPES  --}}
-
+                <div class="btn-group my-2" role="group" aria-label="Basic mixed styles example">
+                    @foreach ($types as $type)
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="py-1">
+                            <a class="btn btn-success mx-1" href="{{ route('admin.type.show', $type->id) }}">
+                                {{ $type->name }}
+                            </a>
+                        </div>
+                        <div class="typePhotoBox mx-3">
+                            <img src="{{ asset("storage/" . $type->image) }}">
+                        </div>
+                    </div>
+                    @endforeach
+                    {{-- FINE CICLO PER STAMPA DI ELEMENTI IN VARIABILE $TYPES  --}}
+                </div>
             </div>
         </div>
-    </div>
-@endsection
+    @endsection
