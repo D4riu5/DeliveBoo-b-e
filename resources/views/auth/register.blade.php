@@ -21,10 +21,10 @@
 
                                     <div>
                                         <input id="username" type="text"
-                                        class="form-control @error('username') is-invalid @enderror" name="username"
+                                        class="form-control @error('username') is-invalid @enderror" name="name"
                                         value="{{ old('name') }}" autocomplete="name" autofocus>
 
-                                        @error('username')
+                                        @error('name')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
                                             </span>
@@ -35,6 +35,7 @@
                                         </span>
                                     </div>
                                 </div>
+                                
 
                                 <div class="form-group row">
                                     <label for="surname">{{ __('Cognome *') }}</label>
@@ -118,7 +119,7 @@
                                     <label for="name">{{ __('Nome Ristorante *') }}</label>
     
                                     <div>
-                                        <input id="name" type="text" class="form-control" name="name"
+                                        <input id="name" type="text" class="form-control" name="restaurant_name"
                                         autocomplete="name">
 
                                         <span id="invalid-name" class="invalid-feedback" role="alert">
@@ -145,7 +146,7 @@
     
                                     <div>
                                         <input id="pIva" type="text"
-                                            class="form-control @error('pIva') is-invalid @enderror" name="pIva"
+                                            class="form-control @error('pIva') is-invalid @enderror" name="PIVA"
                                             autocomplete="pIva">
     
                                         @error('pIva')
