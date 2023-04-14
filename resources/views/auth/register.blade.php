@@ -120,7 +120,7 @@
 
                                     <div>
                                         <input id="name" type="text" class="form-control" name="restaurant_name"
-                                            autocomplete="name">
+                                            autocomplete="name" value="{{ old('restaurant_name') }}">
 
                                         <span id="invalid-name" class="invalid-feedback" role="alert">
                                             <strong>{{ 'Campo obbligatorio' }}</strong>
@@ -133,7 +133,7 @@
 
                                     <div>
                                         <input id="address" type="text" class="form-control" name="address"
-                                            autocomplete="address">
+                                            autocomplete="address" value="{{ old('address') }}">
 
                                         <span id="invalid-address" class="invalid-feedback" role="alert">
                                             <strong>{{ 'Campo obbligatorio' }}</strong>
@@ -147,7 +147,7 @@
                                     <div>
                                         <input id="pIva" type="text"
                                             class="form-control @error('pIva') is-invalid @enderror" name="PIVA"
-                                            autocomplete="pIva">
+                                            autocomplete="pIva" value="{{ old('email') }}">
 
                                         @error('pIva')
                                             <span class="invalid-feedback" role="alert">
