@@ -22,4 +22,8 @@ class Food extends Model
     public function restaurant() {
         return $this->belongsTo(Restaurant::class);
     }
+
+    public function food_detail(){
+        return $this->hasOne(Food_detail::class);
+    }
 }

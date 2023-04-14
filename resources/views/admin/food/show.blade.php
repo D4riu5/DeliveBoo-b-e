@@ -26,15 +26,6 @@
                         </h3>
                         <p>
                             {!! nl2br($food->description) !!}
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, inventore excepturi quae minus
-                            voluptatibus reprehenderit aut neque accusamus doloremque, maxime placeat adipisci accusantium
-                            aliquid quibusdam. Dignissimos ea soluta repudiandae voluptatibus! Lorem ipsum, dolor sit amet
-                            consectetur adipisicing elit. Voluptatum, accusamus vero repudiandae voluptates voluptas quo nam
-                            non a et veritatis enim porro iure ad saepe! Iure ad harum excepturi quia. Lorem ipsum dolor,
-                            sit amet consectetur adipisicing elit. Quaerat qui laudantium eveniet est dolorum sequi? Veniam
-                            deserunt repudiandae necessitatibus excepturi ex, sed doloribus porro minus adipisci soluta.
-                            Placeat, nostrum et!
-                            lorem
                         </p>
                     </div>
                 </div>
@@ -75,28 +66,39 @@
                     {{-- BLOCCO INFO A SINISTRA --}}
                     <div class="rightBox pt-1">
 
+
                         {{-- INFO PICCANTE  --}}
                         <div>
                             <h3 class="my-2">
                                 E' un prodotto piccante?
                             </h3>
-                            <p>
-                                @foreach ($food_details as $food)
-                                    {{ $food->spicy ? 'Si' : 'No' }}
-                                @endforeach
-                            </p>
+                            @if ($food->food_detail->spicy !== null)
+                                @if ($food->food_detail->spicy == 1)
+                                    <p>Si</p>
+                                @elseif ($food->food_detail->spicy == 0)
+                                    <p>No</p>
+                                @endif
+                            @else
+                                <p>Non specificato</p>
+                            @endif
                         </div>
+
+
 
                         {{-- INFO GLUTINE  --}}
                         <div>
                             <h3 class="my-2">
                                 Contiene Glutine?
                             </h3>
-                            <p>
-                                @foreach ($food_details as $food)
-                                    {{ $food->glute_free ? 'Si' : 'No' }}
-                                @endforeach
-                            </p>
+                            @if ($food->food_detail->gluten_free !== null)
+                                @if ($food->food_detail->gluten_free == 1)
+                                    <p>Si</p>
+                                @elseif ($food->food_detail->gluten_free == 0)
+                                    <p>No</p>
+                                @endif
+                            @else
+                                <p>Non specificato</p>
+                            @endif
                         </div>
 
                         {{-- CALORIE CONTENUTE  --}}
@@ -104,12 +106,16 @@
                             <h3 class="my-2">
                                 Quante calorie contiene?
                             </h3>
-                            @foreach ($food_details as $food)
+                            @if ($food->food_detail && $food->food_detail->kcal !== null)
+
+                                 {{ $food->food_detail->kcal . ' kacl' }}
+                            @else
                                 <p>
-                                    {{ $food->kcal ? number_format($food->kcal) . ' kcal' : 'Non specificato' }}
+                                    Non specificato
                                 </p>
-                            @endforeach
+                            @endif
                         </div>
+
                     </div>
                 </div>
                 {{-- PULSANTE RITORNO A MIEI PRODOTTI  --}}
@@ -127,7 +133,7 @@
                         </h6>
                     </a>
                 </div>
-                
+
             </div>
         </div>
     </div>

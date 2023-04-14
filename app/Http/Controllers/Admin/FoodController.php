@@ -56,7 +56,7 @@ class FoodController extends Controller
         $restaurant_id = Auth::user()->restaurant->id;
         $data['restaurant_id'] = $restaurant_id;
 
-       
+
 
 
         // IMAGE
@@ -67,19 +67,32 @@ class FoodController extends Controller
 
         // $newFood = Food::create($data);
 
+        
         $newFood = new Food();
+        //
         $newFood->name = $data['name'];
         $newFood->description = $data['description'];
-        $newFood->image = $data['image'];
+        if (array_key_exists('image', $data)) {
+            $newFood->image = $data['image'];
+        }
         $newFood->price = $data['price'];
         $newFood->course = $data['course'];
         $newFood->restaurant_id = $data['restaurant_id'];
         $newFood->save();
 
         $newFoodDetail = new Food_detail();
-        $newFoodDetail->spicy = $data['spicy'];
-        $newFoodDetail->gluten_free = $data['gluten_free'];
-        $newFoodDetail->kcal = $data['kcal'];
+        //
+        if (array_key_exists('spicy', $data)) {
+            $newFoodDetail->spicy = $data['spicy'];
+        }
+        
+        if (array_key_exists('gluten_free', $data)) {
+            $newFoodDetail->gluten_free = $data['gluten_free'];
+        }
+        if (array_key_exists('kcal', $data)) {
+            $newFoodDetail->kcal = $data['kcal'];
+        }
+
         $newFoodDetail->food_id = $newFood->id;
 
         $newFoodDetail->save();
@@ -101,10 +114,8 @@ class FoodController extends Controller
             abort(403);
         }
 
-        $food_details = Food_detail::all();
 
-        
-        return view('admin.food.show', compact('food', 'food_details'));
+        return view('admin.food.show', compact('food'));
     }
 
     /**
@@ -146,8 +157,38 @@ class FoodController extends Controller
             }
         }
 
+        // QUESTO AGGIORNA I DATI PRESENTI NEL MODEL FOOD
 
-        $food->update($data);
+        if ($food !== null) {
+
+            $food->update($data);
+        }
+
+        //QUESTO AGGIORNA I DATI PRESENTI NEL MODEL FOOT_DETAIL
+
+        $food_detail = $food->food_detail;
+        $updated_fields = [];
+
+        if ($data['spicy'] !== null) {
+            $updated_fields['spicy'] = $data['spicy'];
+        }
+
+        if ($data['gluten_free'] !== null) {
+            $updated_fields['gluten_free'] = $data['gluten_free'];
+        }
+
+        if ($data['kcal'] !== null) {
+            $updated_fields['kcal'] = $data['kcal'];
+        }
+
+        $food_detail->update($updated_fields);
+
+        // Creato array vuoto $updated_fields che verrà utilizzato per contenere i campi che devono essere aggiornati.
+
+        // Successivamente, vengono verificati i valori dei campi uno per uno
+        // e solo se il valore è diverso da null,viene aggiunto all'array $updated_fields.
+
+        // Infine, l'array $updated_fields viene passato alla funzione update() per eseguire l'aggiornamento solo sui campi che hanno un valore valido.
 
         return redirect()->route('admin.food.show', $food->id)->with('success', 'Piatto aggiornato con successo!');
     }

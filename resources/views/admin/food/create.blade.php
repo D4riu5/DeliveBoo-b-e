@@ -31,7 +31,7 @@
                         <label for="description" class="form-label">
                             Descrizione del prodotto<span class="text-danger"> *</span>
                         </label>
-                        <textarea class="form-control" rows="10" id="description" name="description" required maxlength="255"
+                        <textarea style="height:100px" class="form-control" rows="10" id="description" name="description" required maxlength="500"
                             placeholder="Inserisci descrizione...">{{ old('description') }}</textarea>
                     </div>
 

@@ -30,6 +30,9 @@ class UpdateFoodRequest extends FormRequest
             'price' => 'required|numeric|min:1|max:999.99',
             'course' => 'required|in:Antipasto,Primo,Secondo,Contorno,Dolce,Bevanda',
             'delete_image' => 'nullable',
+            'spicy' => 'nullable|in:0,1',
+            'gluten_free' => 'nullable|in:0,1',
+            'kcal' => 'nullable|numeric|max:5000',
         ];
     }
 }
