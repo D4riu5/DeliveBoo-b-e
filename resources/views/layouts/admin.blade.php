@@ -29,7 +29,7 @@
                 <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+
                 <div class="navbar-nav">
                     <div class="nav-item text-nowrap ms-2">
                         <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();
@@ -43,40 +43,27 @@
                 </div>
             </header>
 
-            <div class="container-fluid vh-100">
+            <div class="container-fluid" style="height: calc(100vh - 56px);">
+                
                 <div class="row h-100">
                     <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-dark navbar-dark sidebar collapse">
-                        <div class="position-sticky pt-3">
+                        <div class="py-3">
                             <ul class="nav flex-column">
                                 <li class="nav-item">
                                     <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.dashboard' ? 'bg-secondary' : '' }}" href="{{route('admin.dashboard')}}">
                                         <i class="fa-solid fa-utensils fa-lg fa-fw"></i> Il mio ristorante
                                     </a>
                                 </li>
-                            </ul>
-                        </div>
-
-                        <div class="position-sticky pt-3">
-                            <ul class="nav flex-column">
                                 <li class="nav-item">
                                     <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.food.index' ? 'bg-secondary' : '' }}" href="{{route('admin.food.index')}}">
-                                        <i class="fa-solid fa-utensils fa-lg fa-fw"></i> I miei piatti
+                                        <i class="fa-solid fa-table-list fa-lg fa-fw"></i> Il mio menu
                                     </a>
                                 </li>
-                            </ul>
-                        </div>
-
-                        <div class="position-sticky pt-3">
-                            <ul class="nav flex-column">
                                 <li class="nav-item">
                                     <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.order.index' ? 'bg-secondary' : '' }}" href="{{route('admin.order.index')}}">
                                         <i class="fa-solid fa-arrow-down-short-wide fa-lg fa-fw"></i> I miei ordini
                                     </a>
                                 </li>
-                            </ul>
-                        </div>
-                        <div class="position-sticky pt-3">
-                            <ul class="nav flex-column">
                                 <li class="nav-item">
                                     <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.type.index' ? 'bg-secondary' : '' }}" href="{{route('admin.type.index')}}">
                                         <i class="fa-solid fa-kitchen-set fa-lg fa-fw"></i> Tipologie di cucina
@@ -84,6 +71,7 @@
                                 </li>
                             </ul>
                         </div>
+
                         <div class="position-sticky pt-3 my-5">
                             <ul class="nav flex-column">
                                 <li class="nav-item text-center btn btn-danger">
@@ -98,7 +86,7 @@
                       
                     </nav>
 
-                    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 p-2 d-flex flex-column overflow-auto" style="height: calc(100vh - 56px)">
                         @yield('content')
                     </main>
                 </div>

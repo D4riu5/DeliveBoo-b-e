@@ -59,7 +59,7 @@
                                 </div>
                             </td>
                             <td>
-                                <a class="text-decoration-none " href="#">
+                                <a class="text-decoration-none " href="{{route('admin.food.index')}}">
                                     Vai al mio Menù
                                 </a>
                             </td>
