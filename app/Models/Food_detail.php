@@ -15,4 +15,8 @@ class Food_detail extends Model
         'kcal',
     ];
 
+    public function food(){
+        return $this->belongsTo(Food::class);
+    }
+
 }

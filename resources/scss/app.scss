@@ -24,3 +24,19 @@
         border-radius: 8px;
     }
 }
+
+.rightBox {
+    margin-left: 40%;
+}
+
+// CONTENITORE FOTO NELLA SHOW DI FOOD 
+.foodShowphotoBox {
+    width: 800px;
+    height: 400px;
+    margin-bottom: 40px;
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+}

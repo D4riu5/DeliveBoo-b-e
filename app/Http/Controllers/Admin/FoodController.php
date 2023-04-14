@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Food;
+use App\Models\Food_detail;
 use App\Http\Requests\StoreFoodRequest;
 use App\Http\Requests\UpdateFoodRequest;
 use Illuminate\Support\Facades\Auth;
@@ -55,13 +56,34 @@ class FoodController extends Controller
         $restaurant_id = Auth::user()->restaurant->id;
         $data['restaurant_id'] = $restaurant_id;
 
+       
+
+
         // IMAGE
         if (array_key_exists('image', $data)) {
             $imgPath = Storage::put('food', $data['image']);
             $data['image'] = $imgPath;
         }
 
-        $newFood = Food::create($data);
+        // $newFood = Food::create($data);
+
+        $newFood = new Food();
+        $newFood->name = $data['name'];
+        $newFood->description = $data['description'];
+        $newFood->image = $data['image'];
+        $newFood->price = $data['price'];
+        $newFood->course = $data['course'];
+        $newFood->restaurant_id = $data['restaurant_id'];
+        $newFood->save();
+
+        $newFoodDetail = new Food_detail();
+        $newFoodDetail->spicy = $data['spicy'];
+        $newFoodDetail->gluten_free = $data['gluten_free'];
+        $newFoodDetail->kcal = $data['kcal'];
+        $newFoodDetail->food_id = $newFood->id;
+
+        $newFoodDetail->save();
+
 
         return redirect()->route('admin.food.show', $newFood->id)->with('success', 'Piatto creato con successo');
     }
@@ -79,9 +101,10 @@ class FoodController extends Controller
             abort(403);
         }
 
-        
+        $food_details = Food_detail::all();
 
-        return view('admin.food.show', compact('food'));
+        
+        return view('admin.food.show', compact('food', 'food_details'));
     }
 
     /**
