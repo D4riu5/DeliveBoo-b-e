@@ -147,7 +147,7 @@
                                     <div>
                                         <input id="pIva" type="text"
                                             class="form-control @error('pIva') is-invalid @enderror" name="PIVA"
-                                            autocomplete="pIva" value="{{ old('email') }}">
+                                            autocomplete="pIva" value="{{ old('PIVA') }}">
 
                                         @error('pIva')
                                             <span class="invalid-feedback" role="alert">
