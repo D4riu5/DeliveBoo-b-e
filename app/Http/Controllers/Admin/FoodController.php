@@ -21,12 +21,12 @@ class FoodController extends Controller
 
         $nameFromSearch = request()->input('name');
 
-        if(isset($nameFromSearch)) {
-            $food = Food::where('name', 'LIKE', '%' . $nameFromSearch . '%')->get();
+        if (isset($nameFromSearch)) {
+            $food = Auth::user()->restaurant->food()->where('name', 'LIKE', '%' . $nameFromSearch . '%')->get();
         } else {
-            $food = Food::all();
+            $food = Auth::user()->restaurant->food;
         }
-        
+
         return view('admin/food/index', compact('food'));
     }
 
@@ -61,9 +61,7 @@ class FoodController extends Controller
             $data['image'] = $imgPath;
         }
 
-
         $newFood = Food::create($data);
-
 
         return redirect()->route('admin.food.show', $newFood->id)->with('success', 'Piatto creato con successo');
     }
@@ -76,6 +74,11 @@ class FoodController extends Controller
      */
     public function show(Food $food)
     {
+        // Verifica appartenenza di food con ristorante dell'utente loggato
+        if ($food->restaurant->user_id !== Auth::id()) {
+            abort(403);
+        }
+
         return view('admin.food.show', compact('food'));
     }
 
@@ -132,12 +135,17 @@ class FoodController extends Controller
      */
     public function destroy(Food $food)
     {
+        // Verifica appartenenza di food con ristorante dell'utente loggato
+        if (auth()->user()->restaurant->id !== $food->restaurant_id) {
+            abort(403, 'Unauthorized action.');
+        }
+
         if ($food->image) {
             Storage::delete($food->image);
         }
 
         $food->delete();
 
-        return redirect()->route('admin.food.index')->with('success', 'Il piatto '. ucfirst($food->title) .' e stato cancellato con successo ');
+        return redirect()->route('admin.food.index')->with('success', 'Il piatto ' . ucfirst($food->title) . ' e stato cancellato con successo ');
     }
 }
