@@ -182,6 +182,12 @@
                                 </div>
                             </div>
 
+                            @error('types')
+                                <div class="alert alert-danger mt-3" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </div>
+                            @enderror
+
                             <div class="d-flex justify-content-center">
                                 <div>
                                     <button type="submit" class="btn btn-primary my-3">
@@ -189,12 +195,6 @@
                                     </button>
                                 </div>
                             </div>
-
-                            @error('types')
-                                <div class="alert alert-danger mt-3" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </div>
-                            @enderror
                         </form>
                     </div>
                 </div>
