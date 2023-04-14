@@ -21,8 +21,8 @@
 
                                     <div>
                                         <input id="username" type="text"
-                                        class="form-control @error('username') is-invalid @enderror" name="name"
-                                        value="{{ old('name') }}" autocomplete="name" autofocus>
+                                            class="form-control @error('username') is-invalid @enderror" name="name"
+                                            value="{{ old('name') }}" autocomplete="name" autofocus>
 
                                         @error('name')
                                             <span class="invalid-feedback" role="alert">
@@ -35,16 +35,16 @@
                                         </span>
                                     </div>
                                 </div>
-                                
+
 
                                 <div class="form-group row">
                                     <label for="surname">{{ __('Cognome *') }}</label>
-    
+
                                     <div>
                                         <input id="surname" type="text"
                                             class="form-control @error('surname') is-invalid @enderror" name="surname"
                                             value="{{ old('surname') }}" autocomplete="surname" autofocus>
-    
+
                                         @error('surname')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
@@ -59,12 +59,12 @@
 
                                 <div class="form-group row">
                                     <label for="email">{{ __('E-Mail *') }}</label>
-    
+
                                     <div>
                                         <input id="email" type="email"
                                             class="form-control @error('email') is-invalid @enderror" name="email"
                                             value="{{ old('email') }}" required autocomplete="email">
-    
+
                                         @error('email')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
@@ -79,12 +79,12 @@
 
                                 <div class="form-group row">
                                     <label for="password">{{ __('Password *') }}</label>
-    
+
                                     <div>
                                         <input id="password" type="password"
                                             class="form-control @error('password') is-invalid @enderror" name="password"
                                             autocomplete="new-password">
-    
+
                                         @error('password')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
@@ -99,7 +99,7 @@
 
                                 <div class="form-group row">
                                     <label for="password-confirm">{{ __('Conferma Password *') }}</label>
-    
+
                                     <div>
                                         <input id="password-confirm" type="password" class="form-control"
                                             name="password_confirmation" autocomplete="new-password">
@@ -117,10 +117,10 @@
                             <div class="px-3 my-3 w-75 m-auto">
                                 <div class="form-group row">
                                     <label for="name">{{ __('Nome Ristorante *') }}</label>
-    
+
                                     <div>
                                         <input id="name" type="text" class="form-control" name="restaurant_name"
-                                        autocomplete="name">
+                                            autocomplete="name">
 
                                         <span id="invalid-name" class="invalid-feedback" role="alert">
                                             <strong>{{ 'Campo obbligatorio' }}</strong>
@@ -130,10 +130,10 @@
 
                                 <div class="form-group row">
                                     <label for="address">{{ __('Indirizzo *') }}</label>
-    
+
                                     <div>
                                         <input id="address" type="text" class="form-control" name="address"
-                                        autocomplete="address">
+                                            autocomplete="address">
 
                                         <span id="invalid-address" class="invalid-feedback" role="alert">
                                             <strong>{{ 'Campo obbligatorio' }}</strong>
@@ -143,12 +143,12 @@
 
                                 <div class="from-group row">
                                     <label for="pIva">{{ __('P.Iva *') }}</label>
-    
+
                                     <div>
                                         <input id="pIva" type="text"
                                             class="form-control @error('pIva') is-invalid @enderror" name="PIVA"
                                             autocomplete="pIva">
-    
+
                                         @error('pIva')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
@@ -189,6 +189,12 @@
                                     </button>
                                 </div>
                             </div>
+
+                            @error('types')
+                                <div class="alert alert-danger mt-3" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </div>
+                            @enderror
                         </form>
                     </div>
                 </div>
