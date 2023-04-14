@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->boolean('spicy')->nullable();
             $table->boolean('gluten_free')->nullable();
-            $table->smallInteger('kcal')->default(0);
+            $table->smallInteger('kcal')->nullable();
             $table->timestamps();
         });
     }

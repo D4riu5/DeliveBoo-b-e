@@ -26,9 +26,9 @@ class FoodDetailSeeder extends Seeder
 
         foreach ($food_details as $food_detail) {
             $newfood_detail = Food_detail::create([
-                'spicy' => $food_detail['total_price'],
-                'gluten_free' => $food_detail['status'],
-                'kcal' => $food_detail['rating'],
+                'spicy' => $food_detail['spicy'],
+                'gluten_free' => $food_detail['gluten_free'],
+                'kcal' => $food_detail['kcal'],
             ]);
         }
     }

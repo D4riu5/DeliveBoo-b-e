@@ -56,7 +56,7 @@
                         <label for="price" class="form-label">
                             Prezzo <span class="text-danger"> *</span>
                         </label>
-                        <input type="number" class="form-control" id="price" name="price" required minlength="1"
+                        <input type="number" class="form-control" id="price" name="price" required min="1"
                             step="0.01" value="{{ old('price') }}" placeholder="Inserisci prezzo (euro)...">
                     </div>
 
@@ -76,10 +76,10 @@
                         <label for="spicy" class="form-label">
                             E' un prodotto piccante?
                         </label>
-                        <select class="form-select" id="spicy" name="spicy" required>
+                        <select class="form-select" id="spicy" name="spicy" >
                             <option value="" disabled selected>Seleziona opzione...</option>
-                            <option value="Piccante">Si</option>
-                            <option value="Non piccante">No</option>
+                            <option value="1">Si</option>
+                            <option value="0">No</option>
                         </select>
                     </div>
 
@@ -89,10 +89,10 @@
                         <label for="gluten_free" class="form-label">
                             Il prodotto contiene glutine?
                         </label>
-                        <select class="form-select" id="gluten_free" name="gluten_free" required>
+                        <select class="form-select" id="gluten_free" name="gluten_free">
                             <option value="" disabled selected>Seleziona opzione...</option>
-                            <option value="Gluten">Si</option>
-                            <option value="Gluten Free">No</option>
+                            <option value="1">Si</option>
+                            <option value="0">No</option>
                         </select>
                     </div>
 
@@ -101,7 +101,7 @@
                         <label for="kcal" class="form-label">
                             Inserisci il numero di calorie
                         </label>
-                        <input numeric type="number" class="form-control" id="kcal" name="kcal" required minlength="1"
+                        <input numeric type="number" class="form-control" id="kcal" name="kcal"
                             step="0.01" value="{{ old('kcal') }}" placeholder="Inserisci numero calorie è..">
                     </div>
 
