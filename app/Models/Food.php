@@ -26,4 +26,9 @@ class Food extends Model
     public function food_detail(){
         return $this->hasOne(Food_detail::class);
     }
+    
+    public function orders() {
+        return $this->belongsTo(Order::class);
+    }
+    
 }

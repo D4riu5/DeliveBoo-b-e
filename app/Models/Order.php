@@ -17,4 +17,8 @@ class Order extends Model
         'delivery_contact',
         'costumer_name',
     ];
+
+    public function foods() {
+        return $this->belongsTo(Food::class);
+    }
 }
