@@ -18,7 +18,6 @@ return new class extends Migration
             $table->boolean('spicy')->nullable();
             $table->boolean('gluten_free')->nullable();
             $table->smallInteger('kcal')->default(0);
-            $table->text('full_description', 300)->nullable();
             $table->timestamps();
         });
     }

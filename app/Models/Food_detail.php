@@ -13,7 +13,6 @@ class Food_detail extends Model
         'spicy',
         'gluten_free',
         'kcal',
-        'full_description'
     ];
 
 }
