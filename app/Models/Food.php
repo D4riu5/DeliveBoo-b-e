@@ -22,4 +22,9 @@ class Food extends Model
     public function restaurant() {
         return $this->belongsTo(Restaurant::class);
     }
+
+    public function orders() {
+        return $this->belongsTo(Order::class);
+    }
+    
 }
