@@ -21,7 +21,6 @@ class FoodDetailSeeder extends Seeder
             ['spicy' => true,
             'gluten_free' => false,
             'kcal' => 1500,
-            'full_description' =>'Questo cibo casuale e non assegnato a nessun cibo specifico è squisito',
         ],
         ];
 
@@ -30,7 +29,6 @@ class FoodDetailSeeder extends Seeder
                 'spicy' => $food_detail['total_price'],
                 'gluten_free' => $food_detail['status'],
                 'kcal' => $food_detail['rating'],
-                'full_description' => $food_detail['delivery_address'],
             ]);
         }
     }

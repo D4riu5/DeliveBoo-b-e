@@ -17,6 +17,7 @@
                 <form action="{{ route('admin.food.store') }}" method="POST" enctype="multipart/form-data">
                     @csrf
 
+                    {{-- NOME CIBO  --}}
                     <div class="mb-3">
                         <label for="name" class="form-label">
                             Nome<span class="text-danger"> *</span>
@@ -25,14 +26,16 @@
                             value="{{ old('name') }}" placeholder="Inserisci nome...">
                     </div>
 
+                    {{-- DESCRIZIONE  --}}
                     <div class="mb-3">
                         <label for="description" class="form-label">
-                            Descrizione breve<span class="text-danger"> *</span>
+                            Descrizione del prodotto<span class="text-danger"> *</span>
                         </label>
                         <textarea class="form-control" rows="10" id="description" name="description" required maxlength="255"
                             placeholder="Inserisci descrizione...">{{ old('description') }}</textarea>
                     </div>
 
+                    {{-- PORTATE --}}
                     <div class="mb-3">
                         <label for="course" class="form-label">
                             Portata <span class="text-danger"> *</span>
@@ -48,7 +51,7 @@
                         </select>
                     </div>
 
-
+                    {{-- PREZZO  --}}
                     <div class="mb-3">
                         <label for="price" class="form-label">
                             Prezzo <span class="text-danger"> *</span>
@@ -57,6 +60,7 @@
                             step="0.01" value="{{ old('price') }}" placeholder="Inserisci prezzo (euro)...">
                     </div>
 
+                    {{-- IMMAGINE PIATTO --}}
                     <div class="mb-3">
                         <label for="image" class="form-label">
                             Immagine piatto
@@ -64,7 +68,42 @@
                         <input type="file" class="form-control" id="image" name="image" accept="image/*">
                     </div>
 
+                    {{-- DETTAGLI DA INVIARE A FOOD DETAILS  --}}
 
+                    {{-- PICCANTE SI/NO  --}}
+
+                    <div class="mb-3">
+                        <label for="spicy" class="form-label">
+                            E' un prodotto piccante?
+                        </label>
+                        <select class="form-select" id="spicy" name="spicy" required>
+                            <option value="" disabled selected>Seleziona opzione...</option>
+                            <option value="Piccante">Si</option>
+                            <option value="Non piccante">No</option>
+                        </select>
+                    </div>
+
+                    {{-- GLUTEN FREE SI/NO  --}}
+
+                    <div class="mb-3">
+                        <label for="gluten_free" class="form-label">
+                            Il prodotto contiene glutine?
+                        </label>
+                        <select class="form-select" id="gluten_free" name="gluten_free" required>
+                            <option value="" disabled selected>Seleziona opzione...</option>
+                            <option value="Gluten">Si</option>
+                            <option value="Gluten Free">No</option>
+                        </select>
+                    </div>
+
+                     {{-- CALORIE  --}}
+                     <div class="mb-3">
+                        <label for="kcal" class="form-label">
+                            Inserisci il numero di calorie
+                        </label>
+                        <input numeric type="number" class="form-control" id="kcal" name="kcal" required minlength="1"
+                            step="0.01" value="{{ old('kcal') }}" placeholder="Inserisci numero calorie è..">
+                    </div>
 
                     <div>
                         <p>
