@@ -27,7 +27,7 @@ class StoreFoodRequest extends FormRequest
             'name' => 'required|max:64',
             'description' => 'required|max:255',
             'image' => 'nullable|image|max:2048',
-            'price' => 'required|numeric|min:0|max:999.99',
+            'price' => 'required|numeric|min:1|max:999.99',
             'course' => 'required|in:Antipasto,Primo,Secondo,Contorno,Dolce,Bevanda',
         ];
     }
