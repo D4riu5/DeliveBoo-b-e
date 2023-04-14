@@ -27,7 +27,7 @@ use App\Models\Type;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect(env('APP_FRONTEND_URL'));
 });
 
 Route::prefix('admin')->name('admin.')->middleware(['auth', 'verified'])->group(function () {
