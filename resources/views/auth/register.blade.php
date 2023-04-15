@@ -111,17 +111,15 @@
                                 </div>
                             </div>
 
-                            {{-- Registrazione Ristorante --}}
+                            {{-- REGISTRAZIONE RISTORANTE --}}
                             <div class="card-header text-center fs-4 mb-4">{{ __('Ristorante') }}</div>
-
                             <div class="px-3 my-3 w-75 m-auto">
                                 <div class="form-group row">
                                     <label for="name">{{ __('Nome Ristorante *') }}</label>
-
-                                    <div>
+                                    <div> {{-- INPUT NAME RISTORANTE --}}
                                         <input id="name" type="text" class="form-control" name="restaurant_name"
                                             autocomplete="name" value="{{ old('restaurant_name') }}">
-
+                                        {{-- CAMPO OBBLIGATORIO RISTORANTE ALERT --}}
                                         <span id="invalid-name" class="invalid-feedback" role="alert">
                                             <strong>{{ 'Campo obbligatorio' }}</strong>
                                         </span>
@@ -130,11 +128,10 @@
 
                                 <div class="form-group row">
                                     <label for="address">{{ __('Indirizzo *') }}</label>
-
-                                    <div>
+                                    <div> {{-- INPUT ADDRESS RISTORANTE --}}
                                         <input id="address" type="text" class="form-control" name="address"
                                             autocomplete="address" value="{{ old('address') }}">
-
+                                        {{-- CAMPO OBBLIGATORIO ADDRESS ALERT --}}
                                         <span id="invalid-address" class="invalid-feedback" role="alert">
                                             <strong>{{ 'Campo obbligatorio' }}</strong>
                                         </span>
@@ -143,18 +140,17 @@
 
                                 <div class="from-group row">
                                     <label for="pIva">{{ __('P.Iva *') }}</label>
-
-                                    <div>
+                                    <div> {{-- INPUT PARTITA IVA RISTORANTE --}}
                                         <input id="pIva" type="text"
                                             class="form-control @error('pIva') is-invalid @enderror" name="PIVA"
                                             autocomplete="pIva" value="{{ old('PIVA') }}">
-
+                                        {{-- CAMPO OBBLIGATORIO PARTITA IVA ALERT --}}
                                         @error('pIva')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
                                             </span>
                                         @enderror
-
+                                        {{-- CAMPO OBBlIGATORIO 11 NUMERI PARTITA IVA ALERT --}}
                                         <span id="invalid-pIva" class="invalid-feedback" role="alert">
                                             <strong>{{ 'La partita Iva deve contenere 11 numeri' }}</strong>
                                         </span>
@@ -162,9 +158,10 @@
                                 </div>
                             </div>
 
+                            {{-- SELEZIONA CATEGORIE MENU  --}}
                             <div class="card-header text-center fs-5 mb-4 w-100">{{ __('Seleziona categorie:') }}</div>
 
-                            {{-- TYPES --}}
+                            {{-- DATI PER LA TABELLA TYPES --}}
                             <div class="flex-center">
                                 <div class="d-flex flex-wrap m-auto justify-content-center">
                                     @foreach ($types as $type)
@@ -181,13 +178,13 @@
                                     @endforeach
                                 </div>
                             </div>
-
+                            {{-- ERRORI PER GLI ELEMENTI DI TYPES --}}
                             @error('types')
                                 <div class="alert alert-danger mt-3" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </div>
                             @enderror
-
+                            {{-- BOTTONE REGISTRATI  --}}
                             <div class="d-flex justify-content-center">
                                 <div>
                                     <button type="submit" class="btn btn-primary my-3">
