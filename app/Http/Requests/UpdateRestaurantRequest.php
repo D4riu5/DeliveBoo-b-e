@@ -13,7 +13,7 @@ class UpdateRestaurantRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,12 @@ class UpdateRestaurantRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'name' => 'required|max:32',
+            'address' => 'required|max:128',
+            'image' => 'nullable|image|max:2048',
+            'PIVA' => 'required|max:128|min:11',
+            'delete_image' => 'nullable',
+
         ];
     }
 }

@@ -12,7 +12,7 @@
                 <div class="my-3 text-center">
                     {{ $type->description }}
                 </div>
-                <div class="boxPhoto ">
+                <div class="boxPhoto">
                     <img src="{{ asset("storage/" . $type->image) }}">
                 </div>
                 <a class="btn btn-danger my-3" class="{{ Route::currentRouteName() == 'admin.type.index' ? 'bg-secondary' : '' }}" href="{{route('admin.type.index')}}">

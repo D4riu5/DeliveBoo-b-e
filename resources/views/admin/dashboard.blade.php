@@ -59,7 +59,7 @@
                                 </div>
                             </td>
                             <td>
-                                <a class="text-decoration-none " href="{{route('admin.food.index')}}">
+                                <a class="text-decoration-none " href="{{ route('admin.food.index') }}">
                                     Vai al mio Menù
                                 </a>
                             </td>
@@ -87,12 +87,25 @@
                     @endforeach
                     <hr>
                 </div>
-                <div>
-                    <h1 class="text-center">
-                        Foto attività
-                    </h1>
-                </div>
+                @if ($restaurant->image)
+                    <div>
+                        <h1 class="text-center my-4">
+                            Foto attività
+                        </h1>
+                    </div>
+                    <div class="d-flex justify-content-center py-2">
+                        <div class="boxPhoto">
+                            <img src="{{ asset('storage/' . $restaurant->image) }}" alt="Myrestaurant">
+                        </div>
+                    </div>
+                @endif
+            </div>
+            <div class="text-center my-4">
+                <a href="{{ route('admin.restaurant.edit', $restaurant->id) }}" class="btn btn-info">
+                    Modifica il tuo ristorante <i class="fa-solid fa-pen-to-square"></i>
+                </a>
             </div>
         </div>
+    </div>
     </div>
 @endsection
