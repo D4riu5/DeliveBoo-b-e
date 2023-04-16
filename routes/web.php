@@ -32,7 +32,7 @@ Route::get('/', function () {
 
 Route::prefix('admin')->name('admin.')->middleware(['auth', 'verified'])->group(function () {
     Route::get('/dashboard', [PageController::class, 'dashboard'])->name('dashboard');
-    Route::resource('restaurant', RestaurantController::class)->only(['edit', 'update']);
+    Route::resource('restaurant', RestaurantController::class)->only(['edit', 'update', 'show']);
     Route::resource('type', TypeController::class)->only(['index', 'show']);
     Route::resource('order', OrderController::class)->only(['index', 'show']);
     Route::resource('food', FoodController::class);
