@@ -15,6 +15,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::name('api')->group(function () {
+Route::name('api.')->group(function () {
     Route::resource('types', TypeController::class)->only(['index', 'show']);
 });
