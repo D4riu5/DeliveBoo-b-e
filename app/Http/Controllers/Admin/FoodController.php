@@ -67,7 +67,7 @@ class FoodController extends Controller
 
         // $newFood = Food::create($data);
 
-        
+
         $newFood = new Food();
         //
         $newFood->name = $data['name'];
@@ -85,7 +85,7 @@ class FoodController extends Controller
         if (array_key_exists('spicy', $data)) {
             $newFoodDetail->spicy = $data['spicy'];
         }
-        
+
         if (array_key_exists('gluten_free', $data)) {
             $newFoodDetail->gluten_free = $data['gluten_free'];
         }
@@ -158,37 +158,37 @@ class FoodController extends Controller
         }
 
         // QUESTO AGGIORNA I DATI PRESENTI NEL MODEL FOOD
+        $food->update($data);
 
-        if ($food !== null) {
-
-            $food->update($data);
-        }
 
         //QUESTO AGGIORNA I DATI PRESENTI NEL MODEL FOOT_DETAIL
-
         $food_detail = $food->food_detail;
-        $updated_fields = [];
 
-        if ($data['spicy'] !== null) {
-            $updated_fields['spicy'] = $data['spicy'];
+
+        if ($food_detail !== null) {
+            // Controlla se $food_detail non e null
+
+            if (array_key_exists('spicy', $data)) {
+                // controlla se la chiave 'spicy' esiste in $data che viene da UpdateFoodRequest
+
+                $food_detail->spicy = $data['spicy'];
+            }
+
+            if (array_key_exists('gluten_free', $data)) {
+                // controlla se la chiave 'gluten_free' esiste in $data che viene da UpdateFoodRequest
+
+                $food_detail->gluten_free = $data['gluten_free'];
+            }
+
+            $food_detail->kcal = $data['kcal'] ?? null;
+            // assegna a kcal $data['kcal] se esiste, se no, assegna valore null
+
+
+            $food_detail->save();
+            // si puo usare sia save che update in questo caso per aggiornare i dati in tabella.
         }
 
-        if ($data['gluten_free'] !== null) {
-            $updated_fields['gluten_free'] = $data['gluten_free'];
-        }
 
-        if ($data['kcal'] !== null) {
-            $updated_fields['kcal'] = $data['kcal'];
-        }
-
-        $food_detail->update($updated_fields);
-
-        // Creato array vuoto $updated_fields che verrà utilizzato per contenere i campi che devono essere aggiornati.
-
-        // Successivamente, vengono verificati i valori dei campi uno per uno
-        // e solo se il valore è diverso da null,viene aggiunto all'array $updated_fields.
-
-        // Infine, l'array $updated_fields viene passato alla funzione update() per eseguire l'aggiornamento solo sui campi che hanno un valore valido.
 
         return redirect()->route('admin.food.show', $food->id)->with('success', 'Piatto aggiornato con successo!');
     }

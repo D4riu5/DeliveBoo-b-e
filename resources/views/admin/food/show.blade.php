@@ -108,7 +108,7 @@
                             </h3>
                             @if ($food->food_detail && $food->food_detail->kcal !== null)
 
-                                 {{ $food->food_detail->kcal . ' kacl' }}
+                                 {{ $food->food_detail->kcal . ' kcal' }}
                             @else
                                 <p>
                                     Non specificato

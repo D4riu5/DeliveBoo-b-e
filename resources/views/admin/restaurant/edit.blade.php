@@ -44,8 +44,9 @@
                         <label for="PIVA" class="form-label">
                             Codice Partita IVA <span class="text-danger"> *</span>
                         </label>
-                        <textarea style="height:100px" class="form-control" rows="10" id="PIVA" name="PIVA" required
-                            minlength="11" maxlength="11" placeholder="Inserisci il tuo codice partita IVA...">{{ old('PIVA', $restaurant->PIVA) }}</textarea>
+                        <input type="number" class="form-control" rows="10" id="PIVA" name="PIVA" required
+                            minlength="11" maxlength="11" placeholder="Inserisci il tuo codice partita IVA..." value="{{ old('PIVA', $restaurant->PIVA) }}">
+                            {{-- {{ old('PIVA', $restaurant->PIVA) }} --}}
                     </div>
 
                     {{-- IMMAGINE RISTORANTE --}}

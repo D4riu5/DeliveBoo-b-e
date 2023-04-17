@@ -98,7 +98,17 @@
                             <img src="{{ asset('storage/' . $restaurant->image) }}" alt="Myrestaurant">
                         </div>
                     </div>
+
+                @else
+
+                    <div>
+                        <h3 class="text-center my-4">
+                            Immagine non caricata
+                        </h3>
+                    </div>
+
                 @endif
+                
             </div>
             <div class="text-center my-4">
                 <a href="{{ route('admin.restaurant.edit', $restaurant->id) }}" class="btn btn-info">

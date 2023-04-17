@@ -141,7 +141,9 @@
                                 <div class="from-group row">
                                     <label for="pIva">{{ __('P.Iva *') }}</label>
                                     <div> {{-- INPUT PARTITA IVA RISTORANTE --}}
-                                        <input id="pIva" type="text"
+                                        <input id="pIva" type="number"
+                                            minlength="11"
+                                            maxlength="11"
                                             class="form-control @error('pIva') is-invalid @enderror" name="PIVA"
                                             autocomplete="pIva" value="{{ old('PIVA') }}">
                                         {{-- CAMPO OBBLIGATORIO PARTITA IVA ALERT --}}
