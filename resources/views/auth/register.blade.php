@@ -187,7 +187,7 @@
                                 </div>
                             @enderror
                             {{-- BOTTONE REGISTRATI  --}}
-                            <div class="d-flex justify-content-center">
+                            <div class="d-flex justify-content-center marginForm">
                                 <div>
                                     <button type="submit" class="btn btn-primary my-3">
                                         {{ __('Registrati') }}
