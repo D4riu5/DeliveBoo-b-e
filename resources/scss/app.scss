@@ -31,7 +31,7 @@
     margin-left: 40%;
 }
 
-// CONTENITORi FOTO NELLA SHOW DI FOOD E RESTAURANT
+// CONTENITORI FOTO NELLA SHOW DI FOOD E RESTAURANT
 .photoBox {
     width: 800px;
     height: 400px;
@@ -87,8 +87,13 @@
     position: fixed;
     bottom: 0%;
     height: 110px;
+    z-index: 2;
 }
 
+// Margine tra la barra inferiore e il form su REGISTER.BLADE.PHP 
+.marginForm {
+    margin-bottom: 90px;
+}
 // SPECIFICHE PER BOTTONE HOME DELLA NAVBAR
 .home {
     padding-left: 0px !important;
@@ -99,7 +104,6 @@
 .navButton {
     color: yellow;
     font-size: 23px;
-
 }
 
 .navButton:hover {
