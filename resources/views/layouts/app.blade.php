@@ -39,7 +39,7 @@
                         </div> --}}
 
                         <div class="logo">
-                            <img src="{{ asset("storage/logo/6.png") }}">
+                            <img src="{{ asset("storage/logo/1.svg") }}">
                         </div>
 
 
