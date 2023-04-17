@@ -102,11 +102,16 @@
                             E' un prodotto piccante?
                         </label>
                         <select class="form-select" id="spicy" name="spicy">
-                            <option value="" disabled>Seleziona opzione...</option>
-                            <option value="1"
-                                {{ old('spicy', $food->food_detail->spicy ?? '') === '1' ? 'selected' : '' }}>Si</option>
-                            <option value="0"
-                                {{ old('spicy', $food->food_detail->spicy ?? '') === '0' ? 'selected' : '' }}>No</option>
+                            <option value="" disabled
+                                {{ old('spicy', $food->food_detail->spicy) === null ? 'selected' : '' }}>
+                                Seleziona opzione...
+                            </option>
+                            <option value="1" {{ old('spicy', $food->food_detail->spicy) == '1' ? 'selected' : '' }}>
+                                Si
+                            </option>
+                            <option value="0" {{ old('spicy', $food->food_detail->spicy) == '0' ? 'selected' : '' }}>
+                                No
+                            </option>
                         </select>
                     </div>
 
@@ -117,12 +122,14 @@
                             Il prodotto contiene glutine?
                         </label>
                         <select class="form-select" id="gluten_free" name="gluten_free">
-                            <option value="" disabled>Seleziona opzione...</option>
+                            <option value="" disabled
+                                {{ old('gluten_free', $food->food_detail->gluten_free) === null ? 'selected' : '' }}>
+                                Seleziona opzione...</option>
                             <option value="1"
-                                {{ old('gluten_free', $food->food_detail->gluten_free ?? '') === '1' ? 'selected' : '' }}>
+                                {{ old('gluten_free', $food->food_detail->gluten_free) == '1' ? 'selected' : '' }}>
                                 Si</option>
                             <option value="0"
-                                {{ old('gluten_free', $food->food_detail->gluten_free ?? '') === '0' ? 'selected' : '' }}>
+                                {{ old('gluten_free', $food->food_detail->gluten_free) == '0' ? 'selected' : '' }}>
                                 No</option>
                         </select>
                     </div>
