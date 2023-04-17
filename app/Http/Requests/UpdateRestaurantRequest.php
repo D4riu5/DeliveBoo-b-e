@@ -24,10 +24,10 @@ class UpdateRestaurantRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|max:32',
-            'address' => 'required|max:128',
+            'name' => 'required|string|max:32',
+            'address' => 'required|string|max:128',
             'image' => 'nullable|image|max:2048',
-            'PIVA' => 'required|max:128|min:11',
+            'PIVA' => 'required|max:11|min:11',
             'delete_image' => 'nullable',
 
         ];
