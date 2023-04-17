@@ -60,7 +60,7 @@
                                 </td>
                                 <td>{{ $food->course }}</td>
                                 <td>
-                                    {{ $food->price }}
+                                    {{ $food->price }} €
                                 </td>
                                 <td>
                                     {{ $food->is_available ? "Si" : "No" }}
