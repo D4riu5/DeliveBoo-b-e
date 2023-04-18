@@ -41,8 +41,8 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th class="col-4" scope="col-4">Nome ristorante</th>
-                            <th class="col-4" scope="col-4">Indirizzo ristorante</th>
+                            <th class="col-4" scope="col-4">Nome attività</th>
+                            <th class="col-4" scope="col-4">Indirizzo attività</th>
                             <th class="col-4" scope="col-4">Sfoglia Menù</th>
                         </tr>
                     </thead>
