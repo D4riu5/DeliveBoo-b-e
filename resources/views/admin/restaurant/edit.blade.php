@@ -5,7 +5,7 @@
         <div class="row justify-content-center mb-4">
             <div class="col">
                 <h1>
-                    Modifica dati ristorante
+                    Modifica dati attività
                 </h1>
             </div>
         </div>
@@ -21,7 +21,7 @@
 
                     @method('PUT')
 
-                    {{-- NOME RISTORANTE  --}}
+                    {{-- NOME ATTIVITA'  --}}
                     <div class="mb-3">
                         <label for="name" class="form-label">
                             Modifica nome attività<span class="text-danger"> *</span>
@@ -30,7 +30,7 @@
                             value="{{ old('name', $restaurant->name) }}" placeholder="Inserisci nome attività...">
                     </div>
 
-                    {{-- INDIRIZZO RISTORANTE  --}}
+                    {{-- INDIRIZZO ATTIVITA'  --}}
                     <div class="mb-3">
                         <label for="address" class="form-label">
                             Modifica indirizzo dell'attività<span class="text-danger"> *</span>
@@ -49,7 +49,7 @@
                             {{-- {{ old('PIVA', $restaurant->PIVA) }} --}}
                     </div>
 
-                    {{-- IMMAGINE RISTORANTE --}}
+                    {{-- IMMAGINE ATTIVITA' --}}
                     <div class="mb-3">
                         <label for="image" class="form-label">
                             Immagine attività
