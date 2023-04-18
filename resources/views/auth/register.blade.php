@@ -11,13 +11,13 @@
                         {{-- Form di Regitrazione --}}
                         <form id="register-form" method="POST" action="{{ route('register') }}">
                             @csrf
-                            <p class="text-center">Tutti i campi con * sono obbligatori</p>
+                            <p class="text-center">Tutti i campi con <span class="text-danger"> *</span> sono obbligatori</p>
 
                             {{--  Registrazione Ristoratore --}}
 
                             <div class="px-3 w-75 m-auto">
                                 <div class="form-group row">
-                                    <label for="username">{{ __('Nome *') }}</label>
+                                    <label for="username">{{ __('Nome') }} <span class="text-danger"> *</span></label>
 
                                     <div>
                                         <input id="username" type="text"
@@ -38,7 +38,7 @@
 
 
                                 <div class="form-group row">
-                                    <label for="surname">{{ __('Cognome *') }}</label>
+                                    <label for="surname">{{ __('Cognome') }} <span class="text-danger"> *</span></label>
 
                                     <div>
                                         <input id="surname" type="text"
@@ -58,7 +58,7 @@
                                 </div>
 
                                 <div class="form-group row">
-                                    <label for="email">{{ __('E-Mail *') }}</label>
+                                    <label for="email">{{ __('E-Mail') }} <span class="text-danger"> *</span></label>
 
                                     <div>
                                         <input id="email" type="email"
@@ -78,7 +78,7 @@
                                 </div>
 
                                 <div class="form-group row">
-                                    <label for="password">{{ __('Password *') }}</label>
+                                    <label for="password">{{ __('Password') }} <span class="text-danger"> *</span></label>
 
                                     <div>
                                         <input id="password" type="password"
@@ -98,7 +98,7 @@
                                 </div>
 
                                 <div class="form-group row">
-                                    <label for="password-confirm">{{ __('Conferma Password *') }}</label>
+                                    <label for="password-confirm">{{ __('Conferma Password') }} <span class="text-danger"> *</span></label>
 
                                     <div>
                                         <input id="password-confirm" type="password" class="form-control"
@@ -127,7 +127,7 @@
                                 </div>
 
                                 <div class="form-group row">
-                                    <label for="address">{{ __('Indirizzo *') }}</label>
+                                    <label for="address">{{ __('Indirizzo') }} <span class="text-danger"> *</span></label>
                                     <div> {{-- INPUT ADDRESS RISTORANTE --}}
                                         <input id="address" type="text" class="form-control" name="address"
                                             autocomplete="address" value="{{ old('address') }}">
@@ -139,11 +139,11 @@
                                 </div>
 
                                 <div class="from-group row">
-                                    <label for="pIva">{{ __('P.Iva *') }}</label>
+                                    <label for="pIva">{{ __('P.Iva') }} <span class="text-danger"> *</span></label>
                                     <div> {{-- INPUT PARTITA IVA RISTORANTE --}}
-                                        <input id="pIva" type="number"
-                                            minlength="11"
-                                            maxlength="11"
+                                        <input id="pIva" type="text"
+                                            {{-- minlength="11"
+                                            maxlength="11" --}}
                                             class="form-control @error('pIva') is-invalid @enderror" name="PIVA"
                                             autocomplete="pIva" value="{{ old('PIVA') }}">
                                         {{-- CAMPO OBBLIGATORIO PARTITA IVA ALERT --}}
@@ -182,7 +182,7 @@
                             </div>
                             {{-- ERRORI PER GLI ELEMENTI DI TYPES --}}
                             @error('types')
-                                <div class="alert alert-danger mt-3" role="alert">
+                                <div class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </div>
                             @enderror
@@ -202,6 +202,32 @@
     </div>
 
     <script>
+        const checkCategories = Array.from(document.querySelectorAll('input[type="checkbox"]'))
+
+        const button = document.querySelector('button[type="submit"]')
+
+        checkCategories.forEach((checkbox, index, array) => {
+            checkbox.addEventListener('click', validateCheckbox.bind(null, array, button))
+        })
+
+        function validateCheckbox(arr, btn) {
+            let counter = 0
+
+            arr.forEach(element => {
+                if (element.checked) {
+                    counter++
+                }
+            })
+
+            if (counter) {
+                btn.disabled = ''
+            } else {
+                btn.disabled = 'disabled'
+            }
+        };
+        
+        validateCheckbox(checkCategories, button);
+
         const form = document.getElementById('register-form');
         const username = document.getElementById('username');
         const surname = document.getElementById('surname');

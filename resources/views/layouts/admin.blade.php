@@ -51,7 +51,7 @@
                             <ul class="nav flex-column">
                                 <li class="nav-item">
                                     <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.dashboard' ? 'bg-secondary' : '' }}" href="{{route('admin.dashboard')}}">
-                                        <i class="fa-solid fa-utensils fa-lg fa-fw"></i> Il mio ristorante
+                                        <i class="fa-solid fa-utensils fa-lg fa-fw"></i> La mia attività
                                     </a>
                                 </li>
                                 <li class="nav-item">

@@ -72,7 +72,7 @@
                 </a>
                 <a href="{{ route('admin.restaurant.edit', $restaurant->id) }}" class="mt-2 btn btn-warning my-3">
                     <h6>
-                        Modifica dati ristorante
+                        Modifica dati attività
                     </h6>
                 </a>
             </div>
