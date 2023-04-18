@@ -10,9 +10,9 @@
             </div>
         </div>
 
-        @include('partials.success')
+        {{-- @include('partials.success')
 
-        @include('partials.errors')
+        @include('partials.errors') --}}
 
         <div class="row mb-4">
             <div class="col">
@@ -26,8 +26,14 @@
                         <label for="name" class="form-label">
                             Modifica nome attività<span class="text-danger"> *</span>
                         </label>
-                        <input type="text" class="form-control" id="name" name="name" required maxlength="64"
+                        <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name" maxlength="64"
                             value="{{ old('name', $restaurant->name) }}" placeholder="Inserisci nome attività...">
+
+                        @error('name')
+                            <div class="text-danger">
+                                <strong>Inserire il nome dell'attività</strong>
+                            </div>
+                        @enderror
                     </div>
 
                     {{-- INDIRIZZO RISTORANTE  --}}
@@ -35,8 +41,14 @@
                         <label for="address" class="form-label">
                             Modifica indirizzo dell'attività<span class="text-danger"> *</span>
                         </label>
-                        <textarea style="height:100px" class="form-control" rows="10" id="address" name="address" required
+                        <textarea style="height:100px" class="form-control @error('address') is-invalid @enderror" rows="10" id="address" name="address"
                             maxlength="500" placeholder="Inserisci indirizzo attività...">{{ old('address', $restaurant->address) }}</textarea>
+
+                        @error('address')
+                            <div class="text-danger">
+                                <strong>Inserire l'indirizzo dell'attività</strong>
+                            </div>
+                        @enderror
                     </div>
 
                     {{-- PARTITA IVA --}}
@@ -44,9 +56,15 @@
                         <label for="PIVA" class="form-label">
                             Codice Partita IVA <span class="text-danger"> *</span>
                         </label>
-                        <input type="number" class="form-control" rows="10" id="PIVA" name="PIVA" required
+                        <input type="text" class="form-control @error('PIVA') is-invalid @enderror" rows="10" id="PIVA" name="PIVA"
                             minlength="11" maxlength="11" placeholder="Inserisci il tuo codice partita IVA..." value="{{ old('PIVA', $restaurant->PIVA) }}">
                             {{-- {{ old('PIVA', $restaurant->PIVA) }} --}}
+
+                        @error('PIVA')
+                            <div class="text-danger">
+                                <strong>Inserire le 11 cifre della partita IVA</strong>
+                            </div>
+                        @enderror
                     </div>
 
                     {{-- IMMAGINE RISTORANTE --}}
