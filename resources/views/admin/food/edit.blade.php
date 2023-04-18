@@ -144,7 +144,27 @@
                             placeholder="Inserisci numero calorie è..">
                     </div>
 
-                    <div>
+
+                    {{-- DISPONIBILITA' PRODOTTO --}}
+                    <div class="mb-3">
+                        <label for="is_available" class="form-label">
+                            Il prodotto è disponibile?
+                        </label>
+                        <select class="form-select" id="is_available" name="is_available">
+                            <option value="" disabled
+                                {{ old('is_available', $food->is_available) === null ? 'selected' : '' }}>
+                                Seleziona opzione...</option>
+                            <option value="1"
+                                {{ old('is_available', $food->is_available) == '1' ? 'selected' : '' }}>
+                                Si</option>
+                            <option value="0"
+                                {{ old('is_available', $food->is_available) == '0' ? 'selected' : '' }}>
+                                No</option>
+                        </select>
+                    </div>
+
+
+                    <div class="py-3">
                         <p>
                             <strong class="text-danger">*</strong> Campi obbligatori!
                         </p>

@@ -33,6 +33,7 @@ class UpdateFoodRequest extends FormRequest
             'spicy' => 'nullable|in:0,1',
             'gluten_free' => 'nullable|in:0,1',
             'kcal' => 'nullable|numeric|max:5000',
+            'is_available' => 'required|in:0,1'
         ];
     }
 }
