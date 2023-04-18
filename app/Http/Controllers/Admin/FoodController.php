@@ -126,6 +126,12 @@ class FoodController extends Controller
      */
     public function edit(Food $food)
     {
+
+        // Verifica appartenenza di food con ristorante dell'utente loggato
+        if ($food->restaurant->user_id !== Auth::id()) {
+            abort(403);
+        }
+        
         return view('admin.food.edit', compact('food'));
     }
 
@@ -138,6 +144,11 @@ class FoodController extends Controller
      */
     public function update(UpdateFoodRequest $request, Food $food)
     {
+        // Verifica appartenenza di food con ristorante dell'utente loggato
+        if ($food->restaurant->user_id !== Auth::id()) {
+            abort(403);
+        }
+
         $data = $request->validated();
 
         if (array_key_exists('delete_image', $data)) {
