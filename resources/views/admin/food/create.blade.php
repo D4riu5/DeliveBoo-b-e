@@ -10,7 +10,7 @@
             </div>
         </div>
 
-        @include('partials.errors')
+        {{-- @include('partials.errors') --}}
 
         <div class="row mb-4">
             <div class="col">
@@ -19,11 +19,17 @@
 
                     {{-- NOME CIBO  --}}
                     <div class="mb-3">
-                        <label for="name" class="form-label">
-                            Nome<span class="text-danger"> *</span>
+                        <label class="form-label">
+                            Nome del piatto<span class="text-danger"> *</span>
                         </label>
-                        <input type="text" class="form-control" id="name" name="name" required maxlength="64"
+                        <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name" maxlength="64"
                             value="{{ old('name') }}" placeholder="Inserisci nome...">
+                        
+                        @error('name')
+                            <span class="text-danger">
+                                <strong>Inserire il nome del piatto</strong>
+                            </span>
+                        @enderror
                     </div>
 
                     {{-- DESCRIZIONE  --}}
@@ -31,8 +37,14 @@
                         <label for="description" class="form-label">
                             Descrizione del prodotto<span class="text-danger"> *</span>
                         </label>
-                        <textarea style="height:100px" class="form-control" rows="10" id="description" name="description" required maxlength="500"
-                            placeholder="Inserisci descrizione...">{{ old('description') }}</textarea>
+                        <textarea style="height:100px" class="form-control @error('description') is-invalid @enderror" rows="10" id="description" name="description"
+                            maxlength="500" placeholder="Inserisci descrizione...">{{ old('description') }}</textarea>
+
+                        @error('description')
+                            <div class="text-danger">
+                                <strong>Inserire una descrizione</strong>
+                            </div>
+                        @enderror
                     </div>
 
                     {{-- PORTATE --}}
@@ -40,7 +52,7 @@
                         <label for="course" class="form-label">
                             Portata <span class="text-danger"> *</span>
                         </label>
-                        <select class="form-select" id="course" name="course" required>
+                        <select class="form-select @error('course') is-invalid @enderror" id="course" name="course">
                             <option value="" disabled selected>Seleziona la portata...</option>
                             <option value="Antipasto">Antipasto</option>
                             <option value="Primo">Primo</option>
@@ -49,6 +61,12 @@
                             <option value="Dolce">Dolce</option>
                             <option value="Bevanda">Bevanda</option>
                         </select>
+
+                        @error('course')
+                            <div class="text-danger">
+                                <strong>Selezionare almeno una portata</strong>
+                            </div>
+                        @enderror
                     </div>
 
                     {{-- PREZZO  --}}
@@ -56,8 +74,14 @@
                         <label for="price" class="form-label">
                             Prezzo <span class="text-danger"> *</span>
                         </label>
-                        <input type="number" class="form-control" id="price" name="price" required min="1"
+                        <input type="number" class="form-control @error('price') is-invalid @enderror" id="price" name="price" min="1"
                             step="0.01" value="{{ old('price') }}" placeholder="Inserisci prezzo (euro)...">
+                        
+                        @error('price')
+                            <div class="text-danger">
+                                <strong>Inserire un prezzo uguale o superiore a 1</strong>
+                            </div>
+                        @enderror
                     </div>
 
                     {{-- IMMAGINE PIATTO --}}
