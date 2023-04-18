@@ -10,9 +10,9 @@
             </div>
         </div>
 
-        @include('partials.success')
+        {{-- @include('partials.success')
 
-        @include('partials.errors')
+        @include('partials.errors') --}}
 
         <div class="row mb-4">
             <div class="col">
@@ -26,8 +26,14 @@
                         <label for="name" class="form-label">
                             Nome<span class="text-danger"> *</span>
                         </label>
-                        <input type="text" class="form-control" id="name" name="name" required maxlength="64"
+                        <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name" maxlength="64"
                             value="{{ old('name', $food->name) }}" placeholder="Inserisci nome...">
+
+                        @error('name')
+                            <span class="text-danger">
+                                <strong>Inserire il nome del piatto</strong>
+                            </span>
+                        @enderror
                     </div>
 
                     {{-- DESCRIZIONE  --}}
@@ -35,8 +41,14 @@
                         <label for="description" class="form-label">
                             Descrizione del prodotto<span class="text-danger"> *</span>
                         </label>
-                        <textarea style="height:100px" class="form-control" rows="10" id="description" name="description" required
+                        <textarea style="height:100px" class="form-control @error('description') is-invalid @enderror" rows="10" id="description" name="description"
                             maxlength="500" placeholder="Inserisci descrizione...">{{ old('description', $food->description) }}</textarea>
+
+                        @error('description')
+                            <div class="text-danger">
+                                <strong>Inserire una descrizione</strong>
+                            </div>
+                        @enderror
                     </div>
 
                     {{-- PORTATE --}}
@@ -44,7 +56,7 @@
                         <label for="course" class="form-label">
                             Portata <span class="text-danger"> *</span>
                         </label>
-                        <select class="form-select" id="course" name="course" required>
+                        <select class="form-select @error('course') is-invalid @enderror" id="course" name="course" required>
                             <option value="" disabled selected>Seleziona la portata...</option>
                             <option value="Antipasto" {{ old('course', $food->course) === 'Antipasto' ? 'selected' : '' }}>
                                 Antipasto</option>
@@ -66,9 +78,15 @@
                         <label for="price" class="form-label">
                             Prezzo <span class="text-danger"> *</span>
                         </label>
-                        <input type="number" class="form-control" id="price" name="price" required minlength="1"
+                        <input type="number" class="form-control @error('price') is-invalid @enderror" id="price" name="price" required minlength="1"
                             step="0.01" value="{{ old('price', $food->price) }}"
                             placeholder="Inserisci prezzo (euro)...">
+
+                        @error('price')
+                            <div class="text-danger">
+                                <strong>Inserire un prezzo uguale o superiore a 1</strong>
+                            </div>
+                        @enderror
                     </div>
 
                     {{-- IMMAGINE PIATTO --}}
