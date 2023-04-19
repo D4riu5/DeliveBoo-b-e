@@ -1,13 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container mt-4">
+<div class="container formMargin">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Confirm Password') }}</div>
+                <div class="card-header formHeader">{{ __('Confirm Password') }}</div>
 
-                <div class="card-body">
+                <div class="card-body formBody">
                     {{ __('Please confirm your password before continuing.') }}
 
                     <form method="POST" action="{{ route('password.confirm') }}">
@@ -34,7 +34,7 @@
                                 </button>
 
                                 @if (Route::has('password.request'))
-                                <a class="btn btn-link" href="{{ route('password.request') }}">
+                                <a class="btn btn-link forgotPassword" href="{{ route('password.request') }}">
                                     {{ __('Forgot Your Password?') }}
                                 </a>
                                 @endif
