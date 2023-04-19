@@ -152,7 +152,7 @@
 }
 
 .navButton:hover {
-    color: rgb(255, 140, 0);
+    color: black;
 }
 
 // LOGIN FORM - HEADER 
@@ -172,4 +172,13 @@
 
 .formMargin {
     margin-top: 6.5%;
+}
+
+// FORGOT PASSWORD LINK
+
+.forgotPassword {
+    color: white;
+}
+.forgotPassword:hover {
+    color: black;
 }

@@ -47,9 +47,9 @@
 
                         {{-- SCRITTA NERA E NERA --}}
 
-                        <div class="logo"> 
+                        {{-- <div class="logo"> 
                             <img src="{{ asset('storage/logo/2.png') }}">
-                        </div>
+                        </div> --}}
 
                         {{-- SCRITTA NERA E ROSSA --}}
 
@@ -59,9 +59,9 @@
 
                         {{-- SCRITTA ROSSA E NERA --}}
 
-                        {{-- <div class="logo"> 
+                        <div class="logo"> 
                             <img src="{{ asset('storage/logo/4.png') }}">
-                        </div> --}}
+                        </div>
 
                          {{-- SCRITTA ROSSA E ROSSA --}}
 

@@ -22,7 +22,9 @@ class FoodSeeder extends Seeder
     {
 
         $foods = [
+
             // --------------CUCINA ITALIANA 1- 10 - TYPE 1-----------------
+
             // PIATTO 1
             [
                 'name' => 'Saltimbocca alla Romana',
@@ -317,12 +319,12 @@ class FoodSeeder extends Seeder
             ],
             // PIATTO NUMERO
             // [
-            //     'name' => 
+            //     'name' => nome prodotto cucina giapponese
             //     'image' => 
-            //     'description' => 
-            //     'price' => 
-            //     'course' => 
-            //     'is_available' => 
+            //     'description' => 10 parole sul relativo prodotto
+            //     'price' => prezzo del relativo prodotto
+            //     'course' => primo
+            //     'is_available' => true
             //     'spicy' => 
             //     'gluten_free' => 
             //     'kcal' => 
