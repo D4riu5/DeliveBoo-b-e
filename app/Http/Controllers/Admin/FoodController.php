@@ -23,12 +23,12 @@ class FoodController extends Controller
         $nameFromSearch = request()->input('name');
 
         if (isset($nameFromSearch)) {
-            $food = Auth::user()->restaurant->foods()->where('name', 'LIKE', '%' . $nameFromSearch . '%')->get();
+            $foods = Auth::user()->restaurant->foods()->where('name', 'LIKE', '%' . $nameFromSearch . '%')->get();
         } else {
-            $food = Auth::user()->restaurant->food;
+            $foods = Auth::user()->restaurant->foods;
         }
 
-        return view('admin/food/index', compact('food'));
+        return view('admin/food/index', compact('foods'));
     }
 
     /**
