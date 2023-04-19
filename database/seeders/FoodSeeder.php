@@ -25,7 +25,7 @@ class FoodSeeder extends Seeder
 
         $food1 = [
             'name' => 'Saltimbocca alla Romana',
-            'image' => null,
+            'image' => '/food/1.jpg',
             'description' => 'fettine di vitello con prosciutto crudo e salvia',
             'price' =>  25,
             'course' => 'Secondo',
@@ -69,7 +69,7 @@ class FoodSeeder extends Seeder
         // Define the dish
         $food2 = [
             'name' => 'Tagliatelle alla Bolognese',
-            'image' => null,
+            'image' => '/food/2.jpg',
             'description' => 'tagliatelle fatte in casa con ragù alla Bolognese',
             'price' =>  18,
             'course' => 'Primo',
@@ -111,7 +111,7 @@ class FoodSeeder extends Seeder
         // PIATTO 3
         $food3 = [
             'name' => 'Crocchette di patate piccanti',
-            'image' => null,
+            'image' => '/food/3.jpg',
             'description' => 'Crocchette di patate cremose e piccanti',
             'price' => 20,
             'course' => 'Primo',
@@ -155,7 +155,7 @@ class FoodSeeder extends Seeder
         // Define the properties for the food item
         $food4 = [
             'name' => 'Risotto ai funghi porcini',
-            'image' => null,
+            'image' => '/food/4.jpg',
             'description' => 'risotto cremoso con funghi porcini freschi',
             'price' => 20,
             'course' => 'Primo',
@@ -198,7 +198,7 @@ class FoodSeeder extends Seeder
 
         $food5 = [
             'name' => 'Cotoletta alla Milanese',
-            'image' => null,
+            'image' => '/food/5.jpg',
             'description' => 'cotoletta di vitello impanata e fritta',
             'price' =>  22,
             'course' => 'Secondo',
@@ -213,7 +213,7 @@ class FoodSeeder extends Seeder
         ];
 
         // Define the list of restaurant IDs
-        $restaurant_ids = [1, 2];
+        $restaurant_ids = [1, 2]; //ITALIANA
 
         // Loop through the restaurant IDs and create a new dish instance for each one
         foreach ($restaurant_ids as $restaurant_id) {
@@ -241,7 +241,7 @@ class FoodSeeder extends Seeder
 
         $food6 = [
             'name' => 'Tiramisù',
-            'image' => null,
+            'image' => '/food/6.jpg',
             'description' => 'dolce al cucchiaio con savoiardi, caffè, mascarpone e cacao',
             'price' => 8,
             'course' => 'Dolce',
@@ -256,7 +256,7 @@ class FoodSeeder extends Seeder
         ];
 
         // Define the list of restaurant IDs
-        $restaurant_ids = [1, 2];
+        $restaurant_ids = [1, 2]; //ITALIANA
 
         // Loop through the restaurant IDs and create a new dish instance for each one
         foreach ($restaurant_ids as $restaurant_id) {
@@ -284,7 +284,7 @@ class FoodSeeder extends Seeder
         // PIATTO 7
         $food7 = [
             'name' => 'Bruschetta al pomodoro',
-            'image' => null,
+            'image' => '/food/7.jpg',
             'description' => 'fette di pane abbrustolite con pomodori freschi, aglio e basilico',
             'price' => 10,
             'course' => 'Antipasto',
@@ -299,7 +299,7 @@ class FoodSeeder extends Seeder
         ];
 
         // Define the list of restaurant IDs
-        $restaurant_ids = [1, 2, 5];
+        $restaurant_ids = [1, 2, 16]; //ITALIANA - VEGETARIANA
 
         // Loop through the restaurant IDs and create a new dish instance for each one
         foreach ($restaurant_ids as $restaurant_id) {
@@ -328,7 +328,7 @@ class FoodSeeder extends Seeder
         // Define the dish details
         $food8 = [
             'name' => 'Panna cotta',
-            'image' => null,
+            'image' => '/food/8.jpg',
             'description' => 'dolce al cucchiaio con panna, zucchero e vaniglia',
             'price' => 6,
             'course' => 'Dolce',
@@ -343,7 +343,7 @@ class FoodSeeder extends Seeder
         ];
 
         // Define the list of restaurant IDs
-        $restaurant_ids = [1, 2];
+        $restaurant_ids = [1, 2]; //ITALIANA
 
         // Loop through the restaurant IDs and create a new dish instance for each one
         foreach ($restaurant_ids as $restaurant_id) {
@@ -370,7 +370,7 @@ class FoodSeeder extends Seeder
         // PIATTO 9
         $food9 = [
             'name' => 'Chianti Classico',
-            'image' => null,
+            'image' => '/food/9.jpg',
             'description' => 'vino rosso toscano a denominazione di origine controllata e garantita',
             'price' => 28,
             'course' => 'Bevanda',
@@ -383,7 +383,7 @@ class FoodSeeder extends Seeder
             'kcal' => 500,
         ];
 
-        $restaurant_ids = [1, 2];
+        $restaurant_ids = [1, 2, 16]; //ITALIANA - VEGETARIANA
 
         foreach ($restaurant_ids as $restaurant_id) {
             $food = Food::create([
@@ -407,7 +407,7 @@ class FoodSeeder extends Seeder
         // PIATTO 10
         $food10 = [
             'name' => 'Insalata Caprese',
-            'image' => null,
+            'image' => '/food/10.jpg',
             'description' => 'insalata fresca con mozzarella di bufala, pomodori e basilico',
             'price' => 12,
             'course' => 'Antipasto',
@@ -422,7 +422,7 @@ class FoodSeeder extends Seeder
         ];
 
         // Define the list of restaurant IDs
-        $restaurant_ids = [1, 2];
+        $restaurant_ids = [1, 2, 16]; //ITALIANA - VEGETARIANA
 
         // Loop through the restaurant IDs and create a new dish instance for each one
         foreach ($restaurant_ids as $restaurant_id) {
@@ -452,7 +452,7 @@ class FoodSeeder extends Seeder
         // Define the properties for the food item
         $food11 = [
             'name' => 'Taco al pastor',
-            'image' => null,
+            'image' => '/food/11.jpg',
             'description' => 'Gustoso taco con carne al pastor, cipolla, coriandolo e salsa piccante',
             'price' => 12,
             'course' => 'Primo',
@@ -467,7 +467,7 @@ class FoodSeeder extends Seeder
         ];
 
         // Define the list of restaurant IDs
-        $restaurant_ids = [1];
+        $restaurant_ids = [1, 3]; // MESSICANA
 
         // Loop through the restaurant IDs and create a new dish instance for each one
         foreach ($restaurant_ids as $restaurant_id) {
@@ -495,7 +495,7 @@ class FoodSeeder extends Seeder
         // Define the properties for the food item
         $food12 = [
             'name' => 'Enchiladas verdes',
-            'image' => null,
+            'image' => '/food/12.jpg',
             'description' => 'Enchiladas ripiene di pollo con salsa verde, formaggio e panna acida',
             'price' => 18,
             'course' => 'Primo',
@@ -510,7 +510,7 @@ class FoodSeeder extends Seeder
         ];
 
         // Define the list of restaurant IDs
-        $restaurant_ids = [1];
+        $restaurant_ids = [1, 3]; // MESSICANA
 
         // Loop through the restaurant IDs and create a new dish instance for each one
         foreach ($restaurant_ids as $restaurant_id) {
@@ -538,7 +538,7 @@ class FoodSeeder extends Seeder
         // Define the properties for the food item
         $food13 = [
             'name' => 'Chili con carne',
-            'image' => null,
+            'image' => '/food/13.jpg',
             'description' => 'Speziato chili con carne di manzo, fagioli e peperoncino',
             'price' => 20,
             'course' => 'Secondo',
@@ -553,7 +553,7 @@ class FoodSeeder extends Seeder
         ];
 
         // Define the list of restaurant IDs
-        $restaurant_ids = [1];
+        $restaurant_ids = [1, 3]; // MESSICANA
 
         // Loop through the restaurant IDs and create a new dish instance for each one
         foreach ($restaurant_ids as $restaurant_id) {
@@ -580,10 +580,10 @@ class FoodSeeder extends Seeder
         // PIATTO 14
         // Define the properties for the food item
         $food14 = [
-            'name' => 'Tacos al pastor',
-            'image' => null,
-            'description' => 'Tacos di maiale allo spiedo con cipolle e coriandolo',
-            'price' => 22,
+            'name' => 'Quesadillas',
+            'image' => '/food/14.jpg',
+            'description' => 'Tortilla di farina ripiena di formaggio fuso e carne, servita con guacamole e pico de gallo.',
+            'price' => 12,
             'course' => 'Secondo',
             'is_available' => true,
         ];
@@ -596,7 +596,7 @@ class FoodSeeder extends Seeder
         ];
 
         // Define the list of restaurant IDs
-        $restaurant_ids = [1];
+        $restaurant_ids = [1, 3]; // MESSICANA
 
         // Loop through the restaurant IDs and create a new dish instance for each one
         foreach ($restaurant_ids as $restaurant_id) {
@@ -624,7 +624,7 @@ class FoodSeeder extends Seeder
         // Define the properties for the food item
         $food15 = [
             'name' => 'Churros con cioccolato',
-            'image' => null,
+            'image' => '/food/15.jpg',
             'description' => 'Churros fritti con zucchero a velo e salsa al cioccolato',
             'price' => 8,
             'course' => 'Dolce',
@@ -639,7 +639,7 @@ class FoodSeeder extends Seeder
         ];
 
         // Define the list of restaurant IDs
-        $restaurant_ids = [1];
+        $restaurant_ids = [1, 3, 16]; //MESSICANA - VEGETARIANA
 
         // Loop through the restaurant IDs and create a new dish instance for each one
         foreach ($restaurant_ids as $restaurant_id) {
@@ -667,7 +667,7 @@ class FoodSeeder extends Seeder
         // Define the properties for the food item
         $food16 = [
             'name' => 'Tres Leches',
-            'image' => null,
+            'image' => '/food/16.jpg',
             'description' => 'Dolce di pan di spagna inzuppato in tre tipi di latte',
             'price' => 9,
             'course' => 'Dolce',
@@ -682,7 +682,7 @@ class FoodSeeder extends Seeder
         ];
 
         // Define the list of restaurant IDs
-        $restaurant_ids = [1];
+        $restaurant_ids = [1, 3, 16]; //MESSICANA - VEGETARIANA
 
         // Loop through the restaurant IDs and create a new dish instance for each one
         foreach ($restaurant_ids as $restaurant_id) {
@@ -710,7 +710,7 @@ class FoodSeeder extends Seeder
         // Define the properties for the food item
         $food17 = [
             'name' => 'Nachos con guacamole',
-            'image' => null,
+            'image' => '/food/17.jpg',
             'description' => 'Nachos croccanti serviti con guacamole fatto in casa',
             'price' => 12,
             'course' => 'Antipasto',
@@ -725,7 +725,7 @@ class FoodSeeder extends Seeder
         ];
 
         // Define the list of restaurant IDs
-        $restaurant_ids = [1];
+        $restaurant_ids = [1, 3, 16]; //MESSICANA - VEGETARIANA
 
         // Loop through the restaurant IDs and create a new dish instance for each one
         foreach ($restaurant_ids as $restaurant_id) {
@@ -753,7 +753,7 @@ class FoodSeeder extends Seeder
         // Define the properties for the food item
         $food18 = [
             'name' => 'Quesadillas con pollo',
-            'image' => null,
+            'image' => '/food/18.jpg',
             'description' => 'Quesadillas di formaggio e pollo con guacamole e pico de gallo',
             'price' => 14,
             'course' => 'Antipasto',
@@ -768,7 +768,7 @@ class FoodSeeder extends Seeder
         ];
 
         // Define the list of restaurant IDs
-        $restaurant_ids = [1];
+        $restaurant_ids = [1, 3]; //MESSICANA
 
         // Loop through the restaurant IDs and create a new dish instance for each one
         foreach ($restaurant_ids as $restaurant_id) {
@@ -797,7 +797,7 @@ class FoodSeeder extends Seeder
         // Define the properties for the food item
         $food19 = [
             'name' => 'Nebbiolo',
-            'image' => null,
+            'image' => '/food/19.jpg',
             'description' => 'Un vino rosso secco e corposo, prodotto nella regione di Baja California',
             'price' => 14,
             'course' => 'Bevanda',
@@ -812,7 +812,7 @@ class FoodSeeder extends Seeder
         ];
 
         // Define the list of restaurant IDs
-        $restaurant_ids = [1];
+        $restaurant_ids = [1, 3, 16]; //MESSICANA - VEGETARIANA
 
         // Loop through the restaurant IDs and create a new dish instance for each one
         foreach ($restaurant_ids as $restaurant_id) {
@@ -842,7 +842,7 @@ class FoodSeeder extends Seeder
         // Define the properties for the food item
         $food20 = [
             'name' => 'Grenache',
-            'image' => null,
+            'image' => '/food/20.jpg',
             'description' => 'Un vino rosso secco e leggero, prodotto principalmente nella regione di Queretaro.',
             'price' => 14,
             'course' => 'Bevanda',
@@ -857,7 +857,7 @@ class FoodSeeder extends Seeder
         ];
 
         // Define the list of restaurant IDs
-        $restaurant_ids = [1];
+        $restaurant_ids = [1, 3, 16]; //MESSICANA - VEGETARIANA
 
         // Loop through the restaurant IDs and create a new dish instance for each one
         foreach ($restaurant_ids as $restaurant_id) {
@@ -884,7 +884,7 @@ class FoodSeeder extends Seeder
         // PIATTO 21
         $food21 = [
             'name' => 'Tecate',
-            'image' => null,
+            'image' => '/food/21.jpg',
             'description' => 'una birra chiara e secca, spesso servita con una fetta di limone',
             'price' => 14,
             'course' => 'Bevanda',
@@ -899,7 +899,7 @@ class FoodSeeder extends Seeder
         ];
 
         // Define the list of restaurant IDs
-        $restaurant_ids = [1];
+        $restaurant_ids = [1, 3, 16]; //MESSICANA - VEGETARIANA
 
         // Loop through the restaurant IDs and create a new dish instance for each one
         foreach ($restaurant_ids as $restaurant_id) {
@@ -915,11 +915,55 @@ class FoodSeeder extends Seeder
             ]);
 
             // Create the dish details instance for this dish
-            $food_details = Food_detail::create([
+            $food_details21 = Food_detail::create([
                 'spicy' => $food_details21['spicy'],
                 'gluten_free' => $food_details21['gluten_free'],
                 'kcal' => $food_details21['kcal'],
                 'food_id' => $food->id,
+            ]);
+
+
+            // CUCINA GIAPPONESE  22 - 33 - TYPE 3 
+
+            // Define the details for the new dish
+
+            // PIATTO 22
+
+            $food22 = [
+                'name' => 'Sushi misto',
+                'image' => null,
+                'description' => 'un piatto giapponese composto da riso aromatizzato con aceto e ripieno di pesce crudo o frutti di mare',
+                'price' => 25,
+                'course' => 'Antipasto',
+                'is_available' => true,
+            ];
+
+            // Define the dietary details for the dish
+            $food_details22 = [
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 400,
+            ];
+
+            // Define the restaurant ID for the new dish
+            $restaurant_ids = [4, 5]; //GIAPPONESE
+            // Create the dish instance for the Japanese restaurant
+            $food22 = Food::create([
+                'name' => $food22['name'],
+                'image' => $food22['image'],
+                'description' => $food22['description'],
+                'price' => $food22['price'],
+                'course' => $food22['course'],
+                'is_available' => $food22['is_available'],
+                'restaurant_id' => $restaurant_id,
+            ]);
+
+            // Create the dish details instance for the Japanese dish
+            $food_details22 = Food_detail::create([
+                'spicy' => $food_details22['spicy'],
+                'gluten_free' => $food_details22['gluten_free'],
+                'kcal' => $food_details22['kcal'],
+                'food_id' => $food22->id,
             ]);
         }
 
