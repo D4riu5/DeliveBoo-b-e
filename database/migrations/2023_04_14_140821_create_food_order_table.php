@@ -21,6 +21,7 @@ return new class extends Migration
             $table->foreign('order_id')->references('id')->on('orders')->onUpdate('cascade')->onDelete('cascade');
 
             $table->primary(['food_id', 'order_id']);
+            $table->smallInteger('quantity')->nullable();
         });
     }
 
