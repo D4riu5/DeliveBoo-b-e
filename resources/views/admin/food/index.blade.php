@@ -50,7 +50,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($food as $food)
+                        @foreach ($foods as $food)
                             <tr>
                                 <th scope="row">{{ $food->id }}</th>
                                 <td>
