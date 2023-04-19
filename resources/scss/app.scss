@@ -49,36 +49,78 @@
 
 // COLORI BARRE
 .barraColor {
-    background-color: rgba(173,0,106,255);
+    background: hsla(39, 100%, 50%, 1);
+
+
+
+    //     background: rgb(255,255,255);
+    // background: linear-gradient(106deg, rgba(255,255,255,0) 0%, rgba(252,70,107,1) 17%, rgba(252,70,107,1) 100%);
 }
 
-//Alternative palette
-
-// 1. rgba(149,26,28,255) -> con foto 1.png
-// 2. rgba(94,23,235,255)  -> con foto 2.png
-// 3. rgba(173,4,108,255)  -> con foto 3.png
-// 4. rgba(0,0,0,255)  -> con foto 4.png
-// 5. rgba(58,14,143,255)  -> con foto 5.png
-// 6. rgba(173,0,106,255)  -> con foto 6.png
 
 // ATTRIBUTI DELLE BARRE: SUPERIORE E INFERIORE
 .barraLogo {
+    position: relative;
     width: 100%;
     --bs-navbar-padding-y: 0, 25rem;
+    background: hsla(39, 100%, 50%, 1);
+
+    background: linear-gradient(0deg, hsla(39, 100%, 50%, 1) 15%, hsla(348, 97%, 63%, 1) 52%);
+
+    background: -moz-linear-gradient(0deg, hsla(39, 100%, 50%, 1) 15%, hsla(348, 97%, 63%, 1) 52%);
+
+    background: -webkit-linear-gradient(0deg, hsla(39, 100%, 50%, 1) 15%, hsla(348, 97%, 63%, 1) 52%);
+
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFA500", endColorstr="#FC466B", GradientType=1);
+
+
 
     // CONTENITORE LOGO
     .logo {
-        width: 110px;
-        height: 110px;
+        width: 130px;
+        height: 74px;
         margin: 0px !important;
 
         //DETTAGLI LOGO
         img {
             width: 100%;
             height: 100%;
-            border-radius: 20px;
         }
     }
+}
+
+.barraLogo:before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 85% 58%;
+    width: 1001px;
+    height: 977px;
+    background: hsla(39, 100%, 50%, 1);
+
+    background: hsla(39, 100%, 50%, 1);
+
+    background: linear-gradient(180deg, hsla(39, 100%, 50%, 1) 58%, hsla(348, 97%, 63%, 1) 74%);
+
+    background: -moz-linear-gradient(180deg, hsla(39, 100%, 50%, 1) 58%, hsla(348, 97%, 63%, 1) 74%);
+
+    background: -webkit-linear-gradient(180deg, hsla(39, 100%, 50%, 1) 58%, hsla(348, 97%, 63%, 1) 74%);
+
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFA500", endColorstr="#FC466B", GradientType=1);
+    right: 418px;
+    top: -921px;
+}
+
+.barraLogo:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 85% 58%;
+    width: 656px;
+    height: 962px;
+    background-color: orange;
+    right: 13px;
+    top: -929px;
 }
 
 //BARRA INFERIORE
@@ -86,14 +128,16 @@
     width: 100%;
     position: fixed;
     bottom: 0%;
-    height: 110px;
+    height: 84px;
     z-index: 2;
+    background-color: rgba(252, 70, 107, 1) !important;
 }
 
 // Margine tra la barra inferiore e il form su REGISTER.BLADE.PHP 
 .marginForm {
     margin-bottom: 90px;
 }
+
 // SPECIFICHE PER BOTTONE HOME DELLA NAVBAR
 .home {
     padding-left: 0px !important;
@@ -102,10 +146,30 @@
 // ATTRIBUTI PER TUTTI I BOTTONI DELLA NAVBAR
 // HOME - REGISTER - LOGIN - LOGOUT
 .navButton {
-    color: yellow;
+    font-weight: bold;
+    color: white;
     font-size: 23px;
 }
 
 .navButton:hover {
+    color: rgb(255, 140, 0);
+}
+
+// LOGIN FORM - HEADER 
+
+.loginForm-header {
+    text-align: center;
     color: white;
+    font-weight: bold;
+    background-color: orange;
+}
+
+// LOGIN FORM - BODY 
+
+.loginForm-body {
+    background-color: rgb(228, 54, 80);
+}
+
+.formMargin {
+    margin-top: 6.5%;
 }

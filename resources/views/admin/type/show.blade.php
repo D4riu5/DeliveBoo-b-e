@@ -21,21 +21,4 @@
             </div>
         </div>
     </div>
-    <div>
-        <div class="boxPhoto">
-            <img src="{{ asset("storage/logo/1.svg") }}">
-        </div>
-        <div class="boxPhoto">
-            <img src="{{ asset("storage/logo/2.svg") }}">
-        </div>
-        <div class="boxPhoto">
-            <img src="{{ asset("storage/logo/3.svg") }}">
-        </div>
-        <div class="boxPhoto">
-            <img src="{{ asset("storage/logo/4.svg") }}">
-        </div>
-        <div class="boxPhoto">
-            <img src="{{ asset("storage/logo/5.svg") }}">
-        </div>
-    </div>
 @endsection
