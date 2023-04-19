@@ -38,7 +38,7 @@
                         </div> --}}
 
                         <div class="logo">
-                            <img src="{{ asset('storage/logo/ComidaGo.png') }}">
+                            <img src="{{ asset('storage/logo/ComidaGO.png') }}">
                         </div>
 
 
