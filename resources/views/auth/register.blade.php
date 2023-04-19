@@ -1,13 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container mt-4">
+    <div class="container formMargin">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header text-center fs-4">{{ __('Utente') }}</div>
+                    <div class="card-header formHeader">{{ __('Utente') }}</div>
 
-                    <div class="card-body py-4 px-0">
+                    <div class="card-body py-4 px-0 formBody">
                         {{-- Form di Regitrazione --}}
                         <form id="register-form" method="POST" action="{{ route('register') }}">
                             @csrf
@@ -115,7 +115,7 @@
                             <div class="card-header text-center fs-4 mb-4">{{ __('Ristorante') }}</div>
                             <div class="px-3 my-3 w-75 m-auto">
                                 <div class="form-group row">
-                                    <label for="name">{{ __('Nome Ristorante *') }}</label>
+                                    <label for="name">{{ __('Nome Ristorante') }} <span class="text-danger">*</span></label>
                                     <div> {{-- INPUT NAME RISTORANTE --}}
                                         <input id="name" type="text" class="form-control" name="restaurant_name"
                                             autocomplete="name" value="{{ old('restaurant_name') }}">
@@ -189,7 +189,7 @@
                             {{-- BOTTONE REGISTRATI  --}}
                             <div class="d-flex justify-content-center marginForm">
                                 <div>
-                                    <button type="submit" class="btn btn-primary my-3">
+                                    <button type="submit" class="btn btn-warning my-3">
                                         {{ __('Registrati') }}
                                     </button>
                                 </div>
