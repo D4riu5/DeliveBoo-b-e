@@ -37,39 +37,15 @@
                             </svg>
                         </div> --}}
 
-                        {{-- LOGO COMIDA GO  --}}
-
-                        {{-- SCRITTA ROSSA E ROSSA --}}
-
-                        {{-- <div class="logo"> 
+                        {{-- LOGO ROSSO NERO --}}
+                        <div class="logo"> 
                             <img src="{{ asset('storage/logo/1.png') }}">
-                        </div> --}}
+                        </div>
 
-                        {{-- SCRITTA NERA E NERA --}}
-
+                        {{-- LOGO NERO ROSSO --}}
                         {{-- <div class="logo"> 
                             <img src="{{ asset('storage/logo/2.png') }}">
                         </div> --}}
-
-                        {{-- SCRITTA NERA E ROSSA --}}
-
-                        {{-- <div class="logo"> 
-                            <img src="{{ asset('storage/logo/3.png') }}">
-                        </div> --}}
-
-                        {{-- SCRITTA ROSSA E NERA --}}
-
-                        <div class="logo"> 
-                            <img src="{{ asset('storage/logo/4.png') }}">
-                        </div>
-
-                         {{-- SCRITTA ROSSA E ROSSA --}}
-
-                        {{-- <div class="logo"> 
-                            <img src="{{ asset('storage/logo/5.png') }}">
-                        </div> --}}
-
-
 
 
 
