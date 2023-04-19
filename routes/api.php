@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\RestaurantMenuController;
 use App\Http\Controllers\Api\TypeController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -17,7 +18,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::name('api.')->group(function () {
     Route::resource('types', TypeController::class)->only(['index', 'show']);
+    Route::resource('restaurants.foods', RestaurantMenuController::class)->only(['index', 'show']);
 });
+
+
 
 // Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 //     return $request->user();
