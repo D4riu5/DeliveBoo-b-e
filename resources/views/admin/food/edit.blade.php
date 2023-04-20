@@ -95,45 +95,6 @@
 
                     {{-- DETTAGLI DA INVIARE A FOOD DETAILS  --}}
 
-                    {{-- PICCANTE SI/NO  --}}
-
-                    <div class="mb-3">
-                        <label for="spicy" class="form-label">
-                            E' un prodotto piccante?
-                        </label>
-                        <select class="form-select" id="spicy" name="spicy">
-                            <option value="" disabled
-                                {{ old('spicy', $food->food_detail->spicy) === null ? 'selected' : '' }}>
-                                Seleziona opzione...
-                            </option>
-                            <option value="1" {{ old('spicy', $food->food_detail->spicy) == '1' ? 'selected' : '' }}>
-                                Si
-                            </option>
-                            <option value="0" {{ old('spicy', $food->food_detail->spicy) == '0' ? 'selected' : '' }}>
-                                No
-                            </option>
-                        </select>
-                    </div>
-
-                    {{-- GLUTEN FREE SI/NO  --}}
-
-                    <div class="mb-3">
-                        <label for="gluten_free" class="form-label">
-                            Il prodotto contiene glutine?
-                        </label>
-                        <select class="form-select" id="gluten_free" name="gluten_free">
-                            <option value="" disabled
-                                {{ old('gluten_free', $food->food_detail->gluten_free) === null ? 'selected' : '' }}>
-                                Seleziona opzione...</option>
-                            <option value="1"
-                                {{ old('gluten_free', $food->food_detail->gluten_free) == '1' ? 'selected' : '' }}>
-                                Si</option>
-                            <option value="0"
-                                {{ old('gluten_free', $food->food_detail->gluten_free) == '0' ? 'selected' : '' }}>
-                                No</option>
-                        </select>
-                    </div>
-
                     {{-- CALORIE  --}}
                     <div class="mb-3">
                         <label for="kcal" class="form-label">
@@ -145,22 +106,66 @@
                     </div>
 
 
+                    {{-- PICCANTE SI/NO  --}}
+
+                    <div class="mb-3">
+                        <div>
+                            <label for="spicy" class="form-label">
+                                E' un prodotto piccante?
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="spicy" id="spicy_si" value="1"
+                            {{ old('spicy', $food->food_detail->spicy) == '1' ? 'checked' : '' }}>
+                            <label class="form-check-label" for="spicy_si">Si</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="spicy" id="spicy_no" value="0"
+                            {{ old('spicy', $food->food_detail->spicy) == '0' ? 'checked' : '' }}>
+                            <label class="form-check-label" for="spicy_no">No</label>
+                        </div>
+                    </div>
+                      
+
+                    {{-- GLUTEN FREE SI/NO  --}}
+
+                    <div class="mb-3">
+                        <div>
+                            <label for="gluten_free" class="form-label">
+                                Il prodotto contiene glutine?
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gluten_free" id="gluten_free_si" value="1"
+                            {{ old('gluten_free', $food->food_detail->gluten_free) == '1' ? 'checked' : '' }}>
+                            <label class="form-check-label" for="gluten_free_si">Si</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gluten_free" id="gluten_free_no" value="0"
+                            {{ old('gluten_free', $food->food_detail->gluten_free) == '0' ? 'checked' : '' }}>
+                            <label class="form-check-label" for="gluten_free_no">No</label>
+                        </div>
+                    </div>
+
+
+
                     {{-- DISPONIBILITA' PRODOTTO --}}
                     <div class="mb-3">
-                        <label for="is_available" class="form-label">
-                            Il prodotto è disponibile?
-                        </label>
-                        <select class="form-select" id="is_available" name="is_available">
-                            <option value="" disabled
-                                {{ old('is_available', $food->is_available) === null ? 'selected' : '' }}>
-                                Seleziona opzione...</option>
-                            <option value="1"
-                                {{ old('is_available', $food->is_available) == '1' ? 'selected' : '' }}>
-                                Si</option>
-                            <option value="0"
-                                {{ old('is_available', $food->is_available) == '0' ? 'selected' : '' }}>
-                                No</option>
-                        </select>
+                        <div>
+                            <label for="is_available" class="form-label">
+                                Il prodotto è disponibile?
+                            </label>
+                        </div> 
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="is_available_yes" name="is_available"
+                                value="1" {{ old('is_available', $food->is_available) == '1' ? 'checked' : '' }}>
+                            <label class="form-check-label" for="is_available_yes">Si</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="is_available_no" name="is_available"
+                                value="0" {{ old('is_available', $food->is_available) == '0' ? 'checked' : '' }}>
+                            <label class="form-check-label" for="is_available_no">No</label>
+                        </div>
                     </div>
 
 
