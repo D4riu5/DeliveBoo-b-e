@@ -19,13 +19,13 @@
                             </div>
                         @else
                             <div class="placeholderBox">
-                                <img src="{{ asset('storage/placeholder/22.png') }}"
+                                <img src="{{ asset('storage/placeholder/placeholder.jpg') }}"
                                     style="height: 400px;" alt="placeholder">
                             </div>
                         @endif
                     </div>
                     {{-- Descrizione prodotto  --}}
-                    <div class="col-auto px-1 mt-1">
+                    <div class="col-3 px-1 mt-1">
                         <h3 class="my-2">
                             Descrizione:
                         </h3>
