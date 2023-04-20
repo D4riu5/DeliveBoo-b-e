@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 
+use App\Models\Type;
 use App\Models\Restaurant;
 use App\Http\Requests\StoreRestaurantRequest;
 use App\Http\Requests\UpdateRestaurantRequest;
@@ -67,7 +68,8 @@ class RestaurantController extends Controller
      */
     public function edit(Restaurant $restaurant)
     {
-        return view('admin.restaurant.edit', compact('restaurant'));
+        $types = Type::all();
+        return view('admin.restaurant.edit', compact('restaurant', 'types'));
     }
 
     /**
@@ -114,6 +116,14 @@ class RestaurantController extends Controller
         if ($restaurant !== null) {
 
             $restaurant->update($data);
+        }
+
+        if (array_key_exists('types', $data)) {
+
+            $restaurant->types()->sync($data['types']);
+        } else {
+
+            $restaurant->types()->sync([]);
         }
 
         return redirect()->route('admin.restaurant.show', $restaurant->id)->with('success', 'Ristorante modificato con successo!');

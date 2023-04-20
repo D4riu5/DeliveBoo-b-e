@@ -29,7 +29,7 @@ class UpdateRestaurantRequest extends FormRequest
             'image' => 'nullable|image|max:2048',
             'PIVA' => 'required|max:11|min:11',
             'delete_image' => 'nullable',
-
+            'types' => 'nullable|array|exists:restaurants,id'
         ];
     }
 }
