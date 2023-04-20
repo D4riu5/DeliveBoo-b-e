@@ -1,4 +1,5 @@
 @import '~bootstrap/scss/bootstrap';
+@import './partials/mediaquery.scss';
 
 .boxPhoto {
     width: 1000px;
@@ -60,7 +61,6 @@
 
 // ATTRIBUTI DELLE BARRE: SUPERIORE E INFERIORE
 .barraLogo {
-    position: relative;
     width: 100%;
     --bs-navbar-padding-y: 0, 25rem;
     background: hsla(39, 100%, 50%, 1);
@@ -177,8 +177,43 @@
 // FORGOT PASSWORD LINK
 
 .forgotPassword {
-    color: rgba(252, 70, 107, 1)
+    color: rgba(252, 70, 107, 1);
 }
 .forgotPassword:hover {
     color: black;
+}
+
+// AREA DASHBOARD - ADMIN.BLADE.PHP
+//MENU RISTORATORE
+
+.menu {
+    background-color: rgba(204, 147, 71, 0.548);
+    .colorMenu {
+        color: black;
+        background-color: none;
+    }
+}
+
+.logout {
+    color: white;
+    font-size: 23px;
+}
+
+.logout:hover {
+    color:rgb(0, 0, 0);
+}
+
+.backgroundSelected { //Backgroun dell'item selezionato nel menu
+    background-color: rgba(252, 70, 107, 1);
+}
+
+.homepageButton {
+    position: absolute;
+    top: 79%;
+    left: 10%;
+    .homepage {
+        font-size: 15px;
+        color: white;
+        padding: 0px 0px 0px 12px;
+    }    
 }
