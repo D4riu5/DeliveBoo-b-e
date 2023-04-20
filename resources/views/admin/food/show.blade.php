@@ -19,7 +19,7 @@
                             </div>
                         @else
                             <div class="placeholderBox">
-                                <img src="{{ asset('storage/placeholder/last.png') }}"
+                                <img src="{{ asset('storage/placeholder/22.png') }}"
                                     style="height: 400px;" alt="placeholder">
                             </div>
                         @endif
