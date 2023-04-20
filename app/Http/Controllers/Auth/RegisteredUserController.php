@@ -34,16 +34,37 @@ class RegisteredUserController extends Controller
      */
     public function store(Request $request): RedirectResponse
     {
-        $request->validate([
-            'name' => ['required', 'string', 'max:16'],
-            'surname' => ['nullable', 'string', 'max:32'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:' . User::class],
-            'password' => ['required', 'confirmed', Rules\Password::defaults()],
-            'restaurant_name' => ['required', 'string', 'max:32'],
-            'address' => ['required', 'string', 'max:128'],
-            'PIVA' => ['required', 'string', 'min:11', 'max:11'],
-            'types' => ['required', 'array', 'exists:types,id']
-        ]);
+        $request->validate(
+            [
+                // no spaces in regex, no special characters and numbers
+                'name' => ['required', 'string', 'min:2', 'max:16', 'regex:/^[a-zA-Z]*$/'],
+                // allows for spaces but no special characters and numbers
+                'surname' => ['nullable', 'string', 'min:2', 'max:32', 'regex:/^[a-zA-Z\s]*$/'],
+                'email' => ['required', 'string', 'email', 'max:255', 'unique:' . User::class, 'regex:/^.+@.+\..+$/'],
+                'password' => ['required', 'confirmed', Rules\Password::defaults()],
+
+                'restaurant_name' => ['required', 'string', 'min:2', 'max:32'],
+                'address' => ['required', 'string', 'max:128'],
+                'PIVA' => ['required', 'string', 'min:11', 'max:11', 'regex:/^[0-9]*$/'],
+                'types' => ['required', 'array', 'exists:types,id']
+            ],
+            // CUSTOM MESSAGES
+            [
+                'restaurant_name.required' => 'Il nome dell\'attività è obbligatorio.',
+                'restaurant_name.string' => 'Il nome dell\'attività deve essere una stringa.',
+                'restaurant_name.min' => 'Il nome dell\'attività deve essere lungo almeno :min caratteri.',
+                'restaurant_name.max' => 'Il nome dell\'attività non può essere più lungo di :max caratteri.',
+                'address.required' => 'L\'indirizzo dell\'attività è obbligatorio',
+                'address.max' => 'L\'indirizzo dell\'attività non può essere più lungo di :max caratteri.',
+                'PIVA.required' => 'La Partita Iva è obbligatoria.',
+                'PIVA.max' => 'La Partita Iva deve essere lungo :max numeri.',
+                'PIVA.min' => 'La Partita Iva deve essere lungo :min numeri.',
+                'PIVA.regex' => 'La Partita Iva deve contenere solo numeri.',
+                'types.required' => 'Seleziona almeno una categoria!',
+                'types.array' => 'Il campo categorie deve essere un array.',
+                'types.exists' => 'Una o più categorie selezionate non sono valide.'
+            ]
+        );
 
         $user = User::create([
             'name' => $request->name,
