@@ -30,10 +30,19 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="navbar-nav">
+                
+                <div class="navbar-nav d-flex flex-row mx-2">
+
+                    <div class="nav-item">
+                        <a class="nav-link" href="{{ url('profile') }}">
+                            <i class="fa-solid fa-user fa-lg fa-fw"></i> Modifica Account
+                        </a>
+                    </div>
+
                     <div class="nav-item text-nowrap ms-2">
                         <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();
                         document.getElementById('logout-form').submit();">
+                        <i class="fa-solid fa-user fa-lg fa-fw"></i>
                             {{ __('Logout') }}
                         </a>
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
@@ -69,6 +78,7 @@
                                         <i class="fa-solid fa-kitchen-set fa-lg fa-fw"></i> Tipologie di cucina
                                     </a>
                                 </li>
+
                             </ul>
                         </div>
 
