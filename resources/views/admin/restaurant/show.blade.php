@@ -72,15 +72,21 @@
                     </h6>
                 </a>
             -->
-                <button class="btn btn-primary mt-2 my-3">
+                <button class="btn btn-danger mt-2 my-3">
                     <a href="{{ route('admin.dashboard') }}" class="link-light text-decoration-none"> Torna indietro
                     </a>
                 </button>
+                <!--
                 <a href="{{ route('admin.restaurant.edit', $restaurant->id) }}" class="mt-2 btn btn-warning my-3">
                     <h6>
                         Modifica dati attività
                     </h6>
                 </a>
+            -->
+                <button class="btn btn-warning mt-2 my-3">
+                    <a href="{{ route('admin.restaurant.edit', $restaurant->id) }}" class="link-light text-decoration-none"> Modifica dati attività
+                    </a>
+                </button>
             </div>
 
         </div>
