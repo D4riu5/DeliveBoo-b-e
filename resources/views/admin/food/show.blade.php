@@ -6,21 +6,26 @@
             <div class="col">
                 @include('partials.success')
 
-                <h1>
+                <h1 >
                     {{ $food->name }}
                 </h1>
                 <div class="d-flex">
                     {{-- IMMAGINE --}}
-                    <div class="col-8">
-                        @if ($food->image)
-                            <div class="foodShowphotoBox">
-                                <img class="my-3" src="{{ asset('storage/' . $food->image) }}" style="height: 400px;"
+                    <div class="col-auto">
+                        @if ($food->image != null)
+                            <div class="photoBox">
+                                <img src="{{ asset('storage/' . $food->image) }}"
                                     alt="food">
+                            </div>
+                        @else
+                            <div class="placeholderBox">
+                                <img src="{{ asset('storage/placeholder/last.png') }}"
+                                    style="height: 400px;" alt="placeholder">
                             </div>
                         @endif
                     </div>
                     {{-- Descrizione prodotto  --}}
-                    <div class="ps-4 col-4">
+                    <div class="col-auto px-1 mt-1">
                         <h3 class="my-2">
                             Descrizione:
                         </h3>
@@ -36,27 +41,27 @@
                     <div>
                         {{-- Dettaglio Portata --}}
                         <div>
-                            <h3 class="my-2">
+                            <h5 class="my-2">
                                 Portata:
-                            </h3>
+                            </h5>
                             <p>
                                 {{ $food->course }}
                             </p>
                         </div>
                         {{-- Status disponibilità --}}
                         <div>
-                            <h3 class="my-2">
+                            <h5 class="my-2">
                                 Disponibile?
-                            </h3>
+                            </h5>
                             <p>
                                 {{ $food->is_available ? 'Si' : 'No' }}
                             </p>
                         </div>
                         {{-- Prezzo prodotto  --}}
                         <div>
-                            <h3 class="my-2">
+                            <h5 class="my-2">
                                 Prezzo:
-                            </h3>
+                            </h5>
                             <p>
                                 {{ $food->price }} €
                             </p>
@@ -69,9 +74,9 @@
 
                         {{-- INFO PICCANTE  --}}
                         <div>
-                            <h3 class="my-2">
+                            <h5 class="my-2">
                                 E' un prodotto piccante?
-                            </h3>
+                            </h5>
                             @if ($food->food_detail->spicy !== null)
                                 @if ($food->food_detail->spicy == 1)
                                     <p>Si</p>
@@ -87,9 +92,9 @@
 
                         {{-- INFO GLUTINE  --}}
                         <div>
-                            <h3 class="my-2">
+                            <h5 class="my-2">
                                 Contiene Glutine?
-                            </h3>
+                            </h5>
                             @if ($food->food_detail->gluten_free !== null)
                                 @if ($food->food_detail->gluten_free == 1)
                                     <p>Si</p>
@@ -103,12 +108,11 @@
 
                         {{-- CALORIE CONTENUTE  --}}
                         <div>
-                            <h3 class="my-2">
+                            <h5 class="my-2">
                                 Quante calorie contiene?
-                            </h3>
+                            </h5>
                             @if ($food->food_detail && $food->food_detail->kcal !== null)
-
-                                 {{ $food->food_detail->kcal . ' kcal' }}
+                                {{ $food->food_detail->kcal . ' kcal' }}
                             @else
                                 <p>
                                     Non specificato
@@ -119,15 +123,15 @@
                     </div>
                 </div>
                 {{-- PULSANTE RITORNO A MIEI PRODOTTI  --}}
-                <div class="pt-2">
-                    <a class="mt-2 btn btn-danger my-3"
+                <div class="">
+                    <a class="mt-2 btn btn-danger"
                         class="{{ Route::currentRouteName() == 'admin.food.index' ? 'bg-secondary' : '' }}"
                         href="{{ route('admin.food.index') }}">
                         <h6>
                             Torna sul mio menù
                         </h6>
                     </a>
-                    <a href="{{ route('admin.food.edit', $food->id) }}" class="mt-2 btn btn-warning my-3">
+                    <a href="{{ route('admin.food.edit', $food->id) }}" class="mt-2 btn btn-warning">
                         <h6>
                             Modifica piatto
                         </h6>
