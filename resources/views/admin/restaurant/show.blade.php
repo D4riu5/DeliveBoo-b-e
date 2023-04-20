@@ -62,15 +62,15 @@
             </div>
 
             {{-- PULSANTE RITORNO ALLA DASHBOARD  --}}
-            <div class="pt-2 text-center">
-                <a class="mt-2 btn btn-danger my-3"
+            <div class="text-center">
+                <a class="btn btn-danger pt-2"
                     class="{{ Route::currentRouteName() == 'admin.dashboard' ? 'bg-secondary' : '' }}"
                     href="{{ route('admin.dashboard') }}">
                     <h6>
                         Torna indietro
                     </h6>
                 </a>
-                <a href="{{ route('admin.restaurant.edit', $restaurant->id) }}" class="mt-2 btn btn-warning my-3">
+                <a href="{{ route('admin.restaurant.edit', $restaurant->id) }}" class="py- btn btn-warning">
                     <h6>
                         Modifica dati attività
                     </h6>

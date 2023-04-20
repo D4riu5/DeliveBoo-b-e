@@ -124,14 +124,14 @@
                 </div>
                 {{-- PULSANTE RITORNO A MIEI PRODOTTI  --}}
                 <div class="">
-                    <a class="mt-2 btn btn-danger"
+                    <a class="btn btn-danger"
                         class="{{ Route::currentRouteName() == 'admin.food.index' ? 'bg-secondary' : '' }}"
                         href="{{ route('admin.food.index') }}">
                         <h6>
                             Torna sul mio menù
                         </h6>
                     </a>
-                    <a href="{{ route('admin.food.edit', $food->id) }}" class="mt-2 btn btn-warning">
+                    <a href="{{ route('admin.food.edit', $food->id) }}" class="btn btn-warning">
                         <h6>
                             Modifica piatto
                         </h6>
