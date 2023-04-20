@@ -303,20 +303,151 @@ class FoodSeeder extends Seeder
             ],
             // --------------CUCINA MESSICANA FINE------------------------------
 
-            // --------------CUCINA GIAPPONESE  22 - 33 - TYPE 3----------------
+            // --------------CUCINA GIAPPONESE  22 - 32 - TYPE 3----------------
             // PIATTO 22
             [
-                'name' => 'Sushi misto',
-                'image' => null,
-                'description' => 'un piatto giapponese composto da riso aromatizzato con aceto e ripieno di pesce crudo o frutti di mare',
-                'price' => 25,
+                'name' => 'Gyoza',
+                'image' => '',
+                'description' => 'Ravioli giapponesi ripieni di carne o verdure',
+                'price' => 6.50,
+                'course' => 'Antipasto',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => false,
+                'kcal' => 290,
+                'restaurant_ids' => [],
+            ],
+            // PIATTO 23
+            [
+                'name' => 'Edamame',
+                'image' => '',
+                'description' => 'Soia bollita e salata, tipica inizio pasto giapponese',
+                'price' => 3.50,
                 'course' => 'Antipasto',
                 'is_available' => true,
                 'spicy' => false,
                 'gluten_free' => true,
-                'kcal' => 400,
-                'restaurant_ids' => [4, 5], //GIAPPONESE
+                'kcal' => 125,
+                'restaurant_ids' => [],
             ],
+            // PIATTO 24
+            [
+                'name' => 'Ramen',
+                'image' => '',
+                'description' => 'Noodle giapponese servito in brodo di carne o pesce, solitamente condito con carne di maiale, uova e verdure',
+                'price' => 9.50,
+                'course' => 'Primo',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => false,
+                'kcal' => 500,
+                'restaurant_ids' => [],
+            ],
+            // PIATTO 25
+            [
+                'name' => 'Udon',
+                'image' => '',
+                'description' => 'Noodle giapponese spesso e morbido servito in brodo o saltato con carne, verdure e salsa di soia',
+                'price' => 8.70,
+                'course' => 'Primo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 600,
+                'restaurant_ids' => [],
+            ],
+            // PIATTO 26
+            [
+                'name' => 'Tonkatsu',
+                'image' => '',
+                'description' => 'Cotoletta di maiale impanata e fritta',
+                'price' => 15,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 500,
+                'restaurant_ids' => [],
+            ],
+            // PIATTO 27
+            [
+                'name' => 'Gyudon',
+                'image' => '',
+                'description' => 'Riso e carne di manzo cotta lentamente insieme in una ciotola calda, accompagnata da molti condimenti gustosi come cipolla, zenzero e shichimi togarashi.',
+                'price' => 13.50,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 610,
+                'restaurant_ids' => [],
+            ],
+            // PIATTO 28
+            [
+                'name' => 'Salmone alla griglia',
+                'image' => '',
+                'description' => 'Filetto di salmone grigliato con salsa teriyaki e verdure saltate',
+                'price' => 12,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 800,
+                'restaurant_ids' => [],
+            ],
+            // PIATTO 29
+            [
+                'name' => 'Dorayaki',
+                'image' => '',
+                'description' => 'Pancake giapponese con ripieno di pasta di fagioli dolci',
+                'price' => 3,
+                'course' => 'Dolce',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 200,
+                'restaurant_ids' => [],
+            ],
+            // PIATTO 30
+            [
+                'name' => 'Anmitsu',
+                'image' => '',
+                'description' => 'Dolce tradizionale giapponese con gelatina di agar-agar, frutta e sciroppo dolce',
+                'price' => 5.50,
+                'course' => 'Dolce',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 200,
+                'restaurant_ids' => [],
+            ],
+            // PIATTO 31
+            [
+                'name' => 'Sake Daiginjo',
+                'image' => '',
+                'description' => 'Delicato e leggermente fruttato, dal gusto equilibrato e persistente.',
+                'price' => 30,
+                'course' => 'Bevanda',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 120,
+                'restaurant_ids' => [],
+            ],
+            // PIATTO 32
+            [
+                'name' => 'Matcha latte',
+                'image' => '',
+                'description' => 'Tè verde in polvere macinato con latte caldo. Ricco di antiossidanti e perfetto per un momento di relax.',
+                'price' => 4.50,
+                'course' => 'Bevanda',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 150,
+                'restaurant_ids' => [],
+            ],
+            // --------------CUCINA MESSICANA FINE------------------------------
             // PIATTO NUMERO
             // [
             //     'name' => nome prodotto cucina giapponese
