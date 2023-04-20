@@ -157,7 +157,7 @@
 
 // LOGIN FORM - HEADER 
 
-.loginForm-header {
+.formHeader {
     text-align: center;
     color: white;
     font-weight: bold;
@@ -166,8 +166,8 @@
 
 // LOGIN FORM - BODY 
 
-.loginForm-body {
-    background-color: rgb(228, 54, 80);
+.formBody {
+    background-color: rgba(221, 175, 114, 0.548);
 }
 
 .formMargin {
@@ -177,7 +177,7 @@
 // FORGOT PASSWORD LINK
 
 .forgotPassword {
-    color: white;
+    color: rgba(252, 70, 107, 1)
 }
 .forgotPassword:hover {
     color: black;
