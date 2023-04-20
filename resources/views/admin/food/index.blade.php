@@ -73,13 +73,45 @@
                                         <i class="fa-solid fa-pen-to-square"></i>
                                     </a>
                                     <form class="d-inline-block" action="{{ route('admin.food.destroy', $food->id) }}"
-                                        method="POST"
-                                        onsubmit="return confirm('Sei sicuro di voler eliminare questo piatto?');">
+                                        method="POST">
                                         @csrf
                                         @method('DELETE')
-                                        <button class="btn btn-danger">
+                                        <button class="btn btn-danger" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal{{ $food->id }}">
                                             <i class="fa-solid fa-trash"></i>
                                         </button>
+
+                                        <div class="modal fade" id="exampleModal{{ $food->id }}" tabindex="-1"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+    
+                                            <div class="modal-dialog">
+    
+                                                <div class="modal-content">
+    
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel"> Conferma
+                                                            eliminazione
+                                                        </h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+    
+                                                    <div class="modal-body">
+                                                        Sei sicuro di voler eliminare questo piatto ?
+                                                    </div>
+    
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">
+                                                            Annulla </button>
+                                                        <button type="submit" class="btn btn-danger"> Elimina </button>
+                                                    </div>
+    
+                                                </div>
+    
+                                            </div>
+    
+                                        </div>
                                     </form>
                                 </td>
                             </tr>
