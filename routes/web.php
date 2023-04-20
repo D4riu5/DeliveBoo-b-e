@@ -30,6 +30,12 @@ Route::get('/', function () {
     return redirect(env('APP_FRONTEND_URL'));
 });
 
+
+//*** OLD BACK-END homepage */
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
 Route::prefix('admin')->name('admin.')->middleware(['auth', 'verified'])->group(function () {
     Route::get('/dashboard', [PageController::class, 'dashboard'])->name('dashboard');
     Route::resource('restaurant', RestaurantController::class)->only(['edit', 'update', 'show']);

@@ -107,13 +107,15 @@
                     </div>
                 </div>
         </nav>
-        <nav class="barraLogodown barraColor navbar navbar-expand-md shadow-sm">
-        </nav>
+        
 
 
-        <main class="">
+        <main class="" style="min-height: 600px"> 
             @yield('content')
         </main>
+
+        <footer class="barraLogodown barraColor navbar navbar-expand-md shadow-sm mt-4"> 
+        </footer>
     </div>
 </body>
 

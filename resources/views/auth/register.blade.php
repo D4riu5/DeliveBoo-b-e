@@ -15,13 +15,14 @@
 
                             {{--  Registrazione Ristoratore --}}
 
+                            {{-- NOME --}}
                             <div class="px-3 w-75 m-auto">
                                 <div class="form-group row">
                                     <label for="username">{{ __('Nome') }} <span class="text-danger"> *</span></label>
 
                                     <div>
                                         <input id="username" type="text"
-                                            class="form-control @error('username') is-invalid @enderror" name="name"
+                                            class="form-control @error('name') is-invalid @enderror" name="name"
                                             value="{{ old('name') }}" autocomplete="name" autofocus>
 
                                         @error('name')
@@ -30,13 +31,15 @@
                                             </span>
                                         @enderror
 
-                                        <span id="invalid-username" class="invalid-feedback" role="alert">
-                                            <strong>{{ 'Campo obbligatorio' }}</strong>
-                                        </span>
+                                        @if ($errors->has('name') === false)
+                                            <strong id="invalid-username" class="invalid-feedback" role="alert">
+                                                <strong>{{ 'Campo obbligatorio' }}</strong>
+                                            </strong>
+                                        @endif
                                     </div>
                                 </div>
 
-
+                                {{-- COGNOME --}}
                                 <div class="form-group row">
                                     <label for="surname">{{ __('Cognome') }} <span class="text-danger"> *</span></label>
 
@@ -51,17 +54,20 @@
                                             </span>
                                         @enderror
 
-                                        <span id="invalid-surname" class="invalid-feedback" role="alert">
-                                            <strong>{{ 'Campo obbligatorio' }}</strong>
-                                        </span>
+                                        @if ($errors->has('surname') === false)
+                                            <span id="invalid-surname" class="invalid-feedback" role="alert">
+                                                <strong>{{ 'Campo obbligatorio' }}</strong>
+                                            </span>
+                                        @endif
                                     </div>
                                 </div>
 
+                                {{-- EMAIL --}}
                                 <div class="form-group row">
                                     <label for="email">{{ __('E-Mail') }} <span class="text-danger"> *</span></label>
 
                                     <div>
-                                        <input id="email" type="email"
+                                        <input id="email" type="text"
                                             class="form-control @error('email') is-invalid @enderror" name="email"
                                             value="{{ old('email') }}" autocomplete="email">
 
@@ -71,12 +77,15 @@
                                             </span>
                                         @enderror
 
-                                        <span id="invalid-email" class="invalid-feedback" role="alert">
-                                            <strong>{{ 'Campo obbligatorio' }}</strong>
-                                        </span>
+                                        @if ($errors->has('email') === false)
+                                            <span id="invalid-email" class="invalid-feedback" role="alert">
+                                                <strong>{{ 'Campo obbligatorio' }}</strong>
+                                            </span>
+                                        @endif
                                     </div>
                                 </div>
 
+                                {{-- PASSWORD --}}
                                 <div class="form-group row">
                                     <label for="password">{{ __('Password') }} <span class="text-danger"> *</span></label>
 
@@ -91,14 +100,18 @@
                                             </span>
                                         @enderror
 
-                                        <span id="invalid-password" class="invalid-feedback" role="alert">
-                                            <strong>{{ 'La password deve essere di almeno 8 caratteri!' }}</strong>
-                                        </span>
+                                        @if ($errors->has('password') === false)
+                                            <span id="invalid-password" class="invalid-feedback" role="alert">
+                                                <strong>{{ 'La password deve essere di almeno 8 caratteri!' }}</strong>
+                                            </span>
+                                        @endif
                                     </div>
                                 </div>
 
+                                {{-- PASSWORD CONFIRM --}}
                                 <div class="form-group row">
-                                    <label for="password-confirm">{{ __('Conferma Password') }} <span class="text-danger"> *</span></label>
+                                    <label for="password-confirm">{{ __('Conferma Password') }} <span class="text-danger">
+                                            *</span></label>
 
                                     <div>
                                         <input id="password-confirm" type="password" class="form-control"
@@ -112,56 +125,83 @@
                             </div>
 
                             {{-- REGISTRAZIONE RISTORANTE --}}
-                            <div class="card-header text-center fs-4 mb-4">{{ __('Ristorante') }}</div>
+                            <div class="card-header text-center fs-4 my-4 border-top">{{ __('Attività') }}</div>
+                            {{-- NAME --}}
                             <div class="px-3 my-3 w-75 m-auto">
                                 <div class="form-group row">
-                                    <label for="name">{{ __('Nome Ristorante') }} <span class="text-danger">*</span></label>
+                                    <label for="name">{{ __("Nome Attività'") }}<span class="text-danger">
+                                            *</span></label>
                                     <div> {{-- INPUT NAME RISTORANTE --}}
-                                        <input id="name" type="text" class="form-control" name="restaurant_name"
-                                            autocomplete="name" value="{{ old('restaurant_name') }}">
+                                        <input id="name" type="text"
+                                            class="form-control @error('restaurant_name') is-invalid @enderror"
+                                            name="restaurant_name" autocomplete="name"
+                                            value="{{ old('restaurant_name') }}">
+
                                         {{-- CAMPO OBBLIGATORIO RISTORANTE ALERT --}}
-                                        <span id="invalid-name" class="invalid-feedback" role="alert">
-                                            <strong>{{ 'Campo obbligatorio' }}</strong>
-                                        </span>
-                                    </div>
-                                </div>
-
-                                <div class="form-group row">
-                                    <label for="address">{{ __('Indirizzo') }} <span class="text-danger"> *</span></label>
-                                    <div> {{-- INPUT ADDRESS RISTORANTE --}}
-                                        <input id="address" type="text" class="form-control" name="address"
-                                            autocomplete="address" value="{{ old('address') }}">
-                                        {{-- CAMPO OBBLIGATORIO ADDRESS ALERT --}}
-                                        <span id="invalid-address" class="invalid-feedback" role="alert">
-                                            <strong>{{ 'Campo obbligatorio' }}</strong>
-                                        </span>
-                                    </div>
-                                </div>
-
-                                <div class="from-group row">
-                                    <label for="pIva">{{ __('P.Iva') }} <span class="text-danger"> *</span></label>
-                                    <div> {{-- INPUT PARTITA IVA RISTORANTE --}}
-                                        <input id="pIva" type="text"
-                                            {{-- minlength="11"
-                                            maxlength="11" --}}
-                                            class="form-control @error('pIva') is-invalid @enderror" name="PIVA"
-                                            autocomplete="pIva" value="{{ old('PIVA') }}">
-                                        {{-- CAMPO OBBLIGATORIO PARTITA IVA ALERT --}}
-                                        @error('pIva')
+                                        @error('restaurant_name')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
                                             </span>
                                         @enderror
+
+                                        @if ($errors->has('restaurant_name') === false)
+                                            <span id="invalid-name" class="invalid-feedback" role="alert">
+                                                <strong>{{ 'Campo obbligatorio' }}</strong>
+                                            </span>
+                                        @endif
+                                    </div>
+                                </div>
+
+                                {{-- ADDRESS --}}
+                                <div class="form-group row">
+                                    <label for="address">{{ __('Indirizzo') }} <span class="text-danger"> *</span></label>
+                                    <div> {{-- INPUT ADDRESS RISTORANTE --}}
+                                        <input id="address" type="text"
+                                            class="form-control @error('address') is-invalid @enderror" name="address"
+                                            autocomplete="address" value="{{ old('address') }}">
+                                        {{-- CAMPO OBBLIGATORIO ADDRESS ALERT --}}
+                                        @error('address')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
+                                        @if ($errors->has('address') === false)
+                                            <span id="invalid-address" class="invalid-feedback" role="alert">
+                                                <strong>{{ 'Campo obbligatorio' }}</strong>
+                                            </span>
+                                        @endif
+                                    </div>
+                                </div>
+
+                                {{-- PIVA --}}
+                                <div class="from-group row">
+                                    <label for="pIva">{{ __('P.Iva') }} <span class="text-danger"> *</span></label>
+                                    <div> {{-- INPUT PARTITA IVA RISTORANTE --}}
+                                        <input id="pIva" type="text" {{-- minlength="11"
+                                            maxlength="11" --}}
+                                            class="form-control @error('PIVA') is-invalid @enderror" name="PIVA"
+                                            autocomplete="pIva" value="{{ old('PIVA') }}">
+                                        {{-- CAMPO OBBLIGATORIO PARTITA IVA ALERT --}}
+
+                                        @error('PIVA')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
+
                                         {{-- CAMPO OBBlIGATORIO 11 NUMERI PARTITA IVA ALERT --}}
-                                        <span id="invalid-pIva" class="invalid-feedback" role="alert">
-                                            <strong>{{ 'La partita Iva deve contenere 11 numeri' }}</strong>
-                                        </span>
+                                        @if ($errors->has('PIVA') === false)
+                                            <span id="invalid-pIva" class="invalid-feedback" role="alert">
+                                                <strong>{{ 'La partita Iva deve contenere 11 numeri' }}</strong>
+                                            </span>
+                                        @endif
                                     </div>
                                 </div>
                             </div>
 
                             {{-- SELEZIONA CATEGORIE MENU  --}}
-                            <div class="card-header text-center fs-5 mb-4 w-100">{{ __('Seleziona categorie:') }}</div>
+                            <div class="card-header text-center fs-5 mb-4 w-100 border-top">
+                                {{ __('Seleziona categorie:') }}</div>
 
                             {{-- DATI PER LA TABELLA TYPES --}}
                             <div class="flex-center">
@@ -179,6 +219,11 @@
                                         </div>
                                     @endforeach
                                 </div>
+                                {{-- Message displayed if no checkbox is selected --}}
+                                <strong>
+                                    <div id="types-error" class="text-danger text-center"></div>
+                                </strong>
+   
                             </div>
                             {{-- ERRORI PER GLI ELEMENTI DI TYPES --}}
                             @error('types')
@@ -187,9 +232,12 @@
                                 </div>
                             @enderror
                             {{-- BOTTONE REGISTRATI  --}}
-                            <div class="d-flex justify-content-center marginForm">
+                            <div class="d-flex justify-content-center">
                                 <div>
-                                    <button type="submit" class="btn btn-warning my-3">
+
+
+
+                                    <button id="submit-btn" type="submit" class="btn btn-warning my-3" disabled>
                                         {{ __('Registrati') }}
                                     </button>
                                 </div>
@@ -221,19 +269,23 @@
 
             if (counter) {
                 btn.disabled = ''
+                document.getElementById('types-error').innerHTML = ''
             } else {
                 btn.disabled = 'disabled'
+                document.getElementById('types-error').innerHTML = 'Seleziona almeno una categoria!'
             }
         };
-        
+
         validateCheckbox(checkCategories, button);
 
         const form = document.getElementById('register-form');
         const username = document.getElementById('username');
         const surname = document.getElementById('surname');
         const email = document.getElementById('email');
+
         const password = document.getElementById('password');
         const passwordConfirm = document.getElementById('password-confirm');
+
         const name = document.getElementById('name');
         const address = document.getElementById('address');
         const pIva = document.getElementById('pIva');
@@ -262,12 +314,20 @@
 
             let isInvalid = 0;
 
-            if (username.value.length < 1) {
+            // USER
+            // NAME VALIDATION
+            if (username.value.length < 2) {
+                invalidUsername.textContent = "Il nome dev'essere di almeno 2 caratteri";
                 invalidUsername.classList.add('d-block')
                 username.classList.add("is-invalid")
                 isInvalid++;
-            } else if (!/^[^0-9]*$/.test(username.value)) {
-                invalidUsername.textContent = "L'username non puo' contenere numeri.";
+            } else if (username.value.length > 16) {
+                invalidUsername.textContent = "Il nome dev'essere superiore a 16 caratteri";
+                invalidUsername.classList.add('d-block')
+                username.classList.add("is-invalid")
+                isInvalid++;
+            } else if (!/^[^0-9\s\W]*$/.test(username.value)) {
+                invalidUsername.textContent = "L'username non puo' contenere numeri e/o caratteri speciali";
                 invalidUsername.classList.add("d-block");
                 username.classList.add("is-invalid");
                 isInvalid++;
@@ -276,7 +336,9 @@
                 username.classList.remove("is-invalid");
             }
 
-            if (surname.value.length < 1) {
+            // SURNAME VALIDATION
+            if (surname.value.trim().length < 2) {
+                invalidSurname.textContent = "Il cognome dev'essere di almeno 2 caratteri";
                 invalidSurname.classList.add('d-block')
                 surname.classList.add("is-invalid")
                 isInvalid++;
@@ -286,19 +348,29 @@
                 surname.classList.add("is-invalid");
                 isInvalid++;
             } else {
-                invalidSurname.classList.remove("d-block");
-                surname.classList.remove("is-invalid");
+                if (invalidSurname !== null) {
+                    invalidSurname.classList.remove("d-block");
+                    surname.classList.remove("is-invalid");
+                }
             }
 
+            // EMAIL VALIDATION
             if (email.value.length < 1) {
-                invalidEmail.classList.add('d-block')
-                email.classList.add("is-invalid")
+                invalidEmail.textContent = "L'email dev'essere di almeno 1 carattere.";
+                invalidEmail.classList.add('d-block');
+                email.classList.add("is-invalid");
+                isInvalid++;
+            } else if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email.value)) {
+                invalidEmail.textContent = "Inserire un'email valida.";
+                invalidEmail.classList.add("d-block");
+                email.classList.add("is-invalid");
                 isInvalid++;
             } else {
                 invalidEmail.classList.remove("d-block");
                 email.classList.remove("is-invalid");
             }
 
+            // PASSWORD VALIDATION
             if (password.value.length < 8) {
                 password.classList.add("is-invalid")
                 isInvalid++;
@@ -307,7 +379,11 @@
                 isInvalid++;
             }
 
-            if (name.value.length < 1) {
+
+            // ATTIVITA
+            // NAME VALIDATION
+            if (name.value.length < 2) {
+                invalidName.textContent = "Il nome dell'attività dev'essere di almeno 2 caratteri";
                 invalidName.classList.add('d-block')
                 name.classList.add("is-invalid")
                 isInvalid++;
@@ -316,6 +392,7 @@
                 name.classList.remove("is-invalid");
             }
 
+            // ADDRESS VALIDATION
             if (address.value.length < 1) {
                 invalidAddress.classList.add('d-block')
                 address.classList.add("is-invalid")
@@ -325,6 +402,7 @@
                 address.classList.remove("is-invalid");
             }
 
+            // PIVA VALIDATION
             if (pIva.value.length !== 11 || !pIva.value.match(/^[0-9]+$/)) {
                 invalidPIva.classList.add('d-block')
                 pIva.classList.add("is-invalid")
