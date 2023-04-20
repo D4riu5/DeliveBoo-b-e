@@ -55,9 +55,9 @@
                                         @enderror
 
                                         @if ($errors->has('surname') === false)
-                                            <span id="invalid-surname" class="invalid-feedback" role="alert">
+                                            <strong id="invalid-surname" class="invalid-feedback" role="alert">
                                                 <strong>{{ 'Campo obbligatorio' }}</strong>
-                                            </span>
+                                            </strong>
                                         @endif
                                     </div>
                                 </div>
@@ -78,9 +78,9 @@
                                         @enderror
 
                                         @if ($errors->has('email') === false)
-                                            <span id="invalid-email" class="invalid-feedback" role="alert">
+                                            <strong id="invalid-email" class="invalid-feedback" role="alert">
                                                 <strong>{{ 'Campo obbligatorio' }}</strong>
-                                            </span>
+                                            </strong>
                                         @endif
                                     </div>
                                 </div>
@@ -145,9 +145,9 @@
                                         @enderror
 
                                         @if ($errors->has('restaurant_name') === false)
-                                            <span id="invalid-name" class="invalid-feedback" role="alert">
+                                            <strong id="invalid-name" class="invalid-feedback" role="alert">
                                                 <strong>{{ 'Campo obbligatorio' }}</strong>
-                                            </span>
+                                            </strong>
                                         @endif
                                     </div>
                                 </div>
