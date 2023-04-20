@@ -237,7 +237,7 @@
 
 
 
-                                    <button id="submit-btn" type="submit" class="btn btn-primary my-3" disabled>
+                                    <button id="submit-btn" type="submit" class="btn btn-warning my-3" disabled>
                                         {{ __('Registrati') }}
                                     </button>
                                 </div>
