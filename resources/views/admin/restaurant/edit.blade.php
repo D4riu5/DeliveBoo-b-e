@@ -28,7 +28,7 @@
                             Modifica nome attività<span class="text-danger"> *</span>
                         </label>
                         <input type="text" class="form-control @error('name') is-invalid @enderror" id="name"
-                            name="name" maxlength="64" value="{{ old('name', $restaurant->name) }}"
+                            name="name" maxlength="32" value="{{ old('name', $restaurant->name) }}"
                             placeholder="Inserisci nome attività...">
 
                         @error('name')
@@ -44,7 +44,7 @@
                             Modifica indirizzo dell'attività<span class="text-danger"> *</span>
                         </label>
                         <textarea style="height:100px" class="form-control @error('address') is-invalid @enderror" rows="10" id="address"
-                            name="address" maxlength="500" placeholder="Inserisci indirizzo attività...">{{ old('address', $restaurant->address) }}</textarea>
+                            name="address" maxlength="128" placeholder="Inserisci indirizzo attività...">{{ old('address', $restaurant->address) }}</textarea>
 
                         @error('address')
                             <div class="text-danger">

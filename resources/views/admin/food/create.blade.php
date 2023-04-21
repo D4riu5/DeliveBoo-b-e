@@ -38,7 +38,7 @@
                             Descrizione del prodotto<span class="text-danger"> *</span>
                         </label>
                         <textarea style="height:100px" class="form-control @error('description') is-invalid @enderror" rows="10" id="description" name="description"
-                            maxlength="500" placeholder="Inserisci descrizione...">{{ old('description') }}</textarea>
+                            maxlength="255" placeholder="Inserisci descrizione...">{{ old('description') }}</textarea>
 
                         @error('description')
                             <div class="text-danger">
@@ -74,7 +74,7 @@
                         <label for="price" class="form-label">
                             Prezzo <span class="text-danger"> *</span>
                         </label>
-                        <input type="number" class="form-control @error('price') is-invalid @enderror" id="price" name="price" min="1"
+                        <input type="number" class="form-control @error('price') is-invalid @enderror" id="price" name="price"
                             step="0.01" value="{{ old('price') }}" placeholder="Inserisci prezzo (euro)...">
                         
                         @error('price')
