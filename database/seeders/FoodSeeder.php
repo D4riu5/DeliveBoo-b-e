@@ -1156,8 +1156,150 @@ class FoodSeeder extends Seeder
             // --------------CUCINA FRANCESE 86 - 96 - TYPE 9-------------
             // PIATTO 86
             [
+                'name' => 'Escargots de Bourgogne',
+                'image' => '',
+                'description' => 'Classico antipasto francese. Lumache di vigna cotte e servite con burro all’aglio e prezzemolo.',
+                'price' => 12,
+                'course' => 'Antipasto',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 200,
+                'restaurant_ids' => [19, 20], //FRANCESE
+            ],
+            // PIATTO 87
+            [
+                'name' => 'Terrine de Foie Gras',
+                'image' => '',
+                'description' => 'Terrina di fegato grasso d’oca con confettura di cipolle rosse al porto e pane tostato.',
+                'price' => 15,
+                'course' => 'Antipasto',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 350,
+                'restaurant_ids' => [19, 20], //FRANCESE
+            ],
+            // PIATTO 88
+            [
+                'name' => 'Coq au Vin',
+                'image' => '',
+                'description' => 'Un piatto di pollo cotto nel vino rosso con funghi, pancetta e cipolla, tipico della cucina francese.',
+                'price' => 16.50,
+                'course' => 'Primo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 550,
+                'restaurant_ids' => [19, 20], //FRANCESE
+            ],
+            // PIATTO 89
+            [
+                'name' => 'Soupe à l oignon',
+                'image' => '',
+                'description' => 'Zuppa cremosa di cipolle caramellate in brodo di manzo con pane croccante e formaggio grattugiato',
+                'price' => 8.50,
+                'course' => 'Primo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 250,
+                'restaurant_ids' => [19, 20], //FRANCESE
+            ],
+            // PIATTO 90
+            [
+                'name' => 'Salmone alla provenzale',
+                'image' => '',
+                'description' => 'Un piatto di pesce alla provenzale, ricco di sapori mediterranei',
+                'price' => 18.50,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 320,
+                'restaurant_ids' => [19, 20], //FRANCESE
+            ],
+            // PIATTO 91
+            [
+                'name' => 'Coniglio alla senape',
+                'image' => '',
+                'description' => 'Un piatto tradizionale della cucina francese che unisce sapori dolci e pungenti',
+                'price' => 16,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => true,
+                'kcal' => 400,
+                'restaurant_ids' => [19, 20], //FRANCESE
+            ],
+            // PIATTO 92
+            [
+                'name' => 'Cassolette di frutti di mare',
+                'image' => '',
+                'description' => 'Una deliziosa cassolette di frutti di mare, un piatto tipico della Bretagna',
+                'price' => 22.00,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 450,
+                'restaurant_ids' => [19, 20], //FRANCESE
+            ],
+            // PIATTO 93
+            [
+                'name' => 'Macarons',
+                'image' => '',
+                'description' => 'Biscotti francesi con base di mandorle e ripieno dolce serviti in vari gusti e colori.',
+                'price' => 5.50,
+                'course' => 'Dolce',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 80,
+                'restaurant_ids' => [19, 20], //FRANCESE
+            ],
+            // PIATTO 94
+            [
+                'name' => 'Crème Brûlée',
+                'image' => '',
+                'description' => 'Dessert a base di crema aromatizzata alla vaniglia e croccante caramello sulla superficie.',
+                'price' => 6.50,
+                'course' => 'Dolce',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 320,
+                'restaurant_ids' => [19, 20], //FRANCESE
+            ],
+            // PIATTO 95
+            [
+                'name' => 'Château Margaux',
+                'image' => '',
+                'description' => 'Affinato in botte di rovere francese, questo vino Bordeaux è caratterizzato da note di frutta nera e una texture morbida e setosa.',
+                'price' => 150,
+                'course' => 'Bevanda',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 123,
+                'restaurant_ids' => [19, 20], //FRANCESE
+            ],
+            // PIATTO 96
+            [
+                'name' => 'Kir Royal',
+                'image' => '',
+                'description' => 'Aperitivo a base di Champagne e Crème de Cassis',
+                'price' => 7.50,
+                'course' => 'Bevanda',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 128,
+                'restaurant_ids' => [19, 20], //FRANCESE
+            ],
+            // --------------CUCINA FRANCESE FINE------------------------------
 
-            ]
+            // --------------CUCINA GRECA 97 - 107 - TYPE 9-------------
 
 
             // PIATTO NUMERO
