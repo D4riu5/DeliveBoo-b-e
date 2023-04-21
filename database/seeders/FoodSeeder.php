@@ -1524,6 +1524,156 @@ class FoodSeeder extends Seeder
                 'kcal' => 500,
                 'restaurant_ids' => [23], //HAMBURGER
             ],
+            // --------------HAMBURGER FINE------------------------------
+
+            // --------------CUCINA INDIANA 114 - 124 - TYPE 12-------------
+            // PIATTO 114
+            [
+                'name' => 'Samosa',
+                'image' => '',
+                'description' => 'Croccante triangolo fritto ripieno di patate speziate e piselli',
+                'price' => 3.50,
+                'course' => 'Antipasto',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => false,
+                'kcal' => 250,
+                'restaurant_ids' => [24, 25], //INDIANA
+            ],
+            // PIATTO 115
+            [
+                'name' => 'Tandoori chicken',
+                'image' => '',
+                'description' => 'Pollo marinato con spezie e yogurt, poi cotto alla brace',
+                'price' => 6.50,
+                'course' => 'Antipasto',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => true,
+                'kcal' => 300,
+                'restaurant_ids' => [24, 25], //INDIANA
+            ],
+            // PIATTO 116
+            [
+                'name' => 'Chana Masala',
+                'image' => '',
+                'description' => 'Un piatto vegetariano, preparato con ceci cotti in una miscela di spezie e pomodoro.',
+                'price' => 8.50,
+                'course' => 'Primo',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => true,
+                'kcal' => 450,
+                'restaurant_ids' => [24, 25], //INDIANA
+            ],
+            // PIATTO 117
+            [
+                'name' => 'Chicken Tikka Masala',
+                'image' => '',
+                'description' => 'Un classico piatto indiano, con pezzi di pollo marinati e cotti in una salsa cremosa di pomodoro e spezie.',
+                'price' => 11.50,
+                'course' => 'Primo',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => false,
+                'kcal' => 550,
+                'restaurant_ids' => [24, 25], //INDIANA
+            ],
+            // PIATTO 118
+            [
+                'name' => 'Saag Paneer',
+                'image' => '',
+                'description' => 'Formaggio tradizionale indiano fatto in casa in salsa di spinaci aromatica. Vegan su richiesta.',
+                'price' => 9,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 350,
+                'restaurant_ids' => [24, 25], //INDIANA
+            ],
+            // PIATTO 119
+            [
+                'name' => 'Biryani di Agnello',
+                'image' => '',
+                'description' => 'Riso basmati speziato con agnello aromatizzato, cotto nel tradizionale biryani. Servito con raita e sottaceti.',
+                'price' => 12,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => false,
+                'kcal' => 550,
+                'restaurant_ids' => [24, 25], //INDIANA
+            ],
+            // PIATTO 120
+            [
+                'name' => 'Butter Chicken',
+                'image' => '',
+                'description' => 'Pollo cotto con spezie, pomodori e burro, servito con riso basmati.',
+                'price' => 12.50,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => false,
+                'kcal' => 400,
+                'restaurant_ids' => [24, 25], //INDIANA
+            ],
+            // PIATTO 121
+            [
+                'name' => 'Gulab jamun',
+                'image' => '',
+                'description' => 'Deliziosi dolcetti fritti a base di latte in sciroppo di zucchero e rosmarino',
+                'price' => 4.50,
+                'course' => 'Dolce',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 400,
+                'restaurant_ids' => [24, 25], //INDIANA
+            ],
+            // PIATTO 122
+            [
+                'name' => 'Rasgulla',
+                'image' => '',
+                'description' => 'Sfere dolci fatte di formaggio di latte, bollite in uno sciroppo di zucchero aromatizzato con rose',
+                'price' => 5,
+                'course' => 'Dolce',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 300,
+                'restaurant_ids' => [24, 25], //INDIANA
+            ],
+            // PIATTO 123
+            [
+                'name' => 'Lassi alla fragola',
+                'image' => '',
+                'description' => 'Bibita cremosa e dolce a base di yoghurt, fragole e spezie',
+                'price' => 4.50,
+                'course' => 'Bevanda',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 150,
+                'restaurant_ids' => [24, 25], //INDIANA
+            ],
+            // PIATTO 124
+            [
+                'name' => 'Masala Chai',
+                'image' => '',
+                'description' => 'Bevanda calda e speziata a base di latte, tè nero e spezie',
+                'price' => 3.50,
+                'course' => 'Bevanda',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => true,
+                'kcal' => 90,
+                'restaurant_ids' => [24, 25], //INDIANA
+            ],
+            // --------------CUCINA INDIANA FINE------------------------------
+
+            // --------------KEBAB 125 - 135 - TYPE 13-------------
+            
 
 
             // PIATTO NUMERO
