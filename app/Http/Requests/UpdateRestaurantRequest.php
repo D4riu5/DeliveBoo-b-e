@@ -25,7 +25,7 @@ class UpdateRestaurantRequest extends FormRequest
     {
         return [
             'name' => 'required|regex:/^[a-zA-Z0-9 ]+$/|string|max:32',
-            'address' => 'required|regex:/^[a-zA-Z0-9 ]+$/|string|max:128',
+            'address' => 'required|regex:/^[a-zA-Z0-9 .,;:-]+$/|string|max:128',
             'image' => 'nullable|image|max:2048',
             'PIVA' => 'required|max:11|min:11|',
             'delete_image' => 'nullable',

@@ -111,7 +111,7 @@
                 
             </div>
             <div class="text-center my-4">
-                <a href="{{ route('admin.restaurant.edit', $restaurant->id) }}" class="btn btn-info">
+                <a href="{{ route('admin.restaurant.edit', $restaurant->id) }}" class="btn btn-danger">
                     Modifica la tua attività <i class="fa-solid fa-pen-to-square"></i>
                 </a>
             </div>

@@ -68,6 +68,11 @@ class RestaurantController extends Controller
      */
     public function edit(Restaurant $restaurant)
     {
+
+        if ($restaurant->user_id !== auth::id() ) {
+            abort(403);
+        }
+        
         $types = Type::all();
         return view('admin.restaurant.edit', compact('restaurant', 'types'));
     }

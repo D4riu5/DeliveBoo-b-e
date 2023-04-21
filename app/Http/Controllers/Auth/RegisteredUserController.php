@@ -44,7 +44,7 @@ class RegisteredUserController extends Controller
                 'password' => ['required', 'confirmed', Rules\Password::defaults()],
 
                 'restaurant_name' => ['required', 'string', 'min:2', 'max:32'],
-                'address' => ['required', 'string', 'max:128'],
+                'address' => ['required', 'string', 'max:128', 'regex:/^[a-zA-Z0-9 .,;:-]+$/'],
                 'PIVA' => ['required', 'string', 'min:11', 'max:11', 'regex:/^[0-9]*$/'],
                 'types' => ['required', 'array', 'exists:types,id']
             ],
@@ -56,6 +56,7 @@ class RegisteredUserController extends Controller
                 'restaurant_name.max' => 'Il nome dell\'attività non può essere più lungo di :max caratteri.',
                 'address.required' => 'L\'indirizzo dell\'attività è obbligatorio',
                 'address.max' => 'L\'indirizzo dell\'attività non può essere più lungo di :max caratteri.',
+                'address.regex' => 'L\'indirizzo non ammette caratteri speciali',
                 'PIVA.required' => 'La Partita Iva è obbligatoria.',
                 'PIVA.max' => 'La Partita IVA deve essere lungo :max numeri.',
                 'PIVA.min' => 'La Partita IVA deve essere lungo :min numeri.',
