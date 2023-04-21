@@ -41,22 +41,26 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="navbar-nav d-flex flex-row mx-2">
-                <div class="nav-item">
-                    <a class="nav-link" href="{{ url('profile') }}">
-                        <i class="fa-solid fa-user fa-lg fa-fw"></i> Modifica Account
-                    </a>
-                </div>
+            <div class="mx-4 ">
 
-                <div class="nav-item text-nowrap ms-2">
-                    <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();
+                <div class="navbar-nav d-flex flex-row mx-3">
+                    <div class="nav-item px-3">
+                        <a class="nav-link adminBots" href="{{ url('profile') }}">
+                            <i class="fa-solid fa-user fa-lg fa-fw"></i> Modifica Account
+                        </a>
+                    </div>
+
+                    <div class="nav-item text-nowrap ms-2">
+                        <a class="nav-link adminBots" href="{{ route('logout') }}"
+                            onclick="event.preventDefault();
                     document.getElementById('logout-form').submit();">
-                    <i class="fa-solid fa-user fa-lg fa-fw"></i>
-                        {{ __('Logout') }}
-                    </a>
-                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                        @csrf
-                    </form>
+                            <i class="fa-solid fa-user fa-lg fa-fw"></i>
+                            {{ __('Logout') }}
+                        </a>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                            @csrf
+                        </form>
+                    </div>
                 </div>
 
             </div>
@@ -98,7 +102,8 @@
                     <div class="homepageButton my-5">
                         <ul class="nav flex-column">
                             <li class="nav-item btn btn-danger">
-                                <a class="navbar-brand col-md-3 col-lg-2 homepage" href="/">Ritorna ad Homepage</a>
+                                <a class="navbar-brand col-md-3 col-lg-2 homepage" href="/">Ritorna ad
+                                    Homepage</a>
                             </li>
                         </ul>
                     </div>
