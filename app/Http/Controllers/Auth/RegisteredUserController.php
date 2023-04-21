@@ -57,9 +57,9 @@ class RegisteredUserController extends Controller
                 'address.required' => 'L\'indirizzo dell\'attività è obbligatorio',
                 'address.max' => 'L\'indirizzo dell\'attività non può essere più lungo di :max caratteri.',
                 'PIVA.required' => 'La Partita Iva è obbligatoria.',
-                'PIVA.max' => 'La Partita Iva deve essere lungo :max numeri.',
-                'PIVA.min' => 'La Partita Iva deve essere lungo :min numeri.',
-                'PIVA.regex' => 'La Partita Iva deve contenere solo numeri.',
+                'PIVA.max' => 'La Partita IVA deve essere lungo :max numeri.',
+                'PIVA.min' => 'La Partita IVA deve essere lungo :min numeri.',
+                'PIVA.regex' => 'La Partita IVA deve contenere solo numeri.',
                 'types.required' => 'Seleziona almeno una categoria!',
                 'types.array' => 'Il campo categorie deve essere un array.',
                 'types.exists' => 'Una o più categorie selezionate non sono valide.'
