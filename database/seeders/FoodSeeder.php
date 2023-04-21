@@ -1443,7 +1443,87 @@ class FoodSeeder extends Seeder
                 'kcal' => 50,
                 'restaurant_ids' => [21, 22], //GRECA
             ],
+            // --------------CUCINA GRECA FINE------------------------------
 
+            // --------------HAMBURGER 108 - 113 - TYPE 11-------------
+            // PIATTO 108
+            [
+                'name' => 'Hamburger classico',
+                'image' => '',
+                'description' => 'Hamburger di manzo con formaggio, lattuga, pomodoro e salsa speciale',
+                'price' => 8.50,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 600,
+                'restaurant_ids' => [23], //HAMBURGER
+            ],
+            // PIATTO 109
+            [
+                'name' => 'Hamburger di pollo',
+                'image' => '',
+                'description' => 'Hamburger di pollo con bacon croccante, insalata e salsa al miele e senape',
+                'price' => 9.50,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 500,
+                'restaurant_ids' => [23], //HAMBURGER
+            ],
+            // PIATTO 110
+            [
+                'name' => 'Hamburger vegetariano',
+                'image' => '',
+                'description' => 'Hamburger di verdure con formaggio di capra, lattuga, pomodoro e salsa yogurt',
+                'price' => 7.50,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 450,
+                'restaurant_ids' => [23], //HAMBURGER
+            ],
+            // PIATTO 111
+            [
+                'name' => 'Hamburger piccante',
+                'image' => '',
+                'description' => 'Hamburger di manzo con formaggio piccante, lattuga, pomodoro e salsa ai peperoni',
+                'price' => 9,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => false,
+                'kcal' => 650,
+                'restaurant_ids' => [23], //HAMBURGER
+            ],
+            // PIATTO 112
+            [
+                'name' => 'Hamburger con funghi',
+                'image' => '',
+                'description' => 'Hamburger di manzo con funghi, formaggio gorgonzola, lattuga e pomodoro',
+                'price' => 10.50,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 700,
+                'restaurant_ids' => [23], //HAMBURGER
+            ],
+            // PIATTO 113
+            [
+                'name' => 'Hamburger al salmone',
+                'image' => '',
+                'description' => 'Hamburger di salmone con insalata, salsa alla menta e limone',
+                'price' => 12,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 500,
+                'restaurant_ids' => [23], //HAMBURGER
+            ],
 
 
             // PIATTO NUMERO
