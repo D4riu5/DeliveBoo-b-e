@@ -1755,6 +1755,150 @@ class FoodSeeder extends Seeder
             // --------------KEBAB FINE------------------------------
 
             // --------------CUCINA PERUVIANA 131 - 141 - TYPE 14-------------
+            // PIATTO 131
+            [
+                'name' => 'Causa Rellena',
+                'image' => '',
+                'description' => 'Purè di patate condito con limone e olio, ripieno di pollo e servito con peperoni e olive.',
+                'price' => 6.50,
+                'course' => 'Antipasto',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 250,
+                'restaurant_ids' => [28, 29], //PERUVIANA
+            ],
+            // PIATTO 132
+            [
+                'name' => 'Anticuchos',
+                'image' => '',
+                'description' => 'Spiedini di cuore di manzo marinati e grigliati, serviti con salsa di peperoncino.',
+                'price' => 7.50,
+                'course' => 'Antipasto',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => true,
+                'kcal' => 300,
+                'restaurant_ids' => [28, 29], //PERUVIANA
+            ],
+            // PIATTO 133
+            [
+                'name' => 'Ceviche',
+                'image' => '',
+                'description' => 'Piatto di pesce crudo marinato in limone e leche de tigre',
+                'price' => 12,
+                'course' => 'Primo',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => true,
+                'kcal' => 220,
+                'restaurant_ids' => [28, 29], //PERUVIANA
+            ],
+            // PIATTO 134
+            [
+                'name' => 'Papa a la Huancaína',
+                'image' => '',
+                'description' => 'Patate con salsa cremosa di peperoncini, formaggio, latte e cracker',
+                'price' => 10,
+                'course' => 'Primo',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => false,
+                'kcal' => 370,
+                'restaurant_ids' => [28, 29], //PERUVIANA
+            ],
+            // PIATTO 135
+            [
+                'name' => 'Lomo Saltado',
+                'image' => '',
+                'description' => 'Una deliziosa miscela di manzo saltato, cipolle, pomodori e patate in una salsa di soia e olio, servito con riso',
+                'price' => 12.50,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => true,
+                'kcal' => 480,
+                'restaurant_ids' => [28, 29], //PERUVIANA
+            ],
+            // PIATTO 136
+            [
+                'name' => 'Seco de Cordero',
+                'image' => '',
+                'description' => 'Spezzatino di agnello in un delizioso sugo di coriandolo con fagioli, riso e patate',
+                'price' => 14.50,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 590,
+                'restaurant_ids' => [28, 29], //PERUVIANA
+            ],
+            // PIATTO 137
+            [
+                'name' => 'Ají de Gallina',
+                'image' => '',
+                'description' => 'Ricco stufato di pollo in una crema di peperoncino giallo e noci, servito con riso e patate',
+                'price' => 11.50,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => true,
+                'kcal' => 570,
+                'restaurant_ids' => [28, 29], //PERUVIANA
+            ],
+            // PIATTO 138
+            [
+                'name' => 'Suspiro de limeña',
+                'image' => '',
+                'description' => 'Dolce cremoso dal sapore di caramello con meringa sopra',
+                'price' => 5.50,
+                'course' => 'Dolce',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 350,
+                'restaurant_ids' => [28, 29], //PERUVIANA
+            ],
+            // PIATTO 139
+            [
+                'name' => 'Picarones',
+                'image' => '',
+                'description' => 'Frittelle dolci fatte con zucca e zucchero di canna, servite con sciroppo di chancaca',
+                'price' => 4,
+                'course' => 'Dolce',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 250,
+                'restaurant_ids' => [28, 29], //PERUVIANA
+            ],
+            // PIATTO 140
+            [
+                'name' => 'Pisco Sour',
+                'image' => '',
+                'description' => 'Un cocktail tradizionale peruviano a base di Pisco, lime, sciroppo di zucchero, albume d uovo e amaro',
+                'price' => 8.50,
+                'course' => 'Bevanda',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 200,
+                'restaurant_ids' => [28, 29], //PERUVIANA
+            ],
+            // PIATTO 141
+            [
+                'name' => 'Chicha Morada',
+                'image' => '',
+                'description' => 'Bevanda analcolica tradizionale peruviana a base di mais viola, ananas e cannella, dal sapore dolce e speziato',
+                'price' => 3.50,
+                'course' => 'Bevanda',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 150,
+                'restaurant_ids' => [28, 29], //PERUVIANA
+            ],
+            // --------------CUCINA PERUVIANA FINE------------------------------
 
 
             // PIATTO NUMERO
