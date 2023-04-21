@@ -190,6 +190,7 @@
 .forgotPassword {
     color: rgba(252, 70, 107, 1);
 }
+
 .forgotPassword:hover {
     color: black;
 }
@@ -199,6 +200,7 @@
 
 .menu {
     background-color: rgba(204, 147, 71, 0.548);
+
     .colorMenu {
         color: black;
         background-color: none;
@@ -211,10 +213,22 @@
 }
 
 .logout:hover {
-    color:rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
 }
 
-.backgroundSelected { //Backgroun dell'item selezionato nel menu
+.adminBots {
+    color: white;
+    font-size: 17px;
+}
+
+.adminBots:hover {
+    color: rgb(0, 0, 0);
+}
+
+
+
+.backgroundSelected {
+    //Backgroun dell'item selezionato nel menu
     background-color: rgba(252, 70, 107, 1);
 }
 
@@ -222,9 +236,22 @@
     position: absolute;
     top: 79%;
     left: 10%;
+
     .homepage {
         font-size: 15px;
         color: white;
         padding: 0px 0px 0px 12px;
-    }    
+    }
+}
+
+//"MODIFICA PROFILO" title - EDIT.PHP -> di profile
+.profileColor {
+    color: black;
+    font-size: larger;
+}
+
+
+// UPDATE PROFILE INFORMATION FORM BLADE.PHP 
+.updateTitle {
+    color: rgba(252, 70, 107, 1);
 }
