@@ -315,7 +315,7 @@ class FoodSeeder extends Seeder
                 'spicy' => true,
                 'gluten_free' => false,
                 'kcal' => 290,
-                'restaurant_ids' => [9, 10, 11],
+                'restaurant_ids' => [9, 10, 11], //GIAPPONESE
             ],
             // PIATTO 23
             [
@@ -328,7 +328,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => true,
                 'kcal' => 125,
-                'restaurant_ids' => [9, 10, 11],
+                'restaurant_ids' => [9, 10, 11], //GIAPPONESE
             ],
             // PIATTO 24
             [
@@ -341,7 +341,7 @@ class FoodSeeder extends Seeder
                 'spicy' => true,
                 'gluten_free' => false,
                 'kcal' => 500,
-                'restaurant_ids' => [9, 10, 11],
+                'restaurant_ids' => [9, 10, 11], //GIAPPONESE
             ],
             // PIATTO 25
             [
@@ -354,7 +354,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => false,
                 'kcal' => 600,
-                'restaurant_ids' => [9, 10, 11],
+                'restaurant_ids' => [9, 10, 11], //GIAPPONESE
             ],
             // PIATTO 26
             [
@@ -367,7 +367,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => false,
                 'kcal' => 500,
-                'restaurant_ids' => [9, 10, 11],
+                'restaurant_ids' => [9, 10, 11], //GIAPPONESE
             ],
             // PIATTO 27
             [
@@ -380,7 +380,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => false,
                 'kcal' => 610,
-                'restaurant_ids' => [9, 10, 11],
+                'restaurant_ids' => [9, 10, 11], //GIAPPONESE
             ],
             // PIATTO 28
             [
@@ -393,7 +393,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => false,
                 'kcal' => 800,
-                'restaurant_ids' => [9, 10, 11],
+                'restaurant_ids' => [9, 10, 11], //GIAPPONESE
             ],
             // PIATTO 29
             [
@@ -406,7 +406,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => false,
                 'kcal' => 200,
-                'restaurant_ids' => [9, 10, 11],
+                'restaurant_ids' => [9, 10, 11], //GIAPPONESE
             ],
             // PIATTO 30
             [
@@ -419,7 +419,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => true,
                 'kcal' => 200,
-                'restaurant_ids' => [9, 10, 11],
+                'restaurant_ids' => [9, 10, 11], //GIAPPONESE
             ],
             // PIATTO 31
             [
@@ -432,7 +432,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => true,
                 'kcal' => 120,
-                'restaurant_ids' => [9, 10, 11],
+                'restaurant_ids' => [9, 10, 11], //GIAPPONESE
             ],
             // PIATTO 32
             [
@@ -445,9 +445,241 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => true,
                 'kcal' => 150,
-                'restaurant_ids' => [9, 10, 11],
+                'restaurant_ids' => [9, 10, 11], //GIAPPONESE
             ],
-            // --------------CUCINA MESSICANA FINE------------------------------
+            // --------------CUCINA GIAPPONESE FINE------------------------------
+
+            // --------------CUCINA CINESE 33 - 43 - TYPE 4------------
+            // PIATTO 33
+            [
+                'name' => 'Involtini primavera',
+                'image' => '',
+                'description' => 'Croccanti involtini ripieni di verdure e carne, fritti e serviti con salsa agrodolce.',
+                'price' => 4,
+                'course' => 'Antipasto',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 150,
+                'restaurant_ids' => [12, 13, 14], //CINESE
+            ],
+            // PIATTO 34
+            [
+                'name' => 'Insalata di alghe',
+                'image' => '',
+                'description' => 'Fresca insalata di alghe croccanti, condita con olio di sesamo e aceto di riso.',
+                'price' => 6,
+                'course' => 'Antipasto',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 100,
+                'restaurant_ids' => [12, 13, 14], //CINESE
+            ],
+            // PIATTO 35
+            [
+                'name' => 'Zuppa di noodles',
+                'image' => '',
+                'description' => 'Una deliziosa zuppa di noodles di grano con carne di maiale e verdure fresche',
+                'price' => 8,50,
+                'course' => 'Primo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 350,
+                'restaurant_ids' => [12, 13, 14], //CINESE
+            ],
+            // PIATTO 36
+            [
+                'name' => 'Ravioli cinesi al vapore',
+                'image' => '',
+                'description' => 'Ravioli di pasta fresca ripieni di carne e verdure, delicatamente cotti al vapore',
+                'price' => 9,90,
+                'course' => 'Primo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 250,
+                'restaurant_ids' => [12, 13, 14], //CINESE
+            ],
+            // PIATTO 37
+            [
+                'Ma Po Tofu' => 'Una vivace miscela di tofu, peperoncino e spezie, tipico della cucina di Sichuan.',
+                'image' => '',
+                'description' => 'Una miscela perfetta di sapori piccanti, dolci e salati.',
+                'price' => 12.99,
+                'course' => 'Secondo',
+                'is_available' => true,   
+                'spicy' => true,
+                'gluten_free' => false,
+                'kcal' => 250,
+                'restaurant_ids' => [12, 13, 14], //CINESE
+            ],
+            // PIATTO 38
+            [
+                'Chow Mein di Pollo' => 'Spaghetti di friggere saltati con pollo, cipolle e verdure.',
+                'image' => '',
+                'description' => 'Un piatto croccante e saporito perfetto per il pranzo sullo sfizio.',
+                'price' => 10.99,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 300,
+                'restaurant_ids' => [12, 13, 14], //CINESE
+            ],
+            // PIATTO 39
+            [
+                'Kung Pao Chicken' => 'Pollo tenero e speziato, arrostito con peperoncino secco e arachidi.',
+                'image' => '',
+                'description' => 'Il pollo Kung Pao è un piatto classico e tradizionale che offre una combinazione di sapori unici e speziati.',
+                'price' => 14.99,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => false,
+                'kcal' => 350,
+                'restaurant_ids' => [12, 13, 14], //CINESE
+            ],
+            // PIATTO 40
+            [
+                'name' => 'Mooncake al sesamo',
+                'image' => '',
+                'description' => 'Delizioso dolce ripieno di pasta di fagioli rossi e semi di sesamo croccanti',
+                'price' => 4.50,
+                'course' => 'Dolce',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 250,
+                'restaurant_ids' => [12, 13, 14], //CINESE
+            ],
+            // PIATTO 41
+            [
+                'name' => 'Torta di ananas e cocco',
+                'image' => '',
+                'description' => 'Morbida torta con ananas caramellati e cocco grattugiato, perfetta per concludere un pasto in bellezza',
+                'price' => 5.90,
+                'course' => 'Dolce',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 300,
+                'restaurant_ids' => [12, 13, 14], //CINESE
+            ],
+            // PIATTO 42
+            [
+                'name' => 'Great Wall Shiraz',
+                'image' => '',
+                'description' => 'Vino rosso ricco e corposo con note di frutti di bosco e spezie, abbinamento perfetto con piatti della cucina cinese.',
+                'price' => 20,
+                'course' => 'Bevanda',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 120,
+                'restaurant_ids' => [12, 13, 14], //CINESE
+            ],
+            // PIATTO 43
+            [
+                'name' => 'Tè verde',
+                'image' => '',
+                'description' => 'Una bevanda salutare e dissetante ricca di antiossidanti e proprietà benefiche per l organismo',
+                'price' => 2.50,
+                'course' => 'Bevanda',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 0,
+                'restaurant_ids' => [12, 13, 14], //CINESE
+            ],
+            // --------------CUCINA CINESE FINE------------------------------
+
+            // --------------CUCINA VEGETARIANA 44 - 54 - TYPE 5-------------
+            // PIATTO 44
+            [
+                'name' => 'Bruschetta ai pomodorini',
+                'image' => '',
+                'description' => 'Deliziosa bruschetta con pomodorini freschi e basilico',
+                'price' => 5.50,
+                'course' => 'Antipasto',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 250,
+                'restaurant_ids' => [], //VEGETARIANA
+            ],
+            // PIATTO 45
+            [
+                'name' => 'Insalata di quinoa',
+                'image' => '',
+                'description' => 'Insalata fresca con quinoa, verdure e mandorle tostate',
+                'price' => 7,
+                'course' => 'Antipasto',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 300,
+                'restaurant_ids' => [], //VEGETARIANA
+            ],
+            // PIATTO 46
+            [
+                'name' => 'Spaghetti alla chitarra con pomodoro e basilico',
+                'image' => '',
+                'description' => 'Classici spaghetti con salsa di pomodoro fresco e basilico',
+                'price' => 8.50,
+                'course' => 'Primo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 350,
+                'restaurant_ids' => [], //VEGETARIANA
+            ],
+            // PIATTO 47
+            [
+                'name' => 'Risotto ai funghi',
+                'image' => '',
+                'description' => 'Risotto cremoso con funghi porcini e parmigiano',
+                'price' => 9.50,
+                'course' => 'Primo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 400,
+                'restaurant_ids' => [], //VEGETARIANA
+            ],
+            // PIATTO 48
+            [
+                'name' => 'Polpette di lenticchie',
+                'image' => '',
+                'description' => 'Polpette di lenticchie con spezie aromatiche e salsa di pomodoro fresco.',
+                'price' => 8,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 300,
+                'restaurant_ids' => [], //VEGETARIANA
+            ],
+            // PIATTO 49
+            [
+                'name' => 'Burger di quinoa e verdure',
+                'image' => '',
+                'description' => 'Burger di quinoa con verdure grigliate, insalata di avocado e hummus.',
+                'price' => 9,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => true,
+                'kcal' => 350,
+                'restaurant_ids' => [], //VEGETARIANA
+            ],
+            // PIATTO 50
+            [
+                
+            ]
+
+
             // PIATTO NUMERO
             // [
             //     'name' => nome prodotto cucina giapponese
