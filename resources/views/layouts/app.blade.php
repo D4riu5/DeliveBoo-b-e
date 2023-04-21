@@ -110,7 +110,7 @@
         
 
 
-        <main class="" style="min-height: 600px"> 
+        <main class="" style="min-height: 625px"> 
             @yield('content')
         </main>
 
