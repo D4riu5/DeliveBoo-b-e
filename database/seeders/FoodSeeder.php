@@ -307,7 +307,7 @@ class FoodSeeder extends Seeder
             // PIATTO 22
             [
                 'name' => 'Gyoza',
-                'image' => '',
+                'image' => '/food/23.jpg',
                 'description' => 'Ravioli giapponesi ripieni di carne o verdure',
                 'price' => 6.50,
                 'course' => 'Antipasto',
@@ -320,7 +320,7 @@ class FoodSeeder extends Seeder
             // PIATTO 23
             [
                 'name' => 'Edamame',
-                'image' => '',
+                'image' => '/food/24.jpg',
                 'description' => 'Soia bollita e salata, tipica inizio pasto giapponese',
                 'price' => 3.50,
                 'course' => 'Antipasto',
@@ -333,7 +333,7 @@ class FoodSeeder extends Seeder
             // PIATTO 24
             [
                 'name' => 'Ramen',
-                'image' => '',
+                'image' => '/food/25.jpg',
                 'description' => 'Noodle giapponese servito in brodo di carne o pesce, solitamente condito con carne di maiale, uova e verdure',
                 'price' => 9.50,
                 'course' => 'Primo',
@@ -346,7 +346,7 @@ class FoodSeeder extends Seeder
             // PIATTO 25
             [
                 'name' => 'Udon',
-                'image' => '',
+                'image' => '/food/26.jpg',
                 'description' => 'Noodle giapponese spesso e morbido servito in brodo o saltato con carne, verdure e salsa di soia',
                 'price' => 8.70,
                 'course' => 'Primo',
@@ -359,7 +359,7 @@ class FoodSeeder extends Seeder
             // PIATTO 26
             [
                 'name' => 'Tonkatsu',
-                'image' => '',
+                'image' => '/food/27.jpg',
                 'description' => 'Cotoletta di maiale impanata e fritta',
                 'price' => 15,
                 'course' => 'Secondo',
@@ -372,7 +372,7 @@ class FoodSeeder extends Seeder
             // PIATTO 27
             [
                 'name' => 'Gyudon',
-                'image' => '',
+                'image' => '/food/28.jpg',
                 'description' => 'Riso e carne di manzo cotta lentamente insieme in una ciotola calda, accompagnata da molti condimenti gustosi come cipolla, zenzero e shichimi togarashi.',
                 'price' => 13.50,
                 'course' => 'Secondo',
@@ -385,7 +385,7 @@ class FoodSeeder extends Seeder
             // PIATTO 28
             [
                 'name' => 'Salmone alla griglia',
-                'image' => '',
+                'image' => '/food/29.jpg',
                 'description' => 'Filetto di salmone grigliato con salsa teriyaki e verdure saltate',
                 'price' => 12,
                 'course' => 'Secondo',
@@ -398,7 +398,7 @@ class FoodSeeder extends Seeder
             // PIATTO 29
             [
                 'name' => 'Dorayaki',
-                'image' => '',
+                'image' => '/food/30.jpg',
                 'description' => 'Pancake giapponese con ripieno di pasta di fagioli dolci',
                 'price' => 3,
                 'course' => 'Dolce',
@@ -411,7 +411,7 @@ class FoodSeeder extends Seeder
             // PIATTO 30
             [
                 'name' => 'Anmitsu',
-                'image' => '',
+                'image' => '/food/31.jpg',
                 'description' => 'Dolce tradizionale giapponese con gelatina di agar-agar, frutta e sciroppo dolce',
                 'price' => 5.50,
                 'course' => 'Dolce',
@@ -424,7 +424,7 @@ class FoodSeeder extends Seeder
             // PIATTO 31
             [
                 'name' => 'Sake Daiginjo',
-                'image' => '',
+                'image' => '/food/32.jpg',
                 'description' => 'Delicato e leggermente fruttato, dal gusto equilibrato e persistente.',
                 'price' => 30,
                 'course' => 'Bevanda',
@@ -437,7 +437,7 @@ class FoodSeeder extends Seeder
             // PIATTO 32
             [
                 'name' => 'Matcha latte',
-                'image' => '',
+                'image' => '/food/33.jpg',
                 'description' => 'Tè verde in polvere macinato con latte caldo. Ricco di antiossidanti e perfetto per un momento di relax.',
                 'price' => 4.50,
                 'course' => 'Bevanda',
@@ -453,7 +453,7 @@ class FoodSeeder extends Seeder
             // PIATTO 33
             [
                 'name' => 'Involtini primavera',
-                'image' => '',
+                'image' => '/food/34.jpg',
                 'description' => 'Croccanti involtini ripieni di verdure e carne, fritti e serviti con salsa agrodolce.',
                 'price' => 4,
                 'course' => 'Antipasto',
@@ -466,7 +466,7 @@ class FoodSeeder extends Seeder
             // PIATTO 34
             [
                 'name' => 'Insalata di alghe',
-                'image' => '',
+                'image' => '/food/35.jpg',
                 'description' => 'Fresca insalata di alghe croccanti, condita con olio di sesamo e aceto di riso.',
                 'price' => 6,
                 'course' => 'Antipasto',
@@ -479,7 +479,7 @@ class FoodSeeder extends Seeder
             // PIATTO 35
             [
                 'name' => 'Zuppa di noodles',
-                'image' => '',
+                'image' => '/food/36.jpg',
                 'description' => 'Una deliziosa zuppa di noodles di grano con carne di maiale e verdure fresche',
                 'price' => 8,50,
                 'course' => 'Primo',
@@ -492,7 +492,7 @@ class FoodSeeder extends Seeder
             // PIATTO 36
             [
                 'name' => 'Ravioli cinesi al vapore',
-                'image' => '',
+                'image' => '/food/37.jpg',
                 'description' => 'Ravioli di pasta fresca ripieni di carne e verdure, delicatamente cotti al vapore',
                 'price' => 9,90,
                 'course' => 'Primo',
@@ -505,7 +505,7 @@ class FoodSeeder extends Seeder
             // PIATTO 37
             [
                 'name' => 'Ma Po Tofu',
-                'image' => '',
+                'image' => '/food/38.jpg',
                 'description' => 'Una miscela perfetta di sapori piccanti, dolci e salati.',
                 'price' => 12.99,
                 'course' => 'Secondo',
@@ -518,7 +518,7 @@ class FoodSeeder extends Seeder
             // PIATTO 38
             [
                 'name' => 'Chow Mein di Pollo',
-                'image' => '',
+                'image' => '/food/39.jpg',
                 'description' => 'Un piatto croccante e saporito perfetto per il pranzo sullo sfizio.',
                 'price' => 10.99,
                 'course' => 'Secondo',
@@ -531,7 +531,7 @@ class FoodSeeder extends Seeder
             // PIATTO 39
             [
                 'name' => 'Kung Pao Chicken',
-                'image' => '',
+                'image' => '/food/40.jpg',
                 'description' => 'Il pollo Kung Pao è un piatto classico e tradizionale che offre una combinazione di sapori unici e speziati.',
                 'price' => 14.99,
                 'course' => 'Secondo',
@@ -544,7 +544,7 @@ class FoodSeeder extends Seeder
             // PIATTO 40
             [
                 'name' => 'Mooncake al sesamo',
-                'image' => '',
+                'image' => '/food/41.jpg',
                 'description' => 'Delizioso dolce ripieno di pasta di fagioli rossi e semi di sesamo croccanti',
                 'price' => 4.50,
                 'course' => 'Dolce',
@@ -557,7 +557,7 @@ class FoodSeeder extends Seeder
             // PIATTO 41
             [
                 'name' => 'Torta di ananas e cocco',
-                'image' => '',
+                'image' => '/food/42.jpg',
                 'description' => 'Morbida torta con ananas caramellati e cocco grattugiato, perfetta per concludere un pasto in bellezza',
                 'price' => 5.90,
                 'course' => 'Dolce',
@@ -570,7 +570,7 @@ class FoodSeeder extends Seeder
             // PIATTO 42
             [
                 'name' => 'Great Wall Shiraz',
-                'image' => '',
+                'image' => '/food/43.jpg',
                 'description' => 'Vino rosso ricco e corposo con note di frutti di bosco e spezie, abbinamento perfetto con piatti della cucina cinese.',
                 'price' => 20,
                 'course' => 'Bevanda',
@@ -583,7 +583,7 @@ class FoodSeeder extends Seeder
             // PIATTO 43
             [
                 'name' => 'Tè verde',
-                'image' => '',
+                'image' => '/food/44.jpg',
                 'description' => 'Una bevanda salutare e dissetante ricca di antiossidanti e proprietà benefiche per l organismo',
                 'price' => 2.50,
                 'course' => 'Bevanda',
@@ -599,7 +599,7 @@ class FoodSeeder extends Seeder
             // PIATTO 44
             [
                 'name' => 'Bruschetta ai pomodorini',
-                'image' => '',
+                'image' => '/food/45.jpg',
                 'description' => 'Deliziosa bruschetta con pomodorini freschi e basilico',
                 'price' => 5.50,
                 'course' => 'Antipasto',
@@ -612,7 +612,7 @@ class FoodSeeder extends Seeder
             // PIATTO 45
             [
                 'name' => 'Insalata di quinoa',
-                'image' => '',
+                'image' => '/food/46.jpg',
                 'description' => 'Insalata fresca con quinoa, verdure e mandorle tostate',
                 'price' => 7,
                 'course' => 'Antipasto',
@@ -625,7 +625,7 @@ class FoodSeeder extends Seeder
             // PIATTO 46
             [
                 'name' => 'Spaghetti alla chitarra con pomodoro e basilico',
-                'image' => '',
+                'image' => '/food/47.jpg',
                 'description' => 'Classici spaghetti con salsa di pomodoro fresco e basilico',
                 'price' => 8.50,
                 'course' => 'Primo',
@@ -638,7 +638,7 @@ class FoodSeeder extends Seeder
             // PIATTO 47
             [
                 'name' => 'Risotto ai funghi',
-                'image' => '',
+                'image' => '/food/48.jpg',
                 'description' => 'Risotto cremoso con funghi porcini e parmigiano',
                 'price' => 9.50,
                 'course' => 'Primo',
@@ -651,7 +651,7 @@ class FoodSeeder extends Seeder
             // PIATTO 48
             [
                 'name' => 'Polpette di lenticchie',
-                'image' => '',
+                'image' => '/food/49.jpg',
                 'description' => 'Polpette di lenticchie con spezie aromatiche e salsa di pomodoro fresco.',
                 'price' => 8,
                 'course' => 'Secondo',
@@ -664,7 +664,7 @@ class FoodSeeder extends Seeder
             // PIATTO 49
             [
                 'name' => 'Burger di quinoa e verdure',
-                'image' => '',
+                'image' => '/food/50.jpg',
                 'description' => 'Burger di quinoa con verdure grigliate, insalata di avocado e hummus.',
                 'price' => 9,
                 'course' => 'Secondo',
@@ -677,7 +677,7 @@ class FoodSeeder extends Seeder
             // PIATTO 50
             [
                 'name' => 'Ratatouille alla provenzale',
-                'image' => '',
+                'image' => '/food/51.jpg',
                 'description' => 'Questa gustosa ratatouille è un classico della cucina francese a base di zucchine, melanzane, peperoni e pomodori.',
                 'price' => 8.50,
                 'course' => 'Secondo',
@@ -690,7 +690,7 @@ class FoodSeeder extends Seeder
             // PIATTO 51
             [
                 'name' => 'Torta di mele vegana',
-                'image' => '',
+                'image' => '/food/52.jpg',
                 'description' => 'Deliziosa torta di mele a base di ingredienti completamente vegetali',
                 'price' => 15,
                 'course' => 'Dolce',
@@ -703,7 +703,7 @@ class FoodSeeder extends Seeder
             // PIATTO 52
             [
                 'name' => 'Tiramisù al cocco senza uova',
-                'image' => '',
+                'image' => '/food/53.jpg',
                 'description' => 'Un classico tiramisù rivisitato in chiave vegana e gluten-free',
                 'price' => 12,
                 'course' => 'Dolce',
@@ -719,7 +719,7 @@ class FoodSeeder extends Seeder
             // PIATTO 53
             [
                 'name' => 'Buffalo Wings',
-                'image' => '',
+                'image' => '/food/54.jpg',
                 'description' => 'Ali di pollo piccanti immersi in salsa buffalo, serviti con salsa ranch cremosa.',
                 'price' => 8.99,
                 'course' => 'Antipasto',
@@ -732,7 +732,7 @@ class FoodSeeder extends Seeder
             // PIATTO 54
             [
                 'name' => 'Jalapeno Poppers',
-                'image' => '',
+                'image' => '/food/55.jpg',
                 'description' => 'Peperoncini jalapeno ripieni di formaggio cremoso,fritti in pastella di birra.',
                 'price' => 7.99,
                 'course' => 'Antipasto',
@@ -745,7 +745,7 @@ class FoodSeeder extends Seeder
             // PIATTO 55
             [
                 'name' => 'Mac and Cheese',
-                'image' => '',
+                'image' => '/food/56.jpg',
                 'description' => 'Più che un primo piatto, un simbolo della cucina americana: pasta e formaggio cremosi, dorati al forno.',
                 'price' => 11,
                 'course' => 'Primo',
@@ -758,7 +758,7 @@ class FoodSeeder extends Seeder
             // PIATTO 56
             [
                 'name' => 'Jambalaya',
-                'image' => '',
+                'image' => '/food/57.jpg',
                 'description' => 'Piatto tipico della Louisiana, simile alla paella spagnola ma con riso rosso, spezie e (a scelta) carne di maiale, pollo o gamberetti.',
                 'price' => 15,
                 'course' => 'Primo',
@@ -771,7 +771,7 @@ class FoodSeeder extends Seeder
             // PIATTO 57
             [
                 'name' => 'BBQ Ribs',
-                'image' => '',
+                'image' => '/food/58.jpg',
                 'description' => 'Deliziose costine di maiale in salsa BBQ, cotte a bassa temperatura',
                 'price' => 25.99,
                 'course' => 'Secondo',
@@ -784,7 +784,7 @@ class FoodSeeder extends Seeder
             // PIATTO 58
             [
                 'name' => 'Fried Chicken',
-                'image' => '',
+                'image' => '/food/59.jpg',
                 'description' => 'Pezzi di pollo fritti, croccanti fuori e succosi dentro',
                 'price' => 19,
                 'course' => 'Secondo',
@@ -797,7 +797,7 @@ class FoodSeeder extends Seeder
             // PIATTO 59
             [
                 'name' => 'Steak',
-                'image' => '',
+                'image' => '/food/60.jpg',
                 'description' => 'Bistecca di manzo cotta alla perfezione, servita con patate al forno',
                 'price' => 29.50,
                 'course' => 'Secondo',
@@ -810,7 +810,7 @@ class FoodSeeder extends Seeder
             // PIATTO 60
             [
                 'name' => 'Red Velvet Cake',
-                'image' => '',
+                'image' => '/food/61.jpg',
                 'description' => 'Delizioso dolce al cacao con una nota di vaniglia, decorato con frosting al formaggio',
                 'price' => 25.50,
                 'course' => 'Dolce',
@@ -823,7 +823,7 @@ class FoodSeeder extends Seeder
             // PIATTO 61
             [
                 'name' => 'Chocolate Chip Cookies',
-                'image' => '',
+                'image' => '/food/62.jpg',
                 'description' => 'Biscotti americani classici al cioccolato fondente e noci pecan croccanti',
                 'price' => 13,
                 'course' => 'Dolce',
@@ -836,7 +836,7 @@ class FoodSeeder extends Seeder
             // PIATTO 62
             [
                 'name' => 'Coca-Cola',
-                'image' => '',
+                'image' => '/food/63.jpg',
                 'description' => 'La classica bevanda gassata americana, dal sapore unico e inconfondibile',
                 'price' => 2.5,
                 'course' => 'Bevanda',
@@ -849,7 +849,7 @@ class FoodSeeder extends Seeder
             // PIATTO 63
             [
                 'name' => 'Iced Tea',
-                'image' => '',
+                'image' => '/food/64.jpg',
                 'description' => 'Bicchiere di tè freddo zuccherato, tipico drink americano per l estate',
                 'price' => 3,
                 'course' => 'Bevanda',
@@ -865,7 +865,7 @@ class FoodSeeder extends Seeder
             // PIATTO 64
             [
                 'name' => 'Falafel',
-                'image' => '',
+                'image' => '/food/65.jpg',
                 'description' => 'Crocchette di ceci aromatizzate con spezie mediorientali, ottime con salse',
                 'price' => 5,
                 'course' => 'Antipasto',
@@ -878,7 +878,7 @@ class FoodSeeder extends Seeder
             // PIATTO 65
             [
                 'name' => 'Hummus',
-                'image' => '',
+                'image' => '/food/66.jpg',
                 'description' => 'Crema di ceci condita con olio e paprika, ottimo con pane arabo',
                 'price' => 4,
                 'course' => 'Antipasto',
@@ -891,7 +891,7 @@ class FoodSeeder extends Seeder
             // PIATTO 66
             [
                 'name' => 'Mansaf',
-                'image' => '',
+                'image' => '/food/67.jpg',
                 'description' => 'Riso con carne di agnello e salsa di yogurt',
                 'price' => 12.50,
                 'course' => 'Primo',
@@ -904,7 +904,7 @@ class FoodSeeder extends Seeder
             // PIATTO 67
             [
                 'name' => 'Tabbouleh',
-                'image' => '',
+                'image' => '/food/68.jpg',
                 'description' => 'Insalata di prezzemolo, pomodori, cipolle e bulgur',
                 'price' => 8.50,
                 'course' => 'Primo',
@@ -917,7 +917,7 @@ class FoodSeeder extends Seeder
             // PIATTO 68
             [
                 'name' => 'Shish taouk',
-                'image' => '',
+                'image' => '/food/69.jpg',
                 'description' => 'Pollo marinato con spezie mediorientali servito con riso basmati',
                 'price' => 12.50,
                 'course' => 'Secondo',
@@ -930,7 +930,7 @@ class FoodSeeder extends Seeder
             // PIATTO 69
             [
                 'name' => 'Maqluba',
-                'image' => '',
+                'image' => '/food/70.jpg',
                 'description' => 'Riso, melanzane e carne di agnello stufati e serviti capovolti',
                 'price' => 15,
                 'course' => 'Secondo',
@@ -943,7 +943,7 @@ class FoodSeeder extends Seeder
             // PIATTO 70
             [
                 'name' => 'Kofta',
-                'image' => '',
+                'image' => '/food/71.jpg',
                 'description' => 'Polpette di manzo e agnello speziate, grigliate e servite con insalata di pomodori e cetrioli',
                 'price' => 10,
                 'course' => 'Secondo',
@@ -956,7 +956,7 @@ class FoodSeeder extends Seeder
             // PIATTO 71
             [
                 'name' => 'Baklava',
-                'image' => '',
+                'image' => '/food/72.jpg',
                 'description' => 'Dolce arabo a base di pasta fillo, noci e sciroppo di zucchero. Soffice e croccante al tempo stesso.',
                 'price' => 5.50,
                 'course' => 'Dolce',
@@ -969,7 +969,7 @@ class FoodSeeder extends Seeder
             // PIATTO 72
             [
                 'name' => 'Kanafeh',
-                'image' => '',
+                'image' => '/food/73.jpg',
                 'description' => 'Dolce composto da pane arabo, formaggio fresco ricoperto da sciroppo di zucchero. Croccante fuori e morbido dentro.',
                 'price' => 7,
                 'course' => 'Dolce',
@@ -982,7 +982,7 @@ class FoodSeeder extends Seeder
             // PIATTO 73
             [
                 'name' => 'Shiraz',
-                'image' => '',
+                'image' => '/food/74.jpg',
                 'description' => 'Vino rosso arabo dal sapore intenso e speziato',
                 'price' => 8.00,
                 'course' => 'Bevanda',
@@ -995,7 +995,7 @@ class FoodSeeder extends Seeder
             // PIATTO 74
             [
                 'name' => 'Sahlab',
-                'image' => '',
+                'image' => '/food/75.jpg',
                 'description' => 'Bevanda calda a base di polvere di tuberi di orchidee, aromatizzata alla cannella e alla noce moscata',
                 'price' => 3.50,
                 'course' => 'Bevanda',
@@ -1011,7 +1011,7 @@ class FoodSeeder extends Seeder
             // PIATTO 75
             [
                 'name' => 'Kimchi',
-                'image' => '',
+                'image' => '/food/76.jpg',
                 'description' => 'Piatto a base di verdure fermentate con spezie e peperoncino. Piccante e saporito.',
                 'price' => 5,
                 'course' => 'Antipasto',
@@ -1024,7 +1024,7 @@ class FoodSeeder extends Seeder
             // PIATTO 76
             [
                 'name' => 'Pancake di gamberi',
-                'image' => '',
+                'image' => '/food/77.jpg',
                 'description' => 'Crepes salate farcite con gamberi e verdure, servite con salsa di soia.',
                 'price' => 7,
                 'course' => 'Antipasto',
@@ -1037,7 +1037,7 @@ class FoodSeeder extends Seeder
             // PIATTO 77
             [
                 'name' => 'Bibimbap',
-                'image' => '',
+                'image' => '/food/78.jpg',
                 'description' => 'Riso servito in una ciotola a cui si aggiungono carne, verdure e uova prima di essere mescolato. Saporito e croccante.',
                 'price' => 10,
                 'course' => 'Primo',
