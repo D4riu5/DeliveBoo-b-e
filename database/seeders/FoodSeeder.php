@@ -1299,7 +1299,151 @@ class FoodSeeder extends Seeder
             ],
             // --------------CUCINA FRANCESE FINE------------------------------
 
-            // --------------CUCINA GRECA 97 - 107 - TYPE 9-------------
+            // --------------CUCINA GRECA 97 - 107 - TYPE 10-------------
+            // PIATTO 97
+            [
+                'name' => 'Spanakopita',
+                'image' => '',
+                'description' => 'Sfoglia ripiena di spinaci, feta e erbe aromatiche',
+                'price' => 6.50,
+                'course' => 'Antipasto',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 180,
+                'restaurant_ids' => [21, 22], //GRECA
+            ],
+            // PIATTO 98
+            [
+                'name' => 'Dolmades',
+                'image' => '',
+                'description' => 'Foglie di vite ripiene di riso, erbe aromatiche, limone e pinoli',
+                'price' => 5.50,
+                'course' => 'Antipasto',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 150,
+                'restaurant_ids' => [21, 22], //GRECA
+            ],
+            // PIATTO 99
+            [
+                'name' => 'Moussaka',
+                'image' => '',
+                'description' => 'Piatto saporito con melanzane, carne macinata e salsa di pomodoro',
+                'price' => 9.50,
+                'course' => 'Primo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 480,
+                'restaurant_ids' => [21, 22], //GRECA
+            ],
+            // PIATTO 100
+            [
+                'name' => 'Spanakopita',
+                'image' => '',
+                'description' => 'Delizioso piatto salato a base di spinaci freschi, formaggio feta e pasta fillo croccante.',
+                'price' => 8,
+                'course' => 'Primo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 350,
+                'restaurant_ids' => [21, 22], //GRECA
+            ],
+            // PIATTO 101
+            [
+                'name' => 'Souvlaki di pollo',
+                'image' => '',
+                'description' => 'Spiedini di pollo marinati con olive nere e feta',
+                'price' => 10,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 350,
+                'restaurant_ids' => [21, 22], //GRECA
+            ],
+            // PIATTO 102
+            [
+                'name' => 'Keftédes',
+                'image' => '',
+                'description' => 'Polpette di carne aromatizzate con aglio, origano e menta',
+                'price' => 8,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 280,
+                'restaurant_ids' => [21, 22], //GRECA
+            ],
+            // PIATTO 103
+            [
+                'name' => 'Gyro',
+                'image' => '',
+                'description' => 'Piatto greco tipico di carne di maiale tagliata e condita con salsa tzatziki, servita su pane pita',
+                'price' => 10.50,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 350,
+                'restaurant_ids' => [21, 22], //GRECA
+            ],
+            // PIATTO 104
+            [
+                'name' => 'Loukoumades',
+                'image' => '',
+                'description' => 'Gocce dolci fritte di pasta lievitata, servite con sciroppo di miele e noci tritate',
+                'price' => 5.50,
+                'course' => 'Dolce',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 300,
+                'restaurant_ids' => [21, 22], //GRECA
+            ],
+            // PIATTO 105
+            [
+                'name' => 'Galaktoboureko',
+                'image' => '',
+                'description' => 'Torta di semolino avvolta in pasta filo croccante, inzuppata di sciroppo di miele',
+                'price' => 6.50,
+                'course' => 'Dolce',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 450,
+                'restaurant_ids' => [21, 22], //GRECA
+            ],
+            // PIATTO 106
+            [
+                'name' => 'Samos',
+                'image' => '',
+                'description' => 'Vino bianco secco della isola di Samo con note fruttate e minerale.',
+                'price' => 20,
+                'course' => 'Bevanda',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 120,
+                'restaurant_ids' => [21, 22], //GRECA
+            ],
+            // PIATTO 107
+            [
+                'name' => 'Frappe freddo',
+                'image' => '',
+                'description' => 'Caffè freddo battuto con ghiaccio e servito in un bicchiere alto',
+                'price' => 2.50,
+                'course' => 'Bevanda',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 50,
+                'restaurant_ids' => [21, 22], //GRECA
+            ],
+
 
 
             // PIATTO NUMERO
