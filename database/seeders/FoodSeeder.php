@@ -1524,6 +1524,381 @@ class FoodSeeder extends Seeder
                 'kcal' => 500,
                 'restaurant_ids' => [23], //HAMBURGER
             ],
+            // --------------HAMBURGER FINE------------------------------
+
+            // --------------CUCINA INDIANA 114 - 124 - TYPE 12-------------
+            // PIATTO 114
+            [
+                'name' => 'Samosa',
+                'image' => '',
+                'description' => 'Croccante triangolo fritto ripieno di patate speziate e piselli',
+                'price' => 3.50,
+                'course' => 'Antipasto',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => false,
+                'kcal' => 250,
+                'restaurant_ids' => [24, 25], //INDIANA
+            ],
+            // PIATTO 115
+            [
+                'name' => 'Tandoori chicken',
+                'image' => '',
+                'description' => 'Pollo marinato con spezie e yogurt, poi cotto alla brace',
+                'price' => 6.50,
+                'course' => 'Antipasto',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => true,
+                'kcal' => 300,
+                'restaurant_ids' => [24, 25], //INDIANA
+            ],
+            // PIATTO 116
+            [
+                'name' => 'Chana Masala',
+                'image' => '',
+                'description' => 'Un piatto vegetariano, preparato con ceci cotti in una miscela di spezie e pomodoro.',
+                'price' => 8.50,
+                'course' => 'Primo',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => true,
+                'kcal' => 450,
+                'restaurant_ids' => [24, 25], //INDIANA
+            ],
+            // PIATTO 117
+            [
+                'name' => 'Chicken Tikka Masala',
+                'image' => '',
+                'description' => 'Un classico piatto indiano, con pezzi di pollo marinati e cotti in una salsa cremosa di pomodoro e spezie.',
+                'price' => 11.50,
+                'course' => 'Primo',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => false,
+                'kcal' => 550,
+                'restaurant_ids' => [24, 25], //INDIANA
+            ],
+            // PIATTO 118
+            [
+                'name' => 'Saag Paneer',
+                'image' => '',
+                'description' => 'Formaggio tradizionale indiano fatto in casa in salsa di spinaci aromatica. Vegan su richiesta.',
+                'price' => 9,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 350,
+                'restaurant_ids' => [24, 25], //INDIANA
+            ],
+            // PIATTO 119
+            [
+                'name' => 'Biryani di Agnello',
+                'image' => '',
+                'description' => 'Riso basmati speziato con agnello aromatizzato, cotto nel tradizionale biryani. Servito con raita e sottaceti.',
+                'price' => 12,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => false,
+                'kcal' => 550,
+                'restaurant_ids' => [24, 25], //INDIANA
+            ],
+            // PIATTO 120
+            [
+                'name' => 'Butter Chicken',
+                'image' => '',
+                'description' => 'Pollo cotto con spezie, pomodori e burro, servito con riso basmati.',
+                'price' => 12.50,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => false,
+                'kcal' => 400,
+                'restaurant_ids' => [24, 25], //INDIANA
+            ],
+            // PIATTO 121
+            [
+                'name' => 'Gulab jamun',
+                'image' => '',
+                'description' => 'Deliziosi dolcetti fritti a base di latte in sciroppo di zucchero e rosmarino',
+                'price' => 4.50,
+                'course' => 'Dolce',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 400,
+                'restaurant_ids' => [24, 25], //INDIANA
+            ],
+            // PIATTO 122
+            [
+                'name' => 'Rasgulla',
+                'image' => '',
+                'description' => 'Sfere dolci fatte di formaggio di latte, bollite in uno sciroppo di zucchero aromatizzato con rose',
+                'price' => 5,
+                'course' => 'Dolce',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 300,
+                'restaurant_ids' => [24, 25], //INDIANA
+            ],
+            // PIATTO 123
+            [
+                'name' => 'Lassi alla fragola',
+                'image' => '',
+                'description' => 'Bibita cremosa e dolce a base di yoghurt, fragole e spezie',
+                'price' => 4.50,
+                'course' => 'Bevanda',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 150,
+                'restaurant_ids' => [24, 25], //INDIANA
+            ],
+            // PIATTO 124
+            [
+                'name' => 'Masala Chai',
+                'image' => '',
+                'description' => 'Bevanda calda e speziata a base di latte, tè nero e spezie',
+                'price' => 3.50,
+                'course' => 'Bevanda',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => true,
+                'kcal' => 90,
+                'restaurant_ids' => [24, 25], //INDIANA
+            ],
+            // --------------CUCINA INDIANA FINE------------------------------
+
+            // --------------KEBAB 125 - 130 - TYPE 13-------------
+            // CUCINA 125
+            [
+                'name' => 'Kebab misto',
+                'image' => '',
+                'description' => 'Un mix di carne di pollo e di manzo tagliata finemente, servito con verdure fresche e salsa tahini',
+                'price' => 6,50,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 690,
+                'restaurant_ids' => [26, 27], //KEBAB
+            ],
+            // CUCINA 126
+            [
+                'name' => 'Kebab vegetariano',
+                'image' => '',
+                'description' => 'Kebab vegetariano con falafel croccanti, verdure miste e salsa tzatziki',
+                'price' => 5,50,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 580,
+                'restaurant_ids' => [26, 27], //KEBAB
+
+            ],
+            // CUCINA 127
+            [
+                'name' => 'Kebab al formaggio',
+                'image' => '',
+                'description' => 'Kebab di carne di pollo o manzo con formaggio fuso, verdure fresche e salsa piccante',
+                'price' => 7,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => false,
+                'kcal' => 720,
+                'restaurant_ids' => [26, 27], //KEBAB
+            ],
+            // CUCINA 128
+            [
+                'name' => 'Kebab al curry',
+                'image' => '',
+                'description' => 'Kebab di pollo con curry, verdure miste e salsa allo yogurt',
+                'price' => 6,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => true,
+                'kcal' => 530,
+                'restaurant_ids' => [26, 27], //KEBAB
+            ],
+            // CUCINA 129
+            [
+                'name' => 'Kebab di agnello',
+                'image' => '',
+                'description' => 'Tagliata di agnello marinata, verdure fresche e salsa all aglio',
+                'price' => 8,50,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 800,
+                'restaurant_ids' => [26, 27], //KEBAB
+            ],
+            // CUCINA 130
+            [
+                'name' => 'Kebab di tacchino',
+                'image' => '',
+                'description' => 'Kebab di tacchino con pita calda, verdure miste e salsa ardente',
+                'price' => 6,50,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => false,
+                'kcal' => 620,
+                'restaurant_ids' => [26, 27], //KEBAB
+            ],
+            // --------------KEBAB FINE------------------------------
+
+            // --------------CUCINA PERUVIANA 131 - 141 - TYPE 14-------------
+            // PIATTO 131
+            [
+                'name' => 'Causa Rellena',
+                'image' => '',
+                'description' => 'Purè di patate condito con limone e olio, ripieno di pollo e servito con peperoni e olive.',
+                'price' => 6.50,
+                'course' => 'Antipasto',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 250,
+                'restaurant_ids' => [28, 29], //PERUVIANA
+            ],
+            // PIATTO 132
+            [
+                'name' => 'Anticuchos',
+                'image' => '',
+                'description' => 'Spiedini di cuore di manzo marinati e grigliati, serviti con salsa di peperoncino.',
+                'price' => 7.50,
+                'course' => 'Antipasto',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => true,
+                'kcal' => 300,
+                'restaurant_ids' => [28, 29], //PERUVIANA
+            ],
+            // PIATTO 133
+            [
+                'name' => 'Ceviche',
+                'image' => '',
+                'description' => 'Piatto di pesce crudo marinato in limone e leche de tigre',
+                'price' => 12,
+                'course' => 'Primo',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => true,
+                'kcal' => 220,
+                'restaurant_ids' => [28, 29], //PERUVIANA
+            ],
+            // PIATTO 134
+            [
+                'name' => 'Papa a la Huancaína',
+                'image' => '',
+                'description' => 'Patate con salsa cremosa di peperoncini, formaggio, latte e cracker',
+                'price' => 10,
+                'course' => 'Primo',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => false,
+                'kcal' => 370,
+                'restaurant_ids' => [28, 29], //PERUVIANA
+            ],
+            // PIATTO 135
+            [
+                'name' => 'Lomo Saltado',
+                'image' => '',
+                'description' => 'Una deliziosa miscela di manzo saltato, cipolle, pomodori e patate in una salsa di soia e olio, servito con riso',
+                'price' => 12.50,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => true,
+                'kcal' => 480,
+                'restaurant_ids' => [28, 29], //PERUVIANA
+            ],
+            // PIATTO 136
+            [
+                'name' => 'Seco de Cordero',
+                'image' => '',
+                'description' => 'Spezzatino di agnello in un delizioso sugo di coriandolo con fagioli, riso e patate',
+                'price' => 14.50,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 590,
+                'restaurant_ids' => [28, 29], //PERUVIANA
+            ],
+            // PIATTO 137
+            [
+                'name' => 'Ají de Gallina',
+                'image' => '',
+                'description' => 'Ricco stufato di pollo in una crema di peperoncino giallo e noci, servito con riso e patate',
+                'price' => 11.50,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => true,
+                'kcal' => 570,
+                'restaurant_ids' => [28, 29], //PERUVIANA
+            ],
+            // PIATTO 138
+            [
+                'name' => 'Suspiro de limeña',
+                'image' => '',
+                'description' => 'Dolce cremoso dal sapore di caramello con meringa sopra',
+                'price' => 5.50,
+                'course' => 'Dolce',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 350,
+                'restaurant_ids' => [28, 29], //PERUVIANA
+            ],
+            // PIATTO 139
+            [
+                'name' => 'Picarones',
+                'image' => '',
+                'description' => 'Frittelle dolci fatte con zucca e zucchero di canna, servite con sciroppo di chancaca',
+                'price' => 4,
+                'course' => 'Dolce',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 250,
+                'restaurant_ids' => [28, 29], //PERUVIANA
+            ],
+            // PIATTO 140
+            [
+                'name' => 'Pisco Sour',
+                'image' => '',
+                'description' => 'Un cocktail tradizionale peruviano a base di Pisco, lime, sciroppo di zucchero, albume d uovo e amaro',
+                'price' => 8.50,
+                'course' => 'Bevanda',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 200,
+                'restaurant_ids' => [28, 29], //PERUVIANA
+            ],
+            // PIATTO 141
+            [
+                'name' => 'Chicha Morada',
+                'image' => '',
+                'description' => 'Bevanda analcolica tradizionale peruviana a base di mais viola, ananas e cannella, dal sapore dolce e speziato',
+                'price' => 3.50,
+                'course' => 'Bevanda',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 150,
+                'restaurant_ids' => [28, 29], //PERUVIANA
+            ],
+            // --------------CUCINA PERUVIANA FINE------------------------------
 
 
             // PIATTO NUMERO

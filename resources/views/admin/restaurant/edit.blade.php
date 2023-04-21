@@ -102,7 +102,7 @@
 
                         {{-- DATI PER LA TABELLA TYPES --}}
                         <div class="flex-center">
-                            <div class="d-flex flex-wrap m-auto justify-content-center">
+                            <div class="d-flex flex-wrap m-auto justify-content-center justify-content-around">
                                 @foreach ($types as $type)
                                     <div class="form-check">
                                         <!-- Controllo sui valori precedenti delle checkboxes -->
