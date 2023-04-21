@@ -715,7 +715,7 @@ class FoodSeeder extends Seeder
             ],
             // --------------CUCINA VEGETARIANA FINE------------------------------
 
-            // --------------CUCINA AMERICANA 53 - 63 - TYPE 5-------------
+            // --------------CUCINA AMERICANA 53 - 63 - TYPE 6-------------
             // PIATTO 53
             [
                 'name' => 'Buffalo Wings',
@@ -861,7 +861,7 @@ class FoodSeeder extends Seeder
             ],
             // --------------CUCINA AMERICANA FINE------------------------------
 
-            // --------------CUCINA ARABA 64 - 74 - TYPE 6-------------
+            // --------------CUCINA ARABA 64 - 74 - TYPE 7-------------
             // PIATTO 64
             [
                 'name' => 'Falafel',
@@ -1007,8 +1007,157 @@ class FoodSeeder extends Seeder
             ],
             // --------------CUCINA ARABA FINE------------------------------
 
-            // --------------CUCINA COREANA 75 - 85 - TYPE 7-------------
-            
+            // --------------CUCINA COREANA 75 - 85 - TYPE 8-------------
+            // PIATTO 75
+            [
+                'name' => 'Kimchi',
+                'image' => '',
+                'description' => 'Piatto a base di verdure fermentate con spezie e peperoncino. Piccante e saporito.',
+                'price' => 5,
+                'course' => 'Antipasto',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => true,
+                'kcal' => 50,
+                'restaurant_ids' => [17, 18], //COREANA
+            ],
+            // PIATTO 76
+            [
+                'name' => 'Pancake di gamberi',
+                'image' => '',
+                'description' => 'Crepes salate farcite con gamberi e verdure, servite con salsa di soia.',
+                'price' => 7,
+                'course' => 'Antipasto',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 150,
+                'restaurant_ids' => [17, 18], //COREANA
+            ],
+            // PIATTO 77
+            [
+                'name' => 'Bibimbap',
+                'image' => '',
+                'description' => 'Riso servito in una ciotola a cui si aggiungono carne, verdure e uova prima di essere mescolato. Saporito e croccante.',
+                'price' => 10,
+                'course' => 'Primo',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => true,
+                'kcal' => 450,
+                'restaurant_ids' => [17, 18], //COREANA
+            ],
+            // PIATTO 78
+            [
+                'name' => 'Japchae',
+                'image' => '',
+                'description' => 'Piatto di vermicelli di patate conditi con carne e verdure. Sapore dolce e aromi di sesamo e soia.',
+                'price' => 12,
+                'course' => 'Primo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 350,
+                'restaurant_ids' => [17, 18], //COREANA
+            ],
+            // PIATTO 79
+            [
+                'name' => 'Bulgogi',
+                'image' => '',
+                'description' => 'Strisce di carne marinata e grigliata, tipiche della cucina coreana',
+                'price' => 10,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 450,
+                'restaurant_ids' => [17, 18], //COREANA
+            ],
+            // PIATTO 80
+            [
+                'name' => 'Dakgalbi',
+                'image' => '',
+                'description' => 'Pollo marinato e speziato, cucinato in padella con patate dolci e verdure',
+                'price' => 12,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => true,
+                'kcal' => 550,
+                'restaurant_ids' => [17, 18], //COREANA
+            ],
+            // PIATTO 81
+            [
+                'name' => 'Dak Gui',
+                'image' => '',
+                'description' => 'Pollo succoso alla griglia con sapore piccante',
+                'price' => 10.75,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => true,
+                'kcal' => 250,
+                'restaurant_ids' => [17, 18], //COREANA
+            ],
+            // PIATTO 82
+            [
+                'name' => 'Patbingsu',
+                'image' => '',
+                'description' => 'Un dolce estivo a base di fiocchi di ghiaccio, fagioli dolci e frutta fresca.',
+                'price' => 5.50,
+                'course' => 'Dolce',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 400,
+                'restaurant_ids' => [17, 18], //COREANA
+            ],
+            // PIATTO 83
+            [
+                'name' => 'Hotteok',
+                'image' => '',
+                'description' => 'Un pancake dolce ripieno di pasta di fagioli dolci e spezie.',
+                'price' => 3,
+                'course' => 'Dolce',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 300,
+                'restaurant_ids' => [17, 18], //COREANA
+            ],
+            // PIATTO 84
+            [
+                'name' => 'Makgeolli',
+                'image' => '',
+                'description' => 'Tipico vino di riso coreano dal gusto dolce e leggermente carbonato.',
+                'price' => 8,
+                'course' => 'Bevanda',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 150,
+                'restaurant_ids' => [17, 18], //COREANA
+            ],
+            // PIATTO 85
+            [
+                'name' => 'Bori-cha',
+                'image' => '',
+                'description' => 'Bevanda dissetante a base di orzo tostato',
+                'price' => 3.50,
+                'course' => 'Bevanda',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 50,
+                'restaurant_ids' => [17, 18], //COREANA
+            ],
+            // --------------CUCINA COREANA FINE------------------------------
+
+            // --------------CUCINA FRANCESE 86 - 96 - TYPE 9-------------
+            // PIATTO 86
+            [
+                
+            ]
 
 
             // PIATTO NUMERO
