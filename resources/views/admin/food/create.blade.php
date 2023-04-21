@@ -27,7 +27,7 @@
                         
                         @error('name')
                             <span class="text-danger">
-                                <strong>Inserire il nome del piatto</strong>
+                                <strong>{{ $message }}</strong>
                             </span>
                         @enderror
                     </div>
@@ -42,7 +42,7 @@
 
                         @error('description')
                             <div class="text-danger">
-                                <strong>Inserire una descrizione</strong>
+                                <strong>{{ $message }}</strong>
                             </div>
                         @enderror
                     </div>
@@ -97,28 +97,39 @@
                     {{-- PICCANTE SI/NO  --}}
 
                     <div class="mb-3">
-                        <label for="spicy" class="form-label">
-                            E' un prodotto piccante?
-                        </label>
-                        <select class="form-select" id="spicy" name="spicy" >
-                            <option value="" disabled selected>Seleziona opzione...</option>
-                            <option value="1">Si</option>
-                            <option value="0">No</option>
-                        </select>
-                    </div>
+                        <div>
+                            <label class="form-label">
+                                E' un prodotto piccante?
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="spicy" id="spicy_yes" value="1">
+                            <label class="form-check-label" for="spicy_yes">Si</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="spicy" id="spicy_no" value="0">
+                            <label class="form-check-label" for="spicy_no">No</label>
+                        </div>
+                    </div>                      
 
                     {{-- GLUTEN FREE SI/NO  --}}
 
                     <div class="mb-3">
-                        <label for="gluten_free" class="form-label">
-                            Il prodotto contiene glutine?
-                        </label>
-                        <select class="form-select" id="gluten_free" name="gluten_free">
-                            <option value="" disabled selected>Seleziona opzione...</option>
-                            <option value="1">Si</option>
-                            <option value="0">No</option>
-                        </select>
+                        <div>
+                            <label class="form-label">
+                                Il prodotto contiene glutine?
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gluten_free" id="gluten_yes" value="0">
+                            <label class="form-check-label" for="gluten_yes">No</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gluten_free" id="gluten_no" value="1">
+                            <label class="form-check-label" for="gluten_no">Si</label>
+                        </div>
                     </div>
+                      
 
                      {{-- CALORIE  --}}
                      <div class="mb-3">
