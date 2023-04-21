@@ -132,7 +132,7 @@
                                     <label for="name">{{ __("Nome Attività'") }}<span class="text-danger">
                                             *</span></label>
                                     <div> {{-- INPUT NAME RISTORANTE --}}
-                                        <input id="name" type="text"
+                                        <input id="name" type="text" maxlength="32"
                                             class="form-control @error('restaurant_name') is-invalid @enderror"
                                             name="restaurant_name" autocomplete="name"
                                             value="{{ old('restaurant_name') }}">
