@@ -504,7 +504,7 @@ class FoodSeeder extends Seeder
             ],
             // PIATTO 37
             [
-                'Ma Po Tofu' => 'Una vivace miscela di tofu, peperoncino e spezie, tipico della cucina di Sichuan.',
+                'name' => 'Ma Po Tofu',
                 'image' => '',
                 'description' => 'Una miscela perfetta di sapori piccanti, dolci e salati.',
                 'price' => 12.99,
@@ -517,7 +517,7 @@ class FoodSeeder extends Seeder
             ],
             // PIATTO 38
             [
-                'Chow Mein di Pollo' => 'Spaghetti di friggere saltati con pollo, cipolle e verdure.',
+                'name' => 'Chow Mein di Pollo',
                 'image' => '',
                 'description' => 'Un piatto croccante e saporito perfetto per il pranzo sullo sfizio.',
                 'price' => 10.99,
@@ -530,7 +530,7 @@ class FoodSeeder extends Seeder
             ],
             // PIATTO 39
             [
-                'Kung Pao Chicken' => 'Pollo tenero e speziato, arrostito con peperoncino secco e arachidi.',
+                'name' => 'Kung Pao Chicken',
                 'image' => '',
                 'description' => 'Il pollo Kung Pao è un piatto classico e tradizionale che offre una combinazione di sapori unici e speziati.',
                 'price' => 14.99,
@@ -985,7 +985,7 @@ class FoodSeeder extends Seeder
                 'image' => '',
                 'description' => 'Vino rosso arabo dal sapore intenso e speziato',
                 'price' => 8.00,
-                'course' => 'Bevande',
+                'course' => 'Bevanda',
                 'is_available' => true,
                 'spicy' => true,
                 'gluten_free' => true,
@@ -998,7 +998,7 @@ class FoodSeeder extends Seeder
                 'image' => '',
                 'description' => 'Bevanda calda a base di polvere di tuberi di orchidee, aromatizzata alla cannella e alla noce moscata',
                 'price' => 3.50,
-                'course' => 'Bevande',
+                'course' => 'Bevanda',
                 'is_available' => true,
                 'spicy' => false,
                 'gluten_free' => true,
@@ -1156,7 +1156,7 @@ class FoodSeeder extends Seeder
             // --------------CUCINA FRANCESE 86 - 96 - TYPE 9-------------
             // PIATTO 86
             [
-                
+
             ]
 
 
