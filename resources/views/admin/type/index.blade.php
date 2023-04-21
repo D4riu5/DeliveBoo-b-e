@@ -10,18 +10,19 @@
                     </h2>
                 </div>
                 {{-- INIZIO CICLO PER STAMPA DI ELEMENTI IN VARIABILE $TYPES  --}}
-                <div class="btn-group my-2 d-flex justify-content-evenly flex-wrap" role="group"
+                <div class="btn-group d-flex justify-content-evenly flex-wrap" role="group"
                     aria-label="Basic mixed styles example">
                     @foreach ($types as $type)
-                        <div class="d-flex flex-column align-items-center mb-3">
-                            <div class="py-1">
-                                <a class="btn btn-success mx-1" href="{{ route('admin.type.show', $type->id) }}">
-                                    {{ $type->name }}
-                                </a>
-                            </div>
+                        <div class="d-flex flex-column align-items-center mb-5">
+                            
                             <div class="typePhotoBox">
                                 <a href="{{ route('admin.type.show', $type->id) }}">
                                     <img src="{{ asset('storage/' . $type->image) }}">
+                                </a>
+                            </div>
+                            <div class="py-1">
+                                <a class="btn btn-warning mx-1" href="{{ route('admin.type.show', $type->id) }}">
+                                    {{ $type->name }}
                                 </a>
                             </div>
                         </div>

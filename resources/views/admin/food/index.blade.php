@@ -3,34 +3,35 @@
 @section('content')
     <div class="container-fluid mt-4">
         <div class="row justify-content-center mb-4">
-            <div class="col">
+            <div class="col text-center">
                 <h1>
                     I miei piatti
                 </h1>
-
-                <a href="{{ route('admin.food.create') }}" class="btn btn-success mt-2">
-                    Aggiungi un piatto
-                </a>
             </div>
         </div>
 
         @include('partials.success')
 
-        <div class="row mb-4">
-            <div class="col">
-                <h4>
-                    Cerca
-                </h4>
-
+        <div class="row my-4 d-flex">
+            <div class="col d-flex justify-content-center">
                 <form action="{{ route('admin.food.index') }}" method="GET">
-                    <div>
-                        <input type="text" name="name" placeholder="Cerca piatto per nome..." class="form-control"
-                            value="{{ request()->input('name') }}">
-                    </div>
-                    <div>
-                        <button type="submit" class="btn btn-secondary my-2">
-                            Cerca
-                        </button>
+                    <div class="d-flex justify-content-center">
+                        <div class="d-flex align-items-center">
+                            <div class="mx-1">
+                                <button type="submit" class="btn btn-danger my-2">
+                                    Cerca
+                                </button>
+                            </div>
+                            <div>
+                                <input type="text" name="name" placeholder="Cerca piatto per nome..               "
+                                    class="form-control " value="{{ request()->input('name') }}">
+                            </div>
+                        </div>
+                        <div class="mx-1">
+                            <a href="{{ route('admin.food.create') }}" class="btn btn-warning mt-2">
+                                Aggiungi un piatto
+                            </a>
+                        </div>
                     </div>
                 </form>
             </div>
@@ -54,7 +55,7 @@
                             <tr>
                                 <th scope="row">{{ $food->id }}</th>
                                 <td>
-                                    <a style="color: darkblue" href="{{ route('admin.food.show', $food->id) }}">
+                                    <a style="color:green" href="{{ route('admin.food.show', $food->id) }}">
                                         {{ $food->name }}
                                     </a>
                                 </td>
@@ -63,10 +64,10 @@
                                     {{ $food->price }} €
                                 </td>
                                 <td>
-                                    {{ $food->is_available ? "Si" : "No" }}
+                                    {{ $food->is_available ? 'Si' : 'No' }}
                                 </td>
                                 <td>
-                                    <a href="{{ route('admin.food.show', $food->id) }}" class="btn btn-primary">
+                                    <a href="{{ route('admin.food.show', $food->id) }}" class="btn btn-success">
                                         <i class="fa-solid fa-circle-info"></i>
                                     </a>
                                     <a href="{{ route('admin.food.edit', $food->id) }}" class="btn btn-warning">
@@ -77,17 +78,17 @@
                                         @csrf
                                         @method('DELETE')
                                         <button class="btn btn-danger" type="button" data-bs-toggle="modal"
-                                        data-bs-target="#exampleModal{{ $food->id }}">
+                                            data-bs-target="#exampleModal{{ $food->id }}">
                                             <i class="fa-solid fa-trash"></i>
                                         </button>
 
                                         <div class="modal fade" id="exampleModal{{ $food->id }}" tabindex="-1"
                                             aria-labelledby="exampleModalLabel" aria-hidden="true">
-    
+
                                             <div class="modal-dialog">
-    
+
                                                 <div class="modal-content">
-    
+
                                                     <div class="modal-header">
                                                         <h1 class="modal-title fs-5" id="exampleModalLabel"> Conferma
                                                             eliminazione
@@ -95,22 +96,22 @@
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                             aria-label="Close"></button>
                                                     </div>
-    
+
                                                     <div class="modal-body">
                                                         Sei sicuro di voler eliminare questo piatto ?
                                                     </div>
-    
+
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-secondary"
                                                             data-bs-dismiss="modal">
                                                             Annulla </button>
                                                         <button type="submit" class="btn btn-danger"> Elimina </button>
                                                     </div>
-    
+
                                                 </div>
-    
+
                                             </div>
-    
+
                                         </div>
                                     </form>
                                 </td>

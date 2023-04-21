@@ -94,7 +94,7 @@
                         </h1>
                     </div>
                     <div class="d-flex justify-content-center py-2">
-                        <div class="boxPhoto">
+                        <div class="img-fluid">
                             <img src="{{ asset('storage/' . $restaurant->image) }}" alt="Myrestaurant">
                         </div>
                     </div>

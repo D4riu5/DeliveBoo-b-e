@@ -87,10 +87,12 @@
                                     </label>
                                 </div>
                                 {{-- STAMPA IMMAGINE --}}
-
-                                <img src="{{ asset('storage/' . $restaurant->image) }}" style="height: 400px;"
+                                <div class="img-fluid">
+                                    <img src="{{ asset('storage/' . $restaurant->image) }}"
                                     alt="restaurant">
-                            </div>
+                                </div>
+                                
+                                </div>
                         @endif
 
                         <input type="file" class="form-control" id="image" name="image" accept="image/*">

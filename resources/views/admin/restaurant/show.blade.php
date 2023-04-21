@@ -11,15 +11,13 @@
                 </h2>
                 {{-- IMMAGINE MODIFICATA SE PRESENTE --}}
                 @if ($restaurant->image)
-                    <div class=" d-flex justify-content-between mb-1">
-                        <div class="col-8">
-                            <div class="photoBox">
-                                <img class="my-3" src="{{ asset('storage/' . $restaurant->image) }}" style="height: 400px;"
-                                    alt="restaurant">
-                            </div>
+                    <div class=" d-flex justify-content-start mb-1">
+                        <div class="img-fluid">
+                            <img class="my-3" src="{{ asset('storage/' . $restaurant->image) }}" style="height: 400px;"
+                                alt="restaurant">
                         </div>
                         {{-- INDIRIZZO MODIFICATO --}}
-                        <div class="col-4 mx-4">
+                        <div class="mx-4">
                             <div class="mt-3">
                                 <h3 class="my-2">
                                     Indirizzo attività:
@@ -64,27 +62,28 @@
             {{-- PULSANTE RITORNO ALLA DASHBOARD  --}}
             <div class="pt-2 text-center">
                 <!--
-                <a class="mt-2 btn btn-danger my-3"
-                    class="{{ Route::currentRouteName() == 'admin.dashboard' ? 'bg-secondary' : '' }}"
-                    href="{{ route('admin.dashboard') }}">
-                    <h6>
-                        Torna indietro
-                    </h6>
-                </a>
-            -->
+                        <a class="mt-2 btn btn-danger my-3"
+                            class="{{ Route::currentRouteName() == 'admin.dashboard' ? 'bg-secondary' : '' }}"
+                            href="{{ route('admin.dashboard') }}">
+                            <h6>
+                                Torna indietro
+                            </h6>
+                        </a>
+                    -->
                 <button class="btn btn-danger mt-2 my-3">
                     <a href="{{ route('admin.dashboard') }}" class="link-light text-decoration-none"> Torna indietro
                     </a>
                 </button>
                 <!--
-                <a href="{{ route('admin.restaurant.edit', $restaurant->id) }}" class="mt-2 btn btn-warning my-3">
-                    <h6>
-                        Modifica dati attività
-                    </h6>
-                </a>
-            -->
+                        <a href="{{ route('admin.restaurant.edit', $restaurant->id) }}" class="mt-2 btn btn-warning my-3">
+                            <h6>
+                                Modifica dati attività
+                            </h6>
+                        </a>
+                    -->
                 <button class="btn btn-warning mt-2 my-3">
-                    <a href="{{ route('admin.restaurant.edit', $restaurant->id) }}" class="link-light text-decoration-none"> Modifica dati attività
+                    <a href="{{ route('admin.restaurant.edit', $restaurant->id) }}" class="link-light text-decoration-none">
+                        Modifica dati attività
                     </a>
                 </button>
             </div>
