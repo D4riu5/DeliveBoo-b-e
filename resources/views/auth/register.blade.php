@@ -223,7 +223,7 @@
                                 <strong>
                                     <div id="types-error" class="text-danger text-center"></div>
                                 </strong>
-   
+
                             </div>
                             {{-- ERRORI PER GLI ELEMENTI DI TYPES --}}
                             @error('types')

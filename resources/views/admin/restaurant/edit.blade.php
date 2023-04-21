@@ -28,12 +28,12 @@
                             Modifica nome attività<span class="text-danger"> *</span>
                         </label>
                         <input type="text" class="form-control @error('name') is-invalid @enderror" id="name"
-                            name="name" maxlength="64" value="{{ old('name', $restaurant->name) }}"
+                            name="name" value="{{ old('name', $restaurant->name) }}"
                             placeholder="Inserisci nome attività...">
 
                         @error('name')
                             <div class="text-danger">
-                                <strong>Inserire il nome dell'attività</strong>
+                                <strong>{{ $message }}</strong>
                             </div>
                         @enderror
                     </div>
@@ -43,12 +43,12 @@
                         <label for="address" class="form-label">
                             Modifica indirizzo dell'attività<span class="text-danger"> *</span>
                         </label>
-                        <textarea style="height:100px" class="form-control @error('address') is-invalid @enderror" rows="10" id="address"
-                            name="address" maxlength="500" placeholder="Inserisci indirizzo attività...">{{ old('address', $restaurant->address) }}</textarea>
+                        <textarea style="height:30px" class="form-control @error('address') is-invalid @enderror" rows="10" id="address"
+                            name="address" placeholder="Inserisci indirizzo attività...">{{ old('address', $restaurant->address) }}</textarea>
 
                         @error('address')
                             <div class="text-danger">
-                                <strong>Inserire l'indirizzo dell'attività</strong>
+                                <strong>{{ $message }}</strong>
                             </div>
                         @enderror
                     </div>
@@ -59,14 +59,13 @@
                             Codice Partita IVA <span class="text-danger"> *</span>
                         </label>
                         <input type="text" class="form-control @error('PIVA') is-invalid @enderror" rows="10"
-                            id="PIVA" name="PIVA" minlength="11" maxlength="11"
-                            placeholder="Inserisci il tuo codice partita IVA..."
+                            id="PIVA" name="PIVA" placeholder="Inserisci il tuo codice partita IVA..."
                             value="{{ old('PIVA', $restaurant->PIVA) }}">
                         {{-- {{ old('PIVA', $restaurant->PIVA) }} --}}
 
                         @error('PIVA')
                             <div class="text-danger">
-                                <strong>Inserire le 11 cifre della partita IVA</strong>
+                                <strong>{{ $message }}</strong>
                             </div>
                         @enderror
                     </div>
@@ -107,8 +106,9 @@
                                 @foreach ($types as $type)
                                     <div class="form-check">
                                         <!-- Controllo sui valori precedenti delle checkboxes -->
-                                        <input class="form-check-input" name="types[]" type="checkbox"
-                                            id="type-{{ $type->id }}" value="{{ $type->id }}"
+                                        <input class="form-check-input"
+                                            name="types[]" type="checkbox" id="type-{{ $type->id }}"
+                                            value="{{ $type->id }}"
                                             @if (old('types') && is_array(old('types')) && count(old('types')) > 0) {{ in_array($type->id, old('types')) ? 'checked' : '' }}
                                     @elseif ($restaurant->types->contains($type->id))
                                         checked @endif>
@@ -116,7 +116,6 @@
                                         <label class="form-check-label" for="type-{{ $type->id }}">
                                             {{ $type->name }}
                                         </label>
-
                                     </div>
                                 @endforeach
                             </div>
@@ -124,7 +123,6 @@
                             <strong>
                                 <div id="types-error" class="text-danger text-center"></div>
                             </strong>
-
                         </div>
                     </div>
 
@@ -148,4 +146,33 @@
             </div>
         </div>
     </div>
+    <script>
+        const checkCategories = Array.from(document.querySelectorAll('input[type="checkbox"]'))
+
+        const button = document.querySelector('button[type="submit"]')
+
+        checkCategories.forEach((checkbox, index, array) => {
+            checkbox.addEventListener('click', validateCheckbox.bind(null, array, button))
+        })
+
+        function validateCheckbox(arr, btn) {
+            let counter = 0
+
+            arr.forEach(element => {
+                if (element.checked) {
+                    counter++
+                }
+            })
+
+            if (counter) {
+                btn.disabled = ''
+                document.getElementById('types-error').innerHTML = ''
+            } else {
+                btn.disabled = 'disabled'
+                document.getElementById('types-error').innerHTML = 'Seleziona almeno una categoria!'
+            }
+        };
+
+        validateCheckbox(checkCategories, button);
+    </script>
 @endsection
