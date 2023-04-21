@@ -1672,8 +1672,89 @@ class FoodSeeder extends Seeder
             ],
             // --------------CUCINA INDIANA FINE------------------------------
 
-            // --------------KEBAB 125 - 135 - TYPE 13-------------
-            
+            // --------------KEBAB 125 - 130 - TYPE 13-------------
+            // CUCINA 125
+            [
+                'name' => 'Kebab misto',
+                'image' => '',
+                'description' => 'Un mix di carne di pollo e di manzo tagliata finemente, servito con verdure fresche e salsa tahini',
+                'price' => 6,50,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 690,
+                'restaurant_ids' => [26, 27], //KEBAB
+            ],
+            // CUCINA 126
+            [
+                'name' => 'Kebab vegetariano',
+                'image' => '',
+                'description' => 'Kebab vegetariano con falafel croccanti, verdure miste e salsa tzatziki',
+                'price' => 5,50,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 580,
+                'restaurant_ids' => [26, 27], //KEBAB
+
+            ],
+            // CUCINA 127
+            [
+                'name' => 'Kebab al formaggio',
+                'image' => '',
+                'description' => 'Kebab di carne di pollo o manzo con formaggio fuso, verdure fresche e salsa piccante',
+                'price' => 7,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => false,
+                'kcal' => 720,
+                'restaurant_ids' => [26, 27], //KEBAB
+            ],
+            // CUCINA 128
+            [
+                'name' => 'Kebab al curry',
+                'image' => '',
+                'description' => 'Kebab di pollo con curry, verdure miste e salsa allo yogurt',
+                'price' => 6,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => true,
+                'kcal' => 530,
+                'restaurant_ids' => [26, 27], //KEBAB
+            ],
+            // CUCINA 129
+            [
+                'name' => 'Kebab di agnello',
+                'image' => '',
+                'description' => 'Tagliata di agnello marinata, verdure fresche e salsa all aglio',
+                'price' => 8,50,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 800,
+                'restaurant_ids' => [26, 27], //KEBAB
+            ],
+            // CUCINA 130
+            [
+                'name' => 'Kebab di tacchino',
+                'image' => '',
+                'description' => 'Kebab di tacchino con pita calda, verdure miste e salsa ardente',
+                'price' => 6,50,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => false,
+                'kcal' => 620,
+                'restaurant_ids' => [26, 27], //KEBAB
+            ],
+            // --------------KEBAB FINE------------------------------
+
+            // --------------CUCINA PERUVIANA 131 - 141 - TYPE 14-------------
 
 
             // PIATTO NUMERO
