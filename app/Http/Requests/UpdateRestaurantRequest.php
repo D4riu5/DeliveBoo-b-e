@@ -48,7 +48,7 @@ class UpdateRestaurantRequest extends FormRequest
             'image.max' => 'Il file caricato non può superare i 2MB di dimensione',
             'types.required' => 'Seleziona almeno una categoria!',
             'types.array' => 'Il campo categorie deve essere un array.',
-            'types.exists' => 'Una o più categorie selezionate non sono valide.'
+            'types.exists' => 'Una o più categorie selezionate non sono valide.',
         ];
     }
 }
