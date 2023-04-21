@@ -595,7 +595,7 @@ class FoodSeeder extends Seeder
             ],
             // --------------CUCINA CINESE FINE------------------------------
 
-            // --------------CUCINA VEGETARIANA 44 - 54 - TYPE 5-------------
+            // --------------CUCINA VEGETARIANA 44 - 52 - TYPE 5-------------
             // PIATTO 44
             [
                 'name' => 'Bruschetta ai pomodorini',
@@ -676,24 +676,354 @@ class FoodSeeder extends Seeder
             ],
             // PIATTO 50
             [
-                
-            ]
+                'name' => 'Ratatouille alla provenzale',
+                'image' => '',
+                'description' => 'Questa gustosa ratatouille è un classico della cucina francese a base di zucchine, melanzane, peperoni e pomodori.',
+                'price' => 8.50,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 250,
+                'restaurant_ids' => [], //VEGETARIANA
+            ],
+            // PIATTO 51
+            [
+                'name' => 'Torta di mele vegana',
+                'image' => '',
+                'description' => 'Deliziosa torta di mele a base di ingredienti completamente vegetali',
+                'price' => 15,
+                'course' => 'Dolce',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 350,
+                'restaurant_ids' => [], //VEGETARIANA
+            ],
+            // PIATTO 52
+            [
+                'name' => 'Tiramisù al cocco senza uova',
+                'image' => '',
+                'description' => 'Un classico tiramisù rivisitato in chiave vegana e gluten-free',
+                'price' => 12,
+                'course' => 'Dolce',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 300,
+                'restaurant_ids' => [], //VEGETARIANA
+            ],
+            // --------------CUCINA VEGETARIANA FINE------------------------------
+
+            // --------------CUCINA AMERICANA 53 - 63 - TYPE 5-------------
+            // PIATTO 53
+            [
+                'name' => 'Buffalo Wings',
+                'image' => '',
+                'description' => 'Ali di pollo piccanti immersi in salsa buffalo, serviti con salsa ranch cremosa.',
+                'price' => 8.99,
+                'course' => 'Antipasto',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => false,
+                'kcal' => 650,
+                'restaurant_ids' => [14], //AMERICANA
+            ],
+            // PIATTO 54
+            [
+                'name' => 'Jalapeno Poppers',
+                'image' => '',
+                'description' => 'Peperoncini jalapeno ripieni di formaggio cremoso,fritti in pastella di birra.',
+                'price' => 7.99,
+                'course' => 'Antipasto',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => false,
+                'kcal' => 450,
+                'restaurant_ids' => [14], //AMERICANA
+            ],
+            // PIATTO 55
+            [
+                'name' => 'Mac and Cheese',
+                'image' => '',
+                'description' => 'Più che un primo piatto, un simbolo della cucina americana: pasta e formaggio cremosi, dorati al forno.',
+                'price' => 11,
+                'course' => 'Primo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 550,
+                'restaurant_ids' => [14], //AMERICANA
+            ],
+            // PIATTO 56
+            [
+                'name' => 'Jambalaya',
+                'image' => '',
+                'description' => 'Piatto tipico della Louisiana, simile alla paella spagnola ma con riso rosso, spezie e (a scelta) carne di maiale, pollo o gamberetti.',
+                'price' => 15,
+                'course' => 'Primo',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => false,
+                'kcal' => 580,
+                'restaurant_ids' => [14], //AMERICANA
+            ],
+            // PIATTO 57
+            [
+                'name' => 'BBQ Ribs',
+                'image' => '',
+                'description' => 'Deliziose costine di maiale in salsa BBQ, cotte a bassa temperatura',
+                'price' => 25.99,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 850,
+                'restaurant_ids' => [14], //AMERICANA
+            ],
+            // PIATTO 58
+            [
+                'name' => 'Fried Chicken',
+                'image' => '',
+                'description' => 'Pezzi di pollo fritti, croccanti fuori e succosi dentro',
+                'price' => 19,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => false,
+                'kcal' => 950,
+                'restaurant_ids' => [14], //AMERICANA
+            ],
+            // PIATTO 59
+            [
+                'name' => 'Steak',
+                'image' => '',
+                'description' => 'Bistecca di manzo cotta alla perfezione, servita con patate al forno',
+                'price' => 29.50,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 1200,
+                'restaurant_ids' => [14], //AMERICANA
+            ],
+            // PIATTO 60
+            [
+                'name' => 'Red Velvet Cake',
+                'image' => '',
+                'description' => 'Delizioso dolce al cacao con una nota di vaniglia, decorato con frosting al formaggio',
+                'price' => 25.50,
+                'course' => 'Dolce',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 400,
+                'restaurant_ids' => [14], //AMERICANA
+            ],
+            // PIATTO 61
+            [
+                'name' => 'Chocolate Chip Cookies',
+                'image' => '',
+                'description' => 'Biscotti americani classici al cioccolato fondente e noci pecan croccanti',
+                'price' => 13,
+                'course' => 'Dolce',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 200,
+                'restaurant_ids' => [14], //AMERICANA
+            ],
+            // PIATTO 62
+            [
+                'name' => 'Coca-Cola',
+                'image' => '',
+                'description' => 'La classica bevanda gassata americana, dal sapore unico e inconfondibile',
+                'price' => 2.5,
+                'course' => 'Bevanda',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 140,
+                'restaurant_ids' => [14], //AMERICANA
+            ],
+            // PIATTO 63
+            [
+                'name' => 'Iced Tea',
+                'image' => '',
+                'description' => 'Bicchiere di tè freddo zuccherato, tipico drink americano per l estate',
+                'price' => 3,
+                'course' => 'Bevanda',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 90,
+                'restaurant_ids' => [14], //AMERICANA
+            ],
+            // --------------CUCINA AMERICANA FINE------------------------------
+
+            // --------------CUCINA ARABA 64 - 74 - TYPE 6-------------
+            // PIATTO 64
+            [
+                'name' => 'Falafel',
+                'image' => '',
+                'description' => 'Crocchette di ceci aromatizzate con spezie mediorientali, ottime con salse',
+                'price' => 5,
+                'course' => 'Antipasto',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => true,
+                'kcal' => 250,
+                'restaurant_ids' => [15, 16], //ARABA
+            ],
+            // PIATTO 65
+            [
+                'name' => 'Hummus',
+                'image' => '',
+                'description' => 'Crema di ceci condita con olio e paprika, ottimo con pane arabo',
+                'price' => 4,
+                'course' => 'Antipasto',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 175,
+                'restaurant_ids' => [15, 16], //ARABA
+            ],
+            // PIATTO 66
+            [
+                'name' => 'Mansaf',
+                'image' => '',
+                'description' => 'Riso con carne di agnello e salsa di yogurt',
+                'price' => 12.50,
+                'course' => 'Primo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 500,
+                'restaurant_ids' => [15, 16], //ARABA
+            ],
+            // PIATTO 67
+            [
+                'name' => 'Tabbouleh',
+                'image' => '',
+                'description' => 'Insalata di prezzemolo, pomodori, cipolle e bulgur',
+                'price' => 8.50,
+                'course' => 'Primo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 250,
+                'restaurant_ids' => [15, 16], //ARABA
+            ],
+            // PIATTO 68
+            [
+                'name' => 'Shish taouk',
+                'image' => '',
+                'description' => 'Pollo marinato con spezie mediorientali servito con riso basmati',
+                'price' => 12.50,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 400,
+                'restaurant_ids' => [15, 16], //ARABA
+            ],
+            // PIATTO 69
+            [
+                'name' => 'Maqluba',
+                'image' => '',
+                'description' => 'Riso, melanzane e carne di agnello stufati e serviti capovolti',
+                'price' => 15,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => false,
+                'kcal' => 550,
+                'restaurant_ids' => [15, 16], //ARABA
+            ],
+            // PIATTO 70
+            [
+                'name' => 'Kofta',
+                'image' => '',
+                'description' => 'Polpette di manzo e agnello speziate, grigliate e servite con insalata di pomodori e cetrioli',
+                'price' => 10,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => true,
+                'kcal' => 450,
+                'restaurant_ids' => [15, 16], //ARABA
+            ],
+            // PIATTO 71
+            [
+                'name' => 'Baklava',
+                'image' => '',
+                'description' => 'Dolce arabo a base di pasta fillo, noci e sciroppo di zucchero. Soffice e croccante al tempo stesso.',
+                'price' => 5.50,
+                'course' => 'Dolce',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 250,
+                'restaurant_ids' => [15, 16], //ARABA
+            ],
+            // PIATTO 72
+            [
+                'name' => 'Kanafeh',
+                'image' => '',
+                'description' => 'Dolce composto da pane arabo, formaggio fresco ricoperto da sciroppo di zucchero. Croccante fuori e morbido dentro.',
+                'price' => 7,
+                'course' => 'Dolce',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 400,
+                'restaurant_ids' => [15, 16], //ARABA
+            ],
+            // PIATTO 73
+            [
+                'name' => 'Shiraz',
+                'image' => '',
+                'description' => 'Vino rosso arabo dal sapore intenso e speziato',
+                'price' => 8.00,
+                'course' => 'Bevande',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => true,
+                'kcal' => 160,
+                'restaurant_ids' => [15, 16], //ARABA
+            ],
+            // PIATTO 74
+            [
+                'name' => 'Sahlab',
+                'image' => '',
+                'description' => 'Bevanda calda a base di polvere di tuberi di orchidee, aromatizzata alla cannella e alla noce moscata',
+                'price' => 3.50,
+                'course' => 'Bevande',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 150,
+                'restaurant_ids' => [15, 16], //ARABA
+            ],
+            // --------------CUCINA ARABA FINE------------------------------
+
+            // --------------CUCINA COREANA 75 - 85 - TYPE 7-------------
+            
 
 
             // PIATTO NUMERO
             // [
-            //     'name' => nome prodotto cucina giapponese
-            //     'image' => 
-            //     'description' => 10 parole sul relativo prodotto
-            //     'price' => prezzo del relativo prodotto
-            //     'course' => primo
-            //     'is_available' => true
-            //     'spicy' => 
-            //     'gluten_free' => 
-            //     'kcal' => 
+            //     'name' => 'nome prodotto cucina *inserire nome cucina*',
+            //     'image' => '',
+            //     'description' => '10 parole sul relativo prodotto',
+            //     'price' => prezzo del relativo prodotto,
+            //     'course' => '*portata*',
+            //     'is_available' => true,
+            //     'spicy' => true o false,
+            //     'gluten_free' => true o false,
+            //     'kcal' => inserire numero kcal,
             //     'restaurant_ids' => [],
             // ],
-            // --------------CUCINA GIAPPONESE FINE------------------------------
 
             // --------------CUCINA PLACEHOLDER  num - num - TYPE num------------
             // --------------CUCINA PLACEHOLDER FINE-----------------------------
