@@ -1,0 +1,35 @@
+// AREA DASHBOARD - ADMIN.BLADE.PHP
+//MENU RISTORATORE
+
+.menu {
+    background-color: rgba(204, 147, 71, 0.548);
+
+    .colorMenu {
+        color: black;
+        background-color: none;
+    }
+}
+
+.logout {
+    color: white;
+    font-size: 23px;
+}
+
+.logout:hover {
+    color: rgb(0, 0, 0);
+}
+
+.adminBots {
+    color: white;
+    font-size: 17px;
+}
+
+.adminBots:hover {
+    color: rgb(0, 0, 0);
+}
+
+
+//Backgroun dell'item selezionato nel menu
+.backgroundSelected {
+    background-color: rgba(252, 70, 107, 1);
+}

@@ -1,0 +1,29 @@
+// CONTENITORI FOTO NELLA SHOW DI FOOD (RICICLATO SU RESTAURANT)
+.photoBox {
+    width: 780px;
+    height: 460px;
+    margin-bottom: 50px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+}
+
+.placeholderBox {
+    width: 780px;
+    height: 360px;
+    margin-bottom: 40px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+}
+
+// CONTAINER INFO NELLA SHOW DI FOOD 
+.rightBox {
+    margin-left: 40%;
+}
