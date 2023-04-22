@@ -1,0 +1,113 @@
+@media screen and (max-width: 320px) {
+
+  // A DIMENSIONE 320PX FACCIAMO SPARIRE LA TABELLA CHE NORMALMENTE VEDIAMO SU TUTTI GLI ALTRI SCHERMI
+
+  .bigScreen {
+    display: none;
+  }
+
+  .smallScreen {
+    display: block;
+  }
+
+  // HEADER
+
+  .barraLogo {
+    //POSISIZIONE DEL LOGO NELL'HEADER
+    display: flex !important;
+    justify-content: center !important;
+
+    // CONTENITORE LOGO NELL'HEADER
+    .logo {
+      width: 130px;
+      height: 74px;
+      margin: 0px !important;
+      display: flex;
+      justify-content: center;
+
+      //DETTAGLI LOGO - POSIZIONAMENTO IMMAGINE ALL'INTERNO DELL'SUO CONTAINER
+      img {
+        width: 100%;
+        height: 100%;
+        margin: 0px 47px 0px 0px !important;
+      }
+    }
+  }
+
+  // WAVE EFFECT NELL'HEADER
+
+  .barraLogo:before {
+    content: "";
+  }
+
+  .barraLogo:after {
+    content: "";
+  }
+}
+
+// HAMBURGER MENU PER OFF CANVAS
+
+.offCanva {
+  top: 92px;
+  left: 0px;
+}
+
+//MODIFICA ACCOUNT BUTTON + ESCI BUTTON
+
+.modificaAccount {
+  font-size: 15px !important;
+  padding-left: 4px !important;
+}
+
+//MENU A COMPARSA DETAILS
+
+.centeredModificaAccount {
+  padding-left: 72px !important;
+  padding-right: 27px;
+}
+
+.menuSize {
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  font-size: 29px;
+  font-weight: 100;
+}
+
+// HOMEPAGE BUTTON - nel fondo del menu laterale
+
+.homepageButton {
+  position: static;
+  margin: 54px;
+}
+
+// DIMENSIONE ICONE NEL MENU LATERALE
+
+.iconSize {
+  font-size: 21px !important;
+  padding: -22px 0px;
+  vertical-align: 2px;
+}
+
+// CONTENITORE IMMAGINE NELLA DASHBOARD
+.queryContainer {
+  max-width: 288px;
+  max-height: 170px;
+  border-radius: 10px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 9px;
+
+  }
+}
+
+// LOGO QUANDO SIAMO IN FASE DI LOGIN
+
+.loginSet {
+  display: flex !important;
+  flex-wrap: inherit !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+}

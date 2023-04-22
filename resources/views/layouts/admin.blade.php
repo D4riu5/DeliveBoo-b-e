@@ -35,23 +35,26 @@
                     </div>
                 </div>
             </a>
-            <button class="navbar-toggler position-absolute d-md-none collapsed" type="button"
-                data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <div class="mx-4 ">
-
-                <div class="navbar-nav d-flex flex-row mx-3">
-                    <div class="nav-item px-3">
-                        <a class="nav-link adminBots" href="{{ url('profile') }}">
+            <div class="d-flex">
+                <div>
+                    <button class="offCanva navbar-toggler position-absolute d-md-none collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="centeredModificaAccount navbar-nav d-flex flex-row">
+                    <div class="nav-item">
+                        <a class="nav-link adminBots modificaAccount" href="{{ url('profile') }}">
                             <i class="fa-solid fa-user fa-lg fa-fw"></i> Modifica Account
                         </a>
                     </div>
+                </div>
+                <div class="navbar-nav d-flex flex-row">
 
-                    <div class="nav-item text-nowrap ms-2">
-                        <a class="nav-link adminBots" href="{{ route('logout') }}"
+                    <div class="nav-item text-nowrap">
+                        <a class="nav-link adminBots modificaAccount" href="{{ route('logout') }}"
                             onclick="event.preventDefault();
                     document.getElementById('logout-form').submit();">
                             <i class="fa-solid fa-user fa-lg fa-fw"></i>
@@ -69,37 +72,37 @@
         <div class="container-fluid" style="height: calc(100vh - 84px);">
 
             <div class="row h-100">
-                <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block menu navbar sidebar collapse">
-                    <div class="py-3">
-                        <ul class="nav flex-column">
+                <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block menu navbar sidebar collapse menuQuery">
+                    <div class="py-3 menuSize">
+                        <ul class="nav flex-column menuSize">
                             <li class="nav-item">
                                 <a class="nav-link colorMenu {{ Route::currentRouteName() == 'admin.dashboard' ? 'backgroundSelected' : '' }}"
                                     href="{{ route('admin.dashboard') }}">
-                                    <i class="fa-solid fa-utensils fa-lg fa-fw"></i> La mia attività
+                                    <i class="fa-solid fa-utensils fa-lg fa-fw iconSize"></i> La mia attività
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link colorMenu {{ Route::currentRouteName() == 'admin.food.index' ? 'backgroundSelected' : '' }}"
                                     href="{{ route('admin.food.index') }}">
-                                    <i class="fa-solid fa-table-list fa-lg fa-fw"></i> Il mio menu
+                                    <i class="fa-solid fa-table-list fa-lg fa-fw iconSize"></i> Il mio menu
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link colorMenu {{ Route::currentRouteName() == 'admin.order.index' ? 'backgroundSelected' : '' }}"
                                     href="{{ route('admin.order.index') }}">
-                                    <i class="fa-solid fa-arrow-down-short-wide fa-lg fa-fw"></i> I miei ordini
+                                    <i class="fa-solid fa-arrow-down-short-wide fa-lg fa-fw iconSize"></i> I miei ordini
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link colorMenu {{ Route::currentRouteName() == 'admin.type.index' ? 'backgroundSelected' : '' }}"
                                     href="{{ route('admin.type.index') }}">
-                                    <i class="fa-solid fa-kitchen-set fa-lg fa-fw"></i> Tipologie di cucina
+                                    <i class="fa-solid fa-kitchen-set fa-lg fa-fw iconSize"></i> Tipologie di cucina
                                 </a>
                             </li>
                         </ul>
                     </div>
 
-                    <div class="homepageButton my-5">
+                    <div class="homepageButton my-3">
                         <ul class="nav flex-column">
                             <li class="nav-item btn btn-danger">
                                 <a class="navbar-brand col-md-3 col-lg-2 homepage" href="/">Ritorna ad
