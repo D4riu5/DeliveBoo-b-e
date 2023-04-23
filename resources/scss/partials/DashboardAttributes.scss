@@ -33,3 +33,14 @@
 .backgroundSelected {
     background-color: rgba(252, 70, 107, 1);
 }
+
+// SEMPRE VISIBILE LA TABELLA GRANDE tranne che per 320 in giu
+.bigScreen {
+    display: block;
+}
+
+//MAI VISIBILE SE NON PER i 320px in giù
+
+.smallScreen {
+    display: none;
+}

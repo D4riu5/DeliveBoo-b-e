@@ -1,5 +1,5 @@
-@import '~bootstrap/scss/bootstrap';
-@import './partials/Mediaquery.scss'; //1
+//General Attributes
+
 @import './partials/TypeAttributes.scss'; //2
 @import './partials/HeaderAttributes.scss'; //3
 @import './partials/FoodAttributes.scss'; //4
@@ -7,3 +7,15 @@
 @import './partials/AllFormsAttributes.scss'; //6
 @import './partials/DashboardAttributes.scss'; // 7
 @import './partials/AllButtons.scss'; //8
+
+// Responsive Attributes
+
+@import './partials/ResponsiveDetails/320px.scss';
+@import './partials/ResponsiveDetails/375px.scss';
+@import './partials/ResponsiveDetails/425px.scss';
+@import './partials/ResponsiveDetails/768px.scss';
+@import './partials/ResponsiveDetails/1024px.scss';
+@import './partials/ResponsiveDetails/1440px.scss';
+@import './partials/ResponsiveDetails/2650px.scss';
+
+@import '~bootstrap/scss/bootstrap';
