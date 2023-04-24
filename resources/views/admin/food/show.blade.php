@@ -126,9 +126,7 @@
                         <a class="mt-2 btn btn-danger"
                             class="{{ Route::currentRouteName() == 'admin.food.index' ? 'bg-secondary' : '' }}"
                             href="{{ route('admin.food.index') }}">
-                            <h6>
-                                Torna sul mio menù
-                            </h6>
+                            Torna sul mio menù
                         </a>
                         <a href="{{ route('admin.food.edit', $food->id) }}" class="mt-2 btn btn-warning">
                             <h6>
@@ -189,92 +187,70 @@
                             {{ $food->price }} €
                         </p>
                     </div>
-                </div>
-
-
-                {{-- Status disponibilità --}}
-                <div>
-                    <h5 class="my-2">
-                        Disponibile?
-                    </h5>
-                    <p>
-                        {{ $food->is_available ? 'Si' : 'No' }}
-                    </p>
-                </div>
-                {{-- Prezzo prodotto  --}}
-                <div>
-                    <h5 class="my-2">
-                        Prezzo:
-                    </h5>
-                    <p>
-                        {{ $food->price }} €
-                    </p>
-                </div>
-                <div>
-                    <h5 class="my-2">
-                        E' un prodotto piccante?
-                    </h5>
-                    <p>
-                        @if ($food->food_detail->spicy !== null)
-                            @if ($food->food_detail->spicy == 1)
-                                <p>Si</p>
-                            @elseif ($food->food_detail->spicy == 0)
-                                <p>No</p>
-                            @endif
-                        @else
-                            <p>Non specificato</p>
-                        @endif
-                    </p>
-                </div>
-                <div>
-                    <h5 class="my-2">
-                        Contiene glutine?
-                    </h5>
-                    <p>
-                        @if ($food->food_detail->gluten_free !== null)
-                        @if ($food->food_detail->gluten_free == 1)
-                            <p>Si</p>
-                        @elseif ($food->food_detail->gluten_free == 0)
-                            <p>No</p>
-                        @endif
-                    @else
-                        <p>Non specificato</p>
-                    @endif
-                    </p>
-                </div>
-                <div>
-                    <h5 class="my-2">
-                        Quante calorie contiene?:
-                    </h5>
-                    <p>
-                        @if ($food->food_detail && $food->food_detail->kcal !== null)
-                        {{ $food->food_detail->kcal . ' kcal' }}
-                    @else
+                    <div class="col-12">
+                        <h4 class="my-1">
+                            E' piccante?
+                        </h4>
                         <p>
-                            Non specificato
+                            @if ($food->food_detail->spicy !== null)
+                                @if ($food->food_detail->spicy == 1)
+                                    <p>Si</p>
+                                @elseif ($food->food_detail->spicy == 0)
+                                    <p>No</p>
+                                @endif
+                            @else
+                                <p>Non specificato</p>
+                            @endif
                         </p>
-                    @endif
-                    </p>
+                    </div>
+                    <div class="col-12">
+                        <h4 class="my-1">
+                            Contiene glutine?
+                        </h4>
+                        <p>
+                            @if ($food->food_detail->gluten_free !== null)
+                                @if ($food->food_detail->gluten_free == 1)
+                                    <p>Si</p>
+                                @elseif ($food->food_detail->gluten_free == 0)
+                                    <p>No</p>
+                                @endif
+                            @else
+                                <p>Non specificato</p>
+                            @endif
+                        </p>
+                    </div>
+                    <div class="col-12">
+                        <h4 class="my-1">
+                            Quante calorie contiene?
+                        </h4>
+                        <p>
+                            @if ($food->food_detail && $food->food_detail->kcal !== null)
+                                {{ $food->food_detail->kcal . ' kcal' }}
+                            @else
+                                <p>
+                                    Non specificato
+                                </p>
+                            @endif
+                        </p>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <div class="ms-1">
+                            <a class="mt-2 btn btn-danger fontResponsive"
+                                class="{{ Route::currentRouteName() == 'admin.food.index' ? 'bg-secondary' : '' }}"
+                                href="{{ route('admin.food.index') }}">
+                                Torna sul mio menù
+                            </a>
+                        </div>
+                        <div class="ms-1">
+                            <a href="{{ route('admin.food.edit', $food->id) }}" class="mt-2 btn btn-warning fontResponsive">
+                                Modifica patto
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            </div>
         </div>
-        {{-- PULSANTE RITORNO A MIEI PRODOTTI  --}}
-        <div class="d-flex justify-content-center">
-            <a class="mt-2 btn btn-danger"
-                class="{{ Route::currentRouteName() == 'admin.food.index' ? 'bg-secondary' : '' }}"
-                href="{{ route('admin.food.index') }}">
-                <h6>
-                    Torna sul mio menù
-                </h6>
-            </a>
-            <a href="{{ route('admin.food.edit', $food->id) }}" class="mt-2 btn btn-warning">
-                <h6>
-                    Modifica piatto
-                </h6>
-            </a>
-        </div>
-
+    </div>
     </div>
     </div>
     </div>

@@ -199,19 +199,19 @@
                                         @csrf
                                         @method('DELETE')
                                         <button class="btn btn-danger" type="button" data-bs-toggle="modal"
-                                            data-bs-target="#exampleModal{{ $food->id }}">
+                                            data-bs-target="#Modal{{ $food->id }}">
                                             <i class="fa-solid fa-trash"></i>
                                         </button>
 
-                                        <div class="modal fade" id="exampleModal{{ $food->id }}" tabindex="-1"
-                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal fade" id="Modal{{ $food->id }}" tabindex="-1"
+                                            aria-labelledby="ModalLabel" aria-hidden="true">
 
                                             <div class="modal-dialog">
 
                                                 <div class="modal-content">
 
                                                     <div class="modal-header">
-                                                        <h1 class="modal-title fs-5" id="exampleModalLabel"> Conferma
+                                                        <h1 class="modal-title fs-5" id="ModalLabel"> Conferma
                                                             eliminazione
                                                         </h1>
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal"

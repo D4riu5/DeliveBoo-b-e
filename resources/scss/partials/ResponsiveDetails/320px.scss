@@ -155,3 +155,22 @@
 .rightBox {
   margin-left: 40%;
 }
+
+//FONT DEI BOTTONI NELLA SHOW DI FOOD
+
+.fontResponsive {
+  font-size: 13px !important;
+}
+
+//EDIT FOOD IMG
+
+.editFoodimg {
+  width: 290px;
+  height: 170px;
+  border-radius: 8px;
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 9px;
+  }
+}

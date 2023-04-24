@@ -103,8 +103,9 @@
                                         Rimuovi immagine
                                     </label>
                                 </div>
-
-                                <img src="{{ asset('storage/' . $food->image) }}" style="height: 400px;" alt="food">
+                                <div class="editFoodimg">
+                                    <img src="{{ asset('storage/' . $food->image) }}" alt="food">
+                                </div>
                             </div>
                         @endif
 
