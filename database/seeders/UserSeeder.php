@@ -441,7 +441,7 @@ class UserSeeder extends Seeder
             'user_id' => $user22->id,
         ]);
         
-        $restaurant22->types()->attach([10]);
+        $restaurant22->types()->attach([5, 10]);
 
         // USER 23
         $user23 = User::create([
