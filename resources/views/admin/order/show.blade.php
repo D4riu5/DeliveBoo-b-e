@@ -29,7 +29,19 @@
                             {{ $order->status }}
                         </span>
                     </div>
-                </div>
+                </div>  
+
+                <h4 class="my-2">
+                    Lista prodotti:
+                </h4>
+
+                <ul class="my-2">
+                    @foreach ($order->foods as $food)
+                        <li>{{ $food->name }} - {{ $food->price }} €  x {{ $food->pivot->quantity }}</li>
+                    @endforeach
+                </ul>
+
+
                 <a class="btn btn-danger my-5" class="{{ Route::currentRouteName() == 'admin.order.index' ? 'bg-secondary' : '' }}" href="{{route('admin.order.index')}}">
                     Torna su Miei Ordini
                 </a>
