@@ -1,6 +1,6 @@
 <section class="space-y-6">
     <header>
-        <h2 class="text-lg font-medium text-gray-900 updateTitle">
+        <h2 class="text-bg-dark">
             {{ __('Delete Account') }}
         </h2>
 
@@ -18,7 +18,7 @@
     <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
     <div class="modal fade" id="delete-account" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="delete-account" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
+            <div class="modal-content modalStyle">
                 <div class="modal-header">
                     <h5 class="modal-title" id="delete-account">Delete Account</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -32,8 +32,6 @@
                     </p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-
                     <form method="post" action="{{ route('profile.destroy') }}" class="p-6">
                         @csrf
                         @method('delete')
@@ -41,7 +39,7 @@
 
                         <div class="input-group">
 
-                            <input id="password" name="password" type="password" class="form-control" placeholder="{{ __('Password') }}" />
+                            <input id="password" name="password" type="password" class="form-control inputDelete" placeholder="{{ __('Password') }}" />
 
                             @error('password')
                             <span class="invalid-feedback mt-2" role="alert">
@@ -51,13 +49,13 @@
 
 
 
-                            <button type="submit" class="btn btn-danger mt-3">
+                            <button type="submit" class="btn btn-danger mx-0 mt-3">
                                 {{ __('Delete Account') }}
                             </button>
                             <!--  -->
                         </div>
                     </form>
-
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
                 </div>
             </div>
         </div>

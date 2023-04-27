@@ -5,9 +5,9 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header formHeader">{{ __('Utente') }}</div>
+                    <div class="card-header text-bg-dark">{{ __('Utente') }}</div>
 
-                    <div class="card-body py-4 px-0 formBody">
+                    <div class="card-body text-bg-dark py-4 px-0">
                         {{-- Form di Regitrazione --}}
                         <form id="register-form" method="POST" action="{{ route('register') }}">
                             @csrf
@@ -198,16 +198,16 @@
                                     </div>
                                 </div>
                             </div>
-
+                            <div>
                             {{-- SELEZIONA CATEGORIE MENU  --}}
                             <div class="card-header text-center fs-5 mb-4 w-100 border-top">
                                 {{ __('Seleziona categorie:') }}</div>
 
                             {{-- DATI PER LA TABELLA TYPES --}}
-                            <div class="flex-center">
-                                <div class="d-flex flex-wrap m-auto justify-content-center">
+                            <div class="d-flex flex-column">
+                                <div class="d-flex flex-wrap m-auto justify-content-start ms-1 ps-4">
                                     @foreach ($types as $type)
-                                        <div class="form-check form-check-inline">
+                                        <div class="form-check form-check-inline col-5">
                                             <input class="form-check-input" name="types[]" type="checkbox"
                                                 id="type-{{ $type->id }}" {{-- {{ in_array($type->id, old('types', [])) ? 'checked' : '' }} --}}
                                                 @if (old('types') && is_array(old('types')) && count(old('types')) > 0) {{ in_array($type->id, old('types')) ? 'checked' : '' }} @endif
@@ -234,14 +234,13 @@
                             {{-- BOTTONE REGISTRATI  --}}
                             <div class="d-flex justify-content-center">
                                 <div>
-
-
-
-                                    <button id="submit-btn" type="submit" class="btn btn-warning my-3" disabled>
+                                    <button id="submit-btn" type="submit" class="btn btn-danger my-3" disabled>
                                         {{ __('Registrati') }}
                                     </button>
                                 </div>
                             </div>
+                                                        </div>
+
                         </form>
                     </div>
                 </div>

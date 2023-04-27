@@ -137,14 +137,14 @@
 
                 </div>
                 <div class="smallScreen">
-                    <h3 class="text-center">
+                    <h3 class="text-center restaurantName mb-4">
                         {{ $food->name }}
                     </h3>
                     <div class="d-flex ">
                         {{-- IMMAGINE --}}
-                        <div class="col-12">
+                        <div class="col-1">
                             @if ($food->image != null)
-                                <div class="photoBox">
+                                <div class="img320 mb-4">
                                     <img src="{{ asset('storage/' . $food->image) }}" alt="food">
                                 </div>
                             @else

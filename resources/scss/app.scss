@@ -19,3 +19,30 @@
 @import './partials/ResponsiveDetails/2650px.scss';
 
 @import '~bootstrap/scss/bootstrap';
+
+.menuSize {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: space-evenly!important;
+    font-size: 21px;
+    font-weight: 100;
+}
+
+.gutter {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+}
+
+.mainColor {
+    background-color: rgba(53,54,58,255);
+    color: white !important;
+}
+
+
+.titleColor {
+    color: white;
+}
+
+.modalStyle {
+    background-color: #000 !important;
+}

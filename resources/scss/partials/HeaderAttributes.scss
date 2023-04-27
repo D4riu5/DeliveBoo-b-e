@@ -1,72 +1,93 @@
 // TUTTI GLI ATTRIBUTI PER LA NAVBAR - CLASSI CREATE SU APP.BLADE.PHP
 // COLORI BARRE
 .barraColor {
-    background: hsla(39, 100%, 50%, 1);
+    background: rgb(0, 0, 0);
     // background: rgb(255,255,255);
     // background: linear-gradient(106deg, rgba(255,255,255,0) 0%, rgba(252,70,107,1) 17%, rgba(252,70,107,1) 100%);
 }
 
 
 // ATTRIBUTI DELLE BARRE: SUPERIORE E INFERIORE
-.barraLogo {
-    width: 100%;
-    --bs-navbar-padding-y: 0, 25rem;
-    background: hsla(39, 100%, 50%, 1);
 
-    background: linear-gradient(0deg, hsla(39, 100%, 50%, 1) 15%, hsla(348, 97%, 63%, 1) 52%);
+// CONTENITORE LOGO
+.logo {
+    width: 130px;
+    height: 74px;
+    margin: 0px !important;
 
-    background: -moz-linear-gradient(0deg, hsla(39, 100%, 50%, 1) 15%, hsla(348, 97%, 63%, 1) 52%);
-
-    background: -webkit-linear-gradient(0deg, hsla(39, 100%, 50%, 1) 15%, hsla(348, 97%, 63%, 1) 52%);
-
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFA500", endColorstr="#FC466B", GradientType=1);
-
-
-
-    // CONTENITORE LOGO
-    .logo {
-        width: 130px;
-        height: 74px;
-        margin: 0px !important;
-
-        //DETTAGLI LOGO
-        img {
-            width: 100%;
-            height: 100%;
-        }
+    //DETTAGLI LOGO
+    img {
+        width: 100%;
+        height: 100%;
     }
 }
 
-.barraLogo:before {
-    content: "";
-    display: block;
-    position: absolute;
-    border-radius: 85% 58%;
-    width: 1001px;
-    height: 977px;
-    background: hsla(39, 100%, 50%, 1);
+// .barraLogo:before {
+//     content: "";
+//     display: block;
+//     position: absolute;
+//     border-radius: 85% 58%;
+//     width: 1001px;
+//     height: 977px;
+//     right: 418px;
+//     top: -921px;
+//     background-image: linear-gradient(272deg, hsl(347, 100%, 63%) 0%, hsl(347, 100%, 63%) 2%, hsl(349, 53%, 42%) 31%, hsl(0, 0%, 0%) 100%);
+// }
 
-    background: hsla(39, 100%, 50%, 1);
+// .barraLogo:after {
+//     content: "";
+//     display: block;
+//     position: absolute;
+//     border-radius: 85% 58%;
+//     width: 656px;
+//     height: 962px;
+//     right: 13px;
+//     top: -929px;
+//     background-image: linear-gradient(80deg, hsl(347, 100%, 63%) 0%, hsl(347, 100%, 63%) 2%, hsl(349, 53%, 42%) 31%, hsl(0, 0%, 0%) 100%);
+// }
 
-    background: linear-gradient(180deg, hsla(39, 100%, 50%, 1) 58%, hsla(348, 97%, 63%, 1) 74%);
-
-    background: -moz-linear-gradient(180deg, hsla(39, 100%, 50%, 1) 58%, hsla(348, 97%, 63%, 1) 74%);
-
-    background: -webkit-linear-gradient(180deg, hsla(39, 100%, 50%, 1) 58%, hsla(348, 97%, 63%, 1) 74%);
-
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFA500", endColorstr="#FC466B", GradientType=1);
-    right: 418px;
-    top: -921px;
+.shadBox {
+    box-shadow: -1px 9px 20px 0px rgba(0, 0, 0, 0.349) inset;
 }
 
-.barraLogo:after {
-    content: "";
-    display: block;
-    position: absolute;
-    border-radius: 85% 58%;
-    width: 656px;
-    height: 962px;
-    background-color: orange;
-    right: 13px;
-    top: -929px;
+.marginHeader {
+    margin: 100px 0px;
+}
+
+.marginBody {
+    margin: 170px 0px 0px 0px;
+}
+
+//BACKROUND NAVBAR
+
+.backG {
+    background-color: #7f7171c7;
+}
+
+// BOTTONI LA MIA ATTIVITA' - IL MIO MENù - I MIEI ORDINI - TIPOLOGIE DI CUCINA
+
+.colorMenu {
+    color: white;
+    background-color: none;
+}
+
+.colorMenu:hover {
+    color: yellow;
+}
+
+.colorMenu:focus {
+    color: white;
+}
+
+.menuSize {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: space-evenly !important;
+    font-size: 21px;
+    font-weight: 100;
+}
+
+.gutter {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
 }
