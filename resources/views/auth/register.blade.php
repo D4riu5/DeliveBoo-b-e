@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container formMargin">
+    <div class="container-fluid formMargin">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
@@ -127,7 +127,7 @@
                             {{-- REGISTRAZIONE RISTORANTE --}}
                             <div class="card-header text-center fs-4 my-4 border-top">{{ __('Attività') }}</div>
                             {{-- NAME --}}
-                            <div class="px-3 my-3 w-75 m-auto">
+                            <div class="px-3 my-5 w-75 m-auto">
                                 <div class="form-group row">
                                     <label for="name">{{ __("Nome Attività'") }}<span class="text-danger">
                                             *</span></label>
@@ -199,48 +199,47 @@
                                 </div>
                             </div>
                             <div>
-                            {{-- SELEZIONA CATEGORIE MENU  --}}
-                            <div class="card-header text-center fs-5 mb-4 w-100 border-top">
-                                {{ __('Seleziona categorie:') }}</div>
+                                {{-- SELEZIONA CATEGORIE MENU  --}}
+                                <div class="card-header text-center fs-5 mb-4 w-100 border-top">
+                                    {{ __('Seleziona categorie:') }}</div>
 
-                            {{-- DATI PER LA TABELLA TYPES --}}
-                            <div class="d-flex flex-column">
-                                <div class="d-flex flex-wrap m-auto justify-content-start ms-1 ps-4">
-                                    @foreach ($types as $type)
-                                        <div class="form-check form-check-inline col-5">
-                                            <input class="form-check-input" name="types[]" type="checkbox"
-                                                id="type-{{ $type->id }}" {{-- {{ in_array($type->id, old('types', [])) ? 'checked' : '' }} --}}
-                                                @if (old('types') && is_array(old('types')) && count(old('types')) > 0) {{ in_array($type->id, old('types')) ? 'checked' : '' }} @endif
-                                                value="{{ $type->id }}">
+                                {{-- DATI PER LA TABELLA TYPES --}}
+                                <div class="d-flex flex-column">
+                                    <div class="d-flex flex-wrap m-auto justify-content-start ms-1 ps-4">
+                                        @foreach ($types as $type)
+                                            <div class="form-check form-check-inline col-5">
+                                                <input class="form-check-input" name="types[]" type="checkbox"
+                                                    id="type-{{ $type->id }}" {{-- {{ in_array($type->id, old('types', [])) ? 'checked' : '' }} --}}
+                                                    @if (old('types') && is_array(old('types')) && count(old('types')) > 0) {{ in_array($type->id, old('types')) ? 'checked' : '' }} @endif
+                                                    value="{{ $type->id }}">
 
-                                            <label class="form-check-label" for="type-{{ $type->id }}">
-                                                {{ $type->name }}
-                                            </label>
-                                        </div>
-                                    @endforeach
+                                                <label class="form-check-label" for="type-{{ $type->id }}">
+                                                    {{ $type->name }}
+                                                </label>
+                                            </div>
+                                        @endforeach
+                                    </div>
+                                    {{-- Message displayed if no checkbox is selected --}}
+                                    <strong>
+                                        <div id="types-error" class="text-danger text-center"></div>
+                                    </strong>
+
                                 </div>
-                                {{-- Message displayed if no checkbox is selected --}}
-                                <strong>
-                                    <div id="types-error" class="text-danger text-center"></div>
-                                </strong>
-
+                                {{-- ERRORI PER GLI ELEMENTI DI TYPES --}}
+                                @error('types')
+                                    <div class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </div>
+                                @enderror
+                                {{-- BOTTONE REGISTRATI  --}}
+                                <div class="d-flex justify-content-center">
+                                    <div>
+                                        <button id="submit-btn" type="submit" class="btn btn-danger my-3" disabled>
+                                            {{ __('Registrati') }}
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
-                            {{-- ERRORI PER GLI ELEMENTI DI TYPES --}}
-                            @error('types')
-                                <div class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </div>
-                            @enderror
-                            {{-- BOTTONE REGISTRATI  --}}
-                            <div class="d-flex justify-content-center">
-                                <div>
-                                    <button id="submit-btn" type="submit" class="btn btn-danger my-3" disabled>
-                                        {{ __('Registrati') }}
-                                    </button>
-                                </div>
-                            </div>
-                                                        </div>
-
                         </form>
                     </div>
                 </div>

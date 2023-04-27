@@ -2,7 +2,7 @@
 @section('content')
     {{-- SE LO SCHERMO E' GRANDE -> DISPLAY BLOCK --}}
     <div class="container-fluid mt-4 bigScreen">
-        <div class="container marginPerResponsive">
+        <div class="container-fluid marginPerResponsive">
             <div class="row">
                 <div class="col-md-12">
                     <table class="table">
@@ -157,7 +157,7 @@
                     </h1>
                 </div>
                 <div class="d-flex justify-content-center py-2">
-                    <div class="img-fluid queryContainer">
+                    <div class="queryContainer">
                         <img src="{{ asset('storage/' . $restaurant->image) }}" alt="Myrestaurant">
                     </div>
                 </div>

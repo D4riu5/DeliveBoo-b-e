@@ -27,24 +27,16 @@
     <div id="app">
         <div class="bigScreen">
             <header style="height:100px;"
-                class="header finisher-header barraLogo barraColor navbar fixed-top bg-dark flex-md-nowrap">
-                <a class="navbar-brand col-md-3 col-lg-2 me-0 text-center" href="{{ env('APP_FRONTEND_URL') }}">
-                    <div class="d-flex align-items-center ms-5">
+                class="header finisher-header barraLogo barraColor navbar fixed-top bg-dark">
+                <a class="" href="{{ env('APP_FRONTEND_URL') }}">
+                    <div class="d-flex align-items-center mx-1">
                         <div class="logo">
                             {{-- LOGO ROSSO NERO --}}
                             <img src="{{ asset('storage/logo/7.png') }}">
                         </div>
                     </div>
                 </a>
-
                 <div class="d-flex">
-                    <div>
-                        <button class="offCanva navbar-toggler position-absolute d-md-none collapsed" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                    </div>
                     <div class="centeredModificaAccount navbar-nav d-flex flex-row">
                         <div class="nav-item">
                             <a class="nav-link adminBots modificaAccount" href="{{ url('profile') }}">
@@ -121,7 +113,7 @@
                     <div class="centeredModificaAccount navbar-nav d-flex flex-row">
                         <div class="nav-item">
                             <a class="nav-link adminBots modificaAccount" href="{{ url('profile') }}">
-                                <i class="fa-solid fa-user fa-lg fa-fw"></i> Modifica Account
+                                <i class="fa-solid fa-user fa-lg fa-fw"></i> Account
                             </a>
                         </div>
                     </div>
