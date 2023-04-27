@@ -89,7 +89,7 @@
                                         </label>
                                     </div>
                                     {{-- STAMPA IMMAGINE --}}
-                                    <div class="img-fluid">
+                                    <div class="editResta">
                                         <img src="{{ asset('storage/' . $restaurant->image) }}" alt="restaurant">
                                     </div>
 

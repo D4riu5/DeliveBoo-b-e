@@ -1,4 +1,156 @@
    /* Tablet */
-  @media screen and (max-width: 768px) {
-    /* Inserisci qui le tue regole CSS per questa risoluzione */
-  }
+   @media screen and (min-width: 425px) and (max-width: 768px) {
+
+     .bigScreen {
+       display: block;
+     }
+
+     .smallScreen {
+       display: none;
+     }
+
+     // APP.BLADE -> (fuori dal login) -> TASTI ACCEDI E REGISTRATI
+     .navButton {
+       color: white !important;
+     }
+
+     .navButton:hover {
+       color: #FF446C !important;
+     }
+
+     //MARGINE DI LOGIN CON HEADER
+     .loginMargin {
+       margin-top: 38px !important;
+     }
+
+     // DASHBOARD
+     .modificaAccount {
+       // Più tasto esci
+       font-size: 16px !important;
+       padding-left: 4px !important;
+       padding-right: 20px !important;
+     }
+
+     .adminBots {
+       //COLORE TASTI MODIFICA ACCOUNT + ESCI
+       color: white !important;
+     }
+
+     .adminBots:hover {
+       color: #FF446C !important;
+     }
+
+     .menuSize {
+       width: 100% !important;
+       display: flex !important;
+       justify-content: space-evenly !important;
+       font-size: 16px;
+       font-weight: 100;
+     }
+
+     .backG {
+       // BACKGROUND NAVBAR - LA MIA ATTIVITA' - IL MIO MENU - I MIEI ORDINI - TIPOLOGIE DI CUCINa
+       background-color: rgb(127, 113, 113);
+
+       .colorMenu {
+         //LA MIA ATTIVITA' - IL MIO MENU - I MIEI ORDINI - TIPOLOGIE DI CUCINa
+         color: white;
+       }
+
+       .colorMenu:hover {
+         // LA MIA ATTIVITA' - IL MIO MENU - I MIEI ORDINI - TIPOLOGIE DI CUCINa
+         color: #FF446C;
+       }
+     }
+
+     //IMMAGINE DASHBOARD
+     .queryContainer {
+       width: 697px;
+       height: 454px;
+       border-radius: 10px;
+
+       img {
+         width: 100%;
+         height: 100%;
+         border-radius: 10px;
+       }
+     }
+
+     //  IL MIO MENU 
+
+     // LINE HEIGHT DELLA TABELLA
+     .lineH {
+       line-height: 35px;
+     }
+
+     //  SHOW DI FOOD
+     .boxPhoto {
+       width: 718px;
+       height: 383px;
+     }
+
+     .foodTitle {
+       color: #FF446C;
+     }
+
+     //EDIT FOOD
+     .photoBox {
+       width: 742px;
+       height: 472px;
+       margin-bottom: 50px;
+     }
+
+     .editFoodimg {
+       width: 746px;
+       height: 500px;
+       border-radius: 10px;
+
+       img {
+         width: 100%;
+         height: 100%;
+         border-radius: 10px;
+       }
+     }
+
+     //EDIT RESTAURANT
+     .editResta {
+       width: 738px;
+       height: 398px;
+       border-radius: 10px;
+
+       img {
+         width: 100%;
+         height: 100%;
+         border-radius: 10px;
+       }
+     }
+
+     //SHOW RESTAURANT
+     .showResta {
+       width: 500px;
+       height: 319px;
+       border-radius: 10px;
+
+       img {
+         width: 100%;
+         height: 100%;
+         border-radius: 10px;
+       }
+     }
+
+     .restaName {
+       color: #FF446C;
+     }
+
+     //MODIFICA PROFILO
+     //MARGIn
+     .formMargin {
+       margin-top: 27px !important;
+
+     }
+
+     //PASSWORD RESET
+     .passwordReset {
+      margin-top: 44px !important;
+     }
+   }

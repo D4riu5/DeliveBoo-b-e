@@ -2,13 +2,21 @@
 
 @section('content')
     <div class="container-fluid mt-4">
-        <div class="row justify-content-center mb-4">
+        <div class="row justify-content-center ">
             <div class="col">
                 @include('partials.success')
                 <div class="bigScreen">
-                    <h1>
+                    <h1 class="foodTitle text-center mb-4">
                         {{ $food->name }}
                     </h1>
+                    <div class="col-12 ps-3 mt-1">
+                        <h3 class="my-2">
+                            Descrizione:
+                        </h3>
+                        <p>
+                            {!! nl2br($food->description) !!}
+                        </p>
+                    </div>
                     <div class="d-flex">
                         {{-- IMMAGINE --}}
                         <div class="col-auto">
@@ -23,115 +31,100 @@
                                 </div>
                             @endif
                         </div>
-                        {{-- Descrizione prodotto  --}}
-                        <div class="col-3 px-1 mt-1">
-                            <h3 class="my-2">
-                                Descrizione:
-                            </h3>
-                            <p>
-                                {!! nl2br($food->description) !!}
-                            </p>
-                        </div>
                     </div>
 
                     {{-- CONTENITORE INFO PER LO SHOW - FLEXATO --}}
-                    <div class="d-flex">
-                        {{-- BLOCCO INFO A SINISTRA --}}
-                        <div>
+                    <div class="d-flex justify-content-center">
+                        <div class="d-flex flex-column mb-5">
+                            {{-- BLOCCO INFO A SINISTRA --}}
                             {{-- Dettaglio Portata --}}
                             <div>
-                                <h5 class="my-2">
+                                <span class="fw-bold">
                                     Portata:
-                                </h5>
-                                <p>
+                                </span>
+                                <span>
                                     {{ $food->course }}
-                                </p>
+                                </span>
                             </div>
                             {{-- Status disponibilità --}}
-                            <div>
-                                <h5 class="my-2">
+                            <div class="my-4">
+                                <span class="fw-bold">
                                     Disponibile?
-                                </h5>
-                                <p>
+                                </span>
+                                <span>
                                     {{ $food->is_available ? 'Si' : 'No' }}
-                                </p>
+                                </span>
                             </div>
                             {{-- Prezzo prodotto  --}}
                             <div>
-                                <h5 class="my-2">
+                                <span class="fw-bold">
                                     Prezzo:
-                                </h5>
-                                <p>
+                                </span>
+                                <span>
                                     {{ $food->price }} €
-                                </p>
+                                </span>
                             </div>
                         </div>
-
-                        {{-- BLOCCO INFO A SINISTRA --}}
-                        <div class="rightBox pt-1">
-
-
-                            {{-- INFO PICCANTE  --}}
+                        <div class="d-flex flex-column ms-5">
                             <div>
-                                <h5 class="my-2">
+                                <span class="fw-bold">
                                     E' un prodotto piccante?
-                                </h5>
-                                @if ($food->food_detail->spicy !== null)
-                                    @if ($food->food_detail->spicy == 1)
-                                        <p>Si</p>
-                                    @elseif ($food->food_detail->spicy == 0)
-                                        <p>No</p>
+                                </span>
+                                <span>
+                                    @if ($food->food_detail->spicy !== null)
+                                        @if ($food->food_detail->spicy == 1)
+                                            <span>Si</span>
+                                        @elseif ($food->food_detail->spicy == 0)
+                                            <span>No</span>
+                                        @endif
+                                    @else
+                                        <span>Non specificato</span>
                                     @endif
-                                @else
-                                    <p>Non specificato</p>
-                                @endif
+                                </span>
                             </div>
-
-
-
-                            {{-- INFO GLUTINE  --}}
-                            <div>
-                                <h5 class="my-2">
+                            {{-- Status disponibilità --}}
+                            <div class="my-4">
+                                <span class="fw-bold">
                                     Contiene Glutine?
-                                </h5>
-                                @if ($food->food_detail->gluten_free !== null)
-                                    @if ($food->food_detail->gluten_free == 1)
-                                        <p>Si</p>
-                                    @elseif ($food->food_detail->gluten_free == 0)
-                                        <p>No</p>
+                                </span>
+                                <span>
+                                    @if ($food->food_detail->gluten_free !== null)
+                                        @if ($food->food_detail->gluten_free == 1)
+                                            <span>Si</span>
+                                        @elseif ($food->food_detail->gluten_free == 0)
+                                            <span>No</span>
+                                        @endif
+                                    @else
+                                        <span>Non specificato</span>
                                     @endif
-                                @else
-                                    <p>Non specificato</p>
-                                @endif
+                                </span>
                             </div>
-
-                            {{-- CALORIE CONTENUTE  --}}
+                            {{-- Prezzo prodotto  --}}
                             <div>
-                                <h5 class="my-2">
+                                <span class="fw-bold">
                                     Quante calorie contiene?
-                                </h5>
-                                @if ($food->food_detail && $food->food_detail->kcal !== null)
-                                    {{ $food->food_detail->kcal . ' kcal' }}
-                                @else
-                                    <p>
-                                        Non specificato
-                                    </p>
-                                @endif
+                                </span>
+                                <span>
+                                    @if ($food->food_detail && $food->food_detail->kcal !== null)
+                                        {{ $food->food_detail->kcal . ' kcal' }}
+                                    @else
+                                        <span>
+                                            Non specificato
+                                        </span>
+                                    @endif
+                                </span>
                             </div>
-
                         </div>
                     </div>
                     {{-- PULSANTE RITORNO A MIEI PRODOTTI  --}}
-                    <div class="">
-                        <a class="mt-2 btn btn-danger"
+                    <div class="d-flex justify-content-center">
+                        <a class="btn btn-danger mx-4 my-4"
                             class="{{ Route::currentRouteName() == 'admin.food.index' ? 'bg-secondary' : '' }}"
                             href="{{ route('admin.food.index') }}">
-                            Torna sul mio menù
+                            Torna sul menù
                         </a>
-                        <a href="{{ route('admin.food.edit', $food->id) }}" class="mt-2 btn btn-warning">
-                            <h6>
-                                Modifica piatto
-                            </h6>
+                        <a href="{{ route('admin.food.edit', $food->id) }}" class="btn btn-warning mx-4 my-4">
+                            Modifica piatto
                         </a>
                     </div>
 
@@ -238,11 +231,12 @@
                             <a class="mt-2 btn btn-danger fontResponsive"
                                 class="{{ Route::currentRouteName() == 'admin.food.index' ? 'bg-secondary' : '' }}"
                                 href="{{ route('admin.food.index') }}">
-                                Torna sul mio menù
+                                Torna sul menù
                             </a>
                         </div>
                         <div class="ms-1">
-                            <a href="{{ route('admin.food.edit', $food->id) }}" class="mt-2 btn btn-warning fontResponsive">
+                            <a href="{{ route('admin.food.edit', $food->id) }}"
+                                class="mt-2 btn btn-warning fontResponsive">
                                 Modifica patto
                             </a>
                         </div>

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container formMargin">
+    <div class="container-fluid formMargin">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
@@ -127,7 +127,7 @@
                             {{-- REGISTRAZIONE RISTORANTE --}}
                             <div class="card-header text-center fs-4 my-4 border-top">{{ __('Attività') }}</div>
                             {{-- NAME --}}
-                            <div class="px-3 my-3 w-75 m-auto">
+                            <div class="px-3 my-5 w-75 m-auto">
                                 <div class="form-group row">
                                     <label for="name">{{ __("Nome Attività'") }}<span class="text-danger">
                                             *</span></label>
@@ -198,7 +198,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="paddingCategory">
+                            <div>
                                 {{-- SELEZIONA CATEGORIE MENU  --}}
                                 <div class="card-header text-center fs-5 mb-4 w-100 border-top">
                                     {{ __('Seleziona categorie:') }}</div>

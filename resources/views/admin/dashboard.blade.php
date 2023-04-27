@@ -2,7 +2,7 @@
 @section('content')
     {{-- SE LO SCHERMO E' GRANDE -> DISPLAY BLOCK --}}
     <div class="container-fluid mt-4 bigScreen">
-        <div class="container marginPerResponsive">
+        <div class="container-fluid marginPerResponsive">
             <div class="row">
                 <div class="col-md-12">
                     <table class="table">

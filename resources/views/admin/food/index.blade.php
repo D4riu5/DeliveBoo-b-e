@@ -77,31 +77,31 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th class="text-white" scope="col ">ID</th>
-                            <th class="text-white" scope="col">Nome</th>
-                            <th class="text-white" scope="col">Portata</th>
-                            <th class="text-white" scope="col">Prezzo</th>
-                            <th class="text-white" scope="col">Disponibile</th>
-                            <th class="text-white" scope="col">Actions</th>
+                            <th class="text-white text-center" scope="col ">ID</th>
+                            <th class="text-white text-center" scope="col">Nome</th>
+                            <th class="text-white text-center" scope="col">Portata</th>
+                            <th class="text-white text-center" scope="col">Prezzo</th>
+                            <th class="text-white text-center" scope="col">Disponibile</th>
+                            <th class="text-white text-center" scope="col">Actions</th>
                         </tr>
                     </thead>
                     <tbody>
                         @foreach ($foods as $food)
                             <tr>
-                                <th class="text-white" scope="row">{{ $food->id }}</th>
+                                <th class="text-white lineH" scope="row">{{ $food->id }}</th>
                                 <td>
-                                    <a style="color:rgb(250, 4, 86)" href="{{ route('admin.food.show', $food->id) }}">
+                                    <a style="color:rgb(250, 4, 86)" href="{{ route('admin.food.show', $food->id) }}" class="lineH">
                                         {{ $food->name }}
                                     </a>
                                 </td>
-                                <td class="text-white">{{ $food->course }}</td>
-                                <td class="text-white">
+                                <td class="text-white lineH">{{ $food->course }}</td>
+                                <td class="text-white lineH">
                                     {{ $food->price }} €
                                 </td>
-                                <td class="text-white">
+                                <td class="text-white lineH">
                                     {{ $food->is_available ? 'Si' : 'No' }}
                                 </td>
-                                <td class="text-white">
+                                <td class="text-white text-center">
                                     <a href="{{ route('admin.food.show', $food->id) }}" class="btn btn-success">
                                         <i class="fa-solid fa-circle-info"></i>
                                     </a>
