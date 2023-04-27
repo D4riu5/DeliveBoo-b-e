@@ -121,7 +121,7 @@
                     <div class="centeredModificaAccount navbar-nav d-flex flex-row">
                         <div class="nav-item">
                             <a class="nav-link adminBots modificaAccount" href="{{ url('profile') }}">
-                                <i class="fa-solid fa-user fa-lg fa-fw"></i> Modifica Account
+                                <i class="fa-solid fa-user fa-lg fa-fw"></i> Account
                             </a>
                         </div>
                     </div>

@@ -84,7 +84,7 @@
                             <th class="col" scope="col">Totale</th>
                             <th class="col" scope="col-">Status - Rating</th> --}}
                 @foreach ($orders as $order)
-                <div class="px-3">
+                <div class="px-3 mb-3">
                     <div class="card text-bg-dark px-2 py-2">
                         <div class="py-1">
                             <span class="fw-bold">

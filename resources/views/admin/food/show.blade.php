@@ -233,7 +233,7 @@
                             @endif
                         </p>
                     </div>
-                    <div class="d-flex justify-content-center">
+                    <div class="d-flex justify-content-center responsive375">
                         <div class="ms-1">
                             <a class="mt-2 btn btn-danger fontResponsive"
                                 class="{{ Route::currentRouteName() == 'admin.food.index' ? 'bg-secondary' : '' }}"

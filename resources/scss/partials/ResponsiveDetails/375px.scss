@@ -1,5 +1,254 @@
   /* Dispositivo mobile medio */
-  @media screen and (max-width: 375px) {
-    /* Inserisci qui le tue regole CSS per questa risoluzione */
+  @media screen and (min-width: 320px) and (max-width: 375px) {
+    // A DIMENSIONE 320PX FACCIAMO SPARIRE LA TABELLA CHE NORMALMENTE VEDIAMO SU TUTTI GLI ALTRI SCHERMI
+
+    .bigScreen {
+      display: none;
+    }
+
+    .smallScreen {
+      display: block;
+    }
+
+    // HEADER
+
+
+    // CONTENITORE LOGO NELL'HEADER
+    .logo {
+      width: 119px;
+      height: 67px;
+      margin: -9px 0px 0px 0px !important;
+
+      //DETTAGLI LOGO - POSIZIONAMENTO IMMAGINE ALL'INTERNO DELL'SUO CONTAINER
+      img {
+        width: 100%;
+        height: 100%;
+        margin: 7px 47px 0px 0px !important;
+      }
+    }
+
+
+
+    // HAMBURGER MENU PER OFF CANVAS
+
+    .offCanva {
+      top: 92px;
+      left: 0px;
+    }
+
+    //MODIFICA ACCOUNT BUTTON + ESCI BUTTON
+
+    .modificaAccount {
+      font-size: 15px !important;
+      padding-left: 4px !important;
+    }
+
+    //MENU A COMPARSA DETAILS
+
+    .centeredModificaAccount {
+      padding: 0px 202px;
+    }
+
+    .menuSize {
+      width: 100% !important;
+      display: flex !important;
+      justify-content: center !important;
+      font-size: 29px;
+      font-weight: 100;
+    }
+
+    // HOMEPAGE BUTTON - nel fondo del menu laterale
+
+    .homepageButton {
+      position: static;
+      margin: 54px;
+    }
+
+    // DIMENSIONE ICONE NEL MENU LATERALE
+
+    .iconSize {
+      font-size: 21px !important;
+      padding: -22px 0px;
+      vertical-align: 2px;
+    }
+
+    // CONTENITORE IMMAGINE NELLA DASHBOARD
+    .queryContainer {
+      width: 347px;
+      height: 182px;
+      border-radius: 10px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 9px;
+
+      }
+    }
+
+    // LOGO QUANDO SIAMO IN FASE DI LOGIN
+
+    .loginSet {
+      display: flex !important;
+      align-items: center !important;
+      flex-direction: column;
+    }
+
+    //IMMAGINE NELLA SHOW DI TYPE
+
+    .boxPhoto {
+      width: 342px;
+      height: 172px;
+      border-radius: 10px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 9px;
+      }
+    }
+
+    // IMMAGINI NELLA SHOW DI FOOD
+    .photoBox {
+      height: 151px;
+      width: 275px;
+      margin-bottom: 50px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+      }
+    }
+
+    .placeholderBox {
+      height: 151px;
+      width: 275px;
+      margin-bottom: 40px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+      }
+    }
+
+    // CONTAINER INFO NELLA SHOW DI FOOD 
+    .rightBox {
+      margin-left: 40%;
+    }
+
+    //FONT DEI BOTTONI NELLA SHOW DI FOOD
+
+    .fontResponsive {
+      font-size: 17px !important;
+      margin-left: 7px !important;
+      margin-right: 9px !important;
+    }
+
+    //DISTANZA DAL FROM
+    .responsive375 {
+      margin-top: 102px;
+    }
+
+    //EDIT FOOD IMG
+
+    .editFoodimg {
+      width: 348px;
+      height: 174px;
+      border-radius: 8px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 9px;
+      }
+    }
+
+    // MARGINE SUPERIORE AI TITOLI DI INDEX, SHOW, EDIT e CREATE
+    .typeResponsive {
+      margin-top: -3%;
+    }
+
+    .dashboardResponsive {
+      margin-top: 4%;
+    }
+
+    .orderResponsive {
+      margin-top: 3%;
+    }
+
+    .foodResponsive {
+      margin-top: -4% !important;
+    }
+
+    // COLORI MENU A TENDINA
+    .colorMenu {
+      color: white;
+      background-color: none;
+    }
+
+    .colorMenu:hover {
+      color: red;
+    }
+
+    .colorMenu:focus {
+      color: #FF446C;
+    }
+
+    // BOTTONI INDEX FOOD 
+    .cirlceBotton {
+      border-radius: 22px !important;
+    }
+
+    .backG {
+      background-color: rgb(127, 113, 113)
+    }
+
+    .forgotPassword {
+      color: #FF446C !important;
+    }
+
+    .restaurantName {
+      color: #FF446C;
+    }
+
+    // IMMAGINE NELL'EDIT DI RESTAURANT
+    .img320 {
+      width: 350px;
+      height: 185px;
+      border-radius: 10px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+
+      }
+    }
+
+    // Titolo FORM IN UPDATE PASSWORD 
+    .updateTitle {
+      color: #FF446C;
+    }
+
+    // TITOLO REGISTRATI SU APP.BLADE
+    .registerTitle {
+      color: #FF446C;
+    }
+
+    // TASTO DELETE NEL MODIFICA ACCOUNT 
+    // INPUT PASSWORD 
+    .inputDelete {
+      height: 43px !important;
+      width: 0% !important;
+      /* padding: 5px 6px 3px; */
+      /* margin: 5px 9px -4px 4px; */
+      border-radius: 10px !important;
+    }
   }
- 
+
+  // LOGIN FORM DISTANZA 
+  .formMargin {
+    margin-top: 120px !important;
+  }
