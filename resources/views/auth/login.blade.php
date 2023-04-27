@@ -4,13 +4,12 @@
     <div class="container formMargin">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <div class="card">
-                    <div class="formHeader card-header">{{ __('Effettua Login') }}</div>
+                <div class="card text-bg-dark">
+                    <div class="text-center py-2">{{ __('Effettua Login') }}</div>
 
-                    <div class="card-body formBody">
+                    <div class="card-body">
                         <form id="login-form" method="POST" action="{{ route('login') }}">
                             @csrf
-
                             <div class="mb-4 row">
                                 <label for="email"
                                     class="col-md-4 col-form-label text-md-right fw-bold">{{ __('E-Mail Address') }}</label>
@@ -66,7 +65,7 @@
 
                             <div class="mb-4 row mb-0">
                                 <div class="col-md-8 offset-md-4">
-                                    <button type="submit" class="btn btn-warning">
+                                    <button type="submit" class="btn btn-danger">
                                         {{ __('Login') }}
                                     </button>
 

@@ -12,165 +12,233 @@
 
   // HEADER
 
-  .barraLogo {
-    //POSISIZIONE DEL LOGO NELL'HEADER
-    display: flex !important;
-    justify-content: center !important;
 
-    // CONTENITORE LOGO NELL'HEADER
-    .logo {
-      width: 130px;
-      height: 74px;
-      margin: 0px !important;
-      display: flex;
-      justify-content: center;
+  // CONTENITORE LOGO NELL'HEADER
+  .logo {
+    width: 94px;
+    height: 57px;
+    margin: 0px !important;
 
-      //DETTAGLI LOGO - POSIZIONAMENTO IMMAGINE ALL'INTERNO DELL'SUO CONTAINER
-      img {
-        width: 100%;
-        height: 100%;
-        margin: 0px 47px 0px 0px !important;
-      }
+    //DETTAGLI LOGO - POSIZIONAMENTO IMMAGINE ALL'INTERNO DELL'SUO CONTAINER
+    img {
+      width: 100%;
+      height: 100%;
+      margin: 0px 47px 0px 0px !important;
     }
   }
 
-  // WAVE EFFECT NELL'HEADER
 
-  .barraLogo:before {
-    content: "";
+
+  // HAMBURGER MENU PER OFF CANVAS
+
+  .offCanva {
+    top: 92px;
+    left: 0px;
   }
 
-  .barraLogo:after {
-    content: "";
+  //MODIFICA ACCOUNT BUTTON + ESCI BUTTON
+
+  .modificaAccount {
+    font-size: 15px !important;
+    padding-left: 4px !important;
   }
+
+  //MENU A COMPARSA DETAILS
+
+  .centeredModificaAccount {
+    padding-right: 36px;
+  }
+
+  .menuSize {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    font-size: 29px;
+    font-weight: 100;
+  }
+
+  // HOMEPAGE BUTTON - nel fondo del menu laterale
+
+  .homepageButton {
+    position: static;
+    margin: 54px;
+  }
+
+  // DIMENSIONE ICONE NEL MENU LATERALE
+
+  .iconSize {
+    font-size: 21px !important;
+    padding: -22px 0px;
+    vertical-align: 2px;
+  }
+
+  // CONTENITORE IMMAGINE NELLA DASHBOARD
+  .queryContainer {
+    max-width: 288px;
+    max-height: 170px;
+    border-radius: 10px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 9px;
+
+    }
+  }
+
+  // LOGO QUANDO SIAMO IN FASE DI LOGIN
+
+  .loginSet {
+    display: flex !important;
+    flex-wrap: inherit !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  //IMMAGINE NELLA SHOW DI TYPE
+
+  .boxPhoto {
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 9px;
+    }
+  }
+
+  // IMMAGINI NELLA SHOW DI FOOD
+  .photoBox {
+    height: 151px;
+    width: 275px;
+    margin-bottom: 50px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
+  }
+
+  .placeholderBox {
+    height: 151px;
+    width: 275px;
+    margin-bottom: 40px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
+  }
+
+  // CONTAINER INFO NELLA SHOW DI FOOD 
+  .rightBox {
+    margin-left: 40%;
+  }
+
+  //FONT DEI BOTTONI NELLA SHOW DI FOOD
+
+  .fontResponsive {
+    font-size: 13px !important;
+  }
+
+  //EDIT FOOD IMG
+
+  .editFoodimg {
+    width: 290px;
+    height: 170px;
+    border-radius: 8px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 9px;
+    }
+  }
+
 }
 
-// HAMBURGER MENU PER OFF CANVAS
-
-.offCanva {
-  top: 92px;
-  left: 0px;
+// MARGINE SUPERIORE AI TITOLI DI INDEX, SHOW, EDIT e CREATE
+.typeResponsive {
+  margin-top: -3%;
 }
 
-//MODIFICA ACCOUNT BUTTON + ESCI BUTTON
-
-.modificaAccount {
-  font-size: 15px !important;
-  padding-left: 4px !important;
+.dashboardResponsive {
+  margin-top: 4%;
 }
 
-//MENU A COMPARSA DETAILS
-
-.centeredModificaAccount {
-  padding-left: 72px !important;
-  padding-right: 27px;
+.orderResponsive {
+  margin-top: 3%;
 }
 
-.menuSize {
-  width: 100% !important;
-  display: flex !important;
-  justify-content: center !important;
-  font-size: 29px;
-  font-weight: 100;
+.foodResponsive {
+  margin-top: -4% !important;
 }
 
-// HOMEPAGE BUTTON - nel fondo del menu laterale
-
-.homepageButton {
-  position: static;
-  margin: 54px;
+// COLORI MENU A TENDINA
+.colorMenu {
+  color: white;
+  background-color: none;
 }
 
-// DIMENSIONE ICONE NEL MENU LATERALE
-
-.iconSize {
-  font-size: 21px !important;
-  padding: -22px 0px;
-  vertical-align: 2px;
+.colorMenu:hover {
+  color: red;
 }
 
-// CONTENITORE IMMAGINE NELLA DASHBOARD
-.queryContainer {
-  max-width: 288px;
-  max-height: 170px;
+.colorMenu:focus {
+  color: #FF446C;
+}
+
+// BOTTONI INDEX FOOD 
+.cirlceBotton {
+  border-radius: 22px !important;
+}
+
+.backG {
+  background-color: rgb(127, 113, 113)
+}
+
+.forgotPassword {
+  color: #FF446C !important;
+}
+
+.restaurantName {
+  color: #FF446C;
+}
+
+// IMMAGINE NELL'EDIT DI RESTAURANT
+.img320 {
+  width: 292px;
+  height: 164px;
   border-radius: 10px;
 
   img {
     width: 100%;
     height: 100%;
-    border-radius: 9px;
-
-  }
-}
-
-// LOGO QUANDO SIAMO IN FASE DI LOGIN
-
-.loginSet {
-  display: flex !important;
-  flex-wrap: inherit !important;
-  align-items: center !important;
-  justify-content: flex-end !important;
-}
-
-//IMMAGINE NELLA SHOW DI TYPE
-
-.boxPhoto {
-  width: 300px;
-  height: 150px;
-  border-radius: 10px;
-
-  img {
-    width: 100%;
-    height: 100%;
-    border-radius: 9px;
-  }
-}
-
-// IMMAGINI NELLA SHOW DI FOOD
-.photoBox {
-  height: 151px;
-  width: 275px;
-  margin-bottom: 50px;
-
-  img {
-    width: 100%;
-    height: 100%;
     border-radius: 10px;
+
   }
 }
 
-.placeholderBox {
-  height: 151px;
-  width: 275px;
-  margin-bottom: 40px;
-
-  img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-  }
+// Titolo FORM IN UPDATE PASSWORD 
+.updateTitle {
+  color: #FF446C;
 }
 
-// CONTAINER INFO NELLA SHOW DI FOOD 
-.rightBox {
-  margin-left: 40%;
+// TITOLO REGISTRATI SU APP.BLADE
+.registerTitle {
+  color: #FF446C;
 }
 
-//FONT DEI BOTTONI NELLA SHOW DI FOOD
-
-.fontResponsive {
-  font-size: 13px !important;
-}
-
-//EDIT FOOD IMG
-
-.editFoodimg {
-  width: 290px;
-  height: 170px;
-  border-radius: 8px;
-  img {
-    width: 100%;
-    height: 100%;
-    border-radius: 9px;
-  }
+// TASTO DELETE NEL MODIFICA ACCOUNT 
+// INPUT PASSWORD 
+.inputDelete {
+  height: 43px !important;
+  width: 0% !important;
+  /* padding: 5px 6px 3px; */
+  /* margin: 5px 9px -4px 4px; */
+  border-radius: 10px !important;
 }

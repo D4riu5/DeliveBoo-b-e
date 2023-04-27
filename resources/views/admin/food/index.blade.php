@@ -2,17 +2,17 @@
 
 @section('content')
     <div class="container-fluid mt-4">
-        <div class="row justify-content-center mb-2">
-            <div class="col text-center">
-                <h1>
-                    I miei piatti
-                </h1>
-            </div>
-        </div>
 
         @include('partials.success')
 
         <div class="bigScreen">
+            <div class="row justify-content-center mb-2">
+                <div class="col text-center">
+                    <h1 class="titleColor">
+                        I miei piatti
+                    </h1>
+                </div>
+            </div>
             <div class="row my-4 d-flex">
                 <div class="col d-flex justify-content-center">
                     <form action="{{ route('admin.food.index') }}" method="GET">
@@ -39,7 +39,14 @@
                 </div>
             </div>
         </div>
-        <div class="smallScreen ">
+        <div class="smallScreen">
+            <div class="row justify-content-center mb-2 foodResponsive">
+                <div class="col text-center">
+                    <h1 class="titleColor">
+                        I miei piatti
+                    </h1>
+                </div>
+            </div>
             <div class="mx-1 d-flex justify-content-center">
                 <a href="{{ route('admin.food.create') }}" class="btn btn-warning mt-2">
                     Aggiungi un piatto
@@ -70,31 +77,31 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th scope="col">ID</th>
-                            <th scope="col">Nome</th>
-                            <th scope="col">Portata</th>
-                            <th scope="col">Prezzo</th>
-                            <th scope="col">Disponibile</th>
-                            <th scope="col">Actions</th>
+                            <th class="text-white" scope="col ">ID</th>
+                            <th class="text-white" scope="col">Nome</th>
+                            <th class="text-white" scope="col">Portata</th>
+                            <th class="text-white" scope="col">Prezzo</th>
+                            <th class="text-white" scope="col">Disponibile</th>
+                            <th class="text-white" scope="col">Actions</th>
                         </tr>
                     </thead>
                     <tbody>
                         @foreach ($foods as $food)
                             <tr>
-                                <th scope="row">{{ $food->id }}</th>
+                                <th class="text-white" scope="row">{{ $food->id }}</th>
                                 <td>
-                                    <a style="color:green" href="{{ route('admin.food.show', $food->id) }}">
+                                    <a style="color:rgb(250, 4, 86)" href="{{ route('admin.food.show', $food->id) }}">
                                         {{ $food->name }}
                                     </a>
                                 </td>
-                                <td>{{ $food->course }}</td>
-                                <td>
+                                <td class="text-white">{{ $food->course }}</td>
+                                <td class="text-white">
                                     {{ $food->price }} €
                                 </td>
-                                <td>
+                                <td class="text-white">
                                     {{ $food->is_available ? 'Si' : 'No' }}
                                 </td>
-                                <td>
+                                <td class="text-white">
                                     <a href="{{ route('admin.food.show', $food->id) }}" class="btn btn-success">
                                         <i class="fa-solid fa-circle-info"></i>
                                     </a>
@@ -115,17 +122,17 @@
 
                                             <div class="modal-dialog">
 
-                                                <div class="modal-content">
+                                                <div class="modal-content modalStyle">
 
                                                     <div class="modal-header">
-                                                        <h1 class="modal-title fs-5" id="exampleModalLabel"> Conferma
-                                                            eliminazione
+                                                        <h1 class="modal-title fs-5 text-dark" id="exampleModalLabel">
+                                                            Conferma eliminazione
                                                         </h1>
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                             aria-label="Close"></button>
                                                     </div>
 
-                                                    <div class="modal-body">
+                                                    <div class="modal-body text-black">
                                                         Sei sicuro di voler eliminare questo piatto ?
                                                     </div>
 
@@ -160,9 +167,9 @@
             <div class="col">
                 <table class="table">
                     @foreach ($foods as $food)
-                        <div class="card card-title">
+                        <div class="card card-title text-bg-dark mx-1 px-2">
                             <div class="d-flex flex-column align-items-center">
-                                <a style="color:green" href="{{ route('admin.food.show', $food->id) }}">
+                                <a class="fw-bold" style="color:rgb(250, 4, 86)" href="{{ route('admin.food.show', $food->id) }}">
                                     {{ $food->name }}
                                 </a>
                             </div>
@@ -179,16 +186,16 @@
                                 <span class="ms-1">{{ $food->is_available ? 'Si' : 'No' }}</span>
                             </div>
                             {{-- DISPOSIZIONE BOTTONI  --}}
-                            <div class="d-flex justify-content-center my-2">
+                            <div class="d-flex justify-content-center my-3">
                                 {{-- BOTTOEN VERDE PER INFO --}}
                                 <div class="mx-1">
-                                    <a href="{{ route('admin.food.show', $food->id) }}" class="btn btn-success">
+                                    <a href="{{ route('admin.food.show', $food->id) }}" class="btn btn-secondary cirlceBotton">
                                         <i class="fa-solid fa-circle-info"></i>
                                     </a>
                                 </div>
                                 {{-- BOTTONE GIALLO PER MODIFICA --}}
                                 <div class="mx-3">
-                                    <a href="{{ route('admin.food.edit', $food->id) }}" class="btn btn-warning">
+                                    <a href="{{ route('admin.food.edit', $food->id) }}" class="btn btn-warning cirlceBotton">
                                         <i class="fa-solid fa-pen-to-square"></i>
                                     </a>
                                 </div>
@@ -198,7 +205,7 @@
                                         method="POST">
                                         @csrf
                                         @method('DELETE')
-                                        <button class="btn btn-danger" type="button" data-bs-toggle="modal"
+                                        <button class="btn btn-danger cirlceBotton" type="button" data-bs-toggle="modal"
                                             data-bs-target="#Modal{{ $food->id }}">
                                             <i class="fa-solid fa-trash"></i>
                                         </button>
@@ -208,7 +215,7 @@
 
                                             <div class="modal-dialog">
 
-                                                <div class="modal-content">
+                                                <div class="modal-content modalStyle">
 
                                                     <div class="modal-header">
                                                         <h1 class="modal-title fs-5" id="ModalLabel"> Conferma
