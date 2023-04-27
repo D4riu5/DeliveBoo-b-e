@@ -22,72 +22,67 @@
 <body class="mainColor">
     <div id="app">
         <div class="bigScreen">
-            <div style="height:100px;" class="header finisher-header navbar navbar-expand-md"
-                style="width: 100%; height: 200px;">
-                <div class="container loginSet">
+            <div style="height:100px;" class="header finisher-header navbar navbar-expand-md">
+                <div class="container-fluid loginSet">
                     {{-- QUI ABBIAMO IL LINK DI COLLEGAMENTO DEL LOGO CON LA HOME - NON TOCCARE --}}
                     <a class="navbar-brand d-flex align-items-center" href="{{ url('/') }}">
-
                         <div class="logo mediaBox">
                             <img src="{{ asset('storage/logo/7.png') }}">
                         </div>
-                        {{-- config('app.name', 'Laravel') --}}
                     </a>
 
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    {{-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                         <span class="navbar-toggler-icon"></span>
-                    </button>
+                    </button> --}}
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <!-- Left Side Of Navbar -->
-                        <ul class="navbar-nav me-auto">
+                    {{-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> --}}
+                    <!-- Left Side Of Navbar -->
+                    {{-- <ul class="navbar-nav me-auto">
                             <li class="nav-item">
                                 <a class="home navButton nav-link" href="{{ url('/') }}">{{ __('Home') }}</a>
                             </li>
-                        </ul>
+                        </ul> --}}
 
-                        <!-- Right Side Of Navbar -->
-                        <ul class="navbar-nav ml-auto">
-                            <!-- Authentication Links -->
-                            @guest
-                                <li class="nav-item">
-                                    <a class="navButton nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                                </li>
-                                @if (Route::has('register'))
-                                    <li class="nav-item">
-                                        <a class="navButton nav-link"
-                                            href="{{ route('register') }}">{{ __('Register') }}</a>
-                                    </li>
-                                @endif
-                            @else
-                                <li class="nav-item dropdown">
-                                    <a id="navbarDropdown" class="nav-link dropdown-toggle adminBots" href="#"
-                                        role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                        v-pre>
-                                        {{ Auth::user()->name }}
+                    <!-- Right Side Of Navbar -->
+                    <div class="d-flex justify-content-end">
+                        <!-- Authentication Links -->
+                        @guest
+                            <div class="nav-item ">
+                                <a class="navButton fw-bold nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                            </div>
+                            @if (Route::has('register'))
+                                <div class="nav-item ps-5">
+                                    <a class="navButton fw-bold nav-link adminBots" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                </div>
+                            @endif
+                        @else
+                            <div class="nav-item dropdown mx-5">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle adminBots" href="#"
+                                    role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                    v-pre>
+                                    {{ Auth::user()->name }}
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item"
+                                        href="{{ route('admin.dashboard') }}">{{ __('Dashboard') }}</a>
+                                    <a class="dropdown-item" href="{{ url('profile') }}">{{ __('Profile') }}</a>
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                        onclick="event.preventDefault();
+                                                        document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
                                     </a>
 
-                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item"
-                                            href="{{ route('admin.dashboard') }}">{{ __('Dashboard') }}</a>
-                                        <a class="dropdown-item" href="{{ url('profile') }}">{{ __('Profile') }}</a>
-                                        <a class="dropdown-item" href="{{ route('logout') }}"
-                                            onclick="event.preventDefault();
-                                                        document.getElementById('logout-form').submit();">
-                                            {{ __('Logout') }}
-                                        </a>
-
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST"
-                                            class="d-none">
-                                            @csrf
-                                        </form>
-                                    </div>
-                                </li>
-                            @endguest
-                        </ul>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                </div>
+                            </div>
+                        @endguest
                     </div>
+                    {{-- </div> --}}
                 </div>
             </div>
         </div>
@@ -106,7 +101,7 @@
                 </div>
             </header>
         </div>
-        <main class="">
+        <main>
             @yield('content')
         </main>
     </div>

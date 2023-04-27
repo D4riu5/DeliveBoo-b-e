@@ -17,12 +17,12 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th class="col text-white" scope="col">ID</th>
-                            <th class="col text-white" scope="col">Nome Cliente</th>
-                            <th class="col text-white" scope="col">Indirizzo Cliente</th>
-                            <th class="col text-white" scope="col">Recapito Cliente</th>
-                            <th class="col text-white" scope="col">Totale</th>
-                            <th class="col text-white" scope="col-">Status - Rating</th>
+                            <th class="col text-white text-center" scope="col">ID</th>
+                            <th class="col text-white text-center" scope="col">Nome Cliente</th>
+                            <th class="col text-white text-center" scope="col">Indirizzo Cliente</th>
+                            <th class="col text-white text-center" scope="col">Recapito Cliente</th>
+                            <th class="col text-white text-center" scope="col">Totale</th>
+                            <th class="col text-white text-center" scope="col-">Status - Rating</th>
                         </tr>
                     </thead>
                     @foreach ($orders as $order)
@@ -55,7 +55,7 @@
                                 </td>
                                 <td>
                                     <a style="color:rgb(250, 4, 86)" class="text-decoration-none" href="{{ route('admin.order.show', $order->id) }}">
-                                        Clicca per maggiori dettagli
+                                        Ulteriori dettagli
                                     </a>
                                 </td>
                             </tr>

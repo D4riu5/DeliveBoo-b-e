@@ -7,14 +7,14 @@
                 <div class="col">
                     @include('partials.success')
                     {{-- NUOVO NOME PER IL RISTORANTE --}}
-                    <h2 class="text-center mb-4">
+                    <h2 class="text-center mb-4 restaName">
                         {{ $restaurant->name }}
                     </h2>
                     {{-- IMMAGINE MODIFICATA SE PRESENTE --}}
                     @if ($restaurant->image)
                         <div class=" d-flex justify-content-start mb-1">
-                            <div class="img-fluid">
-                                <img class="my-3" src="{{ asset('storage/' . $restaurant->image) }}" style="height: 400px;"
+                            <div class="showResta">
+                                <img class="my-3" src="{{ asset('storage/' . $restaurant->image) }}"
                                     alt="restaurant">
                             </div>
                             {{-- INDIRIZZO MODIFICATO --}}
@@ -61,14 +61,14 @@
                 </div>
 
                 {{-- PULSANTE RITORNO ALLA DASHBOARD  --}}
-                <div class="pt-2 d-flex flex-column">
-                    <button class="btn btn-warning px-0 mt-2 my-3">
+                <div class="pt-5 d-flex justify-content-center">
+                    <button class="btn btn-warning mx-1">
                         <a href="{{ route('admin.restaurant.edit', $restaurant->id) }}"
-                            class="link-light text-decoration-none">
+                            class="link-dark text-decoration-none">
                             Modifica dati attività
                         </a>
                     </button>
-                    <button class="btn btn-danger px-0 mt-2 my-3">
+                    <button class="btn btn-danger mx-2">
                         <a href="{{ route('admin.dashboard') }}" class="link-light text-decoration-none"> Torna indietro
                         </a>
                     </button>
