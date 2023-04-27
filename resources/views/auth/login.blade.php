@@ -82,6 +82,23 @@
             </div>
         </div>
     </div>
+    <div class="navbar-nav mt-2">
+        @guest
+            @if (Route::has('register'))
+                <div class="container-fluid text-center">
+                    <li class="nav-item">
+                        <a class="card text-bg-dark navButton nav-link text-light"
+                            href="{{ route('register') }}">
+                            <span class="fw-bold registerTitle">
+                                Registrati
+                            </span>
+                        </a>
+                    </li>
+                </div>
+            @endif
+        @else
+        @endguest
+    </div>
 
 
     <script>

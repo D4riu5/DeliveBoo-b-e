@@ -92,43 +92,23 @@
             </div>
         </div>
         <div class="smallScreen">
-            <div class="my-3">
-                <div class="container loginSet">
-                    {{-- QUI ABBIAMO IL LINK DI COLLEGAMENTO DEL LOGO CON LA HOME - NON TOCCARE --}}
-                    <a class="navbar-brand d-flex align-items-center" href="{{ url('/') }}">
-                        <div class="logo mediaBox">
-                            <img src="{{ asset('storage/logo/7.png') }}">
-                        </div>
-                        {{-- config('app.name', 'Laravel') --}}
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="navbar-nav">
-            <!-- Authentication Links -->
-            @guest
-                {{-- <li class="nav-item">
-                    <a class="navButton nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                </li> --}}
-                @if (Route::has('register'))
-                    <div class="container-fluid text-center">
-                        <li class="nav-item">
-                            <a class="navButton nav-link text-light"
-                                href="{{ route('register') }}">
-                                <span class="fw-bold registerTitle">
-                                    Registrati
-                                </span>
-                            </a>
-                        </li>
+            <header style="height:100px;"
+                class=" d-flex flex-column header finisher-header fixed-top bg-dark d-flex justify-content-center">
+                <div class="my-3">
+                    <div class="container loginSet"> {{-- QUI ABBIAMO IL LINK DI COLLEGAMENTO DEL LOGO CON LA HOME - NON TOCCARE --}}
+                        <a class="navbar-brand d-flex flex-column" href="{{ url('/') }}">
+                            <div class="logo mediaBox">
+                                <img src="{{ asset('storage/logo/7.png') }}">
+                            </div>
+                            {{-- config('app.name', 'Laravel') --}}
+                        </a>
                     </div>
-                @endif
-            @else
-            @endguest
+                </div>
+            </header>
         </div>
-    </div>
-    <main class="" style="min-height: 625px">
-        @yield('content')
-    </main>
+        <main class="">
+            @yield('content')
+        </main>
     </div>
     <script src="{{ asset('js/finisher-header.es5.min.js') }}" type="text/javascript"></script>
     <script type="text/javascript">

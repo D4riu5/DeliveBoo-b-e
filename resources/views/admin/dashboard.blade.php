@@ -157,7 +157,7 @@
                     </h1>
                 </div>
                 <div class="d-flex justify-content-center py-2">
-                    <div class="img-fluid queryContainer">
+                    <div class="queryContainer">
                         <img src="{{ asset('storage/' . $restaurant->image) }}" alt="Myrestaurant">
                     </div>
                 </div>
