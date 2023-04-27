@@ -6,6 +6,7 @@ use App\Http\Controllers\Api\TypeController;
 use App\Models\Order;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Validator;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,6 +43,32 @@ Route::name('api.')->group(function () {
 
     // NEW ORDER
     Route::post('orders', function (Illuminate\Http\Request $request) {
+        // custom messages for errors
+        $customMessages = [
+            'order.costumer_name.required' => 'Il campo Nome e Cognome è richiesto.',
+            'order.costumer_name.string' => 'Il campo Nome e Cognome deve essere una stringa.',
+            'order.costumer_name.max' => 'Il campo Nome e Cognome non deve superare i :max caratteri.',
+            'order.delivery_address.required' => 'Il campo Indirizzo di consegna è richiesto.',
+            'order.delivery_address.string' => 'Il campo Indirizzo di consegna deve essere una stringa.',
+            'order.delivery_address.max' => 'Il campo Indirizzo di consegna non deve superare i :max caratteri.',
+            'order.delivery_address.min' => 'Il campo Indirizzo di consegna deve essere lungo almeno :min caratteri.',
+            'order.delivery_contact.required' => 'Il campo Numero di telefono è richiesto.',
+            'order.delivery_contact.string' => 'Il campo Numero di telefono deve essere una stringa.',
+            'order.delivery_contact.max' => 'Il campo Numero di telefono non deve superare i :max caratteri.',
+            'order.delivery_contact.min' => 'Il campo Numero di telefono deve essere di almeno :min caratteri.'
+        ];
+        // validator rules
+        $validator = Validator::make($request->all(), [
+            'order.costumer_name' => 'required|string|max:64',
+            'order.delivery_address' => 'required|string|max:128|min:5',
+            'order.delivery_contact' => 'required|string|max:15|min:10',
+        ], $customMessages);
+
+        // if validator fails send errors back to front-end
+        if ($validator->fails()) {
+            return response()->json(['errors' => $validator->errors()], 422);
+        }
+
         // new order instances
         $order = new Order();
         $order->total_price = $request->input('order.total_price');
