@@ -87,8 +87,7 @@
             @if (Route::has('register'))
                 <div class="container-fluid text-center">
                     <li class="nav-item">
-                        <a class="card text-bg-dark navButton nav-link text-light"
-                            href="{{ route('register') }}">
+                        <a class="card text-bg-dark navButton nav-link text-light" href="{{ route('register') }}">
                             <span class="fw-bold registerTitle">
                                 Registrati
                             </span>
@@ -107,42 +106,44 @@
         const invalidEmail = document.getElementById('invalid-email');
 
         form.addEventListener("submit", function(event) {
-            event.preventDefault();
+                event.preventDefault();
+                if (invalidEmail !== null) {
+                    email.classList.remove('is-invalid');
+                    invalidEmail.classList.remove('d-block');
+                }
+                let isInvalid = false;
 
-            email.classList.remove('is-invalid');
-            invalidEmail.classList.remove('d-block');
 
-            let isInvalid = false;
+                if (!email.value.trim()) {
+                    invalidEmail.textContent = "Inserire l'indirizzo email.";
+                    invalidEmail.classList.add('d-block');
+                    email.classList.add("is-invalid");
+                    isInvalid = true;
+                } else if (email.value.length < 3 || email.value.length > 320) {
+                    invalidEmail.textContent = "L'indirizzo email deve essere compreso tra 3 e 320 caratteri.";
+                    invalidEmail.classList.add("d-block");
+                    email.classList.add("is-invalid");
+                    isInvalid = true;
+                } else if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email.value)) {
+                    invalidEmail.textContent = "Inserire un indirizzo email valido.";
+                    invalidEmail.classList.add("d-block");
+                    email.classList.add("is-invalid");
+                    isInvalid = true;
+                } else {
+                    if (invalidEmail !== null) {
+                        invalidEmail.classList.remove("d-block");
+                        email.classList.remove("is-invalid");
+                    }
+                }
 
 
-            if (!email.value.trim()) {
-                invalidEmail.textContent = "Inserire l'indirizzo email.";
-                invalidEmail.classList.add('d-block');
-                email.classList.add("is-invalid");
-                isInvalid = true;
-            } else if (email.value.length < 3 || email.value.length > 320) {
-                invalidEmail.textContent = "L'indirizzo email deve essere compreso tra 3 e 320 caratteri.";
-                invalidEmail.classList.add("d-block");
-                email.classList.add("is-invalid");
-                isInvalid = true;
-            } else if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email.value)) {
-                invalidEmail.textContent = "Inserire un indirizzo email valido.";
-                invalidEmail.classList.add("d-block");
-                email.classList.add("is-invalid");
-                isInvalid = true;
-            } else {
-                invalidEmail.classList.remove("d-block");
-                email.classList.remove("is-invalid");
+                if (isInvalid === false) {
+                    form.submit()
+                }
+
             }
 
 
-            if (isInvalid === false) {
-                form.submit()
-            }
-
-        }
-
-        
 
         );
     </script>
