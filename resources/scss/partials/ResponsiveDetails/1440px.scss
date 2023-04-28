@@ -1,4 +1,249 @@
  /* Laptop grande */
-  @media screen and (max-width: 1440px) {
-    /* Inserisci qui le tue regole CSS per questa risoluzione */
-  }
+ @media screen and (min-width: 1024px) and (max-width: 1440px) {
+
+   /* Laptop */
+   /* Tablet */
+   .bigScreen {
+     display: block;
+   }
+
+   .smallScreen {
+     display: none;
+   }
+
+   // APP.BLADE -> (fuori dal login) -> TASTI ACCEDI E REGISTRATI
+   .navButton {
+     color: white !important;
+   }
+
+   .navButton:hover {
+     color: #FF446C !important;
+   }
+
+
+   // DASHBOARD
+   .modificaAccount {
+     // Più tasto esci
+     font-size: 16px !important;
+     padding-left: 4px !important;
+     padding-right: 20px !important;
+   }
+
+   .adminBots {
+     //COLORE TASTI MODIFICA ACCOUNT + ESCI
+     color: white !important;
+   }
+
+   .adminBots:hover {
+     color: #FF446C !important;
+   }
+
+   .menuSize {
+     width: 100% !important;
+     display: flex !important;
+     justify-content: space-evenly !important;
+     font-size: 16px;
+     font-weight: 100;
+   }
+
+   .backG {
+     // BACKGROUND NAVBAR - LA MIA ATTIVITA' - IL MIO MENU - I MIEI ORDINI - TIPOLOGIE DI CUCINa
+     background-color: rgb(127, 113, 113);
+
+     .colorMenu {
+       //LA MIA ATTIVITA' - IL MIO MENU - I MIEI ORDINI - TIPOLOGIE DI CUCINa
+       color: white;
+     }
+
+     .colorMenu:hover {
+       // LA MIA ATTIVITA' - IL MIO MENU - I MIEI ORDINI - TIPOLOGIE DI CUCINa
+       color: #FF446C;
+     }
+   }
+
+   //IMMAGINE DASHBOARD
+   .queryContainer {
+     width: 959px;
+     height: 534px;
+     border-radius: 10px;
+
+     img {
+       width: 100%;
+       height: 100%;
+       border-radius: 10px;
+     }
+   }
+
+   //  IL MIO MENU 
+
+   // LINE HEIGHT DELLA TABELLA
+   .lineH {
+     line-height: 35px;
+   }
+
+   //  SHOW DI FOOD
+   .boxPhoto {
+     width: 718px;
+     height: 383px;
+   }
+
+   .foodTitle {
+     color: #FF446C;
+   }
+
+   //EDIT FOOD
+   .photoBox {
+     width: 1417px;
+     height: 706px;
+     margin-bottom: 50px;
+   }
+
+   .editFoodimg {
+     width: 1295px;
+     height: 700px;
+     border-radius: 10px;
+
+     img {
+       width: 100%;
+       height: 100%;
+       border-radius: 10px;
+     }
+   }
+
+   //EDIT RESTAURANT
+   .editResta {
+     width: 1295px;
+     height: 700px;
+     border-radius: 10px;
+
+     img {
+       width: 100%;
+       height: 100%;
+       border-radius: 10px;
+     }
+   }
+
+   //SHOW RESTAURANT
+   .showResta {
+     width: 500px;
+     height: 319px;
+     border-radius: 10px;
+
+     img {
+       width: 100%;
+       height: 100%;
+       border-radius: 10px;
+     }
+   }
+
+   .restaName {
+     color: #FF446C;
+   }
+
+
+   //  HEADER STYLE SU QUESTO FORMATO
+   #responsive {
+     display: flex;
+     justify-content: space-between !important;
+   }
+
+   // IMMAGINE SHOW DI FOOD
+   .img320 {
+     width: 404px;
+     height: 235px;
+     border-radius: 10px;
+
+     img {
+       width: 100%;
+       height: 100%;
+       border-radius: 10px;
+
+     }
+   }
+
+   .img320placeholder {
+     width: 404px;
+     height: 235px;
+     border-radius: 10px;
+
+     img {
+       width: 100%;
+       height: 100%;
+       border-radius: 10px;
+
+     }
+   }
+
+   .loginSet {
+     display: flex !important;
+     flex-wrap: inherit !important;
+     align-items: center !important;
+     justify-content: space-between !important;
+   }
+
+   .boxPhoto {
+     width: 673px;
+     height: 353px;
+     border-radius: 10px;
+
+     img {
+       width: 100%;
+       height: 100%;
+       border-radius: 9px;
+     }
+   }
+
+   //MARGINE DI LOGIN CON HEADER
+   .loginMargin {
+     margin-top: 38px !important;
+   }
+
+   //MARGINE DI CONFIRM PASSWORD
+   .confirmMargin {
+     margin-top: 2% !important;
+   }
+
+   //MARGINE DI REGISTER.BLADE
+   .registerMargin {
+     margin-top: 2% !important;
+   }
+
+   //EDIT PROFILE MARGIN
+   .editProfileMargin {
+     margin-top: 4% !important;
+   }
+
+   //PASSWORD RESET MARGIN
+   .passwordReset {
+     margin-top: 44px !important;
+   }
+
+   #responsive1440 {
+     padding-left: 17.5rem !important;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ }
