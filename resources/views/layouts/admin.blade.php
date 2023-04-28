@@ -26,36 +26,37 @@
 <body class="mainColor">
     <div id="app">
         <div class="bigScreen">
-            <header style="height:100px;"
-                class="header finisher-header barraLogo barraColor navbar fixed-top bg-dark">
-                <a class="" href="{{ env('APP_FRONTEND_URL') }}">
-                    <div class="d-flex align-items-center mx-1">
-                        <div class="logo">
-                            {{-- LOGO ROSSO NERO --}}
-                            <img src="{{ asset('storage/logo/7.png') }}">
+            <header style="height:100px;" class="header finisher-header barraLogo barraColor fixed-top">
+                <div id="headerContainer" class="d-flex justify-content-between navbar">
+                    <a class="" href="{{ env('APP_FRONTEND_URL') }}">
+                        <div class="d-flex align-items-center mx-1">
+                            <div class="logo">
+                                {{-- LOGO ROSSO NERO --}}
+                                <img src="{{ asset('storage/logo/7.png') }}">
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <div class="d-flex">
-                    <div class="centeredModificaAccount navbar-nav d-flex flex-row">
-                        <div class="nav-item">
-                            <a class="nav-link adminBots modificaAccount" href="{{ url('profile') }}">
-                                <i class="fa-solid fa-user fa-lg fa-fw"></i> Modifica Account
-                            </a>
+                    </a>
+                    <div class="d-flex">
+                        <div class="centeredModificaAccount navbar-nav d-flex flex-row">
+                            <div class="nav-item">
+                                <a class="nav-link adminBots modificaAccount" href="{{ url('profile') }}">
+                                    <i class="fa-solid fa-user fa-lg fa-fw"></i> Modifica Account
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="navbar-nav d-flex flex-row">
-
-                        <div class="nav-item text-nowrap">
-                            <a class="nav-link adminBots modificaAccount" href="{{ route('logout') }}"
-                                onclick="event.preventDefault();
-                    document.getElementById('logout-form').submit();">
-                                <i class="fa-solid fa-user fa-lg fa-fw"></i>
-                                {{ __('Logout') }}
-                            </a>
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                @csrf
-                            </form>
+                        <div class="navbar-nav d-flex flex-row">
+    
+                            <div class="nav-item text-nowrap">
+                                <a class="nav-link adminBots modificaAccount" href="{{ route('logout') }}"
+                                    onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();">
+                                    <i class="fa-solid fa-user fa-lg fa-fw"></i>
+                                    {{ __('Logout') }}
+                                </a>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    @csrf
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
