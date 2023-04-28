@@ -98,6 +98,26 @@
 
                             <input type="file" class="form-control" id="image" name="image" accept="image/*">
                         </div>
+
+                        {{-- PREZZO SPEDIZIONE --}}
+                        <div class="mb-3">
+                            <label for="prezzo_spedizione" class="form-label">
+                                Prezzo Spedizione <span class="text-danger"> *</span>
+                            </label>
+                            <input type="number" class="form-control @error('prezzo_spedizione') is-invalid @enderror"
+                                id="prezzo_spedizione" name="prezzo_spedizione"
+                                placeholder="Inserisci il prezzo della spedizione..."
+                                step="0.01"
+                                value="{{ old('prezzo_spedizione', $restaurant->prezzo_spedizione) }}">
+                            {{-- {{ old('prezzo_spedizione', $restaurant->prezzo_spedizione) }} --}}
+
+                            @error('prezzo_spedizione')
+                                <div class="text-danger">
+                                    <strong>{{ $message }}</strong>
+                                </div>
+                            @enderror
+                        </div>
+
                         <div class="mb-3">
                             {{-- SELEZIONA CATEGORIE MENU  --}}
                             <div class="card-header text-center fs-5 mb-4 w-100 border-top">
@@ -246,6 +266,26 @@
 
                             <input type="file" class="form-control" id="image" name="image" accept="image/*">
                         </div>
+
+                        {{-- PREZZO SPEDIZIONE --}}
+                        <div class="mb-3">
+                            <label for="prezzo_spedizione" class="form-label">
+                                Prezzo Spedizione <span class="text-danger"> *</span>
+                            </label>
+                            <input type="number" class="form-control @error('prezzo_spedizione') is-invalid @enderror"
+                                id="prezzo_spedizione" name="prezzo_spedizione"
+                                placeholder="Inserisci il prezzo della spedizione..."
+                                step="0.01"
+                                value="{{ old('prezzo_spedizione', $restaurant->prezzo_spedizione) }}">
+                            {{-- {{ old('prezzo_spedizione', $restaurant->prezzo_spedizione) }} --}}
+
+                            @error('prezzo_spedizione')
+                                <div class="text-danger">
+                                    <strong>{{ $message }}</strong>
+                                </div>
+                            @enderror
+                        </div>
+                        
                         <div class="mb-3">
                             {{-- SELEZIONA CATEGORIE MENU  --}}
                             <div class="card-header text-center fs-5 mb-4 w-100 border-top">

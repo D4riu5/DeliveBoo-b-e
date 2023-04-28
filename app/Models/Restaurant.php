@@ -13,6 +13,7 @@ class Restaurant extends Model
         'name',
         'address',
         'PIVA',
+        'prezzo_spedizione',
         'image',
         // 'avg_rating',
         // 'total_reviews',

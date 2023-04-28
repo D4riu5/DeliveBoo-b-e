@@ -33,6 +33,10 @@ class OrderSeeder extends Seeder
             $restaurant_id = random_int(1, $restaurant_count); // assign a random restaurant_id between 1 and $restaurant_count
             $foods = Food::where('restaurant_id', $restaurant_id)->get(); // get every food that has that restaurant_id
 
+            // Get the delivery cost for the selected restaurant
+            $restaurant = Restaurant::find($restaurant_id);
+            $prezzo_spedizione = $restaurant->prezzo_spedizione;
+
             // FOODS
             $max_foods_per_order = 4; // Set maximum number of foods per order
             $num_foods = random_int(1, $max_foods_per_order); // num_foods = how many foods i got in my order
@@ -57,6 +61,9 @@ class OrderSeeder extends Seeder
             foreach ($order_foods as $food) {
                 $total_price += $food->price * $food->quantity;
             }
+
+            // Add delivery cost to the total price
+            $total_price += $prezzo_spedizione;
 
             // GENERATE A RANDOM STATUS based on a 85% chance of being consegnato and 15% cancellato, if cancellato rating = null
             $status = (rand(0, 99) < 85) ? 'Consegnato' : 'Cancellato'; // generate random status
