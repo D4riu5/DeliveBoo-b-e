@@ -4,6 +4,7 @@ use Braintree\Gateway;
 use App\Http\Controllers\Api\RestaurantMenuController;
 use App\Http\Controllers\Api\TypeController;
 use App\Models\Order;
+use App\Models\Restaurant;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Validator;
@@ -72,6 +73,14 @@ Route::name('api.')->group(function () {
         // new order instances
         $order = new Order();
         $order->total_price = $request->input('order.total_price');
+
+        // get the restaurant of the first food item in the order
+        $restaurant = Restaurant::findOrFail($request->input('order.food.0.restaurant_id'));
+
+        // add the restaurant's prezzo_spedizione to the total price
+        $order->total_price += $restaurant->prezzo_spedizione;
+
+
         $order->status = $request->input('order.status');
         $order->costumer_name = $request->input('order.costumer_name');
         $order->delivery_address = $request->input('order.delivery_address');

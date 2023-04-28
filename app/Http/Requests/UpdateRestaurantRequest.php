@@ -28,6 +28,7 @@ class UpdateRestaurantRequest extends FormRequest
             'address' => 'required|regex:/^[a-zA-Z0-9 .,;:-]+$/|string|max:128',
             'image' => 'nullable|image|max:2048',
             'PIVA' => 'required|max:11|min:11|',
+            'prezzo_spedizione' => 'numeric|min:0|max:999.99',
             'delete_image' => 'nullable',
             'types' => 'required|array|exists:restaurants,id'
         ];
@@ -49,6 +50,9 @@ class UpdateRestaurantRequest extends FormRequest
             'types.required' => 'Seleziona almeno una categoria!',
             'types.array' => 'Il campo categorie deve essere un array.',
             'types.exists' => 'Una o più categorie selezionate non sono valide.',
+            'prezzo_spedizione.numeric' => 'Il prezzo di spedizione deve essere un valore numerico',
+            'prezzo_spedizione.min' => 'Il prezzo di spedizione non può essere inferiore a 0',
+            'prezzo_spedizione.max' => 'Il prezzo di spedizione non può essere superiore a 999.99',
         ];
     }
 }
