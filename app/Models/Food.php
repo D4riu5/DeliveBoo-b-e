@@ -19,6 +19,21 @@ class Food extends Model
         'course',
     ];
 
+    protected $appends = ['full_image_food'];
+
+    protected $hidden = [
+        'image',
+    ];
+
+    public function getFullImageFoodAttribute() {
+        $fullPath = null;
+        if ($this->image) {
+            $fullPath = asset('storage/'.$this->image);
+        }
+
+        return $fullPath;
+    }
+
     public function restaurant() {
         return $this->belongsTo(Restaurant::class);
     }
