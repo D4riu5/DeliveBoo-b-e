@@ -109,8 +109,8 @@
 
     // IMMAGINI NELLA SHOW DI FOOD
     .photoBox {
-      height: 151px;
-      width: 275px;
+      width: 354px;
+      height: 209px;
       margin-bottom: 50px;
 
       img {
@@ -121,8 +121,9 @@
     }
 
     .placeholderBox {
-      height: 151px;
-      width: 275px;
+      width: 354px;
+      height: 209px;
+      ;
       margin-bottom: 40px;
 
       img {
@@ -164,7 +165,7 @@
       }
     }
 
-    // MARGINE SUPERIORE AI TITOLI DI INDEX, SHOW, EDIT e CREATE
+    // MARGINE SUPERIORE AI TITOLI DI INDEX, SHOW, EDIT e CREATE + LOGIN
     .typeResponsive {
       margin-top: -3%;
     }
@@ -179,6 +180,11 @@
 
     .foodResponsive {
       margin-top: -4% !important;
+    }
+
+    // LOGIN FORM DISTANZA 
+    .formMargin {
+      margin-top: 120px !important;
     }
 
     // COLORI MENU A TENDINA
@@ -212,10 +218,23 @@
       color: #FF446C;
     }
 
-    // IMMAGINE NELL'EDIT DI RESTAURANT
+    // IMMAGINE SHOW DI FOOD DI RESTAURANT
     .img320 {
-      width: 401px;
-      height: 211px;
+      width: 354px;
+      height: 209px;
+      border-radius: 10px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+
+      }
+    }
+
+    .img320placeholder {
+      width: 354px;
+      height: 209px;
       border-radius: 10px;
 
       img {
@@ -245,9 +264,4 @@
       /* margin: 5px 9px -4px 4px; */
       border-radius: 10px !important;
     }
-  }
-
-  // LOGIN FORM DISTANZA 
-  .formMargin {
-    margin-top: 120px !important;
   }

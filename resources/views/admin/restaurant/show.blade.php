@@ -97,7 +97,7 @@
                     @else
                         <div class=" d-flex justify-content-start mb-2">
                             <div class="img320">
-                                <img class="mb-5" src="{{ asset('storage/placeholder/placeholder.jpg') }}" alt="restaurant">
+                                <img class="mb-5" src="{{ asset('storage/placeholder/2.jpg') }}" alt="restaurant">
                             </div>
                             {{-- INDIRIZZO MODIFICATO --}}
                         </div>

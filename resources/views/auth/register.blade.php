@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header text-bg-dark">{{ __('Utente') }}</div>
+                    <div class="card-header text-center fs-4 text-bg-dark border-top">{{ __('Utente') }}</div>
 
                     <div class="card-body text-bg-dark py-4 px-0">
                         {{-- Form di Regitrazione --}}
