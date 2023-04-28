@@ -17,6 +17,7 @@
 @import './partials/ResponsiveDetails/1024px.scss';
 @import './partials/ResponsiveDetails/1440px.scss';
 @import './partials/ResponsiveDetails/2650px.scss';
+@import './partials/ResponsiveDetails/oltre2650.scss';
 
 @import '~bootstrap/scss/bootstrap';
 
@@ -46,4 +47,10 @@
 .modalStyle {
     color: white;
     background-color: #000 !important;
+}
+
+#headerContainer {
+    max-width: 1440px;
+    margin: 0 auto;
+    line-height: 20px;
 }
