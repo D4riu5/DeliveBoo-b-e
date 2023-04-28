@@ -41,9 +41,10 @@
                     <table class="table">
                         <thead>
                             <tr>
-                                <th class="col-4 text-white" scope="col-4">Nome attività</th>
-                                <th class="col-4 text-white" scope="col-4">Indirizzo attività</th>
-                                <th class="col-4 text-white" scope="col-4">Sfoglia Menù</th>
+                                <th class="col-3 text-white" scope="col-3">Nome attività</th>
+                                <th class="col-3 text-white" scope="col-3">Indirizzo attività</th>
+                                <th class="col-3 text-white" scope="col-3">Prezzo Spedizione</th>
+                                <th class="col-3 text-white" scope="col-3">Sfoglia Menù</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -56,6 +57,11 @@
                                 <td>
                                     <div class="text-white">
                                         {{ $user->restaurant->address }}
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-white">
+                                        {{ $user->restaurant->prezzo_spedizione }} €
                                     </div>
                                 </td>
                                 <td>
@@ -114,6 +120,14 @@
                         </span>
                         <span>
                             {{ $user->restaurant->address }}
+                        </span>
+                    </div>
+                    <div class="mb-2">
+                        <span class="fw-bold">
+                            Prezzo Spedizione:
+                        </span>
+                        <span>
+                            {{ $user->restaurant->prezzo_spedizione }} €
                         </span>
                     </div>
                     <div class="mb-2">

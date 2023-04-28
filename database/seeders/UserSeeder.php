@@ -39,6 +39,7 @@ class UserSeeder extends Seeder
             'image' => 'https://media-cdn.tripadvisor.com/media/photo-s/1a/78/43/99/sala-mexican.jpg',
             'address' => 'Via dei Sentieri, 10',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 2.99,
             'user_id' => $user1->id,
         ]);
         
@@ -58,6 +59,7 @@ class UserSeeder extends Seeder
             'image' => 'https://reportergourmet.com/files/2019/12/ristoranti-italiani-in-uk.jpg',
             'address' => 'Via del legname, 12',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 1.99,
             'user_id' => $user2->id,
         ]);
         
@@ -77,6 +79,7 @@ class UserSeeder extends Seeder
             'image' => 'https://cucineditalia.com/wp-content/uploads/2016/07/italoamericano.jpg',
             'address' => 'Via Brera, 13',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 1.89,
             'user_id' => $user3->id,
         ]);
 
@@ -96,6 +99,7 @@ class UserSeeder extends Seeder
             'image' => 'https://media-assets.lacucinaitaliana.it/photos/61fabd448f675ad335f0d998/master/w_1600%2Cc_limit/la-rina-new-york.jpg',
             'address' => 'Via Brignano, 15',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 0,
             'user_id' => $user4->id,
         ]);
         
@@ -115,6 +119,7 @@ class UserSeeder extends Seeder
             'image' => 'https://cgfdesign.it/wp-content/uploads/2022/05/IMG_1079_web.jpg',
             'address' => 'Via del deserto, 13',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 3.99,
             'user_id' => $user5->id,
         ]);
         
@@ -134,6 +139,7 @@ class UserSeeder extends Seeder
             'image' => 'https://www.elmoccolo.it/wp-content/uploads/2015/07/el-moccolo-2-2.jpg',
             'address' => 'Via del Carmine, 11',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 0,
             'user_id' => $user6->id,
         ]);
         
@@ -153,6 +159,7 @@ class UserSeeder extends Seeder
             'image' => 'https://flawless.life/wp-content/uploads/2020/09/I-Migliori-Ristoranti-Messicani-di-Milano-Parrilla.jpg',
             'address' => 'Via Pellegrino Rossi, 93',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 1.99,
             'user_id' => $user7->id,
         ]);
         
@@ -172,6 +179,7 @@ class UserSeeder extends Seeder
             'image' => 'https://www.cucaramacara.it/wp-content/uploads/2022/02/IMG_0451-scaled.jpeg',
             'address' => 'Corso di Porta Ticinese, 91',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 2.99,
             'user_id' => $user8->id,
         ]);
         
@@ -191,6 +199,7 @@ class UserSeeder extends Seeder
             'image' => 'https://www.scattidigusto.it/wp-content/uploads/2018/01/Kowa-nuovo-ristorante-giapponese-cinese-Milano.jpg',
             'address' => 'Piazza Santa Maria Beltrade, 5',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 2.89,
             'user_id' => $user9->id,
         ]);
         
@@ -210,6 +219,7 @@ class UserSeeder extends Seeder
             'image' => 'https://cdn.agrodolce.it/6-LPiFBktYXLEBaHcQpgp2oHbtU=/1200x800/smart/https://www.agrodolce.it/app/uploads/2016/08/ristorante-giapponese.jpg',
             'address' => 'Via S. Calimero, 61',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 0,
             'user_id' => $user10->id,
         ]);
                 
@@ -229,6 +239,7 @@ class UserSeeder extends Seeder
             'image' => 'https://ristoranteiki.com/wp-content/uploads/2022/01/iki-ambienti.jpg',
             'address' => 'Via Monte Napoleone, 65',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 0.49,
             'user_id' => $user11->id,
         ]);
         
@@ -248,6 +259,7 @@ class UserSeeder extends Seeder
             'image' => 'https://www.hongkongcucciago.it/assets/img-temp/about/ristorante_cinese1.jpg',
             'address' => 'Piazzale Guglielmo Marconi, 58',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 1.79,
             'user_id' => $user12->id,
         ]);
         
@@ -267,6 +279,7 @@ class UserSeeder extends Seeder
             'image' => 'https://media-cdn.tripadvisor.com/media/photo-s/0e/b8/32/83/photo2jpg.jpg',
             'address' => 'Via Cesare Correnti, 19',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 0,
             'user_id' => $user13->id,
         ]);
         
@@ -286,6 +299,7 @@ class UserSeeder extends Seeder
             'image' => 'https://www.route66milan.it/wp-content/uploads/2021/01/IMG_20190411_114209-1024x768.jpg',
             'address' => 'Via Lorenteggio, 56',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 1,
             'user_id' => $user14->id,
         ]);
         
@@ -305,6 +319,7 @@ class UserSeeder extends Seeder
             'image' => 'https://www.euroma2.it/wp-content/uploads/2021/12/Foto4.jpeg',
             'address' => 'Piazza del Carmine, 50',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 0,
             'user_id' => $user15->id,
         ]);
         
@@ -324,6 +339,7 @@ class UserSeeder extends Seeder
             'image' => 'https://www.ioscelgoveg.it/wp-content/uploads/2018/09/mido-ristorante-arabo.jpg',
             'address' => 'Piazza del Liberty, 63',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 0,
             'user_id' => $user16->id,
         ]);
         
@@ -343,6 +359,7 @@ class UserSeeder extends Seeder
             'image' => 'https://cdn.sortiraparis.com/images/80/1462/732727-bigbang-le-restaurant-coreen-pour-les-fans-de-k-pop.jpg',
             'address' => 'Via Molino delle Armi, 12',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 3.99,
             'user_id' => $user17->id,
         ]);
         
@@ -362,6 +379,7 @@ class UserSeeder extends Seeder
             'image' => 'https://www.kimchiebasilico.it/wp-content/uploads/2021/12/Photo-Resizer-2021_12_23_09_56_27.jpg',
             'address' => 'Piazza Leonardo da Vinci, 72',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 1.59,
             'user_id' => $user18->id,
         ]);
         
@@ -381,6 +399,7 @@ class UserSeeder extends Seeder
             'image' => 'https://www.italiaatavola.net/images/contenutiarticoli/mamma_mia.jpg',
             'address' => 'Via Filippo Turati, 46',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 4.99,
             'user_id' => $user19->id,
         ]);
         
@@ -400,6 +419,7 @@ class UserSeeder extends Seeder
             'image' => 'https://cdn.sortiraparis.com/images/80/101193/848952-janine-nos-photos-du-restaurant.jpg',
             'address' => 'Piazza Castello, 90',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 0,
             'user_id' => $user20->id,
         ]);
         
@@ -419,6 +439,7 @@ class UserSeeder extends Seeder
             'image' => 'https://carusoacoustic.com/wp-content/uploads/2020/07/Ristorante-Taverna-Greca-Mykonos-pannelli-acustici-caruso-03.jpg',
             'address' => 'Corso di Porta Ticinese, 77',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 2.99,
             'user_id' => $user21->id,
         ]);
         
@@ -438,6 +459,7 @@ class UserSeeder extends Seeder
             'image' => 'https://www.ellenikoristorante.it/wp-content/uploads/2020/12/interniristo.png',
             'address' => 'Via Solferino, 75',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 2.49,
             'user_id' => $user22->id,
         ]);
         
@@ -457,6 +479,7 @@ class UserSeeder extends Seeder
             'image' => 'https://www.retailfood.it/wp-content/uploads/2023/02/01-johnny-rockets-elnos.jpeg',
             'address' => 'Via Papa Gregorio XIV, 29',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 1.49,
             'user_id' => $user23->id,
         ]);
                 
@@ -477,6 +500,7 @@ class UserSeeder extends Seeder
             'image' => 'https://media.safarway.com/content/34905e4c-626f-4dcb-8c7c-97a26bed7c08_xl.jpg',
             'address' => 'P.za Parmigiani, 13',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 0.89,
             'user_id' => $user24->id,
         ]);
         
@@ -496,6 +520,7 @@ class UserSeeder extends Seeder
             'image' => 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/ambiente-4-1638462761.jpg',
             'address' => 'Via Filippo Argelati, 80',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 0,
             'user_id' => $user25->id,
         ]);
         
@@ -515,6 +540,7 @@ class UserSeeder extends Seeder
             'image' => 'https://www.gochmen.co.uk/wp-content/uploads/2019/11/Kapak-Inside.jpg',
             'address' => 'Via S. Calimero, 61',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 1.79,
             'user_id' => $user26->id,
         ]);
         
@@ -534,6 +560,7 @@ class UserSeeder extends Seeder
             'image' => 'https://static.standard.co.uk/s3fs-public/thumbnails/image/2015/09/09/23/BERBER-&-Q.gif?width=1200',
             'address' => 'Via Bologna, 73',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 1.99,
             'user_id' => $user27->id,
         ]);
         
@@ -553,6 +580,7 @@ class UserSeeder extends Seeder
             'image' => 'https://www.saborandino.it/assets/img/portfolio/local-galeria.jpg',
             'address' => 'Via Milano, 12',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 2.99,
             'user_id' => $user28->id,
         ]);
         
@@ -572,6 +600,7 @@ class UserSeeder extends Seeder
             'image' => 'https://www.scattidigusto.it/wp-content/uploads/2016/04/ristorante-peruviano-Inkanto-Milano.jpg',
             'address' => 'Via Santa Radegonda, 90',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 1.99,
             'user_id' => $user29->id,
         ]);
         
@@ -591,6 +620,7 @@ class UserSeeder extends Seeder
             'image' => 'https://cdn.sortiraparis.com/images/80/74292/325194-jaipur-cafe-les-photos.jpg',
             'address' => 'Via Ferrante Aporti, 19',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 2.99,
             'user_id' => $user30->id,
         ]);
         
@@ -610,6 +640,7 @@ class UserSeeder extends Seeder
             'image' => 'https://www.italiaatavola.net/images/contenutiarticoli/Agrolago2.jpg',
             'address' => 'Via dei Pentiti, 12',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 0.89,
             'user_id' => $user31->id,
         ]);
         
