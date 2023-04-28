@@ -29,34 +29,37 @@
                         <tbody>
                             <tr scope="row">
                                 <td>
-                                    <div class="text-white">
+                                    <div class="text-white text-center">
                                         {{ $order->id }}
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="text-white">
+                                    <div class="text-white text-center">
                                         {{ $order->costumer_name }}
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="text-white">
+                                    <div class="text-white text-center">
                                         {{ $order->delivery_address }}
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="text-white">
+                                    <div class="text-white text-center">
                                         {{ $order->delivery_contact }}
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="text-white">
+                                    <div class="text-white text-center">
                                         {{ $order->total_price }} €
                                     </div>
                                 </td>
                                 <td>
-                                    <a style="color:rgb(250, 4, 86)" class="text-decoration-none" href="{{ route('admin.order.show', $order->id) }}">
-                                        Ulteriori dettagli
-                                    </a>
+                                    <div class="text-center">
+                                        <a style="color:rgb(250, 4, 86)" class="text-decoration-none"
+                                            href="{{ route('admin.order.show', $order->id) }}">
+                                            Ulteriori dettagli
+                                        </a>
+                                    </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -84,53 +87,53 @@
                             <th class="col" scope="col">Totale</th>
                             <th class="col" scope="col-">Status - Rating</th> --}}
                 @foreach ($orders as $order)
-                <div class="px-3 mb-3">
-                    <div class="card text-bg-dark px-2 py-2">
-                        <div class="py-1">
-                            <span class="fw-bold">
-                                ID ordine:
-                            </span>
-                            <span>
-                                {{ $order->id }}
-                            </span>
+                    <div class="px-3 mb-3">
+                        <div class="card text-bg-dark px-2 py-2">
+                            <div class="py-1">
+                                <span class="fw-bold">
+                                    ID ordine:
+                                </span>
+                                <span>
+                                    {{ $order->id }}
+                                </span>
+                            </div>
+                            <div class="py-1">
+                                <span class="fw-bold">
+                                    Nome cliente:
+                                </span>
+                                <span>
+                                    {{ $order->costumer_name }}
+                                </span>
+                            </div>
+                            <div class="py-1">
+                                <span class="fw-bold">
+                                    Indirizzo cliente:
+                                </span>
+                                <span>
+                                    {{ $order->delivery_address }}
+                                </span>
+                            </div>
+                            <div class="py-1">
+                                <span class="fw-bold">
+                                    Recapito cliente:
+                                </span>
+                                <span>
+                                    {{ $order->delivery_contact }}
+                                </span>
+                            </div>
+                            <div class="py-1">
+                                <span class="fw-bold">
+                                    Prezzo totale ordine:
+                                </span>
+                                <span>
+                                    {{ $order->total_price }} €
+                                </span>
+                            </div>
+                            <a class="text-decoration-none py-1" href="{{ route('admin.order.show', $order->id) }}">
+                                Clicca per maggiori dettagli
+                            </a>
                         </div>
-                        <div class="py-1">
-                            <span class="fw-bold">
-                                Nome cliente:
-                            </span>
-                            <span>
-                                {{ $order->costumer_name }}
-                            </span>
-                        </div>
-                        <div class="py-1">
-                            <span class="fw-bold">
-                                Indirizzo cliente:
-                            </span>
-                            <span>
-                                {{ $order->delivery_address }}
-                            </span>
-                        </div>
-                        <div class="py-1">
-                            <span class="fw-bold">
-                                Recapito cliente:
-                            </span>
-                            <span>
-                                {{ $order->delivery_contact }}
-                            </span>
-                        </div>
-                        <div class="py-1">
-                            <span class="fw-bold">
-                                Prezzo totale ordine:
-                            </span>
-                            <span>
-                                {{ $order->total_price }} €
-                            </span>
-                        </div>
-                        <a class="text-decoration-none py-1" href="{{ route('admin.order.show', $order->id) }}">
-                            Clicca per maggiori dettagli
-                        </a>
                     </div>
-                </div>
                 @endforeach
             </div>
         </div>

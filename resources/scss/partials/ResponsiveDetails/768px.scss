@@ -2,11 +2,11 @@
    @media screen and (min-width: 425px) and (max-width: 768px) {
 
      .bigScreen {
-       display: none;
+       display: block;
      }
 
      .smallScreen {
-       display: block;
+       display: none;
      }
 
      // APP.BLADE -> (fuori dal login) -> TASTI ACCEDI E REGISTRATI
@@ -18,10 +18,6 @@
        color: #FF446C !important;
      }
 
-     //MARGINE DI LOGIN CON HEADER
-     .loginMargin {
-       margin-top: 38px !important;
-     }
 
      // DASHBOARD
      .modificaAccount {
@@ -65,8 +61,8 @@
 
      //IMMAGINE DASHBOARD
      .queryContainer {
-       width: 395px;
-       height: 286px;
+       width: 731px;
+       height: 424px;
        border-radius: 10px;
 
        img {
@@ -115,7 +111,7 @@
      //EDIT RESTAURANT
      .editResta {
        width: 738px;
-       height: 398px;
+       height: 411px;
        border-radius: 10px;
 
        img {
@@ -140,18 +136,6 @@
 
      .restaName {
        color: #FF446C;
-     }
-
-     //MODIFICA PROFILO
-     //MARGIn
-     .formMargin {
-       margin-top: 27px !important;
-
-     }
-
-     //PASSWORD RESET
-     .passwordReset {
-       margin-top: 44px !important;
      }
 
 
@@ -188,32 +172,72 @@
        }
      }
 
-     .formMargin {
-       margin-top: 29% !important;
-     }
-
-
-     .passwordReset {
-       margin-top: 29% !important;
-     }
-
      .loginSet {
        display: flex !important;
        flex-wrap: inherit !important;
        align-items: center !important;
-       justify-content: center !important;
+       justify-content: space-between !important;
      }
 
      .boxPhoto {
-      width: 400px;
-      height: 218px;
-      border-radius: 10px;
+       width: 673px;
+       height: 353px;
+       border-radius: 10px;
 
-      img {
-        width: 100%;
-        height: 100%;
-        border-radius: 9px;
-      }
-    }
+       img {
+         width: 100%;
+         height: 100%;
+         border-radius: 9px;
+       }
+     }
+
+     //MARGINE DI LOGIN CON HEADER
+     .loginMargin {
+       margin-top: 38px !important;
+     }
+
+     //MARGINE DI CONFIRM PASSWORD
+     .confirmMargin {
+       margin-top: 2% !important;
+     }
+
+     //MARGINE DI REGISTER.BLADE
+     .registerMargin {
+       margin-top: 2% !important;
+     }
+
+     //EDIT PROFILE MARGIN
+     .editProfileMargin {
+       margin-top: 4% !important;
+     }
+
+     //PASSWORD RESET MARGIN
+     .passwordReset {
+       margin-top: 44px !important;
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
    }
