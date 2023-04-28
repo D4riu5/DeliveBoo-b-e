@@ -4,7 +4,7 @@
     <div class="container-fluid mt-4 bigScreen">
         <div class="container-fluid marginPerResponsive">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 text-center">
                     <table class="table">
                         <thead>
                             <tr>
@@ -37,7 +37,7 @@
             </div>
             {{-- SECONDA TABELLA: NOME ATTIVITA' - INDIRIZZO - SFOGLIA MENU --}}
             <div class="row justify-content-evenly">
-                <div class="col-md-12">
+                <div class="col-md-12 text-center">
                     <table class="table">
                         <thead>
                             <tr>
