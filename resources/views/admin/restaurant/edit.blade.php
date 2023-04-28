@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="bigScreen">
-        <div class="container-fluid mt-4">
+        <div class="container mt-4">
             <div class="row justify-content-center mb-4">
                 <div class="col">
                     <h1>

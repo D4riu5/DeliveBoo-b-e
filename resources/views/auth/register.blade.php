@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container-fluid formMargin">
+    <div class="container-fluid registerMargin">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header text-bg-dark">{{ __('Utente') }}</div>
+                    <div class="card-header text-center fs-4 text-bg-dark border-top">{{ __('Utente') }}</div>
 
                     <div class="card-body text-bg-dark py-4 px-0">
                         {{-- Form di Regitrazione --}}
@@ -205,7 +205,7 @@
 
                                 {{-- DATI PER LA TABELLA TYPES --}}
                                 <div class="d-flex flex-column">
-                                    <div class="d-flex flex-wrap m-auto justify-content-start ms-1 ps-4">
+                                    <div id="responsive1440" class="d-flex flex-wrap m-auto justify-content-start responsive1440 ms-1 ps-4 mb-4">
                                         @foreach ($types as $type)
                                             <div class="form-check form-check-inline col-5">
                                                 <input class="form-check-input" name="types[]" type="checkbox"

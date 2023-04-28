@@ -88,17 +88,17 @@
                     <tbody>
                         @foreach ($foods as $food)
                             <tr>
-                                <th class="text-white lineH" scope="row">{{ $food->id }}</th>
-                                <td>
-                                    <a style="color:rgb(250, 4, 86)" href="{{ route('admin.food.show', $food->id) }}" class="lineH">
+                                <th class="text-white lineH text-center" scope="row">{{ $food->id }}</th>
+                                <td class="text-center">
+                                    <a style="color:rgb(250, 4, 86)" href="{{ route('admin.food.show', $food->id) }}" class="lineH text-center">
                                         {{ $food->name }}
                                     </a>
                                 </td>
-                                <td class="text-white lineH">{{ $food->course }}</td>
-                                <td class="text-white lineH">
+                                <td class="text-white lineH text-center">{{ $food->course }}</td>
+                                <td class="text-white lineH text-center">
                                     {{ $food->price }} €
                                 </td>
-                                <td class="text-white lineH">
+                                <td class="text-white lineH text-center">
                                     {{ $food->is_available ? 'Si' : 'No' }}
                                 </td>
                                 <td class="text-white text-center">
@@ -125,14 +125,14 @@
                                                 <div class="modal-content modalStyle">
 
                                                     <div class="modal-header">
-                                                        <h1 class="modal-title fs-5 text-dark" id="exampleModalLabel">
+                                                        <h1 class="modal-title fs-5 text-light" id="exampleModalLabel">
                                                             Conferma eliminazione
                                                         </h1>
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                             aria-label="Close"></button>
                                                     </div>
 
-                                                    <div class="modal-body text-black">
+                                                    <div class="modal-body text-light">
                                                         Sei sicuro di voler eliminare questo piatto ?
                                                     </div>
 

@@ -95,8 +95,7 @@
             </div>
         </div>
         <div class="smallScreen">
-            <header style="height:100px;"
-                class="header finisher-header navbar fixed-top bg-dark d-flex justify-content-center">
+            <header style="height:100px;" id="responsive" class="header finisher-header navbar fixed-top bg-dark d-flex justify-content-center">
                 <div class="logo">
                     <a class="navbar-brand col-md-3 col-lg-2 me-0" href="{{ env('APP_FRONTEND_URL') }}">
                         <img src="{{ asset('storage/logo/7.png') }}">

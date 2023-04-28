@@ -25,8 +25,8 @@
                                     <img src="{{ asset('storage/' . $food->image) }}" alt="food">
                                 </div>
                             @else
-                                <div class="placeholderBox">
-                                    <img src="{{ asset('storage/placeholder/placeholder.jpg') }}" style="height: 400px;"
+                                <div class="photoBox">
+                                    <img src="{{ asset('storage/placeholder/1.jpg') }}" style="height: 400px;"
                                         alt="placeholder">
                                 </div>
                             @endif
@@ -141,8 +141,8 @@
                                     <img src="{{ asset('storage/' . $food->image) }}" alt="food">
                                 </div>
                             @else
-                                <div class="placeholderBox">
-                                    <img src="{{ asset('storage/placeholder/placeholder.jpg') }}" alt="placeholder">
+                                <div class="img320placeholder">
+                                    <img src="{{ asset('storage/placeholder/2.jpg') }}" alt="placeholder">
                                 </div>
                             @endif
                         </div>

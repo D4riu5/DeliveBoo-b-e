@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container-fluid formMargin">
+    <div class="container loginMargin">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card text-bg-dark">
@@ -85,14 +85,14 @@
     <div class="navbar-nav mt-2">
         @guest
             @if (Route::has('register'))
-                <div class="container-fluid text-center">
-                    <li class="nav-item">
+                <div class="container-fluid text-center smallScreen">
+                    <div class="nav-item">
                         <a class="card text-bg-dark navButton nav-link text-light" href="{{ route('register') }}">
                             <span class="fw-bold registerTitle">
                                 Registrati
                             </span>
                         </a>
-                    </li>
+                    </div>
                 </div>
             @endif
         @else
