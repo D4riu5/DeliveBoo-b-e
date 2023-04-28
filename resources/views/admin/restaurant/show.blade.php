@@ -14,8 +14,7 @@
                     @if ($restaurant->image)
                         <div class=" d-flex justify-content-start mb-1">
                             <div class="showResta">
-                                <img class="my-3" src="{{ asset('storage/' . $restaurant->image) }}"
-                                    alt="restaurant">
+                                <img src="{{$restaurant->image}}" alt="{{$restaurant->name}}">
                             </div>
                             {{-- INDIRIZZO MODIFICATO --}}
                             <div class="mx-4">
@@ -34,6 +33,26 @@
                                     </h3>
                                     <p>
                                         {{ $restaurant->PIVA }}
+                                    </p>
+                                </div>
+                                {{-- PREZZO SPEDIZIONE --}}
+                                <div>
+                                    <h3 class="my-2">
+                                        Prezzo Spedizione:
+                                    </h3>
+                                    <p>
+                                        €{{$restaurant->prezzo_spedizione}}
+                                    </p>
+                                </div>
+                                {{-- TYPES --}}
+                                <div>
+                                    <h3 class="my-2">
+                                        Types:
+                                    </h3>
+                                    <p>
+                                        @foreach($restaurant->types as $type)
+                                            {{$type->name}} @if(!$loop->last), @endif
+                                        @endforeach
                                     </p>
                                 </div>
                             </div>
@@ -90,14 +109,14 @@
                     @if ($restaurant->image)
                         <div class=" d-flex justify-content-start mb-2">
                             <div class="img320">
-                                <img class="mb-5" src="{{ asset('storage/' . $restaurant->image) }}" alt="restaurant">
+                                <img src="{{$restaurant->image}}" alt="{{$restaurant->name}}">
                             </div>
                             {{-- INDIRIZZO MODIFICATO --}}
                         </div>
                     @else
                         <div class=" d-flex justify-content-start mb-2">
                             <div class="img320">
-                                <img class="mb-5" src="{{ asset('storage/placeholder/2.jpg') }}" alt="restaurant">
+                                <img src="{{$restaurant->image}}" alt="{{$restaurant->name}}">
                             </div>
                             {{-- INDIRIZZO MODIFICATO --}}
                         </div>
@@ -118,6 +137,26 @@
                         </h3>
                         <p class="text-center">
                             {{ $restaurant->PIVA }}
+                        </p>
+                    </div>
+                    {{-- PREZZO SPEDIZIONE --}}
+                    <div>
+                        <h3 class="my-2 text-center">
+                            Prezzo Spedizione:
+                        </h3>
+                        <p class="text-center">
+                            €{{$restaurant->prezzo_spedizione}}
+                        </p>
+                    </div>
+                    {{-- TYPES --}}
+                    <div>
+                        <h3 class="my-2 text-center">
+                            Types:
+                        </h3>
+                        <p class="text-center">
+                            @foreach($restaurant->types as $type)
+                                {{$type->name}} @if(!$loop->last), @endif
+                            @endforeach
                         </p>
                     </div>
                 </div>
