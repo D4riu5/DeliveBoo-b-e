@@ -85,7 +85,7 @@ Route::name('api.')->group(function () {
         $order->delivery_contact = $request->input('order.delivery_contact');
 
         // Current date
-        $order->order_date = \DateTime::createFromFormat('d-m-Y H:i', now()->format('d-m-Y H:i'));
+        $order->order_date = \DateTime::createFromFormat('d-m-Y H:i:s', now()->format('d-m-Y H:i:s'));
         $order->save();
 
         // Connect the order with the food items in the order

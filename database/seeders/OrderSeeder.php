@@ -28,7 +28,7 @@ class OrderSeeder extends Seeder
         $restaurant_count = count($restaurants);
 
         $orders = [];
-        for ($i = 0; $i < 400; $i++) { // example loop to generate 10 orders
+        for ($i = 0; $i < 2400; $i++) { // example loop to generate 10 orders
 
             // RESTAURANT
             $restaurant_id = random_int(1, $restaurant_count); // assign a random restaurant_id between 1 and $restaurant_count
@@ -91,7 +91,7 @@ class OrderSeeder extends Seeder
                 'delivery_contact' =>  $carrier_code . $random_digits, // add $carrier_code and $random_digits to get a full number
                 'costumer_name' => $faker->name(),
                 'foods' => $order_foods,
-                'order_date' => \DateTime::createFromFormat('d-m-Y H:i', $faker->dateTimeBetween('-2 years', 'now')->format('d-m-Y H:i')),
+                'order_date' => \DateTime::createFromFormat('d-m-Y H:i:s', $faker->dateTimeBetween('-1 years', 'now')->format('d-m-Y H:i:s')),
             ];
 
             $orders[] = $order;
