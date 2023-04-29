@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('delivery_address', 128);
             $table->string('delivery_contact', 15);
             $table->string('costumer_name', 64);
+            $table->dateTime('order_date')->format('d-m-Y H:i');
             $table->timestamps();
         });
     }

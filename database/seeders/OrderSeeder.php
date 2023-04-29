@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use App\Models\Food;
 use App\Models\Order;
 use App\Models\Restaurant;
+use Carbon\Carbon;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -81,6 +82,7 @@ class OrderSeeder extends Seeder
             $random_digits = $faker->numerify('#######'); // generates 7 random digits
             // -----------------DELIVERY CONTACT END-----------------
 
+
             $order = [
                 'total_price' => $total_price,
                 'status' => $status,
@@ -88,7 +90,8 @@ class OrderSeeder extends Seeder
                 'delivery_address' => $faker->streetAddress,
                 'delivery_contact' =>  $carrier_code . $random_digits, // add $carrier_code and $random_digits to get a full number
                 'costumer_name' => $faker->name(),
-                'foods' => $order_foods
+                'foods' => $order_foods,
+                'order_date' => \DateTime::createFromFormat('d-m-Y H:i', $faker->dateTimeBetween('-2 years', 'now')->format('d-m-Y H:i')),
             ];
 
             $orders[] = $order;
@@ -103,6 +106,7 @@ class OrderSeeder extends Seeder
             $order->delivery_address = $orderData['delivery_address'];
             $order->delivery_contact = $orderData['delivery_contact'];
             $order->costumer_name = $orderData['costumer_name'];
+            $order->order_date = $orderData['order_date'];
             $order->save();
 
             foreach ($orderData['foods'] as $food) {
