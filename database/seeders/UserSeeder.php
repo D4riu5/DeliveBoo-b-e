@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use App\Models\Restaurant;
 use App\Models\Type;
 use App\Models\User;
+use Carbon\Carbon;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -31,6 +32,7 @@ class UserSeeder extends Seeder
             'surname' => 'admin',
             'email' => 'admin@admin.com',
             'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
         ]);
 
         // RESTAURANT 1 - ITALIANO - MESSICANO
@@ -51,6 +53,7 @@ class UserSeeder extends Seeder
             'surname' => $faker->lastName(),
             'email' => 'lafoglia@admin.com',
             'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
         ]);
 
         // RESTAURANT 2 - ITALIANO - VEGETARIANO
@@ -71,6 +74,7 @@ class UserSeeder extends Seeder
             'surname' => $faker->lastName(),
             'email' =>'ilmulino@admin.com',
             'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
         ]);
 
         // RESTAURANT 3 - ITALIANO - AMERICANO
@@ -91,6 +95,7 @@ class UserSeeder extends Seeder
             'surname' => $faker->lastName(),
             'email' =>'osteriamorini@admin.com',
             'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
         ]);
         
         // RESTAURANT 4 - ITALIANO
@@ -111,6 +116,7 @@ class UserSeeder extends Seeder
             'surname' => $faker->lastName(),
             'email' => 'chupiton@admin.com',
             'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
         ]);
 
         // RESTAURANT 5 - MESSICANO
@@ -131,6 +137,7 @@ class UserSeeder extends Seeder
             'surname' => $faker->lastName(),
             'email' => 'elcharro@admin.com',
             'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
         ]);
 
         // RESTAURANT 6 - MESSICANO
@@ -151,6 +158,7 @@ class UserSeeder extends Seeder
             'surname' => $faker->lastName(),
             'email' => 'lacasitamexicana@admin.com',
             'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
         ]);
 
         // RESTAURANT 7 - MESSICANO - HAMBURGER
@@ -171,6 +179,7 @@ class UserSeeder extends Seeder
             'surname' => $faker->lastName(),
             'email' => 'elreydeltacovegano@admin.com',
             'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
         ]);
 
         // RESTAURANT 8 - MESSICANO - VEGETARIANO
@@ -191,6 +200,7 @@ class UserSeeder extends Seeder
             'surname' => $faker->lastName(),
             'email' => 'matsuri@admin.com',
             'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
         ]);
 
         // RESTAURANT 9 - GIAPPONESE
@@ -211,6 +221,7 @@ class UserSeeder extends Seeder
             'surname' => $faker->lastName(),
             'email' => 'katsuya@admin.com',
             'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
         ]);
         
         // RESTAURANT 10 - GIAPPONESE
@@ -231,6 +242,7 @@ class UserSeeder extends Seeder
             'surname' => $faker->lastName(),
             'email' => 'skylin@admin.com',
             'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
         ]);
 
         // RESTAURANT 11 - GIAPPONESE - CINESE
@@ -251,6 +263,7 @@ class UserSeeder extends Seeder
             'surname' => $faker->lastName(),
             'email' => 'fengshan@admin.com',
             'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
         ]);
 
         // RESTAURANT 12 - CINESE
@@ -271,6 +284,7 @@ class UserSeeder extends Seeder
             'surname' => $faker->lastName(),
             'email' => 'trattoriagiada@admin.com',
             'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
         ]);
 
         // RESTAURANT 13 - CINESE - PERUVIANA
@@ -291,6 +305,7 @@ class UserSeeder extends Seeder
             'surname' => $faker->lastName(),
             'email' => 'hustler_pub@admin.com',
             'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
         ]);
 
         // RESTAURANT 14 - AMERICANA - HAMBURGER
@@ -311,6 +326,7 @@ class UserSeeder extends Seeder
             'surname' => $faker->lastName(),
             'email' => 'kebab_da_frank@admin.com',
             'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
         ]);
 
         // RESTAURANT 15 - ARABA - KEBAB
@@ -331,6 +347,7 @@ class UserSeeder extends Seeder
             'surname' => $faker->lastName(),
             'email' => 'aladdinseatery@admin.com',
             'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
         ]);
 
         // RESTAURANT 16 - ARABA
@@ -351,6 +368,7 @@ class UserSeeder extends Seeder
             'surname' => $faker->lastName(),
             'email' => 'jpop@admin.com',
             'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
         ]);
 
         // RESTAURANT 17 - COREANA - CINESE
@@ -371,6 +389,7 @@ class UserSeeder extends Seeder
             'surname' => $faker->lastName(),
             'email' => 'oseyo@admin.com',
             'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
         ]);
 
         // RESTAURANT 18 - COREANA
@@ -391,6 +410,7 @@ class UserSeeder extends Seeder
             'surname' => $faker->lastName(),
             'email' => 'la_parigina@admin.com',
             'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
         ]);
 
         // RESTAURANT 19 - FRANCESE
@@ -411,6 +431,7 @@ class UserSeeder extends Seeder
             'surname' => $faker->lastName(),
             'email' => 'le_bernardin@admin.com',
             'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
         ]);
 
         // RESTAURANT 20 - FRANCESE
@@ -431,6 +452,7 @@ class UserSeeder extends Seeder
             'surname' => $faker->lastName(),
             'email' => 'green_gyros@admin.com',
             'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
         ]);
 
         // RESTAURANT 21 - GRECA - VEGETARIANA
@@ -451,6 +473,7 @@ class UserSeeder extends Seeder
             'surname' => $faker->lastName(),
             'email' => 'erythraia@admin.com',
             'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
         ]);
 
         // RESTAURANT 22 - GRECA - VEGETARIANA
@@ -471,6 +494,7 @@ class UserSeeder extends Seeder
             'surname' => $faker->lastName(),
             'email' => 'chompies_burgers@admin.com',
             'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
         ]);
         
         // RESTAURANT 23 - HAMBURGER
@@ -492,6 +516,7 @@ class UserSeeder extends Seeder
             'surname' => $faker->lastName(),
             'email' => 'rajehsh@admin.com',
             'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
         ]);
 
         // RESTAURANT 24 - INDIANA
@@ -512,6 +537,7 @@ class UserSeeder extends Seeder
             'surname' => $faker->lastName(),
             'email' => 'bombay_bistro@admin.com',
             'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
         ]);
 
         // RESTAURANT 25 - INDIANA
@@ -532,6 +558,7 @@ class UserSeeder extends Seeder
             'surname' => $faker->lastName(),
             'email' => 'pita_club_kebab@admin.com',
             'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
         ]);
 
         // RESTAURANT 26 - KEBAB
@@ -552,6 +579,7 @@ class UserSeeder extends Seeder
             'surname' => $faker->lastName(),
             'email' => 'ali_baba_kebab@admin.com',
             'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
         ]);
 
         // RESTAURANT 27 - KEBAB
@@ -572,6 +600,7 @@ class UserSeeder extends Seeder
             'surname' => $faker->lastName(),
             'email' => 'do_re_mi@admin.com',
             'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
         ]);
 
         // RESTAURANT 28 PERUVIANA
@@ -592,6 +621,7 @@ class UserSeeder extends Seeder
             'surname' => $faker->lastName(),
             'email' => 'el_chorrillano@admin.com',
             'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
         ]);
 
         // RESTAURANT 29 PERUVIANA
@@ -612,6 +642,7 @@ class UserSeeder extends Seeder
             'surname' => $faker->lastName(),
             'email' => 'belly_bhudda@admin.com',
             'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
         ]);
 
         // RESTAURANT 30 - INDIANA - VEGETARIANA
@@ -632,6 +663,7 @@ class UserSeeder extends Seeder
             'surname' => $faker->lastName(),
             'email' => 'patate_normanne@admin.com',
             'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
         ]);
 
         // RESTAURANT 31 - VEGETARIANA
