@@ -41,7 +41,6 @@
                     <table class="table">
                         <thead>
                             <tr>
-                                <th class="col-3 text-white" scope="col-3">Nome attività</th>
                                 <th class="col-3 text-white" scope="col-3">Indirizzo attività</th>
                                 <th class="col-3 text-white" scope="col-3">Prezzo Spedizione</th>
                                 <th class="col-3 text-white" scope="col-3">Sfoglia Menù</th>
@@ -49,11 +48,6 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>
-                                    <div class="text-white">
-                                        {{ $user->restaurant->name }}
-                                    </div>
-                                </td>
                                 <td>
                                     <div class="text-white">
                                         {{ $user->restaurant->address }}

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 
-<div class="container pb-3 editProfileMargin">
+<div class="container pb-3 profileMargin">
     <h2 class="fs-4 mb-2 pb-2 text-center modificaProfilo">
         {{ __('Modifica Profilo') }}
     </h2>
