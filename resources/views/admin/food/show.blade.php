@@ -9,24 +9,24 @@
                     <h1 class="foodTitle text-center mb-4">
                         {{ $food->name }}
                     </h1>
-                    <div class="col-12 ps-3 mt-1">
-                        <h3 class="my-2">
+                    <div class="col-12 ps-3 my-4 d-flex justify-content-center">
+                        <span class="mx-2">
                             Descrizione:
-                        </h3>
-                        <p>
+                        </span>
+                        <span>
                             {!! nl2br($food->description) !!}
-                        </p>
+                        </span>
                     </div>
-                    <div class="d-flex">
+                    <div class="d-flex justify-content-center mb-4">
                         {{-- IMMAGINE --}}
                         <div class="col-auto">
                             @if ($food->image != null)
-                                <div class="photoBox">
-                                    <img src="{{ asset('storage/' . $food->image) }}" alt="food">
+                                <div class="container-sm">
+                                    <img class="img-fluid imgBorder" src="{{ asset('storage/' . $food->image) }}" alt="food">
                                 </div>
                             @else
-                                <div class="photoBox">
-                                    <img src="{{ asset('storage/placeholder/1.jpg') }}" style="height: 400px;"
+                                <div class="container-xl">
+                                    <img class="img-fluid imgBorder" src="{{ asset('storage/placeholder/1.jpg') }}" style="height: 400px;"
                                         alt="placeholder">
                                 </div>
                             @endif
