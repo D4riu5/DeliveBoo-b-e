@@ -13,7 +13,10 @@
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Darumadrop+One&family=Kalam&display=swap"
+        rel="stylesheet">
 
     <!-- Usando Vite -->
     @vite(['resources/js/app.js'])
@@ -55,7 +58,8 @@
                             </div>
                             @if (Route::has('register'))
                                 <div class="nav-item ps-5">
-                                    <a class="navButton fw-bold nav-link adminBots" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="navButton fw-bold nav-link adminBots"
+                                        href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </div>
                             @endif
                         @else

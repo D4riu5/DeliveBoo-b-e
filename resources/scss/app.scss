@@ -35,7 +35,7 @@
 }
 
 .mainColor {
-    background-color: rgba(53,54,58,255);
+    background-color: rgba(53, 54, 58, 255);
     color: white !important;
 }
 
@@ -63,7 +63,7 @@
 
 //PER TOGLIERE IL BORDO BIANCO A TUTTE LE CLASSI CARD
 .card {
-  --bs-card-border-color: none;
+    --bs-card-border-color: none;
 }
 
 .marginLogin {
@@ -76,7 +76,7 @@
 
 .bottoniFood {
     border-radius: 45px !important;
-    padding: 3px 8px !important;  
+    padding: 3px 8px !important;
 }
 
 .profileMargin {
@@ -85,4 +85,48 @@
 
 .imgBorder {
     border-radius: 10px;
+}
+
+.typeContainer {
+    position: relative;
+}
+
+.tagAbs {
+    position: absolute;
+    top: 61%;
+    left: 8%;
+}
+
+.tagStyle {
+    padding: 23px 16px;
+    border-radius: 107px;
+    font-size: 17px;
+    /* font-weight: bold; */
+    background-color: #ff4357;
+    border: 3px solid #372f2f;
+    color: white;
+    font-weight: 700;
+    font-family: 'Darumadrop One', cursive;
+}
+
+
+.tagTag {
+    position: absolute;
+    top: 37%;
+    left: 8%;
+}
+
+.styleTag {
+    padding: 14px 12px;
+    border-radius: 107px;
+    font-size: 9px;
+    background-color: #ff4357;
+    border: 3px solid #372f2f;
+    color: white;
+    font-weight: 700;
+    font-family: "Darumadrop One", cursive;
+}
+
+.smallMarginCucine {
+    margin-top: 11%;
 }

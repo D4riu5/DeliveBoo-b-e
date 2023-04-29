@@ -158,7 +158,7 @@
 
                         {{-- BOTTONE AGGIORNA PER INVIO FORM  --}}
 
-                        <div>
+                        <div class="d-flex justify-content-center">
                             <button type="submit" class="btn btn-warning">
                                 Aggiorna
                             </button>

@@ -40,8 +40,8 @@
        width: 100% !important;
        display: flex !important;
        justify-content: space-evenly !important;
-       font-size: 16px;
-       font-weight: 100;
+       font-size: 9px;
+       font-weight: 400;
      }
 
      .backG {
@@ -56,7 +56,7 @@
        .colorMenu:hover {
          // LA MIA ATTIVITA' - IL MIO MENU - I MIEI ORDINI - TIPOLOGIE DI CUCINa
          color: black;
-        }
+       }
      }
 
      //IMMAGINE DASHBOARD
@@ -205,6 +205,26 @@
      .passwordReset {
        margin-top: 44px !important;
      }
+
+     .tag425 {
+       position: absolute !important;
+       top: 54% !important;
+       left: 8%!important;
+     }
+
+     .style425 {
+       padding: 10px 5px !important;
+       border-radius: 107px !important;
+       font-size: 11px !important;
+       font-weight: bold !important;
+       background-color: #ff4357 !important;
+       border: 3px solid #372f2f !important;
+       color: white !important;
+       font-weight: 700 !important;
+       font-family: "Darumadrop One", cursive !important;
+     }
+
+
 
 
 
