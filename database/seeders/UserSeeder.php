@@ -36,7 +36,7 @@ class UserSeeder extends Seeder
         // RESTAURANT 1 - ITALIANO - MESSICANO
         $restaurant1 = Restaurant::create([
             'name' => 'El Baffo Criminal',
-            'image' => 'https://media-cdn.tripadvisor.com/media/photo-s/1a/78/43/99/sala-mexican.jpg',
+            'image' => '/restaurant/1.jpg',
             'address' => 'Via dei Sentieri, 10',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
             'prezzo_spedizione' => 2.99,
@@ -56,7 +56,7 @@ class UserSeeder extends Seeder
         // RESTAURANT 2 - ITALIANO - VEGETARIANO
         $restaurant2 = Restaurant::create([
             'name' => 'La Foglia',
-            'image' => 'https://reportergourmet.com/files/2019/12/ristoranti-italiani-in-uk.jpg',
+            'image' => '/restaurant/2.jpg',
             'address' => 'Via del legname, 12',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
             'prezzo_spedizione' => 1.99,
@@ -76,7 +76,7 @@ class UserSeeder extends Seeder
         // RESTAURANT 3 - ITALIANO - AMERICANO
         $restaurant3 = Restaurant::create([
             'name' => 'Il Mulino New York',
-            'image' => 'https://cucineditalia.com/wp-content/uploads/2016/07/italoamericano.jpg',
+            'image' => '/restaurant/3.jpg',
             'address' => 'Via Brera, 13',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
             'prezzo_spedizione' => 1.89,
@@ -96,7 +96,7 @@ class UserSeeder extends Seeder
         // RESTAURANT 4 - ITALIANO
         $restaurant4 = Restaurant::create([
             'name' => 'Osteria Morini',
-            'image' => 'https://media-assets.lacucinaitaliana.it/photos/61fabd448f675ad335f0d998/master/w_1600%2Cc_limit/la-rina-new-york.jpg',
+            'image' => '/restaurant/4.jpg',
             'address' => 'Via Brignano, 15',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
             'prezzo_spedizione' => 0,
@@ -116,7 +116,7 @@ class UserSeeder extends Seeder
         // RESTAURANT 5 - MESSICANO
         $restaurant5 = Restaurant::create([
             'name' => 'Chupitòn',
-            'image' => 'https://cgfdesign.it/wp-content/uploads/2022/05/IMG_1079_web.jpg',
+            'image' => '/restaurant/5.jpg',
             'address' => 'Via del deserto, 13',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
             'prezzo_spedizione' => 3.99,
@@ -136,7 +136,7 @@ class UserSeeder extends Seeder
         // RESTAURANT 6 - MESSICANO
         $restaurant6 = Restaurant::create([
             'name' => 'El Charro',
-            'image' => 'https://www.elmoccolo.it/wp-content/uploads/2015/07/el-moccolo-2-2.jpg',
+            'image' => '/restaurant/6.jpg',
             'address' => 'Via del Carmine, 11',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
             'prezzo_spedizione' => 0,
@@ -156,7 +156,7 @@ class UserSeeder extends Seeder
         // RESTAURANT 7 - MESSICANO - HAMBURGER
         $restaurant7 = Restaurant::create([
             'name' => 'La Casita Mexicana',
-            'image' => 'https://flawless.life/wp-content/uploads/2020/09/I-Migliori-Ristoranti-Messicani-di-Milano-Parrilla.jpg',
+            'image' => '/restaurant/7.jpg',
             'address' => 'Via Pellegrino Rossi, 93',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
             'prezzo_spedizione' => 1.99,
@@ -176,7 +176,7 @@ class UserSeeder extends Seeder
         // RESTAURANT 8 - MESSICANO - VEGETARIANO
         $restaurant8 = Restaurant::create([
             'name' => 'El Rey del Taco Vegano',
-            'image' => 'https://www.cucaramacara.it/wp-content/uploads/2022/02/IMG_0451-scaled.jpeg',
+            'image' => '/restaurant/8.jpg',
             'address' => 'Corso di Porta Ticinese, 91',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
             'prezzo_spedizione' => 2.99,
@@ -196,7 +196,7 @@ class UserSeeder extends Seeder
         // RESTAURANT 9 - GIAPPONESE
         $restaurant9 = Restaurant::create([
             'name' => 'Matsuri',
-            'image' => 'https://www.scattidigusto.it/wp-content/uploads/2018/01/Kowa-nuovo-ristorante-giapponese-cinese-Milano.jpg',
+            'image' => '/restaurant/9.jpg',
             'address' => 'Piazza Santa Maria Beltrade, 5',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
             'prezzo_spedizione' => 2.89,
@@ -216,7 +216,7 @@ class UserSeeder extends Seeder
         // RESTAURANT 10 - GIAPPONESE
         $restaurant10 = Restaurant::create([
             'name' => 'Katsuya',
-            'image' => 'https://cdn.agrodolce.it/6-LPiFBktYXLEBaHcQpgp2oHbtU=/1200x800/smart/https://www.agrodolce.it/app/uploads/2016/08/ristorante-giapponese.jpg',
+            'image' => '/restaurant/10.jpg',
             'address' => 'Via S. Calimero, 61',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
             'prezzo_spedizione' => 0,
@@ -236,7 +236,7 @@ class UserSeeder extends Seeder
         // RESTAURANT 11 - GIAPPONESE - CINESE
         $restaurant11 = Restaurant::create([
             'name' => 'Skylin',
-            'image' => 'https://ristoranteiki.com/wp-content/uploads/2022/01/iki-ambienti.jpg',
+            'image' => '/restaurant/11.jpg',
             'address' => 'Via Monte Napoleone, 65',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
             'prezzo_spedizione' => 0.49,
@@ -256,7 +256,7 @@ class UserSeeder extends Seeder
         // RESTAURANT 12 - CINESE
         $restaurant12 = Restaurant::create([
             'name' => 'Feng-Shan',
-            'image' => 'https://www.hongkongcucciago.it/assets/img-temp/about/ristorante_cinese1.jpg',
+            'image' => '/restaurant/12.jpg',
             'address' => 'Piazzale Guglielmo Marconi, 58',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
             'prezzo_spedizione' => 1.79,
@@ -276,7 +276,7 @@ class UserSeeder extends Seeder
         // RESTAURANT 13 - CINESE - PERUVIANA
         $restaurant13 = Restaurant::create([
             'name' => 'Trattoria Giada',
-            'image' => 'https://media-cdn.tripadvisor.com/media/photo-s/0e/b8/32/83/photo2jpg.jpg',
+            'image' => '/restaurant/13.jpg',
             'address' => 'Via Cesare Correnti, 19',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
             'prezzo_spedizione' => 0,
@@ -296,7 +296,7 @@ class UserSeeder extends Seeder
         // RESTAURANT 14 - AMERICANA - HAMBURGER
         $restaurant14 = Restaurant::create([
             'name' => 'Hustler Pub',
-            'image' => 'https://www.route66milan.it/wp-content/uploads/2021/01/IMG_20190411_114209-1024x768.jpg',
+            'image' => '/restaurant/14.jpg',
             'address' => 'Via Lorenteggio, 56',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
             'prezzo_spedizione' => 1,
@@ -316,7 +316,7 @@ class UserSeeder extends Seeder
         // RESTAURANT 15 - ARABA - KEBAB
         $restaurant15 = Restaurant::create([
             'name' => 'Kebab da Frank',
-            'image' => 'https://www.euroma2.it/wp-content/uploads/2021/12/Foto4.jpeg',
+            'image' => '/restaurant/15.jpg',
             'address' => 'Piazza del Carmine, 50',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
             'prezzo_spedizione' => 0,
@@ -336,7 +336,7 @@ class UserSeeder extends Seeder
         // RESTAURANT 16 - ARABA
         $restaurant16 = Restaurant::create([
             'name' => 'Aladdin s Eatery',
-            'image' => 'https://www.ioscelgoveg.it/wp-content/uploads/2018/09/mido-ristorante-arabo.jpg',
+            'image' => '/restaurant/16.jpg',
             'address' => 'Piazza del Liberty, 63',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
             'prezzo_spedizione' => 0,
@@ -356,7 +356,7 @@ class UserSeeder extends Seeder
         // RESTAURANT 17 - COREANA - CINESE
         $restaurant17 = Restaurant::create([
             'name' => 'JPOP',
-            'image' => 'https://cdn.sortiraparis.com/images/80/1462/732727-bigbang-le-restaurant-coreen-pour-les-fans-de-k-pop.jpg',
+            'image' => '/restaurant/17.jpg',
             'address' => 'Via Molino delle Armi, 12',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
             'prezzo_spedizione' => 3.99,
@@ -376,7 +376,7 @@ class UserSeeder extends Seeder
         // RESTAURANT 18 - COREANA
         $restaurant18 = Restaurant::create([
             'name' => 'Oseyo',
-            'image' => 'https://www.kimchiebasilico.it/wp-content/uploads/2021/12/Photo-Resizer-2021_12_23_09_56_27.jpg',
+            'image' => '/restaurant/18.jpg',
             'address' => 'Piazza Leonardo da Vinci, 72',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
             'prezzo_spedizione' => 1.59,
@@ -396,7 +396,7 @@ class UserSeeder extends Seeder
         // RESTAURANT 19 - FRANCESE
         $restaurant19 = Restaurant::create([
             'name' => 'La Parigina',
-            'image' => 'https://www.italiaatavola.net/images/contenutiarticoli/mamma_mia.jpg',
+            'image' => '/restaurant/19.jpg',
             'address' => 'Via Filippo Turati, 46',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
             'prezzo_spedizione' => 4.99,
@@ -416,7 +416,7 @@ class UserSeeder extends Seeder
         // RESTAURANT 20 - FRANCESE
         $restaurant20 = Restaurant::create([
             'name' => 'Le Bernardin',
-            'image' => 'https://cdn.sortiraparis.com/images/80/101193/848952-janine-nos-photos-du-restaurant.jpg',
+            'image' => '/restaurant/20.jpg',
             'address' => 'Piazza Castello, 90',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
             'prezzo_spedizione' => 0,
@@ -436,7 +436,7 @@ class UserSeeder extends Seeder
         // RESTAURANT 21 - GRECA - VEGETARIANA
         $restaurant21 = Restaurant::create([
             'name' => 'GreenGyros',
-            'image' => 'https://carusoacoustic.com/wp-content/uploads/2020/07/Ristorante-Taverna-Greca-Mykonos-pannelli-acustici-caruso-03.jpg',
+            'image' => '/restaurant/21.jpg',
             'address' => 'Corso di Porta Ticinese, 77',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
             'prezzo_spedizione' => 2.99,
@@ -456,7 +456,7 @@ class UserSeeder extends Seeder
         // RESTAURANT 22 - GRECA - VEGETARIANA
         $restaurant22 = Restaurant::create([
             'name' => 'Erythraia',
-            'image' => 'https://www.ellenikoristorante.it/wp-content/uploads/2020/12/interniristo.png',
+            'image' => '/restaurant/22.jpg',
             'address' => 'Via Solferino, 75',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
             'prezzo_spedizione' => 2.49,
@@ -476,7 +476,7 @@ class UserSeeder extends Seeder
         // RESTAURANT 23 - HAMBURGER
         $restaurant23 = Restaurant::create([
             'name' => 'Chompies Burgers',
-            'image' => 'https://www.retailfood.it/wp-content/uploads/2023/02/01-johnny-rockets-elnos.jpeg',
+            'image' => '/restaurant/23.jpg',
             'address' => 'Via Papa Gregorio XIV, 29',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
             'prezzo_spedizione' => 1.49,
@@ -497,7 +497,7 @@ class UserSeeder extends Seeder
         // RESTAURANT 24 - INDIANA
         $restaurant24 = Restaurant::create([
             'name' => 'Rajehsh',
-            'image' => 'https://media.safarway.com/content/34905e4c-626f-4dcb-8c7c-97a26bed7c08_xl.jpg',
+            'image' => '/restaurant/24.jpg',
             'address' => 'P.za Parmigiani, 13',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
             'prezzo_spedizione' => 0.89,
@@ -517,7 +517,7 @@ class UserSeeder extends Seeder
         // RESTAURANT 25 - INDIANA
         $restaurant25 = Restaurant::create([
             'name' => 'Bombay Bistro',
-            'image' => 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/ambiente-4-1638462761.jpg',
+            'image' => '/restaurant/25.jpg',
             'address' => 'Via Filippo Argelati, 80',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
             'prezzo_spedizione' => 0,
@@ -537,7 +537,7 @@ class UserSeeder extends Seeder
         // RESTAURANT 26 - KEBAB
         $restaurant26 = Restaurant::create([
             'name' => 'Pita Club Kebab',
-            'image' => 'https://www.gochmen.co.uk/wp-content/uploads/2019/11/Kapak-Inside.jpg',
+            'image' => '/restaurant/26.jpg',
             'address' => 'Via S. Calimero, 61',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
             'prezzo_spedizione' => 1.79,
@@ -557,7 +557,7 @@ class UserSeeder extends Seeder
         // RESTAURANT 27 - KEBAB
         $restaurant27 = Restaurant::create([
             'name' => 'Ali Baba Kebab',
-            'image' => 'https://static.standard.co.uk/s3fs-public/thumbnails/image/2015/09/09/23/BERBER-&-Q.gif?width=1200',
+            'image' => '/restaurant/27.jpg',
             'address' => 'Via Bologna, 73',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
             'prezzo_spedizione' => 1.99,
@@ -577,7 +577,7 @@ class UserSeeder extends Seeder
         // RESTAURANT 28 PERUVIANA
         $restaurant28 = Restaurant::create([
             'name' => 'Do Re Mi',
-            'image' => 'https://www.saborandino.it/assets/img/portfolio/local-galeria.jpg',
+            'image' => '/restaurant/28.jpg',
             'address' => 'Via Milano, 12',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
             'prezzo_spedizione' => 2.99,
@@ -597,7 +597,7 @@ class UserSeeder extends Seeder
         // RESTAURANT 29 PERUVIANA
         $restaurant29 = Restaurant::create([
             'name' => 'El Chorrillano',
-            'image' => 'https://www.scattidigusto.it/wp-content/uploads/2016/04/ristorante-peruviano-Inkanto-Milano.jpg',
+            'image' => '/restaurant/29.jpg',
             'address' => 'Via Santa Radegonda, 90',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
             'prezzo_spedizione' => 1.99,
@@ -617,7 +617,7 @@ class UserSeeder extends Seeder
         // RESTAURANT 30 - INDIANA - VEGETARIANA
         $restaurant30 = Restaurant::create([
             'name' => 'Belly Bhudda',
-            'image' => 'https://cdn.sortiraparis.com/images/80/74292/325194-jaipur-cafe-les-photos.jpg',
+            'image' => '/restaurant/30.jpg',
             'address' => 'Via Ferrante Aporti, 19',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
             'prezzo_spedizione' => 2.99,
@@ -637,7 +637,7 @@ class UserSeeder extends Seeder
         // RESTAURANT 31 - VEGETARIANA
         $restaurant31 = Restaurant::create([
             'name' => 'Patate normanne',
-            'image' => 'https://www.italiaatavola.net/images/contenutiarticoli/Agrolago2.jpg',
+            'image' => '/restaurant/31.jpg',
             'address' => 'Via dei Pentiti, 12',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
             'prezzo_spedizione' => 0.89,

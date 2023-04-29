@@ -20,6 +20,21 @@ class Restaurant extends Model
         'user_id'
     ];
 
+    protected $appends = ['full_image_restaurant'];
+
+    protected $hidden = [
+        'image',
+    ];
+
+    public function getFullImageRestaurantAttribute() {
+        $fullPath = null;
+        if ($this->image) {
+            $fullPath = asset('storage/'.$this->image);
+        }
+
+        return $fullPath;
+    }
+
     public function user() {
         return $this->belongsTo(User::class);
     }
