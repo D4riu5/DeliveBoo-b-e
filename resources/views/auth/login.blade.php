@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container loginMargin">
+    <div class="container marginLogin">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card text-bg-dark">

@@ -71,7 +71,7 @@
                                 </td>
                                 <td>
                                     <div class="text-center">
-                                        <a style="color:rgb(250, 4, 86)" class="text-decoration-none"
+                                        <a style="color:rgb(255 98 150);" class="text-decoration-none"
                                             href="{{ route('admin.order.show', $order->id) }}">
                                             Ulteriori dettagli
                                         </a>
@@ -102,7 +102,7 @@
                             <option value="asc" @if (request('sort_by') === 'asc') selected @endif>Più vecchio</option>
                         </select>
                     </form>
-                    <a style="color:rgb(250, 4, 86)" class="text-decoration-none" href="#">
+                    <a style="color:rgb(255 98 150);" class="text-decoration-none" href="#">
                         Vedi statistiche
                     </a>
                     <hr>

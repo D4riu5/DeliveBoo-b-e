@@ -2,10 +2,10 @@
 
 @section('content')
 
-<div class="container-fluid passwordReset text-white">
+<div class="container-fluid passwordReset">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card bg-dark">
+            <div class="card">
                 <div class="card-header">{{ __('Reset Password') }}</div>
 
                 <div class="card-body">

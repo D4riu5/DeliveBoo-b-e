@@ -2,9 +2,9 @@
 @section('content')
     {{-- SE LO SCHERMO E' GRANDE -> DISPLAY BLOCK --}}
     <div class="container-fluid mt-4 bigScreen">
-        <div class="container-fluid marginPerResponsive">
-            <div class="row">
-                <div class="col-md-12 text-center">
+        <div class="marginPerResponsive">
+            <div class="col-12 text-center">
+                <div>
                     <table class="table">
                         <thead>
                             <tr>
@@ -14,7 +14,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr scope="row">
+                            <tr>
                                 <td>
                                     <div class="text-white">
                                         {{ $user->name }}
@@ -36,8 +36,8 @@
                 </div>
             </div>
             {{-- SECONDA TABELLA: NOME ATTIVITA' - INDIRIZZO - SFOGLIA MENU --}}
-            <div class="row justify-content-evenly">
-                <div class="col-md-12 text-center">
+            <div class="justify-content-evenly">
+                <div class="col-12 text-center">
                     <table class="table">
                         <thead>
                             <tr>
@@ -48,7 +48,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr scope="row">
+                            <tr>
                                 <td>
                                     <div class="text-white">
                                         {{ $user->restaurant->name }}
@@ -80,7 +80,7 @@
     {{-- SE LO SCHERMO E' PICCOLO -> DISPLAY BLOCK --}}
     <div class="smallScreen">
         <div class="container dashboardResponsive">
-            <div class="row text ">
+            <div class="text ">
                 <div class="col-md-12">
                     <div class="mb-2">
                         <span class="fw-bold ">
@@ -146,7 +146,7 @@
         </div>
     </div>
     {{-- NOME ATTIVITA' + TIPOLOGIE + FOTO ATTIVITA' --}}
-    <div class="row justify-content-evenly">
+    <div class="justify-content-evenly">
         <div>
             <h1 class="text-center mt-3 restaurantName">
                 {{ $user->restaurant->name }}
@@ -184,12 +184,10 @@
             @endif
 
         </div>
-        <div class="text-center my-4">
+        <div class="container-sm text-center my-4">
             <a href="{{ route('admin.restaurant.edit', $restaurant->id) }}" class="btn btn-danger">
                 Modifica la tua attività <i class="fa-solid fa-pen-to-square"></i>
             </a>
         </div>
-    </div>
-    </div>
     </div>
 @endsection

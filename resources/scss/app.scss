@@ -60,3 +60,21 @@
     margin: 0 auto;
     line-height: 20px;
 }
+
+//PER TOGLIERE IL BORDO BIANCO A TUTTE LE CLASSI CARD
+.card {
+  --bs-card-border-color: none;
+}
+
+.marginLogin {
+    margin-top: 10%;
+}
+
+.typeMargin {
+    margin-top: 5%;
+}
+
+.bottoniFood {
+    border-radius: 45px !important;
+    padding: 3px 8px !important;  
+}

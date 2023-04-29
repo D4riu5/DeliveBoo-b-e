@@ -26,7 +26,7 @@
 <body class="mainColor">
     <div id="app">
         <div class="bigScreen">
-            <header style="height:100px;" class="header finisher-header navbar navbar-expand-md">
+            <header style="height:100px;" class="header finisher-header navbar navbar-expand-md fixed-top">
                 <div id="headerContainer" class="container-fluid d-flex justify-content-between navbar">
                     <a href="{{ env('APP_FRONTEND_URL') }}">
                         <div class="d-flex align-items-center mx-1">

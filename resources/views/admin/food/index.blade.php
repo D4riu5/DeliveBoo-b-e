@@ -6,14 +6,14 @@
         @include('partials.success')
 
         <div class="bigScreen">
-            <div class="row justify-content-center mb-2">
+            <div class=" justify-content-center mb-2">
                 <div class="col text-center">
                     <h1 class="titleColor">
                         I miei piatti
                     </h1>
                 </div>
             </div>
-            <div class="row my-4 d-flex">
+            <div class="my-4 d-flex">
                 <div class="col d-flex justify-content-center">
                     <form action="{{ route('admin.food.index') }}" method="GET">
                         <div class="d-flex justify-content-center">
@@ -40,7 +40,7 @@
             </div>
         </div>
         <div class="smallScreen">
-            <div class="row justify-content-center mb-2 foodResponsive">
+            <div class=" justify-content-center mb-2 foodResponsive">
                 <div class="col text-center">
                     <h1 class="titleColor">
                         I miei piatti
@@ -52,7 +52,7 @@
                     Aggiungi un piatto
                 </a>
             </div>
-            <div class="row my-4 d-flex">
+            <div class="my-4 d-flex">
                 <div class="col d-flex justify-content-center">
                     <form action="{{ route('admin.food.index') }}" method="GET">
                         <div class="d-flex align-items-center">
@@ -72,7 +72,7 @@
         </div>
     </div>
     <div class="bigScreen">
-        <div class="row">
+        <div class="">
             <div class="col">
                 <table class="table">
                     <thead>
@@ -88,9 +88,9 @@
                     <tbody>
                         @foreach ($foods as $food)
                             <tr>
-                                <th class="text-white lineH text-center" scope="row">{{ $food->id }}</th>
+                                <th class="text-white lineH text-center" scope="">{{ $food->id }}</th>
                                 <td class="text-center">
-                                    <a style="color:rgb(250, 4, 86)" href="{{ route('admin.food.show', $food->id) }}" class="lineH text-center">
+                                    <a style="color:rgb(255 98 150);" href="{{ route('admin.food.show', $food->id) }}" class="lineH text-center">
                                         {{ $food->name }}
                                     </a>
                                 </td>
@@ -102,17 +102,17 @@
                                     {{ $food->is_available ? 'Si' : 'No' }}
                                 </td>
                                 <td class="text-white text-center">
-                                    <a href="{{ route('admin.food.show', $food->id) }}" class="btn btn-success">
+                                    <a href="{{ route('admin.food.show', $food->id) }}" class="btn btn-light bottoniFood">
                                         <i class="fa-solid fa-circle-info"></i>
                                     </a>
-                                    <a href="{{ route('admin.food.edit', $food->id) }}" class="btn btn-warning">
+                                    <a href="{{ route('admin.food.edit', $food->id) }}" class="btn btn-warning bottoniFood">
                                         <i class="fa-solid fa-pen-to-square"></i>
                                     </a>
                                     <form class="d-inline-block" action="{{ route('admin.food.destroy', $food->id) }}"
                                         method="POST">
                                         @csrf
                                         @method('DELETE')
-                                        <button class="btn btn-danger" type="button" data-bs-toggle="modal"
+                                        <button class="btn btn-danger bottoniFood" type="button" data-bs-toggle="modal"
                                             data-bs-target="#exampleModal{{ $food->id }}">
                                             <i class="fa-solid fa-trash"></i>
                                         </button>
@@ -163,7 +163,7 @@
         </div>
     </div>
     <div class="smallScreen">
-        <div class="row">
+        <div class="">
             <div class="col">
                 <table class="table">
                     @foreach ($foods as $food)
