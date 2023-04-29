@@ -10,7 +10,7 @@ use App\Http\Controllers\Admin\PageController;
 use App\Http\Controllers\Admin\TypeController;
 use App\Http\Controllers\Admin\RestaurantController;
 use App\Http\Controllers\Admin\OrderController;
-
+use App\Http\Controllers\Admin\StatisticsController;
 //Models
 use App\Models\Restaurant;
 use App\Models\Type;
@@ -42,6 +42,8 @@ Route::prefix('admin')->name('admin.')->middleware(['auth', 'verified'])->group(
     Route::resource('type', TypeController::class)->only(['index', 'show']);
     Route::resource('order', OrderController::class)->only(['index', 'show']);
     Route::resource('food', FoodController::class);
+
+    Route::get('/statistics', [StatisticsController::class, 'index'])->name('statistics');
 });
 
 Route::middleware('auth')->group(function () {

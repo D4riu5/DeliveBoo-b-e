@@ -22,7 +22,7 @@
                                 </option>
                             </select>
                         </form>
-                        <a style="color:rgb(250, 4, 86)" class="text-decoration-none" href="#">
+                        <a style="color:rgb(250, 4, 86)" class="text-decoration-none" href="{{ route('admin.statistics') }}">
                             Vedi statistiche
                         </a>
                     </div>
