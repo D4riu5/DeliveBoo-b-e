@@ -60,13 +60,18 @@
                                     Voto:
                                 </span>
                                 <span class="ms-1 text-warning">
-                                    @foreach (range(1, $order->rating) as $n)
+                                    @php
+                                        $filled_stars = $order->rating; // show the rating number of filled stars
+                                        $empty_stars = 10 - $filled_stars; // show the remaining unfilled stars
+                                    @endphp
+                                    @for ($i = 1; $i <= $filled_stars; $i++)
                                         ★
-                                    @endforeach
-                                    @foreach (range($order->rating + 1, 5) as $n)
+                                    @endfor
+                                    @for ($i = 1; $i <= $empty_stars; $i++)
                                         ☆
-                                    @endforeach
+                                    @endfor
                                 </span>
+                                <span> ({{ $order->rating }}/10)</span>
                             </div>
                         @else
                             <div>
@@ -75,6 +80,7 @@
                                 </span>
                             </div>
                         @endif
+
 
                     </div>
                     <h4 class="my-2">

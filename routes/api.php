@@ -3,9 +3,12 @@
 use Braintree\Gateway;
 use App\Http\Controllers\Api\RestaurantMenuController;
 use App\Http\Controllers\Api\TypeController;
+use App\Mail\NewOrder;
+use App\Mail\NewOrderGuest;
 use App\Models\Order;
 use App\Models\Restaurant;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Validator;
 
@@ -40,8 +43,6 @@ Route::name('api.')->group(function () {
         ]);
     });
 
-
-
     // NEW ORDER
     Route::post('orders', function (Illuminate\Http\Request $request) {
         // custom messages for errors
@@ -56,13 +57,19 @@ Route::name('api.')->group(function () {
             'order.delivery_contact.required' => 'Il campo Numero di telefono è richiesto.',
             'order.delivery_contact.string' => 'Il campo Numero di telefono deve essere una stringa.',
             'order.delivery_contact.max' => 'Il campo Numero di telefono non deve superare i :max caratteri.',
-            'order.delivery_contact.min' => 'Il campo Numero di telefono deve essere di almeno :min caratteri.'
+            'order.delivery_contact.min' => 'Il campo Numero di telefono deve essere di almeno :min caratteri.',
+            'order.email_address.required' => 'Il campo Email è richiesto.',
+            'order.email_address.string' => 'Il campo Email deve essere una stringa.',
+            'order.email_address.email' => 'Il campo Email deve essere un indirizzo email valido.',
+            'order.email_address.max' => 'Il campo Email non deve superare i :max caratteri.',
+            'order.email_address.regex' => 'Il campo Email deve essere un indirizzo email valido.'
         ];
         // validator rules
         $validator = Validator::make($request->all(), [
             'order.costumer_name' => 'required|string|max:64',
             'order.delivery_address' => 'required|string|max:128|min:5',
             'order.delivery_contact' => 'required|string|max:15|min:10',
+            'order.email_address' => 'required|string|email|max:255|regex:/^.+@.+\..+$/',
         ], $customMessages);
 
         // if validator fails send errors back to front-end
@@ -94,8 +101,34 @@ Route::name('api.')->group(function () {
             $order->foods()->attach($food['id'], ['quantity' => $food['quantity']]);
         }
 
+        // // Get the user related to the restaurant
+        // $user = $restaurant->user;
+
+        Mail::to($restaurant->user->email)->send(new NewOrder($order, $restaurant, $request->input('order.email_address')));
+
+        Mail::to($request->input('order.email_address'))->send(new NewOrderGuest($request, $order, $restaurant));
+
         return response()->json(['message' => 'Order created'], 201);
     });
+
+
+    // ORDER RATING
+    Route::post('/orders/{order}/rate', function (Illuminate\Http\Request $request, $order) {
+        $order = Order::findOrFail($order);
+
+        $validator = Validator::make($request->all(), [
+            'rating' => 'required|integer|min:1|max:10',
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json(['errors' => $validator->errors()], 422);
+        }
+
+        $order->rating = $request->input('rating');
+        $order->save();
+        
+        return "Grazie per aver dato un voto all'ordine!";
+    })->name('orders.rate');
 });
 
 
