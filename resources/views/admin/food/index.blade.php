@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 
 @section('content')
-    <div class="container-fluid mt-4">
+    <div class="container-xl mt-4">
 
         @include('partials.success')
 

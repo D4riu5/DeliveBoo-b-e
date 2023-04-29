@@ -170,7 +170,7 @@
         </div>
     </div>
     <div class="smallScreen">
-        <div class="container-fluid mt-4">
+        <div class="container-xxl mt-4">
             <div class="row text-center mb-4">
                 <div class="col">
                     <h1>

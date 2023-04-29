@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 
 @section('content')
-    <div class="container-fluid mt-4">
+    <div class="container-xxl mt-4">
         <div class="row justify-content-center">
             <div class="col-md-12 d-flex flex-column align-items-center">
                 <div class="text-center d-flex mb-3">

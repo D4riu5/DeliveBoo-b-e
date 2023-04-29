@@ -38,7 +38,7 @@
         </div>
     </div>
     <div class="smallScreen smallMarginCucine">
-        <div class="container-fluid">
+        <div class="container-xxl">
             <div class="row">
                 <div class="col-md-12">
                     <div class="mb-4">

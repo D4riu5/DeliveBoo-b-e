@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="container-fluid passwordReset">
+<div class="container-xxl passwordReset">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">

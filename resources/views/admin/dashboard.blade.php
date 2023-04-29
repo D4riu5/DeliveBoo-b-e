@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 @section('content')
     {{-- SE LO SCHERMO E' GRANDE -> DISPLAY BLOCK --}}
-    <div class="container-fluid mt-4 bigScreen">
+    <div class="container-xxl mt-4 bigScreen">
         <div class="marginPerResponsive">
             <div class="col-12 text-center">
                 <div>
@@ -164,9 +164,9 @@
                         Foto attività
                     </h1>
                 </div>
-                <div class="d-flex justify-content-center py-2">
-                    <div class="queryContainer">
-                        <img src="{{ asset('storage/' . $restaurant->image) }}" alt="Myrestaurant">
+                <div class="py-2">
+                    <div class="container-xxl d-flex justify-content-center">
+                        <img class="img-fluid imgBorder" src="{{ asset('storage/' . $restaurant->image) }}" alt="Myrestaurant">
                     </div>
                 </div>
             @else
