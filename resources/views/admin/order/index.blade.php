@@ -10,14 +10,30 @@
                 </div>
                 {{-- INIZIO DATI CLIENTE  --}}
                 <div class="col-md-12">
-                    <h4>Ordini nel dettaglio:</h4>
+                    <div class="d-flex justify-content-between px-4">
+                        {{-- SORT BY SELECT --}}
+                        <form action="{{ route('admin.order.index') }}" method="get">
+                            {{-- @csrf --}}
+                            <label for="sort_by">Ordina per:</label>
+                            <select class="mx-1" id="sort_by" name="sort_by" onchange="this.form.submit()">
+                                <option value="desc" @if (request('sort_by') === 'desc') selected @endif>Più recente
+                                </option>
+                                <option value="asc" @if (request('sort_by') === 'asc') selected @endif>Più vecchio
+                                </option>
+                            </select>
+                        </form>
+                        <a style="color:rgb(250, 4, 86)" class="text-decoration-none" href="#">
+                            Vedi statistiche
+                        </a>
+                    </div>
+
                     <hr>
                 </div>
                 {{-- INIZIO TABELLA DATI CLIENTE  --}}
                 <table class="table">
                     <thead>
                         <tr>
-                            <th class="col text-white text-center" scope="col">ID</th>
+                            <th class="col text-white text-center" scope="col">Data</th>
                             <th class="col text-white text-center" scope="col">Nome Cliente</th>
                             <th class="col text-white text-center" scope="col">Indirizzo Cliente</th>
                             <th class="col text-white text-center" scope="col">Recapito Cliente</th>
@@ -30,7 +46,7 @@
                             <tr scope="row">
                                 <td>
                                     <div class="text-white text-center">
-                                        {{ $order->id }}
+                                        {{ $order->order_date }}
                                     </div>
                                 </td>
                                 <td>
@@ -77,7 +93,18 @@
                 </div>
                 {{-- INIZIO DATI CLIENTE  --}}
                 <div class="col-12 text-center">
-                    <h4>Ordini nel dettaglio:</h4>
+                    {{-- SORT BY SELECT --}}
+                    <form class="my-2" action="{{ route('admin.order.index') }}" method="get">
+                        {{-- @csrf --}}
+                        <label for="sort_by">Ordina per:</label>
+                        <select class="mx-1" id="sort_by" name="sort_by" onchange="this.form.submit()">
+                            <option value="desc" @if (request('sort_by') === 'desc') selected @endif>Più recente</option>
+                            <option value="asc" @if (request('sort_by') === 'asc') selected @endif>Più vecchio</option>
+                        </select>
+                    </form>
+                    <a style="color:rgb(250, 4, 86)" class="text-decoration-none" href="#">
+                        Vedi statistiche
+                    </a>
                     <hr>
                 </div>
                 {{-- <th class="col" scope="col">ID</th>
@@ -91,10 +118,10 @@
                         <div class="card text-bg-dark px-2 py-2">
                             <div class="py-1">
                                 <span class="fw-bold">
-                                    ID ordine:
+                                    Data dell'ordine:
                                 </span>
                                 <span>
-                                    {{ $order->id }}
+                                    {{ $order->order_date }}
                                 </span>
                             </div>
                             <div class="py-1">

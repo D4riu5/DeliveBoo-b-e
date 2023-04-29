@@ -16,6 +16,7 @@ class Order extends Model
         'delivery_address',
         'delivery_contact',
         'costumer_name',
+        'order_date'
     ];
 
     public function foods() {

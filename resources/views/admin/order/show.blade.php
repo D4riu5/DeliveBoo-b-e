@@ -40,6 +40,14 @@
                         </div>
                         <div>
                             <span class="fw-bold">
+                                Data:
+                            </span>
+                            <span class="ms-1">
+                                {{ $order->order_date }}
+                            </span>
+                        </div>
+                        <div>
+                            <span class="fw-bold">
                                 Status ordine:
                             </span>
                             <span class="ms-1">

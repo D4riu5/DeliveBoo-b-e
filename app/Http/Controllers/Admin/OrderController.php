@@ -7,7 +7,7 @@ use App\Models\Order;
 use App\Http\Requests\StoreOrderRequest;
 use App\Http\Requests\UpdateOrderRequest;
 use Illuminate\Support\Facades\Auth;
-
+use Illuminate\Http\Request;
 class OrderController extends Controller
 {
     /**
@@ -15,11 +15,24 @@ class OrderController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        $orders = Auth::user()->restaurant->foods()->with('orders')->get()->pluck('orders')->flatten()->unique('id')->values();
+    public function index(Request $request)
+{
+    // Retrieve the value of the `sort_by` query parameter
+    $sort_by = $request->input('sort_by', 'desc');
+    
+    // Sort the orders by the `order_date` field
+    if ($sort_by == 'desc') {
+        $orders = Auth::user()->restaurant->foods()->with('orders')->get()->pluck('orders')->flatten()->unique('id')->sortByDesc('order_date')->values();
+
+        return view('admin.order.index', compact('orders'));
+        
+    } else {
+        $orders = Auth::user()->restaurant->foods()->with('orders')->get()->pluck('orders')->flatten()->unique('id')->sortBy('order_date')->values();
+
         return view('admin.order.index', compact('orders'));
     }
+
+}
 
 
     /**
