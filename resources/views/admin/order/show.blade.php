@@ -1,22 +1,24 @@
 @extends('layouts.admin')
 
 @section('content')
-    <div class="container-fluid mt-4">
-        <div class="row justify-content-center">
-            <div class="col-md-12 d-flex flex-column align-items-center">
+    <div class="container-xxl mt-4">
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-evenly align-items-start">
                 <div class="d-flex flex-column">
-                    <h4 class="my-2">
-                        Informazioni contatto:
+                    <h4 class="my-2 ms-4">
+                        Riepilogo ordine
                     </h4>
 
-                    <div>
-                        <span class="fw-bold">
-                            Indirizzo consegna:
-                        </span>
-                        <span class="ms-1">
-                            {{ $order->delivery_address }}
-                        </span>
-                    </div>
+                    <ul class="my-2">
+                        @foreach ($order->foods as $food)
+                            <li>{{ $food->name }} - {{ $food->price }} € x {{ $food->pivot->quantity }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+                <div class="d-flex flex-column">
+                    <h4 class="my-2 ms-1">
+                        Informazioni contatto
+                    </h4>
                     <div>
                         <span class="fw-bold">
                             Recapito telefonico:
@@ -25,14 +27,23 @@
                             {{ $order->delivery_contact }}
                         </span>
                     </div>
-
-                    <h4 class="my-2">
-                        Ordine:
+                    <div>
+                        <span class="fw-bold">
+                            Indirizzo consegna:
+                        </span>
+                        <span class="ms-1">
+                            {{ $order->delivery_address }}
+                        </span>
+                    </div>
+                </div>
+                <div class="d-flex flex-column">
+                    <h4 class="my-2 ms-1">
+                        Specifiche ordine:
                     </h4>
                     <div>
                         <div>
                             <span class="fw-bold">
-                                Codice ordine selezionato:
+                                Codice ordine selezionato
                             </span>
                             <span class="ms-1">
                                 {{ $order->id }}
@@ -80,27 +91,17 @@
                                 </span>
                             </div>
                         @endif
-
-
                     </div>
-                    <h4 class="my-2">
-                        Lista prodotti:
-                    </h4>
-
-                    <ul class="my-2">
-                        @foreach ($order->foods as $food)
-                            <li>{{ $food->name }} - {{ $food->price }} € x {{ $food->pivot->quantity }}</li>
-                        @endforeach
-                    </ul>
-
                 </div>
-
+            </div>
+            <div class="d-flex justify-content-center">
                 <a class="btn btn-danger my-5"
                     class="{{ Route::currentRouteName() == 'admin.order.index' ? 'bg-secondary' : '' }}"
                     href="{{ route('admin.order.index') }}">
                     Torna su Miei Ordini
                 </a>
             </div>
+
         </div>
     </div>
 @endsection

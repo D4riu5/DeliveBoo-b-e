@@ -13,7 +13,10 @@
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Darumadrop+One&family=Kalam&display=swap"
+        rel="stylesheet">
 
     <!-- Usando Vite -->
     @vite(['resources/js/app.js'])
@@ -22,12 +25,13 @@
 <body class="mainColor">
     <div id="app">
         <div class="bigScreen">
-            <div style="height:100px;" class="header finisher-header navbar navbar-expand-md">
-                <div class="container-fluid loginSet">
-                    {{-- QUI ABBIAMO IL LINK DI COLLEGAMENTO DEL LOGO CON LA HOME - NON TOCCARE --}}
-                    <a class="navbar-brand d-flex align-items-center" href="{{ url('/') }}">
-                        <div class="logo mediaBox">
-                            <img src="{{ asset('storage/logo/7.png') }}">
+            <div style="height:100px;" class="header finisher-header navbar navbar-expand-md fixed-top">
+                <div id="loginSet" class="container-fluid d-flex justify-content-between navbar">
+                    <a href="{{ url('/') }}">
+                        <div class="d-flex align-items-center mx-1">
+                            <div class="logo mediaBox">
+                                <img src="{{ asset('storage/logo/7.png') }}">
+                            </div>
                         </div>
                     </a>
 
@@ -54,7 +58,8 @@
                             </div>
                             @if (Route::has('register'))
                                 <div class="nav-item ps-5">
-                                    <a class="navButton fw-bold nav-link adminBots" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="navButton fw-bold nav-link adminBots"
+                                        href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </div>
                             @endif
                         @else

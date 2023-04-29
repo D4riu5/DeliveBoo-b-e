@@ -58,7 +58,7 @@
  
       .colorMenu:hover {
         // LA MIA ATTIVITA' - IL MIO MENU - I MIEI ORDINI - TIPOLOGIE DI CUCINa
-        color: #FF446C;
+        color: black;
       }
     }
  
@@ -91,13 +91,7 @@
     .foodTitle {
       color: #FF446C;
     }
- 
-    //EDIT FOOD
-    .photoBox {
-      width: 1417px;
-      height: 706px;
-      margin-bottom: 50px;
-    }
+
  
     .editFoodimg {
       width: 1295px;
@@ -208,11 +202,7 @@
     .registerMargin {
       margin-top: 2% !important;
     }
- 
-    //EDIT PROFILE MARGIN
-    .editProfileMargin {
-      margin-top: 4% !important;
-    }
+
  
     //PASSWORD RESET MARGIN
     .passwordReset {
@@ -221,11 +211,6 @@
  
     #responsive1440 {
       padding-left: 17.5rem !important;
-    }
-
-    #app {
-        width: 1440px;
-        margin: 0 auto;
     }
  
  

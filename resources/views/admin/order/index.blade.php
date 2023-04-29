@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="bigScreen">
-        <div class="container-fluid mt-4">
+        <div class="container-xxl mt-4">
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h1 class="titleColor">I miei ordini</h1>
@@ -102,7 +102,7 @@
                             <option value="asc" @if (request('sort_by') === 'asc') selected @endif>Più vecchio</option>
                         </select>
                     </form>
-                    <a style="color:rgb(250, 4, 86)" class="text-decoration-none" href="#">
+                    <a style="color:rgb(255 98 150);" class="text-decoration-none" href="#">
                         Vedi statistiche
                     </a>
                     <hr>
@@ -156,8 +156,8 @@
                                     {{ $order->total_price }} €
                                 </span>
                             </div>
-                            <a class="text-decoration-none py-1" href="{{ route('admin.order.show', $order->id) }}">
-                                Clicca per maggiori dettagli
+                            <a style="color:rgb(250, 4, 86)" class="text-decoration-none py-1" href="{{ route('admin.order.show', $order->id) }}">
+                                Ulteriori dettagli
                             </a>
                         </div>
                     </div>
