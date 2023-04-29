@@ -76,15 +76,16 @@ Route::name('api.')->group(function () {
 
         // get the restaurant of the first food item in the order
         $restaurant = Restaurant::findOrFail($request->input('order.food.0.restaurant_id'));
-
         // add the restaurant's prezzo_spedizione to the total price
         $order->total_price += $restaurant->prezzo_spedizione;
-
 
         $order->status = $request->input('order.status');
         $order->costumer_name = $request->input('order.costumer_name');
         $order->delivery_address = $request->input('order.delivery_address');
         $order->delivery_contact = $request->input('order.delivery_contact');
+
+        // Current date
+        $order->order_date = \DateTime::createFromFormat('d-m-Y H:i:s', now()->format('d-m-Y H:i:s'));
         $order->save();
 
         // Connect the order with the food items in the order

@@ -14,7 +14,7 @@
                     @if ($restaurant->image)
                         <div class=" d-flex justify-content-start mb-1">
                             <div class="showResta">
-                                <img src="{{$restaurant->image}}" alt="{{$restaurant->name}}">
+                                <img src="{{ asset('storage/' . $restaurant->image) }}" alt="{{$restaurant->name}}">
                             </div>
                             {{-- INDIRIZZO MODIFICATO --}}
                             <div class="mx-4">

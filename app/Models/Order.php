@@ -16,6 +16,11 @@ class Order extends Model
         'delivery_address',
         'delivery_contact',
         'costumer_name',
+        'order_date'
+    ];
+
+    protected $casts = [
+        'order_date' => 'datetime',
     ];
 
     public function foods() {
