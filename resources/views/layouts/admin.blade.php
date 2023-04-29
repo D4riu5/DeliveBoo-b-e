@@ -26,12 +26,11 @@
 <body class="mainColor">
     <div id="app">
         <div class="bigScreen">
-            <header style="height:100px;" class="header finisher-header barraLogo barraColor fixed-top">
-                <div id="headerContainer" class="d-flex justify-content-between navbar">
-                    <a class="" href="{{ env('APP_FRONTEND_URL') }}">
+            <header style="height:100px;" class="header finisher-header navbar navbar-expand-md">
+                <div id="headerContainer" class="container-fluid d-flex justify-content-between navbar">
+                    <a href="{{ env('APP_FRONTEND_URL') }}">
                         <div class="d-flex align-items-center mx-1">
-                            <div class="logo">
-                                {{-- LOGO ROSSO NERO --}}
+                            <div class="logo mediaBox">
                                 <img src="{{ asset('storage/logo/7.png') }}">
                             </div>
                         </div>

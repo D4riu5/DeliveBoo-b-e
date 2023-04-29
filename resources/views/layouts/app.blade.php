@@ -23,11 +23,12 @@
     <div id="app">
         <div class="bigScreen">
             <div style="height:100px;" class="header finisher-header navbar navbar-expand-md">
-                <div class="container-fluid loginSet">
-                    {{-- QUI ABBIAMO IL LINK DI COLLEGAMENTO DEL LOGO CON LA HOME - NON TOCCARE --}}
-                    <a class="navbar-brand d-flex align-items-center" href="{{ url('/') }}">
-                        <div class="logo mediaBox">
-                            <img src="{{ asset('storage/logo/7.png') }}">
+                <div id="loginSet" class="container-fluid d-flex justify-content-between navbar">
+                    <a href="{{ url('/') }}">
+                        <div class="d-flex align-items-center mx-1">
+                            <div class="logo mediaBox">
+                                <img src="{{ asset('storage/logo/7.png') }}">
+                            </div>
                         </div>
                     </a>
 
