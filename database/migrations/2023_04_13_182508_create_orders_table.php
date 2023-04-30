@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('delivery_contact', 15);
             $table->string('costumer_name', 64);
             $table->dateTime('order_date')->format('d-m-Y H:i:s');
+            $table->string('rate_token')->nullable()->unique();
             $table->timestamps();
         });
     }
