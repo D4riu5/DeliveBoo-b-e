@@ -6,7 +6,7 @@
             <h4 class="">
                 Ordini ricevuti nell'ultimo anno
             </h4>
-            <div class="mt-4 mb-2 container-sm" style="height: 60vh">
+            <div class="mt-4 mb-2" style="height: 60vh">
                 <canvas id="acquisitions">
                 </canvas>
             </div>
