@@ -105,7 +105,7 @@
                         </select>
                     </form>
                     <h3>Totale incasso: {{ $total_earnings }}€</h3>
-                    <a style="color:rgb(255 98 150);" class="text-decoration-none fs-5" href="#">
+                    <a style="color:rgb(255 98 150);" class="text-decoration-none fs-5" href="{{ route('admin.statistics') }}">
                         Vedi statistiche
                     </a>
                     <hr>
