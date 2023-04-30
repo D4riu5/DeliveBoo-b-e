@@ -127,7 +127,7 @@ Route::name('api.')->group(function () {
         $order->rating = $request->input('rating');
         $order->save();
         
-        return "Grazie per aver dato un voto all'ordine!";
+        return redirect()->back()->with('success', 'Thank you for rating the order!');
     })->name('orders.rate');
 });
 

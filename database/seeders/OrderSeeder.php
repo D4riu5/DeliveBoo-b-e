@@ -11,6 +11,7 @@ use Illuminate\Database\Seeder;
 
 // Helpers
 use Faker\Generator as Faker;
+use Illuminate\Support\Str;
 
 class OrderSeeder extends Seeder
 {
@@ -92,6 +93,7 @@ class OrderSeeder extends Seeder
                 'costumer_name' => $faker->name(),
                 'foods' => $order_foods,
                 'order_date' => \DateTime::createFromFormat('d-m-Y H:i:s', $faker->dateTimeBetween('-1 years', 'now')->format('d-m-Y H:i:s')),
+                'rate_token' => $faker->unique()->uuid, // add a unique rate token for each order
             ];
 
             $orders[] = $order;
@@ -107,6 +109,7 @@ class OrderSeeder extends Seeder
             $order->delivery_contact = $orderData['delivery_contact'];
             $order->costumer_name = $orderData['costumer_name'];
             $order->order_date = $orderData['order_date'];
+            $order->rate_token = $orderData['rate_token'];
             $order->save();
 
             foreach ($orderData['foods'] as $food) {

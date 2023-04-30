@@ -8,6 +8,7 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
+use Illuminate\Support\Str;
 
 class NewOrderGuest extends Mailable
 {
@@ -16,6 +17,7 @@ class NewOrderGuest extends Mailable
     public $guest;
     public $order;
     public $restaurant;
+    public $rateToken;
     /**
      * Create a new message instance.
      *
@@ -26,6 +28,9 @@ class NewOrderGuest extends Mailable
         $this->guest = $guest;
         $this->order = $order;
         $this->restaurant = $restaurant;
+        $this->rateToken = Str::uuid()->toString(); // generate a unique rate token
+        $order->rate_token = $this->rateToken;
+        $order->save();
         
     }
 
@@ -38,7 +43,7 @@ class NewOrderGuest extends Mailable
     {
         return new Envelope(
             replyTo: 'noreply@test.com',
-            subject: 'Il tuo ordine è in preparazione!',
+            subject: 'Il tuo ordine è in consegna!',
         );
     }
 
