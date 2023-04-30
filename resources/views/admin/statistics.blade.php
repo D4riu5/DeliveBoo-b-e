@@ -1,12 +1,15 @@
 @extends('layouts.admin')
 
 @section('content')
-    <div class="container-sm mt-1">
+    <div class=" mt-1">
         <div class="d-flex flex-column justify-content-center align-items-center">
             <h4 class="">
                 Ordini ricevuti nell'ultimo anno
             </h4>
-            <div class="mt-4 mb-2" style="height: 60vh"><canvas id="acquisitions"></canvas></div>
+            <div class="mt-4 mb-2 container-sm" style="height: 60vh">
+                <canvas id="acquisitions">
+                </canvas>
+            </div>
         </div>
     </div>
 
