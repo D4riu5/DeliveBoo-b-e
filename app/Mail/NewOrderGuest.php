@@ -18,6 +18,7 @@ class NewOrderGuest extends Mailable
     public $order;
     public $restaurant;
     public $rateToken;
+    
     /**
      * Create a new message instance.
      *

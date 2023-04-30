@@ -34,7 +34,7 @@
         <p>Prezzo spedizione: {{ $restaurant->prezzo_spedizione }} €</p>
         <p>Prezzo totale: {{ $order->total_price }} €</p>
 
-        <p>Una volta ricevuto l'ordine, <a href="{{ url('orders/' . $order->id . '/rate/' . $rateToken) }}">clicca qui</a> per dare un voto all'ordine.
+        <p>Una volta ricevuto l'ordine, <a href="{{ url('orders/' . $order->id . '/rate/' . $rateToken) }}">clicca qui</a> per dargli un voto.
         </p>
 
         <p>Grazie!</p>
