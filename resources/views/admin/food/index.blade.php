@@ -72,7 +72,7 @@
         </div>
     </div>
     <div class="bigScreen">
-        <div class="">
+        <div class="container-xxl">
             <div class="col">
                 <table class="table">
                     <thead>

@@ -12,8 +12,8 @@
                 <div class="mb-5 text-center">
                     {{ $type->description }}
                 </div>
-                <div class="boxPhoto">
-                    <img src="{{ asset("storage/" . $type->image) }}">
+                <div class="container-xxl">
+                    <img class="img-fluid imgBorder" src="{{ asset("storage/" . $type->image) }}">
                 </div>
                 <a class="btn btn-danger my-5" class="{{ Route::currentRouteName() == 'admin.type.index' ? 'bg-secondary' : '' }}" href="{{route('admin.type.index')}}">
                     Torna su altre tipologie

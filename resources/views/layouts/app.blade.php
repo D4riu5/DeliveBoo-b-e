@@ -24,7 +24,7 @@
 
 <body class="mainColor">
     <div id="app">
-        <div class="bigScreen">
+        <div class="bigScreen ">
             <div style="height:100px;" class="header finisher-header navbar navbar-expand-md fixed-top">
                 <div id="loginSet" class="container-fluid d-flex justify-content-between navbar">
                     <a href="{{ url('/') }}">

@@ -165,15 +165,14 @@
                     </h1>
                 </div>
                 <div class="py-2">
-                    <div class="container-xxl d-flex justify-content-center">
-                        <img class="img-fluid imgBorder" src="{{ asset('storage/' . $restaurant->image) }}" alt="Myrestaurant">
+                    <div class="container-xl d-flex justify-content-center">
+                        <img class="img-fluid imgBorder" src="{{ asset('storage/' . $restaurant->image) }}"
+                            alt="Myrestaurant">
                     </div>
                 </div>
             @else
-                <div>
-                    <h3 class="text-center my-4">
-                        Immagine non caricata
-                    </h3>
+                <div class="container-xl d-flex justify-content-center">
+                    <img class="img-fluid imgBorder" src="{{ asset('storage/placeholder/1.jpg' ) }}" alt="Myrestaurant">
                 </div>
             @endif
 

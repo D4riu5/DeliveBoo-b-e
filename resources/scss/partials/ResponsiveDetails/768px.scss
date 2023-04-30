@@ -2,252 +2,269 @@
    @media screen and (min-width: 425px) and (max-width: 768px) {
 
      .bigScreen {
-       display: block;
-     }
-
-     .smallScreen {
        display: none;
      }
 
-     // APP.BLADE -> (fuori dal login) -> TASTI ACCEDI E REGISTRATI
-     .navButton {
-       color: white !important;
+     .smallScreen {
+       display: block;
      }
 
-     .navButton:hover {
-       color: #FF446C !important;
+     // HEADER
+
+
+     // CONTENITORE LOGO NELL'HEADER
+     .logo {
+       width: 119px;
+       height: 67px;
+       margin: -9px 0px 0px 0px !important;
+
+       //DETTAGLI LOGO - POSIZIONAMENTO IMMAGINE ALL'INTERNO DELL'SUO CONTAINER
+       img {
+         width: 100%;
+         height: 100%;
+         margin: 7px 47px 0px 0px !important;
+       }
      }
 
 
-     // DASHBOARD
+
+     // HAMBURGER MENU PER OFF CANVAS
+
+     .offCanva {
+       top: 92px;
+       left: 0px;
+     }
+
+     //MODIFICA ACCOUNT BUTTON + ESCI BUTTON
+
      .modificaAccount {
-       // Più tasto esci
-       font-size: 16px !important;
+       font-size: 15px !important;
        padding-left: 4px !important;
-       padding-right: 20px !important;
      }
 
-     .adminBots {
-       //COLORE TASTI MODIFICA ACCOUNT + ESCI
-       color: white !important;
-     }
+     //MENU A COMPARSA DETAILS
 
-     .adminBots:hover {
-       color: #FF446C !important;
+     .centeredModificaAccount {
+       padding: 0px 202px;
      }
 
      .menuSize {
        width: 100% !important;
        display: flex !important;
-       justify-content: space-evenly !important;
-       font-size: 9px;
-       font-weight: 400;
+       font-size: 29px;
+       font-weight: 100;
      }
+  
 
-     .backG {
-       // BACKGROUND NAVBAR - LA MIA ATTIVITA' - IL MIO MENU - I MIEI ORDINI - TIPOLOGIE DI CUCINa
-       background-color: rgb(127, 113, 113);
+   // HOMEPAGE BUTTON - nel fondo del menu laterale
 
-       .colorMenu {
-         //LA MIA ATTIVITA' - IL MIO MENU - I MIEI ORDINI - TIPOLOGIE DI CUCINa
-         color: white;
-       }
+   .homepageButton {
+     position: static;
+     margin: 54px;
+   }
 
-       .colorMenu:hover {
-         // LA MIA ATTIVITA' - IL MIO MENU - I MIEI ORDINI - TIPOLOGIE DI CUCINa
-         color: black;
-       }
+   // DIMENSIONE ICONE NEL MENU LATERALE
+
+   .iconSize {
+     font-size: 21px !important;
+     padding: -22px 0px;
+     vertical-align: 2px;
+   }
+
+   // CONTENITORE IMMAGINE NELLA DASHBOARD
+   .queryContainer {
+     width: 391px;
+     height: 225px;
+     border-radius: 10px;
+
+     img {
+       width: 100%;
+       height: 100%;
+       border-radius: 9px;
+
      }
+   }
 
-     //IMMAGINE DASHBOARD
-     .queryContainer {
-       width: 731px;
-       height: 269px;
+   // LOGO QUANDO SIAMO IN FASE DI LOGIN
+
+   .loginSet {
+     display: flex !important;
+     align-items: center !important;
+     flex-direction: column;
+   }
+
+   //IMMAGINE NELLA SHOW DI TYPE
+
+   .boxPhoto {
+     width: 385px;
+     height: 204px;
+     border-radius: 10px;
+
+     img {
+       width: 100%;
+       height: 100%;
+       border-radius: 9px;
+     }
+   }
+
+
+   .placeholderBox {
+     width: 354px;
+     height: 209px;
+     ;
+     margin-bottom: 40px;
+
+     img {
+       width: 100%;
+       height: 100%;
+       border-radius: 10px;
+     }
+   }
+
+   // CONTAINER INFO NELLA SHOW DI FOOD 
+   .rightBox {
+     margin-left: 40%;
+   }
+
+   //FONT DEI BOTTONI NELLA SHOW DI FOOD
+
+   .fontResponsive {
+     font-size: 17px !important;
+     margin-left: 7px !important;
+     margin-right: 9px !important;
+   }
+
+   //DISTANZA DAL FROM
+   .responsive375 {
+     margin-top: 102px;
+   }
+
+   //EDIT FOOD IMG
+
+   .editFoodimg {
+     width: 398px;
+     height: 209px;
+     border-radius: 8px;
+
+     img {
+       width: 100%;
+       height: 100%;
+       border-radius: 9px;
+     }
+   }
+
+   // MARGINE SUPERIORE AI TITOLI DI INDEX, SHOW, EDIT e CREATE + LOGIN
+   .typeResponsive {
+     margin-top: -3%;
+   }
+
+   .dashboardResponsive {
+     margin-top: 4%;
+   }
+
+   .orderResponsive {
+     margin-top: 3%;
+   }
+
+   .foodResponsive {
+     margin-top: -4% !important;
+   }
+
+   // COLORI MENU A TENDINA
+   .colorMenu {
+     color: white;
+     background-color: none;
+   }
+
+   .colorMenu:hover {
+     color: black;
+   }
+
+   .colorMenu:focus {
+     color: #FF446C;
+   }
+
+   // BOTTONI INDEX FOOD 
+   .cirlceBotton {
+     border-radius: 22px !important;
+   }
+
+   .backG {
+     background-color: rgb(127, 113, 113)
+   }
+
+   .forgotPassword {
+     color: #FF446C !important;
+   }
+
+   .restaurantName {
+     color: #FF446C;
+   }
+
+   // IMMAGINE SHOW DI FOOD DI RESTAURANT
+   .img320 {
+     width: 354px;
+     height: 209px;
+     border-radius: 10px;
+
+     img {
+       width: 100%;
+       height: 100%;
        border-radius: 10px;
 
-       img {
-         width: 100%;
-         height: 100%;
-         border-radius: 10px;
-       }
      }
+   }
 
-     //  IL MIO MENU 
+   .img320placeholder {
+     width: 354px;
+     height: 209px;
+     border-radius: 10px;
 
-     // LINE HEIGHT DELLA TABELLA
-     .lineH {
-       line-height: 35px;
-     }
-
-     //  SHOW DI FOOD
-     .boxPhoto {
-       width: 718px;
-       height: 383px;
-     }
-
-     .foodTitle {
-       color: #FF446C;
-     }
-
-
-     .editFoodimg {
-       width: 403px;
-       height: 250px;
+     img {
+       width: 100%;
+       height: 100%;
        border-radius: 10px;
 
-       img {
-         width: 100%;
-         height: 100%;
-         border-radius: 10px;
-       }
      }
+   }
 
-     //EDIT RESTAURANT
-     .editResta {
-       width: 738px;
-       height: 411px;
-       border-radius: 10px;
+   // Titolo FORM IN UPDATE PASSWORD 
+   .updateTitle {
+     color: #FF446C;
+   }
 
-       img {
-         width: 100%;
-         height: 100%;
-         border-radius: 10px;
-       }
-     }
+   // TITOLO REGISTRATI SU APP.BLADE
+   .registerTitle {
+     color: #FF446C;
+   }
 
-     //SHOW RESTAURANT
-     .showResta {
-       width: 500px;
-       height: 319px;
-       border-radius: 10px;
-
-       img {
-         width: 100%;
-         height: 100%;
-         border-radius: 10px;
-       }
-     }
-
-     .restaName {
-       color: #FF446C;
-     }
+   // TASTO DELETE NEL MODIFICA ACCOUNT 
+   // INPUT PASSWORD 
+   .inputDelete {
+     height: 43px !important;
+     width: 0% !important;
+     /* padding: 5px 6px 3px; */
+     /* margin: 5px 9px -4px 4px; */
+     border-radius: 10px !important;
+   }
 
 
-     //  HEADER STYLE SU QUESTO FORMATO
-     #responsive {
-       display: flex;
-       justify-content: space-between !important;
-     }
+   // .tagAbs {
+   //   position: absolute;
+   //   top: 49%;
+   //   left: 7%;
+   // }
 
-     // IMMAGINE SHOW DI FOOD
-     .img320 {
-       width: 404px;
-       height: 235px;
-       border-radius: 10px;
-
-       img {
-         width: 100%;
-         height: 100%;
-         border-radius: 10px;
-
-       }
-     }
-
-     .img320placeholder {
-       width: 404px;
-       height: 235px;
-       border-radius: 10px;
-
-       img {
-         width: 100%;
-         height: 100%;
-         border-radius: 10px;
-
-       }
-     }
-
-     .loginSet {
-       display: flex !important;
-       flex-wrap: inherit !important;
-       align-items: center !important;
-       justify-content: space-between !important;
-     }
-
-     .boxPhoto {
-       width: 673px;
-       height: 353px;
-       border-radius: 10px;
-
-       img {
-         width: 100%;
-         height: 100%;
-         border-radius: 9px;
-       }
-     }
-
-     //MARGINE DI LOGIN CON HEADER
-     .loginMargin {
-       margin-top: 38px !important;
-     }
-
-     //MARGINE DI CONFIRM PASSWORD
-     .confirmMargin {
-       margin-top: 2% !important;
-     }
-
-     //MARGINE DI REGISTER.BLADE
-     .registerMargin {
-       margin-top: 2% !important;
-     }
-
-
-     //PASSWORD RESET MARGIN
-     .passwordReset {
-       margin-top: 44px !important;
-     }
-
-     .tag425 {
-       position: absolute !important;
-       top: 54% !important;
-       left: 8%!important;
-     }
-
-     .style425 {
-       padding: 10px 5px !important;
-       border-radius: 107px !important;
-       font-size: 11px !important;
-       font-weight: bold !important;
-       background-color: #ff4357 !important;
-       border: 3px solid #372f2f !important;
-       color: white !important;
-       font-weight: 700 !important;
-       font-family: "Darumadrop One", cursive !important;
-     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   // .tagStyle {
+   //   padding: 17px 9px;
+   //   border-radius: 107px;
+   //   font-size: 10px;
+   //   /* font-weight: bold; */
+   //   background-color: #ff4357;
+   //   border: 3px solid #372f2f;
+   //   color: white;
+   //   font-weight: 700;
+   //   font-family: "Darumadrop One", cursive;
+   // }
 
    }

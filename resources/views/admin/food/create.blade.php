@@ -1,10 +1,10 @@
 @extends('layouts.admin')
 
 @section('content')
-    <div class="container mt-4">
+    <div class="container-sm mt-4">
         <div class="row justify-content-center mb-4">
             <div class="col">
-                <h1>
+                <h1 class="text-center">
                     Crea un nuovo piatto
                 </h1>
             </div>
@@ -12,7 +12,7 @@
 
         {{-- @include('partials.errors') --}}
 
-        <div class="row mb-4">
+        <div class="row mb-4 container-sm">
             <div class="col">
                 <form action="{{ route('admin.food.store') }}" method="POST" enctype="multipart/form-data">
                     @csrf
@@ -146,7 +146,7 @@
                         </p>
                     </div>
 
-                    <div>
+                    <div class="d-flex justify-content-center">
                         <button type="submit" class="btn btn-danger">
                             Crea
                         </button>

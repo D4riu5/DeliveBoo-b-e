@@ -2,12 +2,12 @@
 
 @section('content')
     <div class="bigScreen">
-        <div class="container mt-4">
+        <div class="container-sm mt-4">
             <div class="row justify-content-center mb-4">
-                <div class="col">
-                    <h1>
+                <div class="col text-center">
+                    <h3>
                         Modifica dati attività
-                    </h1>
+                    </h3>
                 </div>
             </div>
 
@@ -72,25 +72,25 @@
                         </div>
 
                         {{-- IMMAGINE ATTIVITA' --}}
-                        <div class="mb-3">
+                        <div class="mb-3 d-flex flex-column align-items-center">
                             <label for="image" class="form-label">
-                                Immagine attività
+                                Immagine attività:
                             </label>
 
                             {{-- Se l'immagine nel database è presente: --}}
                             @if ($restaurant->image)
                                 <div class="my-2">
                                     {{-- Possibilità di rimuovere l'immagine  --}}
-                                    <div class="form-check mb-2">
+                                    <div class="form-check mb-2 d-flex justify-content-center">
                                         <input class="form-check-input" type="checkbox" name="delete_image"
                                             id="delete_image">
-                                        <label class="form-check-label" for="delete_image">
+                                        <label class="form-check-label ms-1" for="delete_image">
                                             Rimuovi immagine
                                         </label>
                                     </div>
                                     {{-- STAMPA IMMAGINE --}}
-                                    <div class="editResta">
-                                        <img src="{{ asset('storage/' . $restaurant->image) }}" alt="restaurant">
+                                    <div class="container-xxl">
+                                        <img class="img-fluid imgBorder" src="{{ asset('storage/' . $restaurant->image) }}" alt="restaurant">
                                     </div>
 
                                 </div>
@@ -120,7 +120,7 @@
 
                         <div class="mb-3">
                             {{-- SELEZIONA CATEGORIE MENU  --}}
-                            <div class="card-header text-center fs-5 mb-4 w-100 border-top">
+                            <div class="card-header text-center fs-5 mb-4 w-100">
                                 {{ __('Seleziona categorie:') }}</div>
 
                             {{-- DATI PER LA TABELLA TYPES --}}
@@ -257,8 +257,8 @@
                                         </label>
                                     </div>
                                     {{-- STAMPA IMMAGINE --}}
-                                    <div class="img320">
-                                        <img src="{{ asset('storage/' . $restaurant->image) }}" alt="restaurant">
+                                    <div class="container-xxl">
+                                        <img class="img-fluid imgBorder" src="{{ asset('storage/' . $restaurant->image) }}" alt="restaurant">
                                     </div>
 
                                 </div>
@@ -288,7 +288,7 @@
                         
                         <div class="mb-3">
                             {{-- SELEZIONA CATEGORIE MENU  --}}
-                            <div class="card-header text-center fs-5 mb-4 w-100 border-top">
+                            <div class="card-header text-center fs-5 mb-4 w-100">
                                 {{ __('Seleziona categorie:') }}</div>
 
                             {{-- DATI PER LA TABELLA TYPES --}}
@@ -324,7 +324,7 @@
 
                         {{-- BOTTONE AGGIORNA PER INVIO FORM  --}}
 
-                        <div>
+                        <div class="d-flex justify-content-center">
                             <button type="submit" class="btn btn-danger">
                                 Aggiorna
                             </button>

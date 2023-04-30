@@ -1,12 +1,12 @@
 @extends('layouts.admin')
 
 @section('content')
-    <div class="container mt-4">
-        <div class="row justify-content-center mb-4">
+    <div class="container-xxl mt-3">
+        <div class="row justify-content-center mb-3">
             <div class="col text-center">
-                <h1>
+                <h3>
                     Modifica piatto
-                </h1>
+                </h3>
             </div>
         </div>
 
@@ -14,7 +14,7 @@
 
         @include('partials.errors') --}}
 
-        <div class="row mb-4">
+        <div class="row mb-4 container-xxl">
             <div class="col">
                 <form action="{{ route('admin.food.update', $food->id) }}" method="POST" enctype="multipart/form-data">
                     @csrf
@@ -90,21 +90,21 @@
                     </div>
 
                     {{-- IMMAGINE PIATTO --}}
-                    <div class="mb-3">
+                    <div class="mb-3 d-flex flex-column justify-content-center align-items-center">
                         <label for="image" class="form-label">
                             Immagine
                         </label>
 
                         @if ($food->image)
-                            <div class="my-2">
-                                <div class="form-check mb-2">
+                            <div class="my-3">
+                                <div class="form-check mb-2 d-flex justify-content-center">
                                     <input class="form-check-input" type="checkbox" name="delete_image" id="delete_image">
-                                    <label class="form-check-label" for="delete_image">
+                                    <label class="ms-1 form-check-label" for="delete_image">
                                         Rimuovi immagine
                                     </label>
                                 </div>
-                                <div class="editFoodimg">
-                                    <img src="{{ asset('storage/' . $food->image) }}" alt="food">
+                                <div class="container-xxl">
+                                    <img class="img-fluid imgBorder" src="{{ asset('storage/' . $food->image) }}" alt="food">
                                 </div>
                             </div>
                         @endif

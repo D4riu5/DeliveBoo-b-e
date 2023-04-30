@@ -5,13 +5,12 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header text-center fs-4 text-bg-dark border-top">{{ __('Utente') }}</div>
+                    <div class="card-header text-center fs-4 text-bg-dark">{{ __('Utente') }}</div>
 
                     <div class="card-body text-bg-dark py-4 px-0">
                         {{-- Form di Regitrazione --}}
                         <form id="register-form" method="POST" action="{{ route('register') }}">
                             @csrf
-                            <p class="text-center">Tutti i campi con <span class="text-danger"> *</span> sono obbligatori</p>
 
                             {{--  Registrazione Ristoratore --}}
 
@@ -125,9 +124,9 @@
                             </div>
 
                             {{-- REGISTRAZIONE RISTORANTE --}}
-                            <div class="card-header text-center fs-4 my-4 border-top">{{ __('Attività') }}</div>
+                            <div class="card-header text-center fs-4 my-3">{{ __('Attività') }}</div>
                             {{-- NAME --}}
-                            <div class="px-3 my-5 w-75 m-auto">
+                            <div class="px-3 my-3 w-75 m-auto">
                                 <div class="form-group row">
                                     <label for="name">{{ __("Nome Attività'") }}<span class="text-danger">
                                             *</span></label>
@@ -175,7 +174,7 @@
 
                                 {{-- PIVA --}}
                                 <div class="from-group row">
-                                    <label for="pIva">{{ __('P.Iva') }} <span class="text-danger"> *</span></label>
+                                    <label for="pIva">{{ __('Codice Partita IVA') }} <span class="text-danger"> *</span></label>
                                     <div> {{-- INPUT PARTITA IVA RISTORANTE --}}
                                         <input id="pIva" type="text" {{-- minlength="11"
                                             maxlength="11" --}}
@@ -195,12 +194,16 @@
                                                 <strong>{{ 'La partita Iva deve contenere 11 numeri' }}</strong>
                                             </span>
                                         @endif
+
+
                                     </div>
                                 </div>
                             </div>
+                            <p class="text-center">Tutti i campi con <span class="text-danger"> *</span> sono obbligatori</p>
+
                             <div>
                                 {{-- SELEZIONA CATEGORIE MENU  --}}
-                                <div class="card-header text-center fs-5 mb-4 w-100 border-top">
+                                <div class="card-header text-center fs-5 mb-4 w-100">
                                     {{ __('Seleziona categorie:') }}</div>
 
                                 {{-- DATI PER LA TABELLA TYPES --}}
@@ -232,6 +235,7 @@
                                     </div>
                                 @enderror
                                 {{-- BOTTONE REGISTRATI  --}}
+
                                 <div class="d-flex justify-content-center">
                                     <div>
                                         <button id="submit-btn" type="submit" class="btn btn-danger my-3" disabled>

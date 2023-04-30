@@ -66,9 +66,6 @@
     --bs-card-border-color: none;
 }
 
-.marginLogin {
-    margin-top: 10%;
-}
 
 .typeMargin {
     margin-top: 5%;
@@ -80,7 +77,7 @@
 }
 
 .profileMargin {
-    margin-top: 19%;
+    margin-top: 127px;
 }
 
 .imgBorder {
@@ -129,4 +126,70 @@
 
 .smallMarginCucine {
     margin-top: 11%;
+}
+
+.registerMargin {
+    margin-top: 127px !important;
+}
+
+.marginLogin {
+    margin-top: 127px !important;
+}
+
+.passwordResetMargin {
+    margin-top: 127px !important;
+}
+
+//PER TOGLIERE IL BORDO BIANCO A TUTTE LE CLASSI CARD
+.card {
+    --bs-card-border-color: none;
+}
+
+.card-header {
+    --bs-card-border-color: none !important;
+    border-top: none;
+}
+
+.card-body {
+    --bs-card-border-color: none !important;
+}
+
+.typeBox {
+    .typeDetails {
+        border-radius: 59px;
+
+        a {
+            color: #ff4357;
+            text-decoration: none;
+            vertical-align: middle;
+            line-height: 30px;
+            font-size: 30px;
+            font-family: 'Darumadrop One', cursive;
+        }
+
+        hr {
+            width: 5%;
+            color: #ff4357;
+        }
+    }
+}
+
+.smallType {
+    .smallDetails {
+        border-radius: 59px;
+
+        a {
+            color: #ff4357;
+            text-decoration: none;
+            vertical-align: middle;
+            line-height: 30px;
+            font-size: 20px;
+            font-family: 'Darumadrop One', cursive;
+        }
+
+        hr {
+            width: 5%;
+            color: #ff4357;
+        }
+    }
 }

@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="bigScreen">
-        <div class="container-fluid mt-4">
+        <div class="container-xxl mt-4">
             <div class="row justify-content-center mb-4">
                 <div class="col">
                     @include('partials.success')
@@ -11,175 +11,161 @@
                         {{ $restaurant->name }}
                     </h2>
                     {{-- IMMAGINE MODIFICATA SE PRESENTE --}}
-                    @if ($restaurant->image)
-                        <div class=" d-flex justify-content-start mb-1">
-                            <div class="showResta">
-                                <img src="{{ asset('storage/' . $restaurant->image) }}" alt="{{$restaurant->name}}">
-                            </div>
-                            {{-- INDIRIZZO MODIFICATO --}}
-                            <div class="mx-4">
-                                <div class="mt-3">
-                                    <h3 class="my-2">
-                                        Indirizzo attività:
-                                    </h3>
-                                    <p>
-                                        {!! nl2br($restaurant->address) !!}
-                                    </p>
-                                </div>
-                                {{-- PARTITA IVA --}}
-                                <div>
-                                    <h3 class="my-2">
-                                        Partita IVA:
-                                    </h3>
-                                    <p>
-                                        {{ $restaurant->PIVA }}
-                                    </p>
-                                </div>
-                                {{-- PREZZO SPEDIZIONE --}}
-                                <div>
-                                    <h3 class="my-2">
-                                        Prezzo Spedizione:
-                                    </h3>
-                                    <p>
-                                        €{{$restaurant->prezzo_spedizione}}
-                                    </p>
-                                </div>
-                                {{-- TYPES --}}
-                                <div>
-                                    <h3 class="my-2">
-                                        Types:
-                                    </h3>
-                                    <p>
-                                        @foreach($restaurant->types as $type)
-                                            {{$type->name}} @if(!$loop->last), @endif
-                                        @endforeach
-                                    </p>
+                    <div class=" d-flex justify-content-center mb-1">
+                        @if ($restaurant->image)
+                            <div class="py-2">
+                                <div class="container-sm d-flex justify-content-center">
+                                    <img class="img-fluid imgBorder" src="{{ asset('storage/' . $restaurant->image) }}"
+                                        alt="Myrestaurant">
                                 </div>
                             </div>
-                        </div>
-                    @else
-                        {{-- INDIRIZZO MODIFICATO --}}
-                        <div class="col-12 text-center">
-                            <h3 class="my-2">
+                        @else
+                            <div class="container-sm d-flex justify-content-center">
+                                <img class="img-fluid imgBorder" src="{{ asset('storage/placeholder/1.jpg') }}"
+                                    alt="Myrestaurant">
+                            </div>
+                        @endif
+                    </div>
+                    {{-- INDIRIZZO MODIFICATO --}}
+                    <div class="d-flex justify-content-between mx-4">
+                        <div class="mt-3">
+                            <span class="fw-bold fs-6">
                                 Indirizzo attività:
-                            </h3>
-                            <p>
+                            </span>
+                            <span>
                                 {!! nl2br($restaurant->address) !!}
-                            </p>
+                            </span>
                         </div>
                         {{-- PARTITA IVA --}}
-                        <div>
-                            <h3 class="my-2 text-center">
-                                Partita IVA:
-                            </h3>
-                            <p class="text-center">
+                        <div class="mt-3">
+                            <span class="fw-bold fs-6">
+                                Codice partita IVA:
+                            </span>
+                            <span>
                                 {{ $restaurant->PIVA }}
-                            </p>
+                            </span>
                         </div>
-                    @endif
+                    </div>
+                    <div class="d-flex justify-content-between mx-4">
+                        <div class="mt-3">
+                            <span class="fw-bold fs-6">
+                                Prezzo Spedizione:
+                            </span>
+                            <span>
+                                €{{ $restaurant->prezzo_spedizione }}
+                            </span>
+                        </div>
+                        <div class="mt-3">
+                            <span class="fw-bold fs-6">
+                                Tipo di cucina:
+                            </span>
+                            <span>
+                                @foreach ($restaurant->types as $type)
+                                    <span>
+                                        {{ $type->name }} @if (!$loop->last)
+                                    </span>
+                                @endif
+                                @endforeach
+                            </span>
+                        </div>
+                    </div>
                 </div>
-
-                {{-- PULSANTE RITORNO ALLA DASHBOARD  --}}
-                <div class="pt-5 d-flex justify-content-center">
-                    <button class="btn btn-warning mx-1">
-                        <a href="{{ route('admin.restaurant.edit', $restaurant->id) }}"
-                            class="link-dark text-decoration-none">
-                            Modifica dati attività
-                        </a>
-                    </button>
-                    <button class="btn btn-danger mx-2">
-                        <a href="{{ route('admin.dashboard') }}" class="link-light text-decoration-none"> Torna indietro
-                        </a>
-                    </button>
-                </div>
-
             </div>
+        </div>
+
+        {{-- PULSANTE RITORNO ALLA DASHBOARD  --}}
+        <div class="pt-5 d-flex justify-content-center">
+            <button class="btn btn-warning mx-1">
+                <a href="{{ route('admin.restaurant.edit', $restaurant->id) }}" class="link-dark text-decoration-none">
+                    Modifica dati attività
+                </a>
+            </button>
+            <button class="btn btn-danger mx-2">
+                <a href="{{ route('admin.dashboard') }}" class="link-light text-decoration-none"> Torna indietro
+                </a>
+            </button>
         </div>
     </div>
     <div class="smallScreen">
-        <div class="container-fluid mt-4">
+        <div class="container-xxl mt-4">
             <div class="row justify-content-center mb-4">
                 <div class="col">
                     @include('partials.success')
                     {{-- NUOVO NOME PER IL RISTORANTE --}}
-                    <h1 class="text-center mb-4 restaurantName">
+                    <h2 class="text-center mb-4 restaName">
                         {{ $restaurant->name }}
-                    </h1>
+                    </h2>
                     {{-- IMMAGINE MODIFICATA SE PRESENTE --}}
-                    @if ($restaurant->image)
-                        <div class=" d-flex justify-content-start mb-2">
-                            <div class="img320">
-                                <img src="{{$restaurant->image}}" alt="{{$restaurant->name}}">
+                    <div class=" d-flex justify-content-center mb-1">
+                        @if ($restaurant->image)
+                            <div class="py-2">
+                                <div class="container-sm d-flex justify-content-center">
+                                    <img class="img-fluid imgBorder" src="{{ asset('storage/' . $restaurant->image) }}"
+                                        alt="Myrestaurant">
+                                </div>
                             </div>
-                            {{-- INDIRIZZO MODIFICATO --}}
-                        </div>
-                    @else
-                        <div class=" d-flex justify-content-start mb-2">
-                            <div class="img320">
-                                <img src="{{$restaurant->image}}" alt="{{$restaurant->name}}">
+                        @else
+                            <div class="container-sm d-flex justify-content-center">
+                                <img class="img-fluid imgBorder" src="{{ asset('storage/placeholder/1.jpg') }}"
+                                    alt="Myrestaurant">
                             </div>
-                            {{-- INDIRIZZO MODIFICATO --}}
-                        </div>
-                    @endif
+                        @endif
+                    </div>
                     {{-- INDIRIZZO MODIFICATO --}}
-                    <div class="col-12 text-center">
-                        <h3 class="my-2">
-                            Indirizzo attività:
-                        </h3>
-                        <p>
-                            {!! nl2br($restaurant->address) !!}
-                        </p>
-                    </div>
-                    {{-- PARTITA IVA --}}
-                    <div>
-                        <h3 class="my-2 text-center">
-                            Partita IVA:
-                        </h3>
-                        <p class="text-center">
-                            {{ $restaurant->PIVA }}
-                        </p>
-                    </div>
-                    {{-- PREZZO SPEDIZIONE --}}
-                    <div>
-                        <h3 class="my-2 text-center">
-                            Prezzo Spedizione:
-                        </h3>
-                        <p class="text-center">
-                            €{{$restaurant->prezzo_spedizione}}
-                        </p>
-                    </div>
-                    {{-- TYPES --}}
-                    <div>
-                        <h3 class="my-2 text-center">
-                            Types:
-                        </h3>
-                        <p class="text-center">
-                            @foreach($restaurant->types as $type)
-                                {{$type->name}} @if(!$loop->last), @endif
-                            @endforeach
-                        </p>
-                    </div>
-                </div>
-
-                {{-- PULSANTE RITORNO ALLA DASHBOARD  --}}
-                <div class="d-flex justify-content-center">
-                    <div class="px-1">
-                        <button class="btn btn-warning px-1 mt-2 my-3">
-                            <a href="{{ route('admin.restaurant.edit', $restaurant->id) }}"
-                                class="link-light text-decoration-none">
-                                Modifica
-                            </a>
-                        </button>
-                    </div>
-                    <div class="px-1">
-                        <button class="btn btn-danger px-1 mt-2 my-3">
-                            <a href="{{ route('admin.dashboard') }}" class="link-light text-decoration-none"> Torna indietro
-                            </a>
-                        </button>
+                    <div class="d-flex flex-column align-items-center mx-4 fontsShoowRestaurant">
+                        <div class="mt-3">
+                            <span class="fw-bold fs-6">
+                                Indirizzo attività:
+                            </span>
+                            <span>
+                                {!! nl2br($restaurant->address) !!}
+                            </span>
+                        </div>
+                        {{-- PARTITA IVA --}}
+                        <div class="mt-3">
+                            <span class="fw-bold fs-6">
+                                Codice partita IVA:
+                            </span>
+                            <span>
+                                {{ $restaurant->PIVA }}
+                            </span>
+                        </div>
+                        <div class="mt-3">
+                            <span class="fw-bold fs-6">
+                                Prezzo Spedizione:
+                            </span>
+                            <span>
+                                €{{ $restaurant->prezzo_spedizione }}
+                            </span>
+                        </div>
+                        <div class="mt-3">
+                            <span class="fw-bold fs-6">
+                                Tipo di cucina:
+                            </span>
+                            <span>
+                                @foreach ($restaurant->types as $type)
+                                    <span>
+                                        {{ $type->name }} @if (!$loop->last)
+                                    </span>
+                                @endif
+                                @endforeach
+                            </span>
+                        </div>
                     </div>
                 </div>
+            </div>
 
+            {{-- PULSANTE RITORNO ALLA DASHBOARD  --}}
+            <div class="pt-5 d-flex justify-content-center">
+                <button class="btn btn-warning mx-1">
+                    <a href="{{ route('admin.restaurant.edit', $restaurant->id) }}" class="link-dark text-decoration-none">
+                        Modifica dati attività
+                    </a>
+                </button>
+                <button class="btn btn-danger mx-2">
+                    <a href="{{ route('admin.dashboard') }}" class="link-light text-decoration-none"> Torna indietro
+                    </a>
+                </button>
             </div>
         </div>
-    </div>
-@endsection
+    @endsection

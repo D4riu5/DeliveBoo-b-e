@@ -16,14 +16,14 @@
                         @foreach ($types as $type)
                             <div class="typeContainer container-sm">
                                 <div class="d-flex flex-column align-items-center mb-5">
-
-                                    <div class="py-1 tagAbs tag425">
-                                        <a class="tagStyle btn style425 mx-1"
-                                            href="{{ route('admin.type.show', $type->id) }}">
-                                            {{ $type->name }}
-                                        </a>
+                                    <div class="typeBox">
+                                        <div class="typeDetails text-center pt-2 pb-2">
+                                            <a class=" mx-1" href="{{ route('admin.type.show', $type->id) }}">
+                                                {{ $type->name }}
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="container-sm">
+                                    <div style="heigth:90%;" class="container-sm">
                                         <a href="{{ route('admin.type.show', $type->id) }}">
                                             <img class="img-fluid imgBorder" src="{{ asset('storage/' . $type->image) }}">
                                         </a>
@@ -50,22 +50,22 @@
                     <div class="btn-group d-flex justify-content-evenly flex-wrap" role="group"
                         aria-label="Basic mixed styles example">
                         @foreach ($types as $type)
-                            <div class="typeContainer container-sm">
-                                <div class="d-flex flex-column align-items-center mb-5">
-
-                                    <div class="py-1 tagTag">
-                                        <a class="styleTag btn mx-1"
-                                            href="{{ route('admin.type.show', $type->id) }}">
+                        <div class="typeContainer container-sm">
+                            <div class="d-flex flex-column align-items-center mb-3">
+                                <div class="smallType">
+                                    <div class="smallDetails text-center pt-2 pb-2">
+                                        <a class=" mx-1" href="{{ route('admin.type.show', $type->id) }}">
                                             {{ $type->name }}
                                         </a>
                                     </div>
-                                    <div class="container">
-                                        <a href="{{ route('admin.type.show', $type->id) }}">
-                                            <img class="img-fluid imgBorder" src="{{ asset('storage/' . $type->image) }}">
-                                        </a>
-                                    </div>
+                                </div>
+                                <div class="container-sm">
+                                    <a href="{{ route('admin.type.show', $type->id) }}">
+                                        <img class="img-fluid imgBorder" src="{{ asset('storage/' . $type->image) }}">
+                                    </a>
                                 </div>
                             </div>
+                        </div>
                         @endforeach
                         {{-- FINE CICLO PER STAMPA DI ELEMENTI IN VARIABILE $TYPES  --}}
                     </div>

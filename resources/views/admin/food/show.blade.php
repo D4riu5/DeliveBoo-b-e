@@ -1,11 +1,11 @@
 @extends('layouts.admin')
 
 @section('content')
-    <div class="container-fluid mt-4">
+    <div class="container-xxl mt-4">
         <div class="row justify-content-center ">
             <div class="col">
                 @include('partials.success')
-                <div class="bigScreen">
+                <div class="bigScreen container-xxl">
                     <h1 class="foodTitle text-center mb-4">
                         {{ $food->name }}
                     </h1>
@@ -19,14 +19,15 @@
                     </div>
                     <div class="d-flex justify-content-center mb-4">
                         {{-- IMMAGINE --}}
-                        <div class="col-auto">
+                        <div class="">
                             @if ($food->image != null)
-                                <div class="container-sm">
-                                    <img class="img-fluid imgBorder" src="{{ asset('storage/' . $food->image) }}" alt="food">
+                                <div class="container-xxl">
+                                    <img class="img-fluid imgBorder" src="{{ asset('storage/' . $food->image) }}"
+                                        alt="food">
                                 </div>
                             @else
-                                <div class="container-xl">
-                                    <img class="img-fluid imgBorder" src="{{ asset('storage/placeholder/1.jpg') }}" style="height: 400px;"
+                                <div class="container-xxl">
+                                    <img class="img-fluid imgBorder" src="{{ asset('storage/placeholder/1.jpg') }}"
                                         alt="placeholder">
                                 </div>
                             @endif
@@ -129,20 +130,22 @@
                     </div>
 
                 </div>
-                <div class="smallScreen">
+                <div class="smallScreen container-sm">
                     <h3 class="text-center restaurantName mb-4">
                         {{ $food->name }}
                     </h3>
-                    <div class="d-flex ">
+                    <div class="d-flex justify-content-center mb-4">
                         {{-- IMMAGINE --}}
-                        <div class="col-1">
+                        <div class="">
                             @if ($food->image != null)
-                                <div class="img320 mb-4">
-                                    <img src="{{ asset('storage/' . $food->image) }}" alt="food">
+                                <div class="container-sm">
+                                    <img class="img-fluid imgBorder" src="{{ asset('storage/' . $food->image) }}"
+                                        alt="food">
                                 </div>
                             @else
-                                <div class="img320placeholder">
-                                    <img src="{{ asset('storage/placeholder/2.jpg') }}" alt="placeholder">
+                                <div class="container-sm">
+                                    <img class="img-fluid imgBorder" src="{{ asset('storage/placeholder/1.jpg') }}"
+                                        alt="placeholder">
                                 </div>
                             @endif
                         </div>
@@ -244,9 +247,5 @@
                 </div>
             </div>
         </div>
-    </div>
-    </div>
-    </div>
-    </div>
     </div>
 @endsection
