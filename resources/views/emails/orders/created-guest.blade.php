@@ -21,11 +21,11 @@
 
 <body>
     <div>
-        <h1>Ciao! {{ $guest->input('order.costumer_name') }}</h1>
-        <p>Il tuo ordine è stato consegnato!</p>
-    
+        <h1>Ciao {{ $guest->input('order.costumer_name') }}!</h1>
+        <p>Il tuo ordine è in consegna!</p>
+
         <p class="my-2">Lista prodotti ordinati:</p>
-    
+
         <ul>
             @foreach ($order->foods as $food)
                 <li>{{ $food->name }} - {{ $food->price }} € x {{ $food->pivot->quantity }}</li>
@@ -33,38 +33,13 @@
         </ul>
         <p>Prezzo spedizione: {{ $restaurant->prezzo_spedizione }} €</p>
         <p>Prezzo totale: {{ $order->total_price }} €</p>
-    
-        @php
-            $formSubmitted = $order->rating ? true : false;
-        @endphp
-    
-        @if ($formSubmitted)
-            <p>Grazie per aver dato un voto all'ordine!</p>
-        @else
-            <form method="POST" action="{{ url('api/orders/' . $order->id . '/rate') }}">
-                @csrf
-    
-                <label for="rating">Rating:</label>
-                <select name="rating" id="rating">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                </select>
-    
-                <button type="submit">Submit Rating</button>
-            </form>
-        @endif
-    
+
+        <p>Una volta ricevuto l'ordine, <a href="{{ url('orders/' . $order->id . '/rate/' . $rateToken) }}">clicca qui</a> per dargli un voto.
+        </p>
+
         <p>Grazie!</p>
     </div>
-    
+
 </body>
 
 </html>

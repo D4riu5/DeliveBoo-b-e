@@ -104,8 +104,10 @@ Route::name('api.')->group(function () {
         // // Get the user related to the restaurant
         // $user = $restaurant->user;
 
+        // mail to restaurant owner
         Mail::to($restaurant->user->email)->send(new NewOrder($order, $restaurant, $request->input('order.email_address')));
 
+        // mail to guest
         Mail::to($request->input('order.email_address'))->send(new NewOrderGuest($request, $order, $restaurant));
 
         return response()->json(['message' => 'Order created'], 201);
@@ -127,7 +129,7 @@ Route::name('api.')->group(function () {
         $order->rating = $request->input('rating');
         $order->save();
         
-        return "Grazie per aver dato un voto all'ordine!";
+        return redirect()->back()->with('success', 'Thank you for rating the order!');
     })->name('orders.rate');
 });
 

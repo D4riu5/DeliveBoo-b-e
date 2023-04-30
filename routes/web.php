@@ -11,6 +11,7 @@ use App\Http\Controllers\Admin\TypeController;
 use App\Http\Controllers\Admin\RestaurantController;
 use App\Http\Controllers\Admin\OrderController;
 use App\Http\Controllers\Admin\StatisticsController;
+use App\Models\Order;
 //Models
 use App\Models\Restaurant;
 use App\Models\Type;
@@ -46,6 +47,18 @@ Route::prefix('admin')->name('admin.')->middleware(['auth', 'verified'])->group(
     Route::get('/statistics', [StatisticsController::class, 'index'])->name('statistics');
 });
 
+// RATE ORDER
+Route::get('/orders/{id}/rate/{token}', function ($id, $token) {
+    $order = Order::where('id', $id)
+            ->where('rate_token', $token)
+            ->first();
+
+        if (!$order) {
+            abort(404);
+        }
+    return view('rate-order', compact('order'));
+});
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
@@ -57,4 +70,4 @@ Route::get('email/verify', 'Auth\VerificationController@show')->name('verificati
 Route::get('email/verify/{id}', 'Auth\VerificationController@verify')->name('verification.verify');
 Route::get('email/resend', 'Auth\VerificationController@resend')->name('verification.resend');
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';

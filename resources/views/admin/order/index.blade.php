@@ -22,7 +22,8 @@
                                 </option>
                             </select>
                         </form>
-                        <a style="color:rgb(250, 4, 86)" class="text-decoration-none" href="{{ route('admin.statistics') }}">
+                        <h3 style="margin-left: -30px">Totale incasso: {{ $total_earnings }}€</h3>
+                        <a style="color:rgb(250, 4, 86);" class="text-decoration-none fs-4" href="{{ route('admin.statistics') }}">
                             Vedi statistiche
                         </a>
                     </div>
@@ -41,6 +42,7 @@
                             <th class="col text-white text-center" scope="col-">Status - Rating</th>
                         </tr>
                     </thead>
+                    
                     @foreach ($orders as $order)
                         <tbody>
                             <tr scope="row">
@@ -102,7 +104,8 @@
                             <option value="asc" @if (request('sort_by') === 'asc') selected @endif>Più vecchio</option>
                         </select>
                     </form>
-                    <a style="color:rgb(255 98 150);" class="text-decoration-none" href="#">
+                    <h3>Totale incasso: {{ $total_earnings }}€</h3>
+                    <a style="color:rgb(255 98 150);" class="text-decoration-none fs-5" href="#">
                         Vedi statistiche
                     </a>
                     <hr>
