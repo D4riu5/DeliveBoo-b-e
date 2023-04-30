@@ -44,9 +44,6 @@
 
      //MENU A COMPARSA DETAILS
 
-     .centeredModificaAccount {
-       padding: 0px 202px;
-     }
 
      .menuSize {
        width: 100% !important;
@@ -54,217 +51,221 @@
        font-size: 29px;
        font-weight: 100;
      }
-  
 
-   // HOMEPAGE BUTTON - nel fondo del menu laterale
 
-   .homepageButton {
-     position: static;
-     margin: 54px;
-   }
+     // HOMEPAGE BUTTON - nel fondo del menu laterale
 
-   // DIMENSIONE ICONE NEL MENU LATERALE
-
-   .iconSize {
-     font-size: 21px !important;
-     padding: -22px 0px;
-     vertical-align: 2px;
-   }
-
-   // CONTENITORE IMMAGINE NELLA DASHBOARD
-   .queryContainer {
-     width: 391px;
-     height: 225px;
-     border-radius: 10px;
-
-     img {
-       width: 100%;
-       height: 100%;
-       border-radius: 9px;
-
+     .homepageButton {
+       position: static;
+       margin: 54px;
      }
-   }
 
-   // LOGO QUANDO SIAMO IN FASE DI LOGIN
+     // DIMENSIONE ICONE NEL MENU LATERALE
 
-   .loginSet {
-     display: flex !important;
-     align-items: center !important;
-     flex-direction: column;
-   }
-
-   //IMMAGINE NELLA SHOW DI TYPE
-
-   .boxPhoto {
-     width: 385px;
-     height: 204px;
-     border-radius: 10px;
-
-     img {
-       width: 100%;
-       height: 100%;
-       border-radius: 9px;
+     .iconSize {
+       font-size: 21px !important;
+       padding: -22px 0px;
+       vertical-align: 2px;
      }
-   }
 
-
-   .placeholderBox {
-     width: 354px;
-     height: 209px;
-     ;
-     margin-bottom: 40px;
-
-     img {
-       width: 100%;
-       height: 100%;
-       border-radius: 10px;
-     }
-   }
-
-   // CONTAINER INFO NELLA SHOW DI FOOD 
-   .rightBox {
-     margin-left: 40%;
-   }
-
-   //FONT DEI BOTTONI NELLA SHOW DI FOOD
-
-   .fontResponsive {
-     font-size: 17px !important;
-     margin-left: 7px !important;
-     margin-right: 9px !important;
-   }
-
-   //DISTANZA DAL FROM
-   .responsive375 {
-     margin-top: 102px;
-   }
-
-   //EDIT FOOD IMG
-
-   .editFoodimg {
-     width: 398px;
-     height: 209px;
-     border-radius: 8px;
-
-     img {
-       width: 100%;
-       height: 100%;
-       border-radius: 9px;
-     }
-   }
-
-   // MARGINE SUPERIORE AI TITOLI DI INDEX, SHOW, EDIT e CREATE + LOGIN
-   .typeResponsive {
-     margin-top: -3%;
-   }
-
-   .dashboardResponsive {
-     margin-top: 4%;
-   }
-
-   .orderResponsive {
-     margin-top: 3%;
-   }
-
-   .foodResponsive {
-     margin-top: -4% !important;
-   }
-
-   // COLORI MENU A TENDINA
-   .colorMenu {
-     color: white;
-     background-color: none;
-   }
-
-   .colorMenu:hover {
-     color: black;
-   }
-
-   .colorMenu:focus {
-     color: #FF446C;
-   }
-
-   // BOTTONI INDEX FOOD 
-   .cirlceBotton {
-     border-radius: 22px !important;
-   }
-
-   .backG {
-     background-color: rgb(127, 113, 113)
-   }
-
-   .forgotPassword {
-     color: #FF446C !important;
-   }
-
-   .restaurantName {
-     color: #FF446C;
-   }
-
-   // IMMAGINE SHOW DI FOOD DI RESTAURANT
-   .img320 {
-     width: 354px;
-     height: 209px;
-     border-radius: 10px;
-
-     img {
-       width: 100%;
-       height: 100%;
+     // CONTENITORE IMMAGINE NELLA DASHBOARD
+     .queryContainer {
+       width: 391px;
+       height: 225px;
        border-radius: 10px;
 
+       img {
+         width: 100%;
+         height: 100%;
+         border-radius: 9px;
+
+       }
      }
-   }
 
-   .img320placeholder {
-     width: 354px;
-     height: 209px;
-     border-radius: 10px;
+     // LOGO QUANDO SIAMO IN FASE DI LOGIN
 
-     img {
-       width: 100%;
-       height: 100%;
+     .loginSet {
+       display: flex !important;
+       align-items: center !important;
+       flex-direction: column;
+     }
+
+     //IMMAGINE NELLA SHOW DI TYPE
+
+     .boxPhoto {
+       width: 385px;
+       height: 204px;
        border-radius: 10px;
 
+       img {
+         width: 100%;
+         height: 100%;
+         border-radius: 9px;
+       }
      }
-   }
-
-   // Titolo FORM IN UPDATE PASSWORD 
-   .updateTitle {
-     color: #FF446C;
-   }
-
-   // TITOLO REGISTRATI SU APP.BLADE
-   .registerTitle {
-     color: #FF446C;
-   }
-
-   // TASTO DELETE NEL MODIFICA ACCOUNT 
-   // INPUT PASSWORD 
-   .inputDelete {
-     height: 43px !important;
-     width: 0% !important;
-     /* padding: 5px 6px 3px; */
-     /* margin: 5px 9px -4px 4px; */
-     border-radius: 10px !important;
-   }
 
 
-   // .tagAbs {
-   //   position: absolute;
-   //   top: 49%;
-   //   left: 7%;
-   // }
+     .placeholderBox {
+       width: 354px;
+       height: 209px;
+       ;
+       margin-bottom: 40px;
 
-   // .tagStyle {
-   //   padding: 17px 9px;
-   //   border-radius: 107px;
-   //   font-size: 10px;
-   //   /* font-weight: bold; */
-   //   background-color: #ff4357;
-   //   border: 3px solid #372f2f;
-   //   color: white;
-   //   font-weight: 700;
-   //   font-family: "Darumadrop One", cursive;
-   // }
+       img {
+         width: 100%;
+         height: 100%;
+         border-radius: 10px;
+       }
+     }
+
+     // CONTAINER INFO NELLA SHOW DI FOOD 
+     .rightBox {
+       margin-left: 40%;
+     }
+
+     //FONT DEI BOTTONI NELLA SHOW DI FOOD
+
+     .fontResponsive {
+       font-size: 17px !important;
+       margin-left: 7px !important;
+       margin-right: 9px !important;
+     }
+
+     //DISTANZA DAL FROM
+     .responsive375 {
+       margin-top: 102px;
+     }
+
+     //EDIT FOOD IMG
+
+     .editFoodimg {
+       width: 398px;
+       height: 209px;
+       border-radius: 8px;
+
+       img {
+         width: 100%;
+         height: 100%;
+         border-radius: 9px;
+       }
+     }
+
+     // MARGINE SUPERIORE AI TITOLI DI INDEX, SHOW, EDIT e CREATE + LOGIN
+     .typeResponsive {
+       margin-top: -3%;
+     }
+
+     .dashboardResponsive {
+       margin-top: 4%;
+     }
+
+     .orderResponsive {
+       margin-top: 3%;
+     }
+
+     .foodResponsive {
+       margin-top: -4% !important;
+     }
+
+     // COLORI MENU A TENDINA
+     .colorMenu {
+       color: white;
+       background-color: none;
+     }
+
+     .colorMenu:hover {
+       color: black;
+     }
+
+     .colorMenu:focus {
+       color: #FF446C;
+     }
+
+     // BOTTONI INDEX FOOD 
+     .cirlceBotton {
+       border-radius: 22px !important;
+     }
+
+     .backG {
+       background-color: rgb(127, 113, 113)
+     }
+
+     .forgotPassword {
+       color: #FF446C !important;
+     }
+
+     .restaurantName {
+       color: #FF446C;
+     }
+
+     // IMMAGINE SHOW DI FOOD DI RESTAURANT
+     .img320 {
+       width: 354px;
+       height: 209px;
+       border-radius: 10px;
+
+       img {
+         width: 100%;
+         height: 100%;
+         border-radius: 10px;
+
+       }
+     }
+
+     .img320placeholder {
+       width: 354px;
+       height: 209px;
+       border-radius: 10px;
+
+       img {
+         width: 100%;
+         height: 100%;
+         border-radius: 10px;
+
+       }
+     }
+
+     // Titolo FORM IN UPDATE PASSWORD 
+     .updateTitle {
+       color: #FF446C;
+     }
+
+     // TITOLO REGISTRATI SU APP.BLADE
+     .registerTitle {
+       color: #FF446C;
+     }
+
+     // TASTO DELETE NEL MODIFICA ACCOUNT 
+     // INPUT PASSWORD 
+     .inputDelete {
+       height: 43px !important;
+       width: 0% !important;
+       /* padding: 5px 6px 3px; */
+       /* margin: 5px 9px -4px 4px; */
+       border-radius: 10px !important;
+     }
+
+     .paddingScreen {
+       padding: 0px 0px 0px 210px !important;
+     }
+
+
+     // .tagAbs {
+     //   position: absolute;
+     //   top: 49%;
+     //   left: 7%;
+     // }
+
+     // .tagStyle {
+     //   padding: 17px 9px;
+     //   border-radius: 107px;
+     //   font-size: 10px;
+     //   /* font-weight: bold; */
+     //   background-color: #ff4357;
+     //   border: 3px solid #372f2f;
+     //   color: white;
+     //   font-weight: 700;
+     //   font-family: "Darumadrop One", cursive;
+     // }
 
    }

@@ -97,7 +97,7 @@
         <div class="smallScreen">
             <header style="height:100px;" id="responsive" class="header finisher-header navbar fixed-top bg-dark d-flex justify-content-center">
                 <div class="logo">
-                    <a class="navbar-brand col-md-3 col-lg-2 me-0" href="{{ env('APP_FRONTEND_URL') }}">
+                    <a class=" navbar-brand col-md-3 col-lg-2 me-0" href="{{ env('APP_FRONTEND_URL') }}">
                         <img src="{{ asset('storage/logo/7.png') }}">
                     </a>
                 </div>
@@ -109,7 +109,7 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     </div> --}}
-                    <div class="centeredModificaAccount navbar-nav d-flex flex-row">
+                    <div class="paddingScreen navbar-nav d-flex flex-row">
                         <div class="nav-item">
                             <a class="nav-link adminBots modificaAccount" href="{{ url('profile') }}">
                                 <i class="fa-solid fa-user fa-lg fa-fw"></i> Account
