@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 
 @section('content')
-    <div class="container mt-1">
+    <div class="container-sm mt-1">
         <div class="d-flex flex-column justify-content-center align-items-center">
             <h4 class="">
                 Ordini ricevuti nell'ultimo anno
