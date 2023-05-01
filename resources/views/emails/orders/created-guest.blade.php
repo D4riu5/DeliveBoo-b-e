@@ -71,7 +71,7 @@
     <body>
         <div class="container">
             <div class="header">
-                <img src="https://www.example.com/logo.png" alt="ComidaGo" />
+                <img src="https://i.postimg.cc/WDYypCdJ/7.png" alt="ComidaGo" />
                 <h1>Ordine ricevuto!</h1>
             </div>
             <div class="content">
