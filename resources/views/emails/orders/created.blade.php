@@ -1,53 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Nuovo ordine ricevuto</title>
-
     <style>
-        h1 {
-            color: red;
-        }
-
-        img {
-            height: 300px;
-            margin: 20px 0;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        color: #333;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      h1 {
+        color: #ff3f5c;
+        margin-top: 0;
+      }
+      .header {
+        background-color: #1f1d1d;
+        padding: 20px;
+        text-align: center;
+      }
+      .header img {
+        height: 100px;
+      }
+      .content {
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+      }
+      .content p {
+        margin: 0 0 10px 0;
+      }
+      .content strong {
+        color: #ff3f5c;
+      }
+      .content ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .content li {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 10px;
+      }
+      .content li span {
+        font-weight: bold;
+        margin-right: 10px;
+      }
+      .my-bold{
+        font-weight: bold;
+      }
+      .my-green{
+        color: limegreen;
+      }
+      .my-color{
+        color: #ff3f5c;
+      }
+      .footer {
+        background-color: #f7f7f7;
+        padding: 20px;
+        text-align: center;
+      }
     </style>
-</head>
-
-<body>
-    <div>
-        <h1>
-            Nuovo ordine ricevuto!
-        </h1>
-
-        <h4>Ciao {{ ucwords($restaurant->user->name) }}!</h4>
-
-        <p>Un nuovo ordine è stato effettuato presso il tuo ristorante, <strong style="color: red">{{ $restaurant->name }},</strong> con i seguenti dettagli:</p>
-
-        <p>ID ordine: {{ $order->id }}</p>
-        <p>Nome del cliente: {{ $order->costumer_name }}</p>
-        <p>Indirizzo di consegna: {{ $order->delivery_address }}</p>
-        <p>Numero di telefono: {{ $order->delivery_contact }}</p>
-        <p>Indirizzo email: {{ $buyer_email }}</p>
-        <p>Data: {{ $order->order_date }}</p>
-
-        <p class="my-2">Lista prodotti ordinati:</p>
-
-        <ul>
-            @foreach ($order->foods as $food)
+  </head>
+    <body>
+        <div class="container">
+        <div class="header">
+            <img src="https://www.example.com/logo.png" alt="ComidaGo" />
+            <h1>Nuovo ordine ricevuto!</h1>
+        </div>
+        <div class="content">
+                <p>Ciao <strong>{{ ucwords($restaurant->user->name) }}</strong>,</p>
+                <p>Un nuovo ordine è stato effettuato presso il tuo ristorante <strong>{{ $restaurant->name }}</strong>, con i seguenti dettagli:</p>
+                <ul>
+                <li><span>ID ordine:</span> {{ $order->id }}</li>
+                <li><span>Nome del cliente:</span> {{ $order->costumer_name }}</li>
+                <li><span>Indirizzo di consegna:</span> {{ $order->delivery_address }}</li>
+                <li><span>Numero di telefono:</span> {{ $order->delivery_contact }}</li>
+                <li><span>Indirizzo email:</span> {{ $buyer_email }}</li>
+                <li><span>Data:</span> {{ $order->order_date }}</li>
+                </ul>
+                <p class="my-bold my-green">Lista prodotti ordinati:</p>
+                <ul>
+                @foreach ($order->foods as $food)
                 <li>{{ $food->name }} - {{ $food->price }} € x {{ $food->pivot->quantity }}</li>
-            @endforeach
-        </ul>
-        <p>Prezzo spedizione: {{ $restaurant->prezzo_spedizione }} €</p>
-        <p>Prezzo totale: {{ $order->total_price }} €</p>
+                @endforeach
+                </ul>
+                <p><span class="my-bold">Prezzo spedizione:</span> {{ $restaurant->prezzo_spedizione }} €</p>
+                <p><span class="my-bold">Prezzo totale:</span> {{ $order->total_price }} €</p>
 
-        <p>Grazie!</p>
-    </div>
-</body>
+                <p class="my-bold my-color">Grazie per aver Scelto ComidaGo!</p>
+            </div>
+        </div>
+    </body>
 
 </html>
