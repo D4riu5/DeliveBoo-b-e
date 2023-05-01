@@ -29,7 +29,7 @@
         </div>
 
         <div class="mb-2">
-            <label for="surname">{{ __('Surname') }}</label>
+            <label for="surname">{{ __('Cognome') }}</label>
             <input class="form-control" type="text" name="surname" id="surname" autocomplete="surname"
                 value="{{ old('surname', $user->surname) }}"  autofocus>
             @error('surname')
