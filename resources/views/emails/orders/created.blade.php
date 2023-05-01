@@ -72,35 +72,35 @@
       }
     </style>
   </head>
-    <body>
-        <div class="container">
-        <div class="header">
-            <img src="https://www.example.com/logo.png" alt="ComidaGo" />
-            <h1>Nuovo ordine ricevuto!</h1>
-        </div>
-        <div class="content">
-                <p>Ciao <strong>{{ ucwords($restaurant->user->name) }}</strong>,</p>
-                <p>Un nuovo ordine è stato effettuato presso il tuo ristorante <strong>{{ $restaurant->name }}</strong>, con i seguenti dettagli:</p>
-                <ul>
-                <li><span>ID ordine:</span> {{ $order->id }}</li>
-                <li><span>Nome del cliente:</span> {{ $order->costumer_name }}</li>
-                <li><span>Indirizzo di consegna:</span> {{ $order->delivery_address }}</li>
-                <li><span>Numero di telefono:</span> {{ $order->delivery_contact }}</li>
-                <li><span>Indirizzo email:</span> {{ $buyer_email }}</li>
-                <li><span>Data:</span> {{ $order->order_date }}</li>
-                </ul>
-                <p class="my-bold my-green">Lista prodotti ordinati:</p>
-                <ul>
-                @foreach ($order->foods as $food)
-                <li>{{ $food->name }} - {{ $food->price }} € x {{ $food->pivot->quantity }}</li>
-                @endforeach
-                </ul>
-                <p><span class="my-bold">Prezzo spedizione:</span> {{ $restaurant->prezzo_spedizione }} €</p>
-                <p><span class="my-bold">Prezzo totale:</span> {{ $order->total_price }} €</p>
+  <body>
+    <div class="container">
+      <div class="header">
+          <img src="https://i.postimg.cc/WDYypCdJ/7.png" alt="ComidaGo" />
+          <h1>Nuovo ordine ricevuto!</h1>
+      </div>
+      <div class="content">
+              <p>Ciao <strong>{{ ucwords($restaurant->user->name) }}</strong>,</p>
+              <p>Un nuovo ordine è stato effettuato presso il tuo ristorante <strong>{{ $restaurant->name }}</strong>, con i seguenti dettagli:</p>
+              <ul>
+              <li><span>ID ordine:</span> {{ $order->id }}</li>
+              <li><span>Nome del cliente:</span> {{ $order->costumer_name }}</li>
+              <li><span>Indirizzo di consegna:</span> {{ $order->delivery_address }}</li>
+              <li><span>Numero di telefono:</span> {{ $order->delivery_contact }}</li>
+              <li><span>Indirizzo email:</span> {{ $buyer_email }}</li>
+              <li><span>Data:</span> {{ $order->order_date }}</li>
+              </ul>
+              <p class="my-bold my-green">Lista prodotti ordinati:</p>
+              <ul>
+              @foreach ($order->foods as $food)
+              <li>{{ $food->name }} - {{ $food->price }} € x {{ $food->pivot->quantity }}</li>
+              @endforeach
+              </ul>
+              <p><span class="my-bold">Prezzo spedizione:</span> {{ $restaurant->prezzo_spedizione }} €</p>
+              <p><span class="my-bold">Prezzo totale:</span> {{ $order->total_price }} €</p>
 
-                <p class="my-bold my-color">Grazie per aver Scelto ComidaGo!</p>
-            </div>
-        </div>
-    </body>
+              <p class="my-bold my-color">Grazie per aver Scelto ComidaGo!</p>
+      </div>
+    </div>
+  </body>
 
 </html>
