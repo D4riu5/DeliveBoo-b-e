@@ -23,7 +23,7 @@ class FoodSeeder extends Seeder
 
         $foods = [
 
-            // --------------CUCINA ITALIANA 1- 10 - TYPE 1-----------------
+            // --------------CUCINA ITALIANA - TYPE 1-----------------
 
             // PIATTO 1
             [
@@ -81,7 +81,7 @@ class FoodSeeder extends Seeder
             [
                 'name' => 'Cotoletta alla Milanese',
                 'image' => '/food/5.jpg',
-                'description' => 'cotoletta di vitello impanata e fritta',
+                'description' => 'Cotoletta di vitello impanata e fritta',
                 'price' => 22.00,
                 'course' => 'Secondo',
                 'is_available' => true,
@@ -155,9 +155,178 @@ class FoodSeeder extends Seeder
                 'kcal' => 200,
                 'restaurant_ids' => [1, 2, 3, 4, 8, 21, 22, 30, 31], //ITALIANA - VEGETARIANA
             ],
+            // PIATTO 142
+            [
+                'name' => 'Crostini al Formaggio',
+                'image' => '',
+                'description' => 'Pane tostato con formaggio fresco, noci e miele',
+                'price' => 6.50,
+                'course' => 'Antipasto',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 200,
+                'restaurant_ids' => [1, 2, 3, 4], //ITALIANA
+            ],
+            // PIATTO 143
+            [
+                'name' => 'Focaccia',
+                'image' => '',
+                'description' => 'Pane morbido con pomodorini e origano',
+                'price' => 4.50,
+                'course' => 'Antipasto',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 250,
+                'restaurant_ids' => [1, 2, 3, 4], //ITALIANA
+            ],
+            // PIATTO 144
+            [
+                'name' => 'Polpette di Melanzane',
+                'image' => '',
+                'description' => 'Polpette di melanzane e formaggio, fritte',
+                'price' => 7.50,
+                'course' => 'Antipasto',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => false,
+                'kcal' => 300,
+                'restaurant_ids' => [1, 2, 3, 4], //ITALIANA
+            ],
+            // PIATTO 145
+            [
+                'name' => 'Spaghetti alla Carbonara',
+                'image' => '',
+                'description' => 'Pasta con uova, pancetta, pecorino e pepe',
+                'price' => 12.50,
+                'course' => 'Primo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 500,
+                'restaurant_ids' => [1, 2, 3, 4], //ITALIANA
+            ],
+            // PIATTO 146
+            [
+                'name' => 'Penne all Arrabbiata',
+                'image' => '',
+                'description' => 'Pasta con pomodoro, aglio e peperoncino',
+                'price' => 10.50,
+                'course' => 'Primo',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => true,
+                'kcal' => 450,
+                'restaurant_ids' => [1, 2, 3, 4], //ITALIANA
+            ],
+            // PIATTO 147
+            [
+                'name' => 'Lasagne al Forno',
+                'image' => '',
+                'description' => 'Pasta all uovo con ragù, besciamella e parmigiano',
+                'price' => 18.50,
+                'course' => 'Primo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 700,
+                'restaurant_ids' => [1, 2, 3, 4], //ITALIANA
+            ],
+            // PIATTO 148
+            [
+                'name' => 'Tagliatelle al Tartufo',
+                'image' => '',
+                'description' => 'Pasta fresca con crema di tartufo nero',
+                'price' => 22.50,
+                'course' => 'Primo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 550,
+                'restaurant_ids' => [1, 2, 3, 4], //ITALIANA
+            ],
+            // PIATTO 149
+            [
+                'name' => 'Pollo alla Cacciatora',
+                'image' => '',
+                'description' => 'Pollo in umido con pomodoro e olive',
+                'price' => 16.50,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 500,
+                'restaurant_ids' => [1, 2, 3, 4], //ITALIANA
+            ],
+            // PIATTO 150
+            [
+                'name' => 'Brasato al Barolo',
+                'image' => '',
+                'description' => 'Carne di manzo brasata al vino Barolo',
+                'price' => 22.50,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 700,
+                'restaurant_ids' => [1, 2, 3, 4], //ITALIANA
+            ],
+            // PIATTO 151
+            [
+                'name' => 'Branzino al Forno',
+                'image' => '',
+                'description' => 'Pesce intero al forno con patate e pomodorini',
+                'price' => 24.50,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 400,
+                'restaurant_ids' => [1, 2, 3, 4], //ITALIANA
+            ],
+            // PIATTO 152
+            [
+                'name' => 'Cannoli Siciliani',
+                'image' => '',
+                'description' => 'Cialde ripiene di ricotta e cioccolato',
+                'price' => 7.50,
+                'course' => 'Dolce',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 350,
+                'restaurant_ids' => [1, 2, 3, 4], //ITALIANA
+            ],
+            // PIATTO 153
+            [
+                'name' => 'Zeppole di San Giuseppe',
+                'image' => '',
+                'description' => 'Frittelle ripiene di crema pasticcera',
+                'price' => 4.50,
+                'course' => 'Dolce',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 200,
+                'restaurant_ids' => [1, 2, 3, 4], //ITALIANA
+            ],
+            // PIATTO 154
+            [
+                'name' => 'Cassata Siciliana',
+                'image' => '',
+                'description' => 'Dolce al cucchiaio con pan di Spagna, ricotta e canditi',
+                'price' => 8.50,
+                'course' => 'Dolce',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 400,
+                'restaurant_ids' => [1, 2, 3, 4], //ITALIANA
+            ],
             // --------------CUCINA ITALIANA FINE------------------------------
 
-            //-------------- CUCINA MESSICANA  11 - 21- TYPE 2----------------- 
+            //-------------- CUCINA MESSICANA - TYPE 2----------------- 
             // PIATTO 11
             [
                 'name' => 'Taco al pastor',
@@ -300,6 +469,110 @@ class FoodSeeder extends Seeder
                 'gluten_free' => false,
                 'kcal' => 550,
                 'restaurant_ids' => [1, 2, 5, 6, 7, 8, 16, 21, 22, 30, 31, 33], //MESSICANA - VEGETARIANA
+            ],
+            // PIATTO 155   
+            [
+                'name' => 'Chiles Rellenos',
+                'image' => '',
+                'description' => 'Peperoni ripieni di formaggio e carne, fritti e serviti con salsa',
+                'price' => 9.00,
+                'course' => 'Antipasto',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => false,
+                'kcal' => 420,
+                'restaurant_ids' => [1, 5, 6, 7, 33], //MESSICANA
+            ],
+            // PIATTO 156
+            [
+                'name' => 'Sopa de tortilla',
+                'image' => '',
+                'description' => 'Zuppa di pollo con pomodori, peperoni, mais e tortilla spezzettata',
+                'price' => 9.00,
+                'course' => 'Primo',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => false,
+                'kcal' => 300,
+                'restaurant_ids' => [1, 5, 6, 7, 33], //MESSICANA
+            ],
+            // PIATTO 157 
+            [
+                'name' => 'Pozole',
+                'image' => '',
+                'description' => 'Zuppa di maiale con mais, peperoni e cipolle, servita con lime, coriandolo e tortillas di mais',
+                'price' => 11.50,
+                'course' => 'Primo',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => false,
+                'kcal' => 400,
+                'restaurant_ids' => [1, 5, 6, 7, 33], //MESSICANA
+            ],
+            // PIATTO 158
+            [
+                'name' => 'Fajitas di pollo',
+                'image' => '',
+                'description' => 'Strisce di pollo alla griglia con peperoni e cipolle servite con tortilla di mais',
+                'price' => 12.00,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => true,
+                'kcal' => 550,
+                'restaurant_ids' => [1, 5, 6, 7, 33], //MESSICANA
+            ],
+            // PIATTO 159
+            [
+                'name' => 'Quesadillas di verdure',
+                'image' => '',
+                'description' => 'Tortilla di mais ripiena di formaggio, zucchine e peperoni',
+                'price' => 7.50,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 350,
+                'restaurant_ids' => [1, 5, 6, 7, 33], //MESSICANA
+            ],
+            // PIATTO 160 
+            [
+                'name' => 'Flan',
+                'image' => '',
+                'description' => 'Pudding di uova e latte caramellato',
+                'price' => 5.00,
+                'course' => 'Dolce',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 220,
+                'restaurant_ids' => [1, 5, 6, 7, 33], //MESSICANA
+            ],
+            // PIATTO 161  
+            [
+                'name' => 'Arroz con Leche',
+                'image' => '',
+                'description' => 'Risotto dolce con latte, cannella e uvetta',
+                'price' => 4.50,
+                'course' => 'Dolce',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 280,
+                'restaurant_ids' => [1, 5, 6, 7, 33], //MESSICANA
+            ],
+            // PIATTO 162
+            [
+                'name' => 'Empanadas de Cajeta',
+                'image' => '',
+                'description' => 'Mezzelune ripiene di cajeta (dolce di latte di capra caramellato)',
+                'price' => 6.50,
+                'course' => 'Dolce',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 420,
+                'restaurant_ids' => [1, 5, 6, 7, 33], //MESSICANA
             ],
             // --------------CUCINA MESSICANA FINE------------------------------
 
@@ -447,6 +720,97 @@ class FoodSeeder extends Seeder
                 'kcal' => 150,
                 'restaurant_ids' => [9, 10, 11], //GIAPPONESE
             ],
+            // PIATTO 163
+            [
+                'name' => 'Okonomiyaki',
+                'image' => '',
+                'description' => 'Frittella di verdure e pancetta, con maionese, salsa okonomiyaki e fiocchi di bonito',
+                'price' => 10.00,
+                'course' => 'Primo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 350,
+                'restaurant_ids' => [9, 10, 11], //GIAPPONESE
+            ],
+            // PIATTO 164
+            [
+                'name' => 'Yakisoba',
+                'image' => '',
+                'description' => 'Noodles saltati con pollo, verdure miste e salsa yakisoba',
+                'price' => 12.00,
+                'course' => 'Primo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 450,
+                'restaurant_ids' => [9, 10, 11], //GIAPPONESE
+            ],
+            // PIATTO 165
+            [
+                'name' => 'Tempura',
+                'image'  => '',
+                'description' => 'Fritto di verdure e/o gamberi in pastella leggera',
+                'price' => 15,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 600,
+                'restaurant_ids' => [9, 10, 11], //GIAPPONESE
+            ],
+            // PIATTO 166
+            [
+                'name' => 'Yakitori',
+                'image' => '',
+                'description' => 'Spiedini di pollo grigliati con salsa teriyaki',
+                'price' => 10,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 500,
+                'restaurant_ids' => [9, 10, 11], //GIAPPONESE
+            ],
+            // PIATTO 167
+            [
+                'name' => 'Matcha affogato',
+                'image' => '',
+                'description' => 'Gelato al tè verde Matcha con un bicchierino di espresso',
+                'price' => 6.50,
+                'course' => 'Dolce',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 290,
+                'restaurant_ids' => [9, 10, 11], //GIAPPONESE
+            ],
+            // PIATTO 168
+            [
+                'name' => 'Taiyaki',
+                'image' => '',
+                'description' => 'Dolce a forma di pesce ripieno di pasta dolce di fagioli rossi o crema di matcha',
+                'price' => 4.00,
+                'course' => 'Dolce',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 240,
+                'restaurant_ids' => [9, 10, 11], //GIAPPONESE
+            ],
+            // PIATTO 169
+            [
+                'name' => 'Castella',
+                'image' => '',
+                'description' => 'Dolce spugnoso a base di uova, zucchero e farina, aromatizzato con la vaniglia o il matcha',
+                'price' => 5.50,
+                'course' => 'Dolce',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 200,
+                'restaurant_ids' => [9, 10, 11], //GIAPPONESE
+            ],
             // --------------CUCINA GIAPPONESE FINE------------------------------
 
             // --------------CUCINA CINESE 33 - 43 - TYPE 4------------
@@ -591,6 +955,97 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => true,
                 'kcal' => 0,
+                'restaurant_ids' => [11, 12, 13, 17, 35], //CINESE
+            ],
+            // PIATTO 170
+            [
+                'name' => 'Zuppa di wonton',
+                'image' => '',
+                'description' => 'Brodo caldo con wonton ripieni di carne di maiale e gamberi',
+                'price' => 4.00,
+                'course' => 'Antipasto',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 150,
+                'restaurant_ids' => [11, 12, 13, 17, 35], //CINESE
+            ],
+            // PIATTO 171
+            [
+                'name' => 'Uova ripiene di granchio',
+                'image' => '',
+                'description' => 'Uova sode farcite con polpa di granchio e salsa cocktail',
+                'price' => 4.00,
+                'course' => 'Antipasto',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 120,
+                'restaurant_ids' => [11, 12, 13, 17, 35], //CINESE
+            ],
+            // PIATTO 172
+            [
+                'name' => 'Riso fritto alla cantonese',
+                'image' => '',
+                'description' => 'Riso saltato con uova, piselli, carote, prosciutto e gamberetti',
+                'price' => 8.00,
+                'course' => 'Primo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 420,
+                'restaurant_ids' => [11, 12, 13, 17, 35], //CINESE
+            ],
+            // PIATTO 173
+            [
+                'name' => 'Anatra all arancia',
+                'image' => '',
+                'description' => 'Cosce di anatra in salsa all arancia con contorno di verdure',
+                'price' => 15.00,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 480,
+                'restaurant_ids' => [11, 12, 13, 17, 35], //CINESE
+            ],
+            // PIATTO 174
+            [
+                'name' => 'Gamberoni saltati con verdure',
+                'image' => '',
+                'description' => 'Gamberoni saltati con peperoni, zucchine e cipolla',
+                'price' => 14.00,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => true,
+                'kcal' => 320,
+                'restaurant_ids' => [11, 12, 13, 17, 35], //CINESE
+            ],
+            // PIATTO 175
+            [
+                'name' => 'Tanghulu',
+                'image' => '',
+                'description' => 'Frutta glassata su stecco',
+                'price' => 4.50,
+                'course' => 'Dolce',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 100,
+                'restaurant_ids' => [11, 12, 13, 17, 35], //CINESE
+            ],
+            // PIATTO 176
+            [
+                'name' => 'Gao Shua',
+                'image' => '',
+                'description' => 'Tortine ripiene di crema di fagioli rossi',
+                'price' => 4.50,
+                'course' => 'Dolce',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 150,
                 'restaurant_ids' => [11, 12, 13, 17, 35], //CINESE
             ],
             // --------------CUCINA CINESE FINE------------------------------
@@ -1896,6 +2351,71 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => true,
                 'kcal' => 150,
+                'restaurant_ids' => [13, 28, 29], //PERUVIANA
+            ],
+            // PIATTO 177
+            [
+                'name' => 'Papa Rellena',
+                'image' => '',
+                'description' => 'Crocchette di patate ripiene di carne macinata, cipolle, uova, olive e spezie. Fritte fino a doratura e servite con salsa criolla.',
+                'price' => 8.50,
+                'course' => 'Antipasto',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 300,
+                'restaurant_ids' => [13, 28, 29], //PERUVIANA
+            ],
+            // PIATTO 178
+            [
+                'name' => 'Empanadas',
+                'image' => '',
+                'description' => 'Pasta sfoglia ripiena di carne, olive, uova e spezie. Fritte fino a doratura e servite con salsa huancaina.',
+                'price' => 7.50,
+                'course' => 'Antipasto',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 280,
+                'restaurant_ids' => [13, 28, 29], //PERUVIANA
+            ],
+            // PIATTO 179
+            [
+                'name' => 'Tacu Tacu',
+                'image' => '',
+                'description' => 'Piatto a base di riso e fagioli misti, accompagnato da carne di manzo saltata con cipolla e pomodoro.',
+                'price' => 12,
+                'course' => 'Primo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 550,
+                'restaurant_ids' => [13, 28, 29], //PERUVIANA
+            ],
+            // PIATTO 180
+            [
+                'name' => 'Seco de cordero',
+                'image' => '',
+                'description' => 'Gustoso stufato di agnello con coriandolo, fagioli e riso bianco',
+                'price' => 13.00,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 700,
+                'restaurant_ids' => [13, 28, 29], //PERUVIANA
+            ],
+            // PIATTO 181
+            [
+                'name' => 'Arroz con pollo',
+                'image' => '',
+                'description' => 'Risotto al pollo con peperoni, piselli e zafferano',
+                'price' => 10.00,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 600,
                 'restaurant_ids' => [13, 28, 29], //PERUVIANA
             ],
             // --------------CUCINA PERUVIANA FINE------------------------------
