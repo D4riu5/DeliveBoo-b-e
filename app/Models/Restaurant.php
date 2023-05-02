@@ -26,25 +26,39 @@ class Restaurant extends Model
         'image',
     ];
 
-    public function getFullImageRestaurantAttribute() {
+    public function getFullImageRestaurantAttribute()
+    {
         $fullPath = null;
         if ($this->image) {
-            $fullPath = asset('storage/'.$this->image);
+            $fullPath = asset('storage/' . $this->image);
         }
 
         return $fullPath;
     }
 
-    public function user() {
+    public function user()
+    {
         return $this->belongsTo(User::class);
     }
 
-    public function types() {
+    public function types()
+    {
         return $this->belongsToMany(Type::class);
     }
 
-    public function foods(){
+    public function foods()
+    {
         return $this->hasMany(Food::class);
     }
 
+    public function orders()
+    {
+        return $this->hasManyThrough(Order::class, Food::class, 'restaurant_id', 'id');
+    }
+
+    public function updateAvgRating()
+    {
+        $this->avg_rating = $this->orders()->whereNotNull('rating')->avg('rating');
+        $this->save();
+    }
 }

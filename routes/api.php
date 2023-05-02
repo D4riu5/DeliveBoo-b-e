@@ -114,7 +114,6 @@ Route::name('api.')->group(function () {
     });
 
 
-    // ORDER RATING
     Route::post('/orders/{order}/rate', function (Illuminate\Http\Request $request, $order) {
         $order = Order::findOrFail($order);
 
@@ -128,7 +127,24 @@ Route::name('api.')->group(function () {
 
         $order->rating = $request->input('rating');
         $order->save();
-        
+
+        $restaurant = $order->foods()->first()->restaurant;
+        $restaurantOrders = Order::whereHas('foods', function ($query) use ($restaurant) {
+            $query->where('restaurant_id', $restaurant->id);
+        })->whereNotNull('rating')->get();
+
+        $totalRating = 0;
+        if ($restaurantOrders->count() > 0) {
+            foreach ($restaurantOrders as $restaurantOrder) {
+                $totalRating += $restaurantOrder->rating;
+            }
+
+            $restaurant->avg_rating = $totalRating / $restaurantOrders->count();
+        } else {
+            $restaurant->avg_rating = 0;
+        }
+        $restaurant->save();
+
         return redirect()->back()->with('success', 'Thank you for rating the order!');
     })->name('orders.rate');
 });

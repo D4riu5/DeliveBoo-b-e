@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('PIVA', 11);
             $table->string('image')->nullable();
             $table->decimal('prezzo_spedizione', 8, 2)->default(0);
-            // $table->unsignedTinyInteger('avg_rating')->nullable();
+            $table->float('avg_rating')->nullable();
             // $table->smallInteger('total_reviews')->nullable()->unsigned();
             $table->timestamps();
         });
