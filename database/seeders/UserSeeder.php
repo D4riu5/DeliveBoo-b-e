@@ -745,14 +745,14 @@ class UserSeeder extends Seeder
         $user35 = User::create([
             'name' => $faker->firstName(),
             'surname' => $faker->lastName(),
-            'email' => 'Beijing_Bistro@admin.com',
+            'email' => 'Silk_Route@admin.com',
             'password' => bcrypt('password'),
             'email_verified_at' => Carbon::now()->subYear(),
         ]);
 
         // RESTAURANT 35 - CINESE
         $restaurant35 = Restaurant::create([
-            'name' => 'Beijing Bistro',
+            'name' => 'Silk Route',
             'image' => '/restaurant/35.jpg',
             'address' => 'Via Vitruvio, 20',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
