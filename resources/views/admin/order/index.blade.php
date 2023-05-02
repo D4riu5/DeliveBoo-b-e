@@ -48,7 +48,7 @@
                             <tr scope="row">
                                 <td>
                                     <div class="text-white text-center">
-                                        {{ $order->order_date }}
+                                        {{ \Carbon\Carbon::parse($order->order_date)->isoFormat('DD MMMM YYYY, [alle] HH:mm') }}
                                     </div>
                                 </td>
                                 <td>
@@ -124,7 +124,7 @@
                                     Data dell'ordine:
                                 </span>
                                 <span>
-                                    {{ $order->order_date }}
+                                    {{ \Carbon\Carbon::parse($order->order_date)->isoFormat('DD MMMM YYYY, [alle] HH:mm') }}
                                 </span>
                             </div>
                             <div class="py-1">
