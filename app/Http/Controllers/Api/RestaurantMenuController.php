@@ -17,7 +17,7 @@ class RestaurantMenuController extends Controller
     public function index($id)
     {
         $restaurant = Restaurant::find($id);
-        $foods = Food::where('restaurant_id', $id)->get();
+        $foods = Food::with('food_detail')->where('restaurant_id', $id)->get();
 
         if ($restaurant && $foods) {
             return response()->json([
