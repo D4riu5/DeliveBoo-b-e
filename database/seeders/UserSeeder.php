@@ -678,6 +678,131 @@ class UserSeeder extends Seeder
         
         $restaurant31->types()->attach([5]);
 
+        // USER 32
+        $user32 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'Bella_Cucina@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 32 - ITALIANA
+        $restaurant32 = Restaurant::create([
+            'name' => 'Bella Cucina',
+            'image' => '/restaurant/32.jpg',
+            'address' => 'Via Dante Alighieri, 12',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 2.99,
+            'user_id' => $user32->id,
+        ]);
+        
+        $restaurant32->types()->attach([1]);
+
+        // USER 33
+        $user33 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'Fuego_Mexicano@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 33 - MESSICANA
+        $restaurant33 = Restaurant::create([
+            'name' => 'Fuego Mexicano',
+            'image' => '/restaurant/33.jpg',
+            'address' => 'Via Francesco Sforza, 15',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 0.89,
+            'user_id' => $user33->id,
+        ]);
+        
+        $restaurant33->types()->attach([2]);
+        
+        // USER 34
+        $user34 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'Sakura_Sushi@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 34 - GIAPPONESE
+        $restaurant34 = Restaurant::create([
+            'name' => 'Sakura Sushi',
+            'image' => '/restaurant/34.jpg',
+            'address' => 'Via Piero della Francesca, 5',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 0.89,
+            'user_id' => $user34->id,
+        ]);
+        
+        $restaurant34->types()->attach([3]);
+        
+        // USER 35
+        $user35 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'Beijing_Bistro@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 35 - CINESE
+        $restaurant35 = Restaurant::create([
+            'name' => 'Beijing Bistro',
+            'image' => '/restaurant/35.jpg',
+            'address' => 'Via Vitruvio, 20',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 0.89,
+            'user_id' => $user35->id,
+        ]);
+        
+        $restaurant35->types()->attach([4]);
+        
+        // USER 36
+        $user36 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'Beijing_Bistro@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 36 - VEGETARIANA
+        $restaurant36 = Restaurant::create([
+            'name' => 'Beijing Bistro',
+            'image' => '/restaurant/36.jpg',
+            'address' => 'Via Alessandro Volta, 8',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 0.89,
+            'user_id' => $user36->id,
+        ]);
+        
+        $restaurant36->types()->attach([5]);
+        
+        // USER 37
+        $user37 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'All_American_Diner@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 37 - AMERICANA
+        $restaurant37 = Restaurant::create([
+            'name' => 'All-American Diner',
+            'image' => '/restaurant/37.jpg',
+            'address' => 'Piazza Duca, 9',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 1.99,
+            'user_id' => $user37->id,
+        ]);
+        
+        $restaurant37->types()->attach([6]);
         
 
 
