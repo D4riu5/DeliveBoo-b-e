@@ -27,6 +27,7 @@ class DatabaseSeeder extends Seeder
             UserSeeder::class,
             FoodSeeder::class,
             OrderSeeder::class,
+            UpdateRestaurantAvgRating::class,
         ]);
     }
 }
