@@ -158,7 +158,7 @@ class FoodSeeder extends Seeder
             // PIATTO 142
             [
                 'name' => 'Crostini al Formaggio',
-                'image' => '',
+                'image' => '/food/182.jpg',
                 'description' => 'Pane tostato con formaggio fresco, noci e miele',
                 'price' => 6.50,
                 'course' => 'Antipasto',
@@ -171,7 +171,7 @@ class FoodSeeder extends Seeder
             // PIATTO 143
             [
                 'name' => 'Focaccia',
-                'image' => '',
+                'image' => '/food/143.jpg',
                 'description' => 'Pane morbido con pomodorini e origano',
                 'price' => 4.50,
                 'course' => 'Antipasto',
@@ -184,7 +184,7 @@ class FoodSeeder extends Seeder
             // PIATTO 144
             [
                 'name' => 'Polpette di Melanzane',
-                'image' => '',
+                'image' => '/food/144.jpg',
                 'description' => 'Polpette di melanzane e formaggio, fritte',
                 'price' => 7.50,
                 'course' => 'Antipasto',
@@ -197,7 +197,7 @@ class FoodSeeder extends Seeder
             // PIATTO 145
             [
                 'name' => 'Spaghetti alla Carbonara',
-                'image' => '',
+                'image' => '/food/145.jpg',
                 'description' => 'Pasta con uova, pancetta, pecorino e pepe',
                 'price' => 12.50,
                 'course' => 'Primo',
@@ -210,7 +210,7 @@ class FoodSeeder extends Seeder
             // PIATTO 146
             [
                 'name' => 'Penne all Arrabbiata',
-                'image' => '',
+                'image' => '/food/146.jpg',
                 'description' => 'Pasta con pomodoro, aglio e peperoncino',
                 'price' => 10.50,
                 'course' => 'Primo',
@@ -223,7 +223,7 @@ class FoodSeeder extends Seeder
             // PIATTO 147
             [
                 'name' => 'Lasagne al Forno',
-                'image' => '',
+                'image' => '/food/147.jpg',
                 'description' => 'Pasta all uovo con ragù, besciamella e parmigiano',
                 'price' => 18.50,
                 'course' => 'Primo',
@@ -236,7 +236,7 @@ class FoodSeeder extends Seeder
             // PIATTO 148
             [
                 'name' => 'Tagliatelle al Tartufo',
-                'image' => '',
+                'image' => '/food/148.jpg',
                 'description' => 'Pasta fresca con crema di tartufo nero',
                 'price' => 22.50,
                 'course' => 'Primo',
@@ -249,7 +249,7 @@ class FoodSeeder extends Seeder
             // PIATTO 149
             [
                 'name' => 'Pollo alla Cacciatora',
-                'image' => '',
+                'image' => '/food/149.jpg',
                 'description' => 'Pollo in umido con pomodoro e olive',
                 'price' => 16.50,
                 'course' => 'Secondo',
@@ -262,7 +262,7 @@ class FoodSeeder extends Seeder
             // PIATTO 150
             [
                 'name' => 'Brasato al Barolo',
-                'image' => '',
+                'image' => '/food/150.jpg',
                 'description' => 'Carne di manzo brasata al vino Barolo',
                 'price' => 22.50,
                 'course' => 'Secondo',
@@ -275,7 +275,7 @@ class FoodSeeder extends Seeder
             // PIATTO 151
             [
                 'name' => 'Branzino al Forno',
-                'image' => '',
+                'image' => '/food/151.jpg',
                 'description' => 'Pesce intero al forno con patate e pomodorini',
                 'price' => 24.50,
                 'course' => 'Secondo',
@@ -288,7 +288,7 @@ class FoodSeeder extends Seeder
             // PIATTO 152
             [
                 'name' => 'Cannoli Siciliani',
-                'image' => '',
+                'image' => '/food/152.jpg',
                 'description' => 'Cialde ripiene di ricotta e cioccolato',
                 'price' => 7.50,
                 'course' => 'Dolce',
@@ -301,7 +301,7 @@ class FoodSeeder extends Seeder
             // PIATTO 153
             [
                 'name' => 'Zeppole di San Giuseppe',
-                'image' => '',
+                'image' => '/food/153.jpg',
                 'description' => 'Frittelle ripiene di crema pasticcera',
                 'price' => 4.50,
                 'course' => 'Dolce',
@@ -314,7 +314,7 @@ class FoodSeeder extends Seeder
             // PIATTO 154
             [
                 'name' => 'Cassata Siciliana',
-                'image' => '',
+                'image' => '/food/154.jpg',
                 'description' => 'Dolce al cucchiaio con pan di Spagna, ricotta e canditi',
                 'price' => 8.50,
                 'course' => 'Dolce',
@@ -473,7 +473,7 @@ class FoodSeeder extends Seeder
             // PIATTO 155   
             [
                 'name' => 'Chiles Rellenos',
-                'image' => '',
+                'image' => '/food/155.jpg',
                 'description' => 'Peperoni ripieni di formaggio e carne, fritti e serviti con salsa',
                 'price' => 9.00,
                 'course' => 'Antipasto',
@@ -486,7 +486,7 @@ class FoodSeeder extends Seeder
             // PIATTO 156
             [
                 'name' => 'Sopa de tortilla',
-                'image' => '',
+                'image' => '/food/156.jpg',
                 'description' => 'Zuppa di pollo con pomodori, peperoni, mais e tortilla spezzettata',
                 'price' => 9.00,
                 'course' => 'Primo',
@@ -499,7 +499,7 @@ class FoodSeeder extends Seeder
             // PIATTO 157 
             [
                 'name' => 'Pozole',
-                'image' => '',
+                'image' => '/food/157.jpg',
                 'description' => 'Zuppa di maiale con mais, peperoni e cipolle, servita con lime, coriandolo e tortillas di mais',
                 'price' => 11.50,
                 'course' => 'Primo',
@@ -512,7 +512,7 @@ class FoodSeeder extends Seeder
             // PIATTO 158
             [
                 'name' => 'Fajitas di pollo',
-                'image' => '',
+                'image' => '/food/158.jpg',
                 'description' => 'Strisce di pollo alla griglia con peperoni e cipolle servite con tortilla di mais',
                 'price' => 12.00,
                 'course' => 'Secondo',
@@ -525,7 +525,7 @@ class FoodSeeder extends Seeder
             // PIATTO 159
             [
                 'name' => 'Quesadillas di verdure',
-                'image' => '',
+                'image' => '/food/159.jpg',
                 'description' => 'Tortilla di mais ripiena di formaggio, zucchine e peperoni',
                 'price' => 7.50,
                 'course' => 'Secondo',
@@ -538,7 +538,7 @@ class FoodSeeder extends Seeder
             // PIATTO 160 
             [
                 'name' => 'Flan',
-                'image' => '',
+                'image' => '/food/160.jpg',
                 'description' => 'Pudding di uova e latte caramellato',
                 'price' => 5.00,
                 'course' => 'Dolce',
@@ -551,7 +551,7 @@ class FoodSeeder extends Seeder
             // PIATTO 161  
             [
                 'name' => 'Arroz con Leche',
-                'image' => '',
+                'image' => '/food/161.jpg',
                 'description' => 'Risotto dolce con latte, cannella e uvetta',
                 'price' => 4.50,
                 'course' => 'Dolce',
@@ -564,7 +564,7 @@ class FoodSeeder extends Seeder
             // PIATTO 162
             [
                 'name' => 'Empanadas de Cajeta',
-                'image' => '',
+                'image' => '/food/162.jpg',
                 'description' => 'Mezzelune ripiene di cajeta (dolce di latte di capra caramellato)',
                 'price' => 6.50,
                 'course' => 'Dolce',
@@ -723,7 +723,7 @@ class FoodSeeder extends Seeder
             // PIATTO 163
             [
                 'name' => 'Okonomiyaki',
-                'image' => '',
+                'image' => '/food/163.jpg',
                 'description' => 'Frittella di verdure e pancetta, con maionese, salsa okonomiyaki e fiocchi di bonito',
                 'price' => 10.00,
                 'course' => 'Primo',
@@ -736,7 +736,7 @@ class FoodSeeder extends Seeder
             // PIATTO 164
             [
                 'name' => 'Yakisoba',
-                'image' => '',
+                'image' => '/food/164.jpg',
                 'description' => 'Noodles saltati con pollo, verdure miste e salsa yakisoba',
                 'price' => 12.00,
                 'course' => 'Primo',
@@ -749,7 +749,7 @@ class FoodSeeder extends Seeder
             // PIATTO 165
             [
                 'name' => 'Tempura',
-                'image'  => '',
+                'image'  => '/food/165.jpg',
                 'description' => 'Fritto di verdure e/o gamberi in pastella leggera',
                 'price' => 15,
                 'course' => 'Secondo',
@@ -762,7 +762,7 @@ class FoodSeeder extends Seeder
             // PIATTO 166
             [
                 'name' => 'Yakitori',
-                'image' => '',
+                'image' => '/food/166.jpg',
                 'description' => 'Spiedini di pollo grigliati con salsa teriyaki',
                 'price' => 10,
                 'course' => 'Secondo',
@@ -775,7 +775,7 @@ class FoodSeeder extends Seeder
             // PIATTO 167
             [
                 'name' => 'Matcha affogato',
-                'image' => '',
+                'image' => '/food/167.jpg',
                 'description' => 'Gelato al tè verde Matcha con un bicchierino di espresso',
                 'price' => 6.50,
                 'course' => 'Dolce',
@@ -788,7 +788,7 @@ class FoodSeeder extends Seeder
             // PIATTO 168
             [
                 'name' => 'Taiyaki',
-                'image' => '',
+                'image' => '/food/168.jpg',
                 'description' => 'Dolce a forma di pesce ripieno di pasta dolce di fagioli rossi o crema di matcha',
                 'price' => 4.00,
                 'course' => 'Dolce',
@@ -801,7 +801,7 @@ class FoodSeeder extends Seeder
             // PIATTO 169
             [
                 'name' => 'Castella',
-                'image' => '',
+                'image' => '/food/169.jpg',
                 'description' => 'Dolce spugnoso a base di uova, zucchero e farina, aromatizzato con la vaniglia o il matcha',
                 'price' => 5.50,
                 'course' => 'Dolce',
@@ -960,7 +960,7 @@ class FoodSeeder extends Seeder
             // PIATTO 170
             [
                 'name' => 'Zuppa di wonton',
-                'image' => '',
+                'image' => '/food/170.jpg',
                 'description' => 'Brodo caldo con wonton ripieni di carne di maiale e gamberi',
                 'price' => 4.00,
                 'course' => 'Antipasto',
@@ -973,7 +973,7 @@ class FoodSeeder extends Seeder
             // PIATTO 171
             [
                 'name' => 'Uova ripiene di granchio',
-                'image' => '',
+                'image' => '/food/171.jpg',
                 'description' => 'Uova sode farcite con polpa di granchio e salsa cocktail',
                 'price' => 4.00,
                 'course' => 'Antipasto',
@@ -986,7 +986,7 @@ class FoodSeeder extends Seeder
             // PIATTO 172
             [
                 'name' => 'Riso fritto alla cantonese',
-                'image' => '',
+                'image' => '/food/172.jpg',
                 'description' => 'Riso saltato con uova, piselli, carote, prosciutto e gamberetti',
                 'price' => 8.00,
                 'course' => 'Primo',
@@ -999,7 +999,7 @@ class FoodSeeder extends Seeder
             // PIATTO 173
             [
                 'name' => 'Anatra all arancia',
-                'image' => '',
+                'image' => '/food/173.jpg',
                 'description' => 'Cosce di anatra in salsa all arancia con contorno di verdure',
                 'price' => 15.00,
                 'course' => 'Secondo',
@@ -1012,7 +1012,7 @@ class FoodSeeder extends Seeder
             // PIATTO 174
             [
                 'name' => 'Gamberoni saltati con verdure',
-                'image' => '',
+                'image' => '/food/174.jpg',
                 'description' => 'Gamberoni saltati con peperoni, zucchine e cipolla',
                 'price' => 14.00,
                 'course' => 'Secondo',
@@ -1025,7 +1025,7 @@ class FoodSeeder extends Seeder
             // PIATTO 175
             [
                 'name' => 'Tanghulu',
-                'image' => '',
+                'image' => '/food/175.jpg',
                 'description' => 'Frutta glassata su stecco',
                 'price' => 4.50,
                 'course' => 'Dolce',
@@ -1038,7 +1038,7 @@ class FoodSeeder extends Seeder
             // PIATTO 176
             [
                 'name' => 'Gao Shua',
-                'image' => '',
+                'image' => '/food/176.jpg',
                 'description' => 'Tortine ripiene di crema di fagioli rossi',
                 'price' => 4.50,
                 'course' => 'Dolce',
@@ -2356,7 +2356,7 @@ class FoodSeeder extends Seeder
             // PIATTO 177
             [
                 'name' => 'Papa Rellena',
-                'image' => '',
+                'image' => '/food/177.jpg',
                 'description' => 'Crocchette di patate ripiene di carne macinata, cipolle, uova, olive e spezie. Fritte fino a doratura e servite con salsa criolla.',
                 'price' => 8.50,
                 'course' => 'Antipasto',
@@ -2369,7 +2369,7 @@ class FoodSeeder extends Seeder
             // PIATTO 178
             [
                 'name' => 'Empanadas',
-                'image' => '',
+                'image' => '/food/178.jpg',
                 'description' => 'Pasta sfoglia ripiena di carne, olive, uova e spezie. Fritte fino a doratura e servite con salsa huancaina.',
                 'price' => 7.50,
                 'course' => 'Antipasto',
@@ -2382,7 +2382,7 @@ class FoodSeeder extends Seeder
             // PIATTO 179
             [
                 'name' => 'Tacu Tacu',
-                'image' => '',
+                'image' => '/food/179.jpg',
                 'description' => 'Piatto a base di riso e fagioli misti, accompagnato da carne di manzo saltata con cipolla e pomodoro.',
                 'price' => 12,
                 'course' => 'Primo',
@@ -2395,7 +2395,7 @@ class FoodSeeder extends Seeder
             // PIATTO 180
             [
                 'name' => 'Seco de cordero',
-                'image' => '',
+                'image' => '/food/180.jpg',
                 'description' => 'Gustoso stufato di agnello con coriandolo, fagioli e riso bianco',
                 'price' => 13.00,
                 'course' => 'Secondo',
@@ -2408,7 +2408,7 @@ class FoodSeeder extends Seeder
             // PIATTO 181
             [
                 'name' => 'Arroz con pollo',
-                'image' => '',
+                'image' => '/food/181.jpg',
                 'description' => 'Risotto al pollo con peperoni, piselli e zafferano',
                 'price' => 10.00,
                 'course' => 'Secondo',
