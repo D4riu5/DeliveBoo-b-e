@@ -1935,7 +1935,7 @@ class UserSeeder extends Seeder
             'image' => '/restaurant/91.jpg',
             'address' => 'Via Andalusia, 11',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
-            'prezzo_spedizione' => 2.99,
+            'prezzo_spedizione' => 0,
             'user_id' => $user91->id,
         ]);
 
@@ -1956,7 +1956,7 @@ class UserSeeder extends Seeder
             'image' => '/restaurant/92.jpg',
             'address' => 'Via Sentenza, 31',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
-            'prezzo_spedizione' => 4.99,
+            'prezzo_spedizione' => 0,
             'user_id' => $user92->id,
         ]);
 
@@ -1977,7 +1977,7 @@ class UserSeeder extends Seeder
             'image' => '/restaurant/93.jpg',
             'address' => 'Via San Ciro, 67',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
-            'prezzo_spedizione' => 1.99,
+            'prezzo_spedizione' => 0,
             'user_id' => $user93->id,
         ]);
 
@@ -2019,7 +2019,7 @@ class UserSeeder extends Seeder
             'image' => '/restaurant/95.jpg',
             'address' => 'Via Cesare Pavese, 127',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
-            'prezzo_spedizione' => 1.99,
+            'prezzo_spedizione' => 0,
             'user_id' => $user95->id,
         ]);
 
@@ -2036,7 +2036,7 @@ class UserSeeder extends Seeder
 
         // RESTAURANT 96 -  AMERICANA - INDIANA
         $restaurant96 = Restaurant::create([
-            'name' => 'Naan-wich',
+            'name' => 'Naan wich',
             'image' => '/restaurant/96.jpg',
             'address' => 'Via Cesare Savonese, 17',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
