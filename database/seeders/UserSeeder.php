@@ -930,6 +930,703 @@ class UserSeeder extends Seeder
         
         $restaurant43->types()->attach([14, 8]);
 
+        // USER 44 - FRANCESE - ARABA
+        $user44 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'marsigliese@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 44 -  FRANCESE - ARABA
+        $restaurant44 = Restaurant::create([
+            'name' => "Saudi's",
+            'image' => '/restaurant/44.jpg',
+            'address' => 'Via del Mare, 32',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 0.67,
+            'user_id' => $user44->id,
+        ]);
+        
+        $restaurant44->types()->attach([9, 7]);
+
+         // USER 45 - FRANCESE - ARABA
+         $user45 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'serbonia@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 45 -  FRANCESE - ARABA
+        $restaurant45 = Restaurant::create([
+            'name' => 'Serbonia',
+            'image' => '/restaurant/45.jpg',
+            'address' => 'Via dei Caduti, 1',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 0,
+            'user_id' => $user45->id,
+        ]);
+        
+        $restaurant45->types()->attach([9, 7]);
+
+        // USER 46 - GRECO - INDIANO
+        $user46 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'rajesh.greco@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 46 -  GRECO - INDIANO
+        $restaurant46 = Restaurant::create([
+            'name' => 'Delhi Greek',
+            'image' => '/restaurant/46.jpg',
+            'address' => 'Via Sparta, 23',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 2.99,
+            'user_id' => $user46->id,
+        ]);
+        
+        $restaurant46->types()->attach([10, 12]);
+
+
+          // USER 47 - GRECO - INDIANO
+          $user47 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'indiaatehns@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 47 -  GRECO - INDIANO
+        $restaurant47 = Restaurant::create([
+            'name' => "India's Athens",
+            'image' => '/restaurant/47.jpg',
+            'address' => 'Via Mikonos, 11',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 1.99,
+            'user_id' => $user47->id,
+        ]);
+        
+        $restaurant47->types()->attach([10, 12]);
+
+
+          // USER 48 - GRECO - INDIANO
+          $user48 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'greekbombay@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 48 -  GRECO - INDIANO
+        $restaurant48 = Restaurant::create([
+            'name' => 'Greek Bombay',
+            'image' => '/restaurant/48.jpg',
+            'address' => 'Via della Creta, 13',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 0.99,
+            'user_id' => $user48->id,
+        ]);
+        
+        $restaurant48->types()->attach([10, 12]);
+
+        // USER 49 - GRECO - KEBAB
+        $user49 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'greekkebab@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 49 -  GRECO - KEBAB
+        $restaurant49 = Restaurant::create([
+            'name' => 'Greek Kebab',
+            'image' => '/restaurant/49.jpg',
+            'address' => 'Via dei kebab, 12',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 1.99,
+            'user_id' => $user49->id,
+        ]);
+        
+        $restaurant49->types()->attach([10, 13]);
+
+        // USER 50 - GRECO - KEBAB
+        $user50 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'pitagyros@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 50 -  GRECO - KEBAB
+        $restaurant50 = Restaurant::create([
+            'name' => 'Pita Gyros',
+            'image' => '/restaurant/50.jpg',
+            'address' => 'Via della carne, 10',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 3.99,
+            'user_id' => $user50->id,
+        ]);
+        
+        $restaurant50->types()->attach([10, 13]);
+
+        // USER 51 - GRECO - KEBAB
+        $user51 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'hallumi@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 51 -  GRECO - KEBAB
+        $restaurant51 = Restaurant::create([
+            'name' => 'Hallumi',
+            'image' => '/restaurant/51.jpg',
+            'address' => 'Via delle polpette , 20',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 2.99,
+            'user_id' => $user51->id,
+        ]);
+        
+        $restaurant51->types()->attach([10, 13]);
+
+        // USER 52 - GRECO - KEBAB
+        $user52 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'souvlaki@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 52 -  GRECO - KEBAB
+        $restaurant52 = Restaurant::create([
+            'name' => 'Souvlaki',
+            'image' => '/restaurant/52.jpg',
+            'address' => 'Via delle zingare , 20',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 1.99,
+            'user_id' => $user52->id,
+        ]);
+        
+        $restaurant52->types()->attach([10, 13]);
+
+         // USER 53 - GRECO - KEBAB
+         $user53 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'daangelos@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 53 -  GRECO - KEBAB
+        $restaurant53 = Restaurant::create([
+            'name' => 'da Angelos',
+            'image' => '/restaurant/53.jpg',
+            'address' => 'Via delle scarpe, 23',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 0,
+            'user_id' => $user53->id,
+        ]);
+        
+        $restaurant53->types()->attach([10, 13]);
+
+        // USER 54 - GRECO - KEBAB
+        $user54 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'daMiquelos@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 54 -  GRECO - KEBAB
+        $restaurant54 = Restaurant::create([
+            'name' => 'da Miquelos',
+            'image' => '/restaurant/54.jpg',
+            'address' => 'Via Spagna, 21',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 0.99,
+            'user_id' => $user54->id,
+        ]);
+        
+        $restaurant54->types()->attach([10, 13]);
+
+        // USER 55 - GRECO - KEBAB
+        $user55 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'lefkada@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 55 -  GRECO - KEBAB
+        $restaurant55 = Restaurant::create([
+            'name' => 'Lefkada Kebab',
+            'image' => '/restaurant/55.jpg',
+            'address' => 'Via Parco, 20',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 1.99,
+            'user_id' => $user55->id,
+        ]);
+        
+        $restaurant55->types()->attach([10, 13]);
+
+         // USER 56 - FRANCESE - COREANA
+         $user56 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'frenchcorea@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 56 -  FRANCESE - COREANA
+        $restaurant56 = Restaurant::create([
+            'name' => 'K Paris',
+            'image' => '/restaurant/56.jpg',
+            'address' => 'Via delle sirne, 81',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 1.99,
+            'user_id' => $user56->id,
+        ]);
+        
+        $restaurant56->types()->attach([9, 8]);
+
+        // USER 57 - FRANCESE - COREANA
+        $user57 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'boulangerie-kimbap@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 57 -  FRANCESE - COREANA
+        $restaurant57 = Restaurant::create([
+            'name' => 'Boulangerie-Kimbap',
+            'image' => '/restaurant/57.jpg',
+            'address' => 'Via delle baguette, 21',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 1.99,
+            'user_id' => $user57->id,
+        ]);
+        
+        $restaurant57->types()->attach([9, 8]);
+
+        // USER 58 - FRANCESE - COREANA
+        $user58 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'kimchi@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 58 -  FRANCESE - COREANA
+        $restaurant58 = Restaurant::create([
+            'name' => 'Croissant Kimchi',
+            'image' => '/restaurant/58.jpg',
+            'address' => 'Via delle poste, 44',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 0,
+            'user_id' => $user58->id,
+        ]);
+        
+        $restaurant58->types()->attach([9, 8]);
+
+         // USER 59 - FRANCESE - COREANA
+         $user59 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'baguette-bibimbap@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 59 -  FRANCESE - COREANA
+        $restaurant59 = Restaurant::create([
+            'name' => 'Baguette-Bibimbap',
+            'image' => '/restaurant/59.jpg',
+            'address' => 'Via delle poste, 44',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 0,
+            'user_id' => $user59->id,
+        ]);
+        
+        $restaurant59->types()->attach([9, 8]);
+
+         // USER 60 - FRANCESE - COREANA
+         $user60 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'fromage-kimchi@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 60 -  FRANCESE - COREANA
+        $restaurant60 = Restaurant::create([
+            'name' => 'Fromage&Kimchi',
+            'image' => '/restaurant/60.jpg',
+            'address' => 'Via delle stanze, 34',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 1.99,
+            'user_id' => $user60->id,
+        ]);
+        
+        $restaurant60->types()->attach([9, 8]);
+
+          // USER 61 - FRANCESE - COREANA
+          $user61 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'escargot-banchan@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 61 -  FRANCESE - COREANA
+        $restaurant61 = Restaurant::create([
+            'name' => 'Escargot Banchan',
+            'image' => '/restaurant/61.jpg',
+            'address' => 'Via dei profitti, 34',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 0.99,
+            'user_id' => $user61->id,
+        ]);
+        
+        $restaurant61->types()->attach([9, 8]);
+
+        // USER 62 - FRANCESE - COREANA
+        $user62 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'quiche-japchae@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 62 -  FRANCESE - COREANA
+        $restaurant62 = Restaurant::create([
+            'name' => 'Quiche Japchae',
+            'image' => '/restaurant/62.jpg',
+            'address' => 'Via dei profitti, 34',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 0,
+            'user_id' => $user62->id,
+        ]);
+        
+        $restaurant62->types()->attach([9, 8]);
+
+        // USER 63 - FRANCESE - COREANA
+        $user63 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'creme-Soondubu@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 63 -  FRANCESE - COREANA
+        $restaurant63 = Restaurant::create([
+            'name' => 'Crème-Soondubu',
+            'image' => '/restaurant/63.jpg',
+            'address' => 'Via dei delitti, 12',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 0,
+            'user_id' => $user63->id,
+        ]);
+        
+        $restaurant63->types()->attach([9, 8]);
+
+         // USER 64 - FRANCESE - COREANA
+         $user64 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'macaron-kimbap@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 64 -  FRANCESE - COREANA
+        $restaurant64 = Restaurant::create([
+            'name' => 'Macaron&Kimbap',
+            'image' => '/restaurant/64.jpg',
+            'address' => 'Via Turi, 94',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 0,
+            'user_id' => $user64->id,
+        ]);
+        
+        $restaurant64->types()->attach([9, 8]);
+
+        // USER 65 - FRANCESE - COREANA
+        $user65 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'tartinejeyukbokkeum@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 65 -  FRANCESE - COREANA
+        $restaurant65 = Restaurant::create([
+            'name' => 'Tartine-Jeyuk Bokkeum',
+            'image' => '/restaurant/65.jpg',
+            'address' => 'Via Turistello, 24',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 0,
+            'user_id' => $user65->id,
+        ]);
+        
+        $restaurant65->types()->attach([9, 8]);
+
+        // USER 66 - FRANCESE - COREANA
+        $user66 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'paindemiegimbap@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 66 -  FRANCESE - COREANA
+        $restaurant66 = Restaurant::create([
+            'name' => 'Pain de mie-Gimbap',
+            'image' => '/restaurant/66.jpg',
+            'address' => 'Via Castellucci, 56',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 0,
+            'user_id' => $user66->id,
+        ]);
+        
+        $restaurant66->types()->attach([9, 8]);
+
+         // USER 67 - FRANCESE - COREANA
+         $user67 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'brie-japchae@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 67 -  FRANCESE - COREANA
+        $restaurant67 = Restaurant::create([
+            'name' => 'Brie-Japchae',
+            'image' => '/restaurant/67.jpg',
+            'address' => 'Via Cestello, 23',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 0,
+            'user_id' => $user67->id,
+        ]);
+        
+        $restaurant67->types()->attach([9, 8]);
+
+         // USER 68 - FRANCESE - COREANA
+         $user68 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'eclair-tteokbokki@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 68 -  FRANCESE - COREANA
+        $restaurant68 = Restaurant::create([
+            'name' => 'Éclair-Tteokbokki',
+            'image' => '/restaurant/68.jpg',
+            'address' => 'Via Milano, 22',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 0,
+            'user_id' => $user68->id,
+        ]);
+        
+        $restaurant68->types()->attach([9, 8]);
+
+        // USER 69 - FRANCESE - COREANA
+        $user69 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'beurre-Kalguksu@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 69 -  FRANCESE - COREANA
+        $restaurant69 = Restaurant::create([
+            'name' => 'Beurre-Kalguksu',
+            'image' => '/restaurant/69.jpg',
+            'address' => 'Via Cina, 23',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 0,
+            'user_id' => $user69->id,
+        ]);
+        
+        $restaurant69->types()->attach([9, 8]);
+
+        // USER 70 - FRANCESE - COREANA
+        $user70 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'pate-jjajangmyeon@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 70 -  FRANCESE - COREANA
+        $restaurant70 = Restaurant::create([
+            'name' => 'Pâté-Jjajangmyeon',
+            'image' => '/restaurant/70.jpg',
+            'address' => 'Via dei Preti, 123',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 0,
+            'user_id' => $user70->id,
+        ]);
+        
+        $restaurant70->types()->attach([9, 8]);
+
+         // USER 71 - FRANCESE - COREANA
+         $user71 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'ratatouille-japchae@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 71 -  FRANCESE - COREANA
+        $restaurant71 = Restaurant::create([
+            'name' => 'Ratatouille-Japchae',
+            'image' => '/restaurant/71.jpg',
+            'address' => 'Via dei Cantanti, 22',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 1.99,
+            'user_id' => $user71->id,
+        ]);
+        
+        $restaurant71->types()->attach([9, 8]);
+
+          // USER 72 - FRANCESE - COREANA
+          $user72 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'foiegras-yukgaejang@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 72 -  FRANCESE - COREANA
+        $restaurant72 = Restaurant::create([
+            'name' => 'Foie gras-Yukgaejang',
+            'image' => '/restaurant/72.jpg',
+            'address' => 'Via delle Cascate, 24',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 1.99,
+            'user_id' => $user72->id,
+        ]);
+        
+        $restaurant72->types()->attach([9, 8]);
+
+        // USER 73 - FRANCESE - COREANA
+        $user73 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'baguette-jajangbap@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 73 -  FRANCESE - COREANA
+        $restaurant73 = Restaurant::create([
+            'name' => 'Baguette-Jajangbap',
+            'image' => '/restaurant/73.jpg',
+            'address' => 'Traversa Via Turi, 34',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 2.99,
+            'user_id' => $user73->id,
+        ]);
+        
+        $restaurant73->types()->attach([9, 8]);
+
+        // USER 73 - FRANCESE - COREANA
+        $user73 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'cassoulet-kimchi@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 73 -  FRANCESE - COREANA
+        $restaurant73 = Restaurant::create([
+            'name' => 'Cassoulet-Kimchi',
+            'image' => '/restaurant/73.jpg',
+            'address' => 'Traversa Via Spada, 76',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 2.99,
+            'user_id' => $user73->id,
+        ]);
+        
+        $restaurant73->types()->attach([9, 8]);
+
+        // USER 74 - FRANCESE - COREANA
+        $user74 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'coqauvin-eopbap@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 74 -  FRANCESE - COREANA
+        $restaurant74 = Restaurant::create([
+            'name' => 'Coq au vin-Jeyuk',
+            'image' => '/restaurant/74.jpg',
+            'address' => 'Contrada Montrone, 16',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 2.99,
+            'user_id' => $user74->id,
+        ]);
+        
+        $restaurant74->types()->attach([9, 8]);
+
+         // USER 74 - FRANCESE - COREANA
+         $user74 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'gateau-korean@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 74 -  FRANCESE - COREANA
+        $restaurant74 = Restaurant::create([
+            'name' => 'Gâteau&Korean&Chicken',
+            'image' => '/restaurant/74.jpg',
+            'address' => 'Strada dei salti, 19',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 0.99,
+            'user_id' => $user74->id,
+        ]);
+        
+        $restaurant74->types()->attach([9, 8]);
+
+
+
 
 
         
