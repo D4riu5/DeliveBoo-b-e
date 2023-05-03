@@ -1562,8 +1562,8 @@ class UserSeeder extends Seeder
         
         $restaurant73->types()->attach([9, 8]);
 
-        // USER 73 - FRANCESE - COREANA
-        $user73 = User::create([
+        // USER 74 - FRANCESE - COREANA
+        $user74 = User::create([
             'name' => $faker->firstName(),
             'surname' => $faker->lastName(),
             'email' => 'cassoulet-kimchi@admin.com',
@@ -1571,20 +1571,20 @@ class UserSeeder extends Seeder
             'email_verified_at' => Carbon::now()->subYear(),
         ]);
 
-        // RESTAURANT 73 -  FRANCESE - COREANA
-        $restaurant73 = Restaurant::create([
+        // RESTAURANT 74 -  FRANCESE - COREANA
+        $restaurant74 = Restaurant::create([
             'name' => 'Cassoulet-Kimchi',
-            'image' => '/restaurant/73.jpg',
+            'image' => '/restaurant/74.jpg',
             'address' => 'Traversa Via Spada, 76',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
             'prezzo_spedizione' => 2.99,
-            'user_id' => $user73->id,
+            'user_id' => $user74->id,
         ]);
         
-        $restaurant73->types()->attach([9, 8]);
+        $restaurant74->types()->attach([9, 8]);
 
-        // USER 74 - FRANCESE - COREANA
-        $user74 = User::create([
+        // USER 75 - FRANCESE - COREANA
+        $user75 = User::create([
             'name' => $faker->firstName(),
             'surname' => $faker->lastName(),
             'email' => 'coqauvin-eopbap@admin.com',
@@ -1592,20 +1592,20 @@ class UserSeeder extends Seeder
             'email_verified_at' => Carbon::now()->subYear(),
         ]);
 
-        // RESTAURANT 74 -  FRANCESE - COREANA
-        $restaurant74 = Restaurant::create([
+        // RESTAURANT 75 -  FRANCESE - COREANA
+        $restaurant75 = Restaurant::create([
             'name' => 'Coq au vin-Jeyuk',
-            'image' => '/restaurant/74.jpg',
+            'image' => '/restaurant/75.jpg',
             'address' => 'Contrada Montrone, 16',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
             'prezzo_spedizione' => 2.99,
-            'user_id' => $user74->id,
+            'user_id' => $user75->id,
         ]);
         
-        $restaurant74->types()->attach([9, 8]);
+        $restaurant75->types()->attach([9, 8]);
 
-         // USER 74 - FRANCESE - COREANA
-         $user74 = User::create([
+         // USER 76 - FRANCESE - COREANA
+         $user76 = User::create([
             'name' => $faker->firstName(),
             'surname' => $faker->lastName(),
             'email' => 'gateau-korean@admin.com',
@@ -1613,17 +1613,17 @@ class UserSeeder extends Seeder
             'email_verified_at' => Carbon::now()->subYear(),
         ]);
 
-        // RESTAURANT 74 -  FRANCESE - COREANA
-        $restaurant74 = Restaurant::create([
+        // RESTAURANT 76 -  FRANCESE - COREANA
+        $restaurant76 = Restaurant::create([
             'name' => 'Gâteau&Korean&Chicken',
-            'image' => '/restaurant/74.jpg',
+            'image' => '/restaurant/76.jpg',
             'address' => 'Strada dei salti, 19',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
             'prezzo_spedizione' => 0.99,
-            'user_id' => $user74->id,
+            'user_id' => $user76->id,
         ]);
         
-        $restaurant74->types()->attach([9, 8]);
+        $restaurant76->types()->attach([9, 8]);
 
 
 
