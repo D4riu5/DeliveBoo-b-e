@@ -546,7 +546,7 @@ class UserSeeder extends Seeder
             'image' => '/restaurant/25.jpg',
             'address' => 'Via Filippo Argelati, 80',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
-            'prezzo_spedizione' => 0,
+            'prezzo_spedizione' => 0.79,
             'user_id' => $user25->id,
         ]);
         
@@ -735,7 +735,7 @@ class UserSeeder extends Seeder
             'image' => '/restaurant/34.jpg',
             'address' => 'Via Piero della Francesca, 5',
             'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
-            'prezzo_spedizione' => 0.89,
+            'prezzo_spedizione' => 1.89,
             'user_id' => $user34->id,
         ]);
         
@@ -803,6 +803,135 @@ class UserSeeder extends Seeder
         ]);
         
         $restaurant37->types()->attach([6]);
+
+        // USER 38 - ITALIANA -  (solo dolci)
+        $user38 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'PazziPerIDolci@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 38 - ITALIANA - CINESE (solo dolci)
+        $restaurant38 = Restaurant::create([
+            'name' => 'Pazzi per i dolci',
+            'image' => '/restaurant/38.jpg',
+            'address' => 'Piazza dei dolci, 9',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 1.99,
+            'user_id' => $user38->id,
+        ]);
+        
+        $restaurant38->types()->attach([1, 4]);
+
+        // USER 39 - MESSICANO - PERUVIANO
+        $user39 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'southCentralAmerica@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 39 - MESSICANO - PERUVIANO
+        $restaurant39 = Restaurant::create([
+            'name' => 'Center&South',
+            'image' => '/restaurant/39.jpg',
+            'address' => 'Via dei narcos, 19',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 3.99,
+            'user_id' => $user39->id,
+        ]);
+        
+        $restaurant39->types()->attach([2, 14]);
+
+        // USER 40 - ARABA - AMERICA
+        $user40 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'Arabasata@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 40 - ARABA - AMERICANA
+        $restaurant40 = Restaurant::create([
+            'name' => 'Arabasta',
+            'image' => '/restaurant/40.jpg',
+            'address' => 'Via dei pirati, 29',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 2.99,
+            'user_id' => $user40->id,
+        ]);
+        
+        $restaurant40->types()->attach([6, 7]);
+
+        // USER 41 - ITALIANA - CINESE
+        $user41 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'littleitaly@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 41 -  ITALIANA - CINESE
+        $restaurant41 = Restaurant::create([
+            'name' => 'Little Italy',
+            'image' => '/restaurant/41.jpg',
+            'address' => 'Via dei cinesi italiani, 39',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 0,
+            'user_id' => $user41->id,
+        ]);
+        
+        $restaurant41->types()->attach([1, 4]);
+
+         // USER 42 - AMERICANA - COREANA
+         $user42 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'koreusa@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 42 -  AMERICANA - COREANA
+        $restaurant42 = Restaurant::create([
+            'name' => 'Koreusa',
+            'image' => '/restaurant/42.jpg',
+            'address' => 'Via dei Jpop, 29',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 1.99,
+            'user_id' => $user42->id,
+        ]);
+        
+        $restaurant42->types()->attach([6, 8]);
+
+        // USER 43 - PERUVIANA - COREANA
+        $user43 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'coruviana@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 43 -  PERUVIANA - COREANA
+        $restaurant43 = Restaurant::create([
+            'name' => 'Coruviana',
+            'image' => '/restaurant/43.jpg',
+            'address' => 'Via del Sole, 19',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 0,
+            'user_id' => $user43->id,
+        ]);
+        
+        $restaurant43->types()->attach([14, 8]);
+
+
+
         
 
 
