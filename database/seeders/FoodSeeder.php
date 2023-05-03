@@ -1182,7 +1182,7 @@ class FoodSeeder extends Seeder
                 'spicy' => true,
                 'gluten_free' => false,
                 'kcal' => 650,
-                'restaurant_ids' => [3, 14, 37, 40, 42], //AMERICANA
+                'restaurant_ids' => [3, 14, 37, 40, 42, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 91, 92, 93, 94, 95, 96], //AMERICANA
             ],
             // PIATTO 54
             [
@@ -1195,7 +1195,7 @@ class FoodSeeder extends Seeder
                 'spicy' => true,
                 'gluten_free' => false,
                 'kcal' => 450,
-                'restaurant_ids' => [3, 14, 37, 40], //AMERICANA
+                'restaurant_ids' => [3, 14, 37, 40, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 91, 92, 93, 94, 95, 96], //AMERICANA
             ],
             // PIATTO 55
             [
@@ -1208,7 +1208,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => false,
                 'kcal' => 550,
-                'restaurant_ids' => [3, 14, 40, 42], //AMERICANA
+                'restaurant_ids' => [3, 14, 40, 42, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 91, 92, 93, 94, 95, 96], //AMERICANA
             ],
             // PIATTO 56
             [
@@ -1221,7 +1221,7 @@ class FoodSeeder extends Seeder
                 'spicy' => true,
                 'gluten_free' => false,
                 'kcal' => 580,
-                'restaurant_ids' => [3, 14, 37, 40], //AMERICANA
+                'restaurant_ids' => [3, 14, 37, 40, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 91, 92, 93, 94, 95, 96], //AMERICANA
             ],
             // PIATTO 57
             [
@@ -1234,7 +1234,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => true,
                 'kcal' => 850,
-                'restaurant_ids' => [3, 14, 40, 42], //AMERICANA
+                'restaurant_ids' => [3, 14, 40, 42, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96], //AMERICANA
             ],
             // PIATTO 58
             [
@@ -1247,7 +1247,7 @@ class FoodSeeder extends Seeder
                 'spicy' => true,
                 'gluten_free' => false,
                 'kcal' => 950,
-                'restaurant_ids' => [3, 14, 37, 40], //AMERICANA
+                'restaurant_ids' => [3, 14, 37, 40, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96], //AMERICANA
             ],
             // PIATTO 59
             [
@@ -1260,7 +1260,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => true,
                 'kcal' => 1200,
-                'restaurant_ids' => [3, 14, 37, 40, 42], //AMERICANA
+                'restaurant_ids' => [3, 14, 37, 40, 42, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96], //AMERICANA
             ],
             // PIATTO 60
             [
@@ -1273,7 +1273,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => false,
                 'kcal' => 400,
-                'restaurant_ids' => [3, 14, 37, 38, 40], //AMERICANA
+                'restaurant_ids' => [3, 14, 37, 38, 40, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96], //AMERICANA
             ],
             // PIATTO 61
             [
@@ -1286,7 +1286,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => false,
                 'kcal' => 200,
-                'restaurant_ids' => [3, 14, 38, 40, 42], //AMERICANA
+                'restaurant_ids' => [3, 14, 38, 40, 42, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96], //AMERICANA
             ],
             // PIATTO 62
             [
@@ -1299,7 +1299,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => true,
                 'kcal' => 140,
-                'restaurant_ids' => [3, 14, 37, 39, 40], //AMERICANA
+                'restaurant_ids' => [3, 14, 37, 39, 40, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96], //AMERICANA
             ],
             // PIATTO 63
             [
@@ -1312,7 +1312,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => true,
                 'kcal' => 90,
-                'restaurant_ids' => [3, 14, 37, 39, 40, 42] //AMERICANA
+                'restaurant_ids' => [3, 14, 37, 39, 40, 42, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 91, 92, 93, 94, 95, 96] //AMERICANA
             ],
             // --------------CUCINA AMERICANA FINE------------------------------
 
@@ -1328,7 +1328,7 @@ class FoodSeeder extends Seeder
                 'spicy' => true,
                 'gluten_free' => true,
                 'kcal' => 250,
-                'restaurant_ids' => [15, 16, 40], //ARABA
+                'restaurant_ids' => [15, 16, 40, 44, 45], //ARABA
             ],
             // PIATTO 65
             [
@@ -1341,7 +1341,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => true,
                 'kcal' => 175,
-                'restaurant_ids' => [15, 16, 40], //ARABA
+                'restaurant_ids' => [15, 16, 40, 44, 45], //ARABA
             ],
             // PIATTO 66
             [
@@ -1354,7 +1354,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => true,
                 'kcal' => 500,
-                'restaurant_ids' => [15, 16, 40], //ARABA
+                'restaurant_ids' => [15, 16, 40, 44, 45], //ARABA]
             ],
             // PIATTO 67
             [
@@ -1367,7 +1367,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => true,
                 'kcal' => 250,
-                'restaurant_ids' => [15, 16, 40], //ARABA
+                'restaurant_ids' => [15, 16, 40, 44, 45], //ARABA
             ],
             // PIATTO 68
             [
@@ -1380,7 +1380,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => true,
                 'kcal' => 400,
-                'restaurant_ids' => [15, 16, 40], //ARABA
+                'restaurant_ids' => [15, 16, 40, 44, 45], //ARABA
             ],
             // PIATTO 69
             [
@@ -1393,7 +1393,7 @@ class FoodSeeder extends Seeder
                 'spicy' => true,
                 'gluten_free' => false,
                 'kcal' => 550,
-                'restaurant_ids' => [15, 16, 40], //ARABA
+                'restaurant_ids' => [15, 16, 40, 44, 45], //ARABA
             ],
             // PIATTO 70
             [
@@ -1406,7 +1406,7 @@ class FoodSeeder extends Seeder
                 'spicy' => true,
                 'gluten_free' => true,
                 'kcal' => 450,
-                'restaurant_ids' => [15, 16, 40], //ARABA
+                'restaurant_ids' => [15, 16, 40, 44, 45], //ARABA
             ],
             // PIATTO 71
             [
@@ -1419,7 +1419,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => false,
                 'kcal' => 250,
-                'restaurant_ids' => [15, 16, 38, 40], //ARABA
+                'restaurant_ids' => [15, 16, 38, 40, 44, 45], //ARABA
             ],
             // PIATTO 72
             [
@@ -1432,7 +1432,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => false,
                 'kcal' => 400,
-                'restaurant_ids' => [15, 16, 38, 40], //ARABA
+                'restaurant_ids' => [15, 16, 38, 40, 44, 45], //ARABA
             ],
             // PIATTO 73
             [
@@ -1445,7 +1445,7 @@ class FoodSeeder extends Seeder
                 'spicy' => true,
                 'gluten_free' => true,
                 'kcal' => 160,
-                'restaurant_ids' => [15, 16, 40], //ARABA
+                'restaurant_ids' => [15, 16, 40, 44, 45], //ARABA
             ],
             // PIATTO 74
             [
@@ -1458,7 +1458,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => true,
                 'kcal' => 150,
-                'restaurant_ids' => [15, 16, 40], //ARABA
+                'restaurant_ids' => [15, 16, 40, 44, 45], //ARABA
             ],
             // --------------CUCINA ARABA FINE------------------------------
 
@@ -1474,7 +1474,7 @@ class FoodSeeder extends Seeder
                 'spicy' => true,
                 'gluten_free' => true,
                 'kcal' => 50,
-                'restaurant_ids' => [17, 18, 42, 43], //COREANA
+                'restaurant_ids' => [17, 18, 42, 43, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69 ,70, 71, 72, 73, 74, 75, 76], //COREANA
             ],
             // PIATTO 76
             [
@@ -1487,7 +1487,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => false,
                 'kcal' => 150,
-                'restaurant_ids' => [17, 18, 42, 43], //COREANA
+                'restaurant_ids' => [17, 18, 42, 43, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69 ,70, 71, 72, 73, 74, 75, 76], //COREANA
             ],
             // PIATTO 77
             [
@@ -1500,7 +1500,7 @@ class FoodSeeder extends Seeder
                 'spicy' => true,
                 'gluten_free' => true,
                 'kcal' => 450,
-                'restaurant_ids' => [17, 18, 42, 43], //COREANA
+                'restaurant_ids' => [17, 18, 42, 43, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69 ,70, 71, 72, 73, 74, 75, 76], //COREANA
             ],
             // PIATTO 78
             [
@@ -1513,7 +1513,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => true,
                 'kcal' => 350,
-                'restaurant_ids' => [17, 18, 42, 43], //COREANA
+                'restaurant_ids' => [17, 18, 42, 43, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69 ,70, 71, 72, 73, 74, 75, 76], //COREANA
             ],
             // PIATTO 79
             [
@@ -1526,7 +1526,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => true,
                 'kcal' => 450,
-                'restaurant_ids' => [17, 18, 42, 43], //COREANA
+                'restaurant_ids' => [17, 18, 42, 43, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69 ,70, 71, 72, 73, 74, 75, 76], //COREANA
             ],
             // PIATTO 80
             [
@@ -1539,7 +1539,7 @@ class FoodSeeder extends Seeder
                 'spicy' => true,
                 'gluten_free' => true,
                 'kcal' => 550,
-                'restaurant_ids' => [17, 18, 42, 43], //COREANA
+                'restaurant_ids' => [17, 18, 42, 43, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69 ,70, 71, 72, 73, 74, 75, 76], //COREANA
             ],
             // PIATTO 81
             [
@@ -1552,7 +1552,7 @@ class FoodSeeder extends Seeder
                 'spicy' => true,
                 'gluten_free' => true,
                 'kcal' => 250,
-                'restaurant_ids' => [17, 18, 42, 43], //COREANA
+                'restaurant_ids' => [17, 18, 42, 43, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69 ,70, 71, 72, 73, 74, 75, 76], //COREANA
             ],
             // PIATTO 82
             [
@@ -1565,7 +1565,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => true,
                 'kcal' => 400,
-                'restaurant_ids' => [17, 18, 38, 42, 43], //COREANA
+                'restaurant_ids' => [17, 18, 38, 42, 43, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69 ,70, 71, 72, 73, 74, 75, 76], //COREANA
             ],
             // PIATTO 83
             [
@@ -1578,7 +1578,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => false,
                 'kcal' => 300,
-                'restaurant_ids' => [17, 18, 38, 42, 43], //COREANA
+                'restaurant_ids' => [17, 18, 38, 42, 43, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69 ,70, 71, 72, 73, 74, 75, 76], //COREANA
             ],
             // PIATTO 84
             [
@@ -1591,7 +1591,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => true,
                 'kcal' => 150,
-                'restaurant_ids' => [17, 18, 42, 43], //COREANA
+                'restaurant_ids' => [17, 18, 42, 43, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69 ,70, 71, 72, 73, 74, 75, 76], //COREANA
             ],
             // PIATTO 85
             [
@@ -1604,7 +1604,137 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => false,
                 'kcal' => 50,
-                'restaurant_ids' => [17, 18, 42, 43], //COREANA
+                'restaurant_ids' => [17, 18, 42, 43, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69 ,70, 71, 72, 73, 74, 75, 76], //COREANA
+            ],
+            // PIATTO 182
+            [
+                'name' => 'Mandu',
+                'image' => '/food/183.jpg',
+                'description' => 'Ravioli coreani ripieni di carne e verdure',
+                'price' => 9.00,
+                'course' => 'Antipasto',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 350,
+                'restaurant_ids' => [17, 18, 42, 43, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69 ,70, 71, 72, 73, 74, 75, 76], //COREANA
+            ],
+            // PIATTO 183  
+            [
+                'name' => 'Tteokbokki',
+                'image' => '/food/184.jpg',
+                'description' => 'Spiedini di riso piccanti con pollo e verdure',
+                'price' => 7.00,
+                'course' => 'Antipasto',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => true,
+                'kcal' => 280,
+                'restaurant_ids' => [17, 18, 42, 43, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69 ,70, 71, 72, 73, 74, 75, 76], //COREANA
+            ],
+            // PIATTO 184  
+            [
+                'name' => 'Pajeon',
+                'image' => '/food/185.jpg',
+                'description' => 'Pancake di cipolle e frutti di mare',
+                'price' => 10.50,
+                'course' => 'Antipasto',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 400,
+                'restaurant_ids' => [17, 18, 42, 43, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69 ,70, 71, 72, 73, 74, 75, 76], //COREANA
+            ],
+            // PIATTO 185 
+            [
+                'name' => 'Jjajangmyeon',
+                'image' => '/food/186.jpg',
+                'description' => 'Noodles di grano con salsa di fagioli neri e verdure',
+                'price' => 11.50,
+                'course' => 'Primo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 600,
+                'restaurant_ids' => [17, 18, 42, 43, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69 ,70, 71, 72, 73, 74, 75, 76], //COREANA
+            ],
+            // PIATTO 186   
+            [
+                'name' => 'Naengmyeon',
+                'image' => '/food/187.jpg',
+                'description' => 'Noodles di grano freddi con salsa di mostarda e verdure',
+                'price' => 13.00,
+                'course' => 'Primo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 350,
+                'restaurant_ids' => [17, 18, 42, 43, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69 ,70, 71, 72, 73, 74, 75, 76], //COREANA
+            ],
+            // PIATTO 187
+            [
+                'name' => 'Haemul pajeon',
+                'image' => '/food/188.jpg',
+                'description' => 'Frittella di frutti di mare e cipolle verdi',
+                'price' => 14.50,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 450,
+                'restaurant_ids' => [17, 18, 42, 43, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69 ,70, 71, 72, 73, 74, 75, 76] //COREANA
+            ],
+            // PIATTO 188
+            [
+                'name' => 'Samgyeopsal',
+                'image' => '/food/189.jpg',
+                'description' => 'Fette di pancetta di maiale grigliate e avvolte in foglie di lattuga',
+                'price' => 16.00,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 650,
+                'restaurant_ids' => [17, 18, 42, 43, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69 ,70, 71, 72, 73, 74], //COREANA
+            ],
+            // PIATTO 189
+            [
+                'name' => 'Yakgwa',
+                'image' => '/food/190.jpg',
+                'description' => 'Biscotti di miele e olio, aromatizzati alla cannella e al ginseng',
+                'price' => 7.50,
+                'course' => 'Dolce',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 150,
+                'restaurant_ids' => [17, 18, 42, 43, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69 ,70, 71, 72, 73, 74, 75, 76], //COREANA
+            ],
+            // PIATTO 190
+            [
+                'name' => 'Gyeongdan',
+                'image' => '/food/191.jpg',
+                'description' => 'Palline di riso ripiene di pasta di fagioli dolci',
+                'price' => 6.50,
+                'course' => 'Dolce',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 200,
+                'restaurant_ids' => [17, 18, 42, 43, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69 ,70, 71, 72, 73, 74, 75, 76], //COREANA
+            ],
+            // PIATTO 191
+            [
+                'name' => 'Songpyeon',
+                'image' => '/food/192.jpg',
+                'description' => 'Dumplings di riso ripieni di miele, semi di sesamo e pasta di fagioli',
+                'price' => 9.00,
+                'course' => 'Dolce',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 180,
+                'restaurant_ids' => [17, 18, 42, 43, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69 ,70, 71, 72, 73, 74, 75, 76], //COREANA
             ],
             // --------------CUCINA COREANA FINE------------------------------
 
@@ -1620,7 +1750,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => false,
                 'kcal' => 200,
-                'restaurant_ids' => [19, 20], //FRANCESE
+                'restaurant_ids' => [19, 20, 44, 45, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69 ,70, 71, 72, 73, 74, 75, 76], //FRANCESE
             ],
             // PIATTO 87
             [
@@ -1633,7 +1763,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => false,
                 'kcal' => 350,
-                'restaurant_ids' => [19, 20], //FRANCESE
+                'restaurant_ids' => [19, 20, 44, 45, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69 ,70, 71, 72, 73, 74, 75, 76], //FRANCESE
             ],
             // PIATTO 88
             [
@@ -1646,7 +1776,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => false,
                 'kcal' => 550,
-                'restaurant_ids' => [19, 20], //FRANCESE
+                'restaurant_ids' => [19, 20, 44, 45, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69 ,70, 71, 72, 73, 74, 75, 76], //FRANCESE
             ],
             // PIATTO 89
             [
@@ -1659,7 +1789,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => false,
                 'kcal' => 250,
-                'restaurant_ids' => [19, 20], //FRANCESE
+                'restaurant_ids' => [19, 20, 44, 45, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69 ,70, 71, 72, 73, 74, 75, 76], //FRANCESE
             ],
             // PIATTO 90
             [
@@ -1672,7 +1802,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => true,
                 'kcal' => 320,
-                'restaurant_ids' => [19, 20], //FRANCESE
+                'restaurant_ids' => [19, 20, 44, 45, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69 ,70, 71, 72, 73, 74, 75, 76], //FRANCESE
             ],
             // PIATTO 91
             [
@@ -1685,7 +1815,7 @@ class FoodSeeder extends Seeder
                 'spicy' => true,
                 'gluten_free' => true,
                 'kcal' => 400,
-                'restaurant_ids' => [19, 20], //FRANCESE
+                'restaurant_ids' => [19, 20, 44, 45, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69 ,70, 71, 72, 73, 74, 75, 76], //FRANCESE
             ],
             // PIATTO 92
             [
@@ -1698,7 +1828,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => false,
                 'kcal' => 450,
-                'restaurant_ids' => [19, 20], //FRANCESE
+                'restaurant_ids' => [19, 20, 44, 45, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69 ,70, 71, 72, 73, 74, 75, 76], //FRANCESE
             ],
             // PIATTO 93
             [
@@ -1711,7 +1841,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => true,
                 'kcal' => 80,
-                'restaurant_ids' => [19, 20, 38], //FRANCESE
+                'restaurant_ids' => [19, 20, 38, 44, 45, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69 ,70, 71, 72, 73, 74, 75, 76], //FRANCESE
             ],
             // PIATTO 94
             [
@@ -1724,7 +1854,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => false,
                 'kcal' => 320,
-                'restaurant_ids' => [19, 20], //FRANCESE
+                'restaurant_ids' => [19, 20, 44, 45, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69 ,70, 71, 72, 73, 74, 75, 76], //FRANCESE
             ],
             // PIATTO 95
             [
@@ -1737,7 +1867,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => true,
                 'kcal' => 123,
-                'restaurant_ids' => [19, 20, 39], //FRANCESE
+                'restaurant_ids' => [19, 20, 39, 44, 45, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69 ,70, 71, 72, 73, 74, 75, 76], //FRANCESE
             ],
             // PIATTO 96
             [
@@ -1750,7 +1880,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => true,
                 'kcal' => 128,
-                'restaurant_ids' => [19, 20], //FRANCESE
+                'restaurant_ids' => [19, 20, 44, 45, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69 ,70, 71, 72, 73, 74, 75, 76], //FRANCESE
             ],
             // --------------CUCINA FRANCESE FINE------------------------------
 
@@ -1766,7 +1896,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => true,
                 'kcal' => 100,
-                'restaurant_ids' => [21, 22], //GRECA
+                'restaurant_ids' => [21, 22, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55], //GRECA
             ],
             // PIATTO 98
             [
@@ -1779,7 +1909,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => true,
                 'kcal' => 150,
-                'restaurant_ids' => [21, 22], //GRECA
+                'restaurant_ids' => [21, 22, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55], //GRECA
             ],
             // PIATTO 99
             [
@@ -1792,7 +1922,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => false,
                 'kcal' => 480,
-                'restaurant_ids' => [21, 22], //GRECA
+                'restaurant_ids' => [21, 22,  46, 47, 48, 49, 50, 51, 52, 53, 54, 55], //GRECA
             ],
             // PIATTO 100
             [
@@ -1805,7 +1935,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => false,
                 'kcal' => 350,
-                'restaurant_ids' => [21, 22], //GRECA
+                'restaurant_ids' => [21, 22,  46, 47, 48,  49, 50, 51, 52, 53, 54, 55], //GRECA]
             ],
             // PIATTO 101
             [
@@ -1818,7 +1948,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => true,
                 'kcal' => 350,
-                'restaurant_ids' => [21, 22], //GRECA
+                'restaurant_ids' => [21, 22, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55], //GRECA
             ],
             // PIATTO 102
             [
@@ -1831,7 +1961,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => false,
                 'kcal' => 280,
-                'restaurant_ids' => [21, 22], //GRECA
+                'restaurant_ids' => [21, 22,  46, 47, 48, 49, 50, 51, 52, 53, 54, 55], //GRECA]
             ],
             // PIATTO 103
             [
@@ -1844,7 +1974,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => false,
                 'kcal' => 350,
-                'restaurant_ids' => [21, 22], //GRECA
+                'restaurant_ids' => [21, 22, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55], //GRECA
             ],
             // PIATTO 104
             [
@@ -1857,7 +1987,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => false,
                 'kcal' => 300,
-                'restaurant_ids' => [21, 22, 38], //GRECA
+                'restaurant_ids' => [21, 22, 38, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55], //GRECA
             ],
             // PIATTO 105
             [
@@ -1870,7 +2000,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => false,
                 'kcal' => 450,
-                'restaurant_ids' => [21, 22], //GRECA
+                'restaurant_ids' => [21, 22, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55], //GRECA
             ],
             // PIATTO 106
             [
@@ -1883,7 +2013,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => true,
                 'kcal' => 120,
-                'restaurant_ids' => [21, 22], //GRECA
+                'restaurant_ids' => [21, 22, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55], //GRECA
             ],
             // PIATTO 107
             [
@@ -1896,7 +2026,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => true,
                 'kcal' => 100,
-                'restaurant_ids' => [21, 22], //GRECA
+                'restaurant_ids' => [21, 22, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55], //GRECA
             ],
             // --------------CUCINA GRECA FINE------------------------------
 
@@ -1993,7 +2123,7 @@ class FoodSeeder extends Seeder
                 'spicy' => true,
                 'gluten_free' => false,
                 'kcal' => 250,
-                'restaurant_ids' => [24, 25, 30], //INDIANA
+                'restaurant_ids' => [24, 25, 30, 46, 47, 48, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96], //INDIANA
             ],
             // PIATTO 115
             [
@@ -2006,7 +2136,7 @@ class FoodSeeder extends Seeder
                 'spicy' => true,
                 'gluten_free' => true,
                 'kcal' => 300,
-                'restaurant_ids' => [24, 25, 30], //INDIANA
+                'restaurant_ids' => [24, 25, 30, 46, 47, 48, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96], //INDIANA
             ],
             // PIATTO 116
             [
@@ -2019,7 +2149,7 @@ class FoodSeeder extends Seeder
                 'spicy' => true,
                 'gluten_free' => true,
                 'kcal' => 450,
-                'restaurant_ids' => [24, 25, 30], //INDIANA
+                'restaurant_ids' => [24, 25, 30, 46, 47, 48, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96], //INDIANA
             ],
             // PIATTO 117
             [
@@ -2032,7 +2162,7 @@ class FoodSeeder extends Seeder
                 'spicy' => true,
                 'gluten_free' => false,
                 'kcal' => 550,
-                'restaurant_ids' => [24, 25, 30], //INDIANA
+                'restaurant_ids' => [24, 25, 30, 46, 47, 48, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96], //INDIANA
             ],
             // PIATTO 118
             [
@@ -2045,7 +2175,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => true,
                 'kcal' => 350,
-                'restaurant_ids' => [24, 25, 30], //INDIANA
+                'restaurant_ids' => [24, 25, 30, 46, 47, 48, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96], //INDIANA
             ],
             // PIATTO 119
             [
@@ -2058,7 +2188,7 @@ class FoodSeeder extends Seeder
                 'spicy' => true,
                 'gluten_free' => false,
                 'kcal' => 550,
-                'restaurant_ids' => [24, 25, 30], //INDIANA
+                'restaurant_ids' => [24, 25, 30, 46, 47, 48, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96], //INDIANA
             ],
             // PIATTO 120
             [
@@ -2071,7 +2201,7 @@ class FoodSeeder extends Seeder
                 'spicy' => true,
                 'gluten_free' => false,
                 'kcal' => 400,
-                'restaurant_ids' => [24, 25, 30], //INDIANA
+                'restaurant_ids' => [24, 25, 30, 46, 47, 48, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96], //INDIANA
             ],
             // PIATTO 121
             [
@@ -2084,7 +2214,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => false,
                 'kcal' => 400,
-                'restaurant_ids' => [24, 25, 30, 38], //INDIANA
+                'restaurant_ids' => [24, 25, 30, 38, 46, 47, 48, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96], //INDIANA
             ],
             // PIATTO 122
             [
@@ -2097,7 +2227,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => true,
                 'kcal' => 300,
-                'restaurant_ids' => [24, 25, 30], //INDIANA
+                'restaurant_ids' => [24, 25, 30, 46, 47, 48, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96], //INDIANA
             ],
             // PIATTO 123
             [
@@ -2110,7 +2240,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => true,
                 'kcal' => 150,
-                'restaurant_ids' => [24, 25, 30], //INDIANA
+                'restaurant_ids' => [24, 25, 30, 46, 47, 48, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 91, 92, 93, 94, 95, 96], //INDIANA
             ],
             // PIATTO 124
             [
@@ -2123,7 +2253,7 @@ class FoodSeeder extends Seeder
                 'spicy' => true,
                 'gluten_free' => true,
                 'kcal' => 90,
-                'restaurant_ids' => [24, 25, 30], //INDIANA
+                'restaurant_ids' => [24, 25, 30, 46, 47, 48, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 91, 92, 93, 94, 95, 96], //INDIANA
             ],
             // --------------CUCINA INDIANA FINE------------------------------
 
@@ -2139,7 +2269,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => false,
                 'kcal' => 690,
-                'restaurant_ids' => [15, 26, 27], //KEBAB
+                'restaurant_ids' => [15, 26, 27, 49, 50, 51, 52, 53, 54, 55], //KEBAB
             ],
             // CUCINA 126
             [
@@ -2152,7 +2282,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => true,
                 'kcal' => 580,
-                'restaurant_ids' => [15, 26, 27], //KEBAB
+                'restaurant_ids' => [15, 26, 27, 49, 50, 51, 52, 53, 54, 55], //KEBAB
 
             ],
             // CUCINA 127
@@ -2166,7 +2296,7 @@ class FoodSeeder extends Seeder
                 'spicy' => true,
                 'gluten_free' => false,
                 'kcal' => 720,
-                'restaurant_ids' => [15, 26, 27], //KEBAB
+                'restaurant_ids' => [15, 26, 27, 49, 50, 51, 52, 53, 54, 55], //KEBAB
             ],
             // CUCINA 128
             [
@@ -2179,7 +2309,7 @@ class FoodSeeder extends Seeder
                 'spicy' => true,
                 'gluten_free' => true,
                 'kcal' => 530,
-                'restaurant_ids' => [15, 26, 27], //KEBAB
+                'restaurant_ids' => [15, 26, 27, 49, 50, 51, 52, 53, 54, 55], //KEBAB
             ],
             // CUCINA 129
             [
@@ -2192,7 +2322,7 @@ class FoodSeeder extends Seeder
                 'spicy' => false,
                 'gluten_free' => true,
                 'kcal' => 800,
-                'restaurant_ids' => [15, 26, 27], //KEBAB
+                'restaurant_ids' => [15, 26, 27, 49, 50, 51, 52, 53, 54, 55], //KEBAB
             ],
             // CUCINA 130
             [
@@ -2205,7 +2335,7 @@ class FoodSeeder extends Seeder
                 'spicy' => true,
                 'gluten_free' => false,
                 'kcal' => 620,
-                'restaurant_ids' => [15, 26, 27], //KEBAB
+                'restaurant_ids' => [15, 26, 27, 49, 50, 51, 52, 53, 54, 55], //KEBAB
             ],
             // --------------KEBAB FINE------------------------------
 
