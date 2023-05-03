@@ -1606,6 +1606,136 @@ class FoodSeeder extends Seeder
                 'kcal' => 50,
                 'restaurant_ids' => [17, 18, 42, 43], //COREANA
             ],
+            // PIATTO 182
+            [
+                'name' => 'Mandu',
+                'image' => '/food/183.jpg',
+                'description' => 'Ravioli coreani ripieni di carne e verdure',
+                'price' => 9.00,
+                'course' => 'Antipasto',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 350,
+                'restaurant_ids' => [17, 18, 42, 43], //COREANA
+            ],
+            // PIATTO 183  
+            [
+                'name' => 'Tteokbokki',
+                'image' => '/food/184.jpg',
+                'description' => 'Spiedini di riso piccanti con pollo e verdure',
+                'price' => 7.00,
+                'course' => 'Antipasto',
+                'is_available' => true,
+                'spicy' => true,
+                'gluten_free' => true,
+                'kcal' => 280,
+                'restaurant_ids' => [17, 18, 42, 43], //COREANA
+            ],
+            // PIATTO 184  
+            [
+                'name' => 'Pajeon',
+                'image' => '/food/185.jpg',
+                'description' => 'Pancake di cipolle e frutti di mare',
+                'price' => 10.50,
+                'course' => 'Antipasto',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 400,
+                'restaurant_ids' => [17, 18, 42, 43], //COREANA
+            ],
+            // PIATTO 185 
+            [
+                'name' => 'Jjajangmyeon',
+                'image' => '/food/186.jpg',
+                'description' => 'Noodles di grano con salsa di fagioli neri e verdure',
+                'price' => 11.50,
+                'course' => 'Primo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 600,
+                'restaurant_ids' => [17, 18, 42, 43], //COREANA
+            ],
+            // PIATTO 186   
+            [
+                'name' => 'Naengmyeon',
+                'image' => '/food/187.jpg',
+                'description' => 'Noodles di grano freddi con salsa di mostarda e verdure',
+                'price' => 13.00,
+                'course' => 'Primo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 350,
+                'restaurant_ids' => [17, 18, 42, 43], //COREANA
+            ],
+            // PIATTO 187
+            [
+                'name' => 'Haemul pajeon',
+                'image' => '/food/188.jpg',
+                'description' => 'Frittella di frutti di mare e cipolle verdi',
+                'price' => 14.50,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 450,
+                'restaurant_ids' => [17, 18, 42, 43], //COREANA
+            ],
+            // PIATTO 188
+            [
+                'name' => 'Samgyeopsal',
+                'image' => '/food/189.jpg',
+                'description' => 'Fette di pancetta di maiale grigliate e avvolte in foglie di lattuga',
+                'price' => 16.00,
+                'course' => 'Secondo',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 650,
+                'restaurant_ids' => [17, 18, 42, 43], //COREANA
+            ],
+            // PIATTO 189
+            [
+                'name' => 'Yakgwa',
+                'image' => '/food/190.jpg',
+                'description' => 'Biscotti di miele e olio, aromatizzati alla cannella e al ginseng',
+                'price' => 7.50,
+                'course' => 'Dolce',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => false,
+                'kcal' => 150,
+                'restaurant_ids' => [17, 18, 42, 43], //COREANA
+            ],
+            // PIATTO 190
+            [
+                'name' => 'Gyeongdan',
+                'image' => '/food/191.jpg',
+                'description' => 'Palline di riso ripiene di pasta di fagioli dolci',
+                'price' => 6.50,
+                'course' => 'Dolce',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 200,
+                'restaurant_ids' => [17, 18, 42, 43], //COREANA
+            ],
+            // PIATTO 191
+            [
+                'name' => 'Songpyeon',
+                'image' => '/food/192.jpg',
+                'description' => 'Dumplings di riso ripieni di miele, semi di sesamo e pasta di fagioli',
+                'price' => 9.00,
+                'course' => 'Dolce',
+                'is_available' => true,
+                'spicy' => false,
+                'gluten_free' => true,
+                'kcal' => 180,
+                'restaurant_ids' => [17, 18, 42, 43], //COREANA
+            ],
             // --------------CUCINA COREANA FINE------------------------------
 
             // --------------CUCINA FRANCESE 86 - 96 - TYPE 9-------------
