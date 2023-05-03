@@ -44,7 +44,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 2.99,
             'user_id' => $user1->id,
         ]);
-        
+
         $restaurant1->types()->attach([1, 2]);
 
         // USER 2
@@ -65,14 +65,14 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 1.99,
             'user_id' => $user2->id,
         ]);
-        
+
         $restaurant2->types()->attach([1, 5]);
 
         // USER 3
         $user3 = User::create([
             'name' => $faker->firstName(),
             'surname' => $faker->lastName(),
-            'email' =>'ilmulino@admin.com',
+            'email' => 'ilmulino@admin.com',
             'password' => bcrypt('password'),
             'email_verified_at' => Carbon::now()->subYear(),
         ]);
@@ -93,11 +93,11 @@ class UserSeeder extends Seeder
         $user4 = User::create([
             'name' => $faker->firstName(),
             'surname' => $faker->lastName(),
-            'email' =>'osteriamorini@admin.com',
+            'email' => 'osteriamorini@admin.com',
             'password' => bcrypt('password'),
             'email_verified_at' => Carbon::now()->subYear(),
         ]);
-        
+
         // RESTAURANT 4 - ITALIANO
         $restaurant4 = Restaurant::create([
             'name' => 'Osteria Morini',
@@ -107,7 +107,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 0,
             'user_id' => $user4->id,
         ]);
-        
+
         $restaurant4->types()->attach([1]);
 
         // USER 5
@@ -128,7 +128,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 3.99,
             'user_id' => $user5->id,
         ]);
-        
+
         $restaurant5->types()->attach([2]);
 
         // USER 6
@@ -149,7 +149,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 0,
             'user_id' => $user6->id,
         ]);
-        
+
         $restaurant6->types()->attach([2]);
 
         // USER 7
@@ -170,7 +170,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 1.99,
             'user_id' => $user7->id,
         ]);
-        
+
         $restaurant7->types()->attach([2, 11]);
 
         // USER 8
@@ -191,7 +191,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 2.99,
             'user_id' => $user8->id,
         ]);
-        
+
         $restaurant8->types()->attach([2, 5]);
 
         // USER 9
@@ -212,7 +212,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 2.89,
             'user_id' => $user9->id,
         ]);
-        
+
         $restaurant9->types()->attach([3]);
 
         // USER 10
@@ -223,7 +223,7 @@ class UserSeeder extends Seeder
             'password' => bcrypt('password'),
             'email_verified_at' => Carbon::now()->subYear(),
         ]);
-        
+
         // RESTAURANT 10 - GIAPPONESE
         $restaurant10 = Restaurant::create([
             'name' => 'Katsuya',
@@ -233,7 +233,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 0,
             'user_id' => $user10->id,
         ]);
-                
+
         $restaurant10->types()->attach([3]);
 
         // USER 11
@@ -254,7 +254,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 0.49,
             'user_id' => $user11->id,
         ]);
-        
+
         $restaurant11->types()->attach([3, 4]);
 
         // USER 12
@@ -275,7 +275,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 1.79,
             'user_id' => $user12->id,
         ]);
-        
+
         $restaurant12->types()->attach([4]);
 
         // USER 13
@@ -296,7 +296,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 0,
             'user_id' => $user13->id,
         ]);
-        
+
         $restaurant13->types()->attach([4, 14]);
 
         // USER 14
@@ -317,7 +317,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 1,
             'user_id' => $user14->id,
         ]);
-        
+
         $restaurant14->types()->attach([6, 11]);
 
         // USER 15
@@ -338,7 +338,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 0,
             'user_id' => $user15->id,
         ]);
-        
+
         $restaurant15->types()->attach([7, 13]);
 
         // USER 16
@@ -359,7 +359,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 0,
             'user_id' => $user16->id,
         ]);
-        
+
         $restaurant16->types()->attach([7]);
 
         // USER 17
@@ -380,7 +380,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 3.99,
             'user_id' => $user17->id,
         ]);
-        
+
         $restaurant17->types()->attach([8, 4]);
 
         // USER 18
@@ -401,7 +401,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 1.59,
             'user_id' => $user18->id,
         ]);
-        
+
         $restaurant18->types()->attach([8]);
 
         // USER 19
@@ -422,7 +422,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 4.99,
             'user_id' => $user19->id,
         ]);
-        
+
         $restaurant19->types()->attach([9]);
 
         // USER 20
@@ -443,7 +443,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 0,
             'user_id' => $user20->id,
         ]);
-        
+
         $restaurant20->types()->attach([9]);
 
         // USER 21
@@ -464,7 +464,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 2.99,
             'user_id' => $user21->id,
         ]);
-        
+
         $restaurant21->types()->attach([10, 5]);
 
         // USER 22
@@ -485,7 +485,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 2.49,
             'user_id' => $user22->id,
         ]);
-        
+
         $restaurant22->types()->attach([5, 10]);
 
         // USER 23
@@ -496,7 +496,7 @@ class UserSeeder extends Seeder
             'password' => bcrypt('password'),
             'email_verified_at' => Carbon::now()->subYear(),
         ]);
-        
+
         // RESTAURANT 23 - HAMBURGER
         $restaurant23 = Restaurant::create([
             'name' => 'Chompies Burgers',
@@ -506,9 +506,9 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 1.49,
             'user_id' => $user23->id,
         ]);
-                
+
         $restaurant23->types()->attach([11]);
-        
+
 
         // USER 24
         $user24 = User::create([
@@ -528,9 +528,9 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 0.89,
             'user_id' => $user24->id,
         ]);
-        
+
         $restaurant24->types()->attach([12]);
-        
+
         // USER 25
         $user25 = User::create([
             'name' => $faker->firstName(),
@@ -549,7 +549,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 0.79,
             'user_id' => $user25->id,
         ]);
-        
+
         $restaurant25->types()->attach([12]);
 
         // USER 26
@@ -570,7 +570,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 1.79,
             'user_id' => $user26->id,
         ]);
-        
+
         $restaurant26->types()->attach([13]);
 
         // USER 27
@@ -591,7 +591,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 1.99,
             'user_id' => $user27->id,
         ]);
-        
+
         $restaurant27->types()->attach([13]);
 
         // USER 28
@@ -612,7 +612,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 2.99,
             'user_id' => $user28->id,
         ]);
-        
+
         $restaurant28->types()->attach([14]);
 
         // USER 29
@@ -633,7 +633,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 1.99,
             'user_id' => $user29->id,
         ]);
-        
+
         $restaurant29->types()->attach([14]);
 
         // USER 30
@@ -654,7 +654,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 2.99,
             'user_id' => $user30->id,
         ]);
-        
+
         $restaurant30->types()->attach([12, 5]);
 
         // USER 31
@@ -675,7 +675,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 0.89,
             'user_id' => $user31->id,
         ]);
-        
+
         $restaurant31->types()->attach([5]);
 
         // USER 32
@@ -696,7 +696,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 2.99,
             'user_id' => $user32->id,
         ]);
-        
+
         $restaurant32->types()->attach([1]);
 
         // USER 33
@@ -717,9 +717,9 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 0.89,
             'user_id' => $user33->id,
         ]);
-        
+
         $restaurant33->types()->attach([2]);
-        
+
         // USER 34
         $user34 = User::create([
             'name' => $faker->firstName(),
@@ -738,9 +738,9 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 1.89,
             'user_id' => $user34->id,
         ]);
-        
+
         $restaurant34->types()->attach([3]);
-        
+
         // USER 35
         $user35 = User::create([
             'name' => $faker->firstName(),
@@ -759,9 +759,9 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 0.89,
             'user_id' => $user35->id,
         ]);
-        
+
         $restaurant35->types()->attach([4]);
-        
+
         // USER 36
         $user36 = User::create([
             'name' => $faker->firstName(),
@@ -780,9 +780,9 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 0.89,
             'user_id' => $user36->id,
         ]);
-        
+
         $restaurant36->types()->attach([5]);
-        
+
         // USER 37
         $user37 = User::create([
             'name' => $faker->firstName(),
@@ -801,7 +801,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 1.99,
             'user_id' => $user37->id,
         ]);
-        
+
         $restaurant37->types()->attach([6]);
 
         // USER 38 - ITALIANA -  (solo dolci)
@@ -822,7 +822,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 1.99,
             'user_id' => $user38->id,
         ]);
-        
+
         $restaurant38->types()->attach([1, 4]);
 
         // USER 39 - MESSICANO - PERUVIANO
@@ -843,7 +843,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 3.99,
             'user_id' => $user39->id,
         ]);
-        
+
         $restaurant39->types()->attach([2, 14]);
 
         // USER 40 - ARABA - AMERICA
@@ -864,7 +864,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 2.99,
             'user_id' => $user40->id,
         ]);
-        
+
         $restaurant40->types()->attach([6, 7]);
 
         // USER 41 - ITALIANA - CINESE
@@ -885,11 +885,11 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 0,
             'user_id' => $user41->id,
         ]);
-        
+
         $restaurant41->types()->attach([1, 4]);
 
-         // USER 42 - AMERICANA - COREANA
-         $user42 = User::create([
+        // USER 42 - AMERICANA - COREANA
+        $user42 = User::create([
             'name' => $faker->firstName(),
             'surname' => $faker->lastName(),
             'email' => 'koreusa@admin.com',
@@ -906,7 +906,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 1.99,
             'user_id' => $user42->id,
         ]);
-        
+
         $restaurant42->types()->attach([6, 8]);
 
         // USER 43 - PERUVIANA - COREANA
@@ -927,7 +927,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 0,
             'user_id' => $user43->id,
         ]);
-        
+
         $restaurant43->types()->attach([14, 8]);
 
         // USER 44 - FRANCESE - ARABA
@@ -948,11 +948,11 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 0.67,
             'user_id' => $user44->id,
         ]);
-        
+
         $restaurant44->types()->attach([9, 7]);
 
-         // USER 45 - FRANCESE - ARABA
-         $user45 = User::create([
+        // USER 45 - FRANCESE - ARABA
+        $user45 = User::create([
             'name' => $faker->firstName(),
             'surname' => $faker->lastName(),
             'email' => 'serbonia@admin.com',
@@ -969,7 +969,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 0,
             'user_id' => $user45->id,
         ]);
-        
+
         $restaurant45->types()->attach([9, 7]);
 
         // USER 46 - GRECO - INDIANO
@@ -990,12 +990,12 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 2.99,
             'user_id' => $user46->id,
         ]);
-        
+
         $restaurant46->types()->attach([10, 12]);
 
 
-          // USER 47 - GRECO - INDIANO
-          $user47 = User::create([
+        // USER 47 - GRECO - INDIANO
+        $user47 = User::create([
             'name' => $faker->firstName(),
             'surname' => $faker->lastName(),
             'email' => 'indiaatehns@admin.com',
@@ -1012,12 +1012,12 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 1.99,
             'user_id' => $user47->id,
         ]);
-        
+
         $restaurant47->types()->attach([10, 12]);
 
 
-          // USER 48 - GRECO - INDIANO
-          $user48 = User::create([
+        // USER 48 - GRECO - INDIANO
+        $user48 = User::create([
             'name' => $faker->firstName(),
             'surname' => $faker->lastName(),
             'email' => 'greekbombay@admin.com',
@@ -1034,7 +1034,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 0.99,
             'user_id' => $user48->id,
         ]);
-        
+
         $restaurant48->types()->attach([10, 12]);
 
         // USER 49 - GRECO - KEBAB
@@ -1055,7 +1055,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 1.99,
             'user_id' => $user49->id,
         ]);
-        
+
         $restaurant49->types()->attach([10, 13]);
 
         // USER 50 - GRECO - KEBAB
@@ -1076,7 +1076,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 3.99,
             'user_id' => $user50->id,
         ]);
-        
+
         $restaurant50->types()->attach([10, 13]);
 
         // USER 51 - GRECO - KEBAB
@@ -1097,7 +1097,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 2.99,
             'user_id' => $user51->id,
         ]);
-        
+
         $restaurant51->types()->attach([10, 13]);
 
         // USER 52 - GRECO - KEBAB
@@ -1118,11 +1118,11 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 1.99,
             'user_id' => $user52->id,
         ]);
-        
+
         $restaurant52->types()->attach([10, 13]);
 
-         // USER 53 - GRECO - KEBAB
-         $user53 = User::create([
+        // USER 53 - GRECO - KEBAB
+        $user53 = User::create([
             'name' => $faker->firstName(),
             'surname' => $faker->lastName(),
             'email' => 'daangelos@admin.com',
@@ -1139,7 +1139,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 0,
             'user_id' => $user53->id,
         ]);
-        
+
         $restaurant53->types()->attach([10, 13]);
 
         // USER 54 - GRECO - KEBAB
@@ -1160,7 +1160,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 0.99,
             'user_id' => $user54->id,
         ]);
-        
+
         $restaurant54->types()->attach([10, 13]);
 
         // USER 55 - GRECO - KEBAB
@@ -1181,11 +1181,11 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 1.99,
             'user_id' => $user55->id,
         ]);
-        
+
         $restaurant55->types()->attach([10, 13]);
 
-         // USER 56 - FRANCESE - COREANA
-         $user56 = User::create([
+        // USER 56 - FRANCESE - COREANA
+        $user56 = User::create([
             'name' => $faker->firstName(),
             'surname' => $faker->lastName(),
             'email' => 'frenchcorea@admin.com',
@@ -1202,7 +1202,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 1.99,
             'user_id' => $user56->id,
         ]);
-        
+
         $restaurant56->types()->attach([9, 8]);
 
         // USER 57 - FRANCESE - COREANA
@@ -1223,7 +1223,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 1.99,
             'user_id' => $user57->id,
         ]);
-        
+
         $restaurant57->types()->attach([9, 8]);
 
         // USER 58 - FRANCESE - COREANA
@@ -1244,11 +1244,11 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 0,
             'user_id' => $user58->id,
         ]);
-        
+
         $restaurant58->types()->attach([9, 8]);
 
-         // USER 59 - FRANCESE - COREANA
-         $user59 = User::create([
+        // USER 59 - FRANCESE - COREANA
+        $user59 = User::create([
             'name' => $faker->firstName(),
             'surname' => $faker->lastName(),
             'email' => 'baguette-bibimbap@admin.com',
@@ -1265,11 +1265,11 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 0,
             'user_id' => $user59->id,
         ]);
-        
+
         $restaurant59->types()->attach([9, 8]);
 
-         // USER 60 - FRANCESE - COREANA
-         $user60 = User::create([
+        // USER 60 - FRANCESE - COREANA
+        $user60 = User::create([
             'name' => $faker->firstName(),
             'surname' => $faker->lastName(),
             'email' => 'fromage-kimchi@admin.com',
@@ -1286,11 +1286,11 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 1.99,
             'user_id' => $user60->id,
         ]);
-        
+
         $restaurant60->types()->attach([9, 8]);
 
-          // USER 61 - FRANCESE - COREANA
-          $user61 = User::create([
+        // USER 61 - FRANCESE - COREANA
+        $user61 = User::create([
             'name' => $faker->firstName(),
             'surname' => $faker->lastName(),
             'email' => 'escargot-banchan@admin.com',
@@ -1307,7 +1307,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 0.99,
             'user_id' => $user61->id,
         ]);
-        
+
         $restaurant61->types()->attach([9, 8]);
 
         // USER 62 - FRANCESE - COREANA
@@ -1328,7 +1328,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 0,
             'user_id' => $user62->id,
         ]);
-        
+
         $restaurant62->types()->attach([9, 8]);
 
         // USER 63 - FRANCESE - COREANA
@@ -1349,11 +1349,11 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 0,
             'user_id' => $user63->id,
         ]);
-        
+
         $restaurant63->types()->attach([9, 8]);
 
-         // USER 64 - FRANCESE - COREANA
-         $user64 = User::create([
+        // USER 64 - FRANCESE - COREANA
+        $user64 = User::create([
             'name' => $faker->firstName(),
             'surname' => $faker->lastName(),
             'email' => 'macaron-kimbap@admin.com',
@@ -1370,7 +1370,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 0,
             'user_id' => $user64->id,
         ]);
-        
+
         $restaurant64->types()->attach([9, 8]);
 
         // USER 65 - FRANCESE - COREANA
@@ -1391,7 +1391,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 0,
             'user_id' => $user65->id,
         ]);
-        
+
         $restaurant65->types()->attach([9, 8]);
 
         // USER 66 - FRANCESE - COREANA
@@ -1412,11 +1412,11 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 0,
             'user_id' => $user66->id,
         ]);
-        
+
         $restaurant66->types()->attach([9, 8]);
 
-         // USER 67 - FRANCESE - COREANA
-         $user67 = User::create([
+        // USER 67 - FRANCESE - COREANA
+        $user67 = User::create([
             'name' => $faker->firstName(),
             'surname' => $faker->lastName(),
             'email' => 'brie-japchae@admin.com',
@@ -1433,11 +1433,11 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 0,
             'user_id' => $user67->id,
         ]);
-        
+
         $restaurant67->types()->attach([9, 8]);
 
-         // USER 68 - FRANCESE - COREANA
-         $user68 = User::create([
+        // USER 68 - FRANCESE - COREANA
+        $user68 = User::create([
             'name' => $faker->firstName(),
             'surname' => $faker->lastName(),
             'email' => 'eclair-tteokbokki@admin.com',
@@ -1454,7 +1454,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 0,
             'user_id' => $user68->id,
         ]);
-        
+
         $restaurant68->types()->attach([9, 8]);
 
         // USER 69 - FRANCESE - COREANA
@@ -1475,7 +1475,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 0,
             'user_id' => $user69->id,
         ]);
-        
+
         $restaurant69->types()->attach([9, 8]);
 
         // USER 70 - FRANCESE - COREANA
@@ -1496,11 +1496,11 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 0,
             'user_id' => $user70->id,
         ]);
-        
+
         $restaurant70->types()->attach([9, 8]);
 
-         // USER 71 - FRANCESE - COREANA
-         $user71 = User::create([
+        // USER 71 - FRANCESE - COREANA
+        $user71 = User::create([
             'name' => $faker->firstName(),
             'surname' => $faker->lastName(),
             'email' => 'ratatouille-japchae@admin.com',
@@ -1517,11 +1517,11 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 1.99,
             'user_id' => $user71->id,
         ]);
-        
+
         $restaurant71->types()->attach([9, 8]);
 
-          // USER 72 - FRANCESE - COREANA
-          $user72 = User::create([
+        // USER 72 - FRANCESE - COREANA
+        $user72 = User::create([
             'name' => $faker->firstName(),
             'surname' => $faker->lastName(),
             'email' => 'foiegras-yukgaejang@admin.com',
@@ -1538,7 +1538,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 1.99,
             'user_id' => $user72->id,
         ]);
-        
+
         $restaurant72->types()->attach([9, 8]);
 
         // USER 73 - FRANCESE - COREANA
@@ -1559,7 +1559,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 2.99,
             'user_id' => $user73->id,
         ]);
-        
+
         $restaurant73->types()->attach([9, 8]);
 
         // USER 74 - FRANCESE - COREANA
@@ -1580,7 +1580,7 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 2.99,
             'user_id' => $user74->id,
         ]);
-        
+
         $restaurant74->types()->attach([9, 8]);
 
         // USER 75 - FRANCESE - COREANA
@@ -1601,11 +1601,11 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 2.99,
             'user_id' => $user75->id,
         ]);
-        
+
         $restaurant75->types()->attach([9, 8]);
 
-         // USER 76 - FRANCESE - COREANA
-         $user76 = User::create([
+        // USER 76 - FRANCESE - COREANA
+        $user76 = User::create([
             'name' => $faker->firstName(),
             'surname' => $faker->lastName(),
             'email' => 'gateau-korean@admin.com',
@@ -1622,19 +1622,447 @@ class UserSeeder extends Seeder
             'prezzo_spedizione' => 0.99,
             'user_id' => $user76->id,
         ]);
-        
+
         $restaurant76->types()->attach([9, 8]);
 
+        // USER 77 - AMERICANA - INDIANA
+        $user77 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'Naan-taco@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 77 -  AMERICANA - INDIANA
+        $restaurant77 = Restaurant::create([
+            'name' => 'Naan-taco',
+            'image' => '/restaurant/77.jpg',
+            'address' => 'Strada dei pazzi, 22',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 0.99,
+            'user_id' => $user77->id,
+        ]);
+
+        $restaurant77->types()->attach([6, 12]);
+
+        // USER 78 - AMERICANA - INDIANA
+        $user78 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'curry-burger@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 78 -  AMERICANA - INDIANA
+        $restaurant78 = Restaurant::create([
+            'name' => 'Curry-burger',
+            'image' => '/restaurant/78.jpg',
+            'address' => 'Via Passeri, 11',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 0.99,
+            'user_id' => $user78->id,
+        ]);
+
+        $restaurant78->types()->attach([6, 12]);
+
+        // USER 79 - AMERICANA - INDIANA
+        $user79 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'mmsala-dog@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 79 -  AMERICANA - INDIANA
+        $restaurant79 = Restaurant::create([
+            'name' => 'Masala-dog',
+            'image' => '/restaurant/79.jpg',
+            'address' => 'Via degli Squali, 121',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 0.99,
+            'user_id' => $user79->id,
+        ]);
+
+        $restaurant79->types()->attach([6, 12]);
+
+        // USER 80 - AMERICANA - INDIANA
+        $user80 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'vada-pizza@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 80 -  AMERICANA - INDIANA
+        $restaurant80 = Restaurant::create([
+            'name' => 'Vada-pizza',
+            'image' => '/restaurant/80.jpg',
+            'address' => 'Via degli Scorpioni, 11',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 1.99,
+            'user_id' => $user80->id,
+        ]);
+
+        $restaurant80->types()->attach([6, 12]);
+
+        // USER 81 - AMERICANA - INDIANA
+        $user81 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'tandoori-chicken@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 81 -  AMERICANA - INDIANA
+        $restaurant81 = Restaurant::create([
+            'name' => 'Tandoori-chicken wings',
+            'image' => '/restaurant/81.jpg',
+            'address' => 'Via dello Spettacolo, 3',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 1.99,
+            'user_id' => $user81->id,
+        ]);
+
+        $restaurant81->types()->attach([6, 12]);
+
+
+        // USER 82 - AMERICANA - INDIANA
+        $user82 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'chaat-burrito@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 82 -  AMERICANA - INDIANA
+        $restaurant82 = Restaurant::create([
+            'name' => 'Chaat&burrito',
+            'image' => '/restaurant/82.jpg',
+            'address' => 'Via dello Sport, 123',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 2.99,
+            'user_id' => $user82->id,
+        ]);
+
+        $restaurant82->types()->attach([6, 12]);
+
+        // USER 83 - AMERICANA - INDIANA
+        $user83 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'dosa-taco@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 83 -  AMERICANA - INDIANA
+        $restaurant83 = Restaurant::create([
+            'name' => 'Dosa-taco',
+            'image' => '/restaurant/83.jpg',
+            'address' => 'Via dello Sport, 123',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 3.99,
+            'user_id' => $user83->id,
+        ]);
+
+        $restaurant83->types()->attach([6, 12]);
+
+        // USER 84 - AMERICANA - INDIANA
+        $user84 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'biryani-bowl@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 84 -  AMERICANA - INDIANA
+        $restaurant84 = Restaurant::create([
+            'name' => 'Biryani&bowl',
+            'image' => '/restaurant/84.jpg',
+            'address' => 'Via dello Scorrazzo, 1',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 1.99,
+            'user_id' => $user84->id,
+        ]);
+
+        $restaurant84->types()->attach([6, 12]);
+
+        // USER 85 - AMERICANA - INDIANA
+        $user85 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'gulabjamun@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 85 -  AMERICANA - INDIANA
+        $restaurant85 = Restaurant::create([
+            'name' => 'Gulab&Jamun',
+            'image' => '/restaurant/85.jpg',
+            'address' => 'Contrada Roma, 21',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 1.99,
+            'user_id' => $user85->id,
+        ]);
+
+        $restaurant85->types()->attach([6, 12]);
+
+        // USER 86 - AMERICANA - INDIANA
+        $user86 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'roti-pita@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 86 -  AMERICANA - INDIANA
+        $restaurant86 = Restaurant::create([
+            'name' => 'Roti-pita',
+            'image' => '/restaurant/86.jpg',
+            'address' => 'Contrada Napoli, 21',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 1.99,
+            'user_id' => $user86->id,
+        ]);
+
+        $restaurant86->types()->attach([6, 12]);
+
+        // USER 87 - AMERICANA - INDIANA
+        $user87 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'paneer-sliders@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 87 -  AMERICANA - INDIANA
+        $restaurant87 = Restaurant::create([
+            'name' => 'Paneer-sliders',
+            'image' => '/restaurant/87.jpg',
+            'address' => 'Contrada Salerno, 51',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 1.99,
+            'user_id' => $user87->id,
+        ]);
+
+        $restaurant87->types()->attach([6, 12]);
+
+        // USER 88 - AMERICANA - INDIANA
+        $user88 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'papadum-tostadas@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 88 -  AMERICANA - INDIANA
+        $restaurant88 = Restaurant::create([
+            'name' => 'Papadum-tostadas',
+            'image' => '/restaurant/88.jpg',
+            'address' => 'Via Temporale, 28',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 1.99,
+            'user_id' => $user88->id,
+        ]);
+
+        $restaurant88->types()->attach([6, 12]);
+
+        // USER 89 - AMERICANA - INDIANA
+        $user89 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'cha-bagel-idi@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 89 -  AMERICANA - INDIANA
+        $restaurant89 = Restaurant::create([
+            'name' => 'Cha-Bagel',
+            'image' => '/restaurant/89.jpg',
+            'address' => 'Via Tropicana, 21',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 1.99,
+            'user_id' => $user89->id,
+        ]);
+
+        $restaurant89->types()->attach([6, 12]);
+
+        // USER 90 - AMERICANA - INDIANA
+        $user90 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'idli-bagel@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 90 -  AMERICANA - INDIANA
+        $restaurant90 = Restaurant::create([
+            'name' => 'Idli&bagel',
+            'image' => '/restaurant/90.jpg',
+            'address' => 'Via Terrestre, 34',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 2.99,
+            'user_id' => $user90->id,
+        ]);
+
+        $restaurant90->types()->attach([6, 12]);
+
+        // USER 91 - AMERICANA - INDIANA
+        $user91 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'mango-salsa-grill@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 91 -  AMERICANA - INDIANA
+        $restaurant91 = Restaurant::create([
+            'name' => 'Mango-salsa&Grill',
+            'image' => '/restaurant/91.jpg',
+            'address' => 'Via Andalusia, 11',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 2.99,
+            'user_id' => $user91->id,
+        ]);
+
+        $restaurant91->types()->attach([6, 12]);
+
+        // USER 92 - AMERICANA - INDIANA
+        $user92 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'paratha-wrap@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 92 -  AMERICANA - INDIANA
+        $restaurant92 = Restaurant::create([
+            'name' => 'Paratha-wrap',
+            'image' => '/restaurant/92.jpg',
+            'address' => 'Via Sentenza, 31',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 4.99,
+            'user_id' => $user92->id,
+        ]);
+
+        $restaurant92->types()->attach([6, 12]);
+
+        // USER 93 - AMERICANA - INDIANA
+        $user93 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'vhelpuri-buffalo@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 93 -  AMERICANA - INDIANA
+        $restaurant93 = Restaurant::create([
+            'name' => 'Bhelpuri-buffalo',
+            'image' => '/restaurant/93.jpg',
+            'address' => 'Via San Ciro, 67',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 1.99,
+            'user_id' => $user93->id,
+        ]);
+
+        $restaurant93->types()->attach([6, 12]);
+
+        // USER 94 - AMERICANA - INDIANA
+        $user94 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'alootikki-tacos@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 94 -  AMERICANA - INDIANA
+        $restaurant94 = Restaurant::create([
+            'name' => 'Aloo Tikki-tacos',
+            'image' => '/restaurant/94.jpg',
+            'address' => 'Via Germania, 167',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 0,
+            'user_id' => $user94->id,
+        ]);
+
+        $restaurant94->types()->attach([6, 12]);
+
+        // USER 95 - AMERICANA - INDIANA
+        $user95 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'biryani-burrito@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 95 -  AMERICANA - INDIANA
+        $restaurant95 = Restaurant::create([
+            'name' => 'Biryani-burrito',
+            'image' => '/restaurant/95.jpg',
+            'address' => 'Via Cesare Pavese, 127',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 1.99,
+            'user_id' => $user95->id,
+        ]);
+
+        $restaurant95->types()->attach([6, 12]);
+
+        // USER 96 - AMERICANA - INDIANA
+        $user96 = User::create([
+            'name' => $faker->firstName(),
+            'surname' => $faker->lastName(),
+            'email' => 'naanwich@admin.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => Carbon::now()->subYear(),
+        ]);
+
+        // RESTAURANT 96 -  AMERICANA - INDIANA
+        $restaurant96 = Restaurant::create([
+            'name' => 'Naan-wich',
+            'image' => '/restaurant/96.jpg',
+            'address' => 'Via Cesare Savonese, 17',
+            'PIVA' => $faker->unique()->regexify('[0-9]{11}'),
+            'prezzo_spedizione' => 0,
+            'user_id' => $user96->id,
+        ]);
+
+        $restaurant96->types()->attach([6, 12]);
 
 
 
 
-        
 
 
 
-        
-       
+
+
+
+
+
+
+
+
+
+
+
 
         // // -------------------------------------------------
         // // 20 random users
